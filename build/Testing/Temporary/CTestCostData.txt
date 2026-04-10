@@ -1,0 +1,22 @@
+module_iface_test 58 0.00022309
+ngircd_configtest 55 0.000264602
+ngircd_configtest_rich 54 0.000252224
+ngircd_configtest_invalid 53 0.000236783
+ngircd_configtest_ipv6 49 0.000259461
+ngircd_configtest_unknown_section 49 0.000299955
+ngircd_configtest_multi_server 49 0.000262653
+ngircd_configtest_long_values 51 0.000240898
+conf_whitebox_test 48 0.000256148
+log_io_resolver_test 48 0.000260937
+login_state_test 38 0.000314747
+message_check_test 36 0.00032475
+login_check_test 35 0.000324351
+join_check_test 32 0.000347481
+join_error_test 30 0.00036492
+login_flow_test 30 0.000387727
+user_check_test 27 0.000436689
+nick_check_test 22 0.000553168
+branch_coverage_test 10 0.00120354
+full_coverage_test 10 0.00119477
+irc_cap_end_test 1 0.0436409
+---

@@ -1,0 +1,10 @@
+[32520:5    0] ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows starting ...
+[32520:6    0] Using specified configuration file "C:\develop\ngircd\build\ngircd-win32-test.conf" ...
+[32520:3    0] Can't read help text file "./Commands.txt": No such file or directory
+[32520:4    0] No help text available, HELP command will be of limited use.
+[32520:4    0] Not specifying a full path name to "C:\develop\ngircd\build\ngircd-win32-test.conf" can cause problems when rehashing the server!
+[32520:6    0] Running as user unknown(1), group unknown(1), with PID 32520.
+[32520:6    0] Not running with changed root directory.
+[32520:6    0] IO subsystem: select (initial maxfd 100).
+[32520:6    0] Now listening on [127.0.0.1]:6789 (socket 412).
+[32520:5    0] Server "ngircd.test.server" (on "HTIWILCO") ready.
