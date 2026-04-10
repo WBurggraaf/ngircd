@@ -6,5 +6,5 @@ C_DEFINES = -DNGIRCD_UNITTEST
 
 C_INCLUDES = -IC:\develop\ngircd\win32\include -IC:\develop\ngircd\original\src\portab -IC:\develop\ngircd\original\src\tool -IC:\develop\ngircd\original\src\ipaddr -IC:\develop\ngircd\original\src\ngircd -IC:\develop\ngircd\include
 
-C_FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090
+C_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090
 

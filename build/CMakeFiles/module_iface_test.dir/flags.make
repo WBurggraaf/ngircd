@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -IC:\develop\ngircd\win32\include -IC:\develop\ngircd\original\src\portab -IC:\develop\ngircd\original\src\ngircd
 
-C_FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3 /Zi /wd4005
+C_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3 /Zi /wd4005
 

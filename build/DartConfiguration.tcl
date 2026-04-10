@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: C:/Program Files/Git/bin/git.exe
+GITCommand: C:/Program Files/Git/mingw64/bin/git.exe
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,7 +58,7 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: C:/Program Files/Git/bin/git.exe
+UpdateCommand: C:/Program Files/Git/mingw64/bin/git.exe
 UpdateOptions: 
 UpdateType: git
 

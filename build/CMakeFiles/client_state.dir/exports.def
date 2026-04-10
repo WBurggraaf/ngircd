@@ -1,0 +1,2 @@
+EXPORTS 
+	client_state_get_api_v1

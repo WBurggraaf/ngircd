@@ -103,11 +103,30 @@ typedef unsigned char bool;
 # define ssize_t int
 #endif
 
+/*
+ * GLOBAL macro — handles dllexport/dllimport for Windows DLL builds.
+ *
+ * NGIRCD_IMPL_BUILD : set for all sources compiled into ngircd_impl.dll
+ * NGIRCD_IMPL_CONSUMER : set for DLLs/EXEs that consume ngircd_impl.dll
+ * GLOBAL_INIT : set by the one .c file that owns a section of global vars
+ *
+ * Non-Windows and static/test builds fall through to plain extern/definition.
+ */
 #undef GLOBAL
-#ifdef GLOBAL_INIT
-#define GLOBAL
+#if defined(GLOBAL_INIT) && defined(NGIRCD_IMPL_BUILD) && defined(_WIN32)
+/* Definition that is exported from ngircd_impl.dll */
+#  define GLOBAL __declspec(dllexport)
+#elif defined(GLOBAL_INIT)
+/* Plain definition — static link or test build */
+#  define GLOBAL
+#elif defined(NGIRCD_IMPL_BUILD) && defined(_WIN32)
+/* Reference to an exported var from within the same DLL (no decoration needed) */
+#  define GLOBAL extern
+#elif defined(NGIRCD_IMPL_CONSUMER) && defined(_WIN32)
+/* Import from ngircd_impl.dll */
+#  define GLOBAL extern __declspec(dllimport)
 #else
-#define GLOBAL extern
+#  define GLOBAL extern
 #endif
 
 /* target constants  */

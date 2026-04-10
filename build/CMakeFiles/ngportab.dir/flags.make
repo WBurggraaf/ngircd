@@ -6,5 +6,5 @@ C_DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS
 
 C_INCLUDES = -IC:\develop\ngircd\win32\include -IC:\develop\ngircd\include -IC:\develop\ngircd\original\src\portab
 
-C_FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3 /Zi /wd4996 /wd4005
+C_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3 /Zi /wd4996 /wd4005
 

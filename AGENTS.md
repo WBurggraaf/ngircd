@@ -2,440 +2,225 @@
 
 ## Mission
 
-Refactor this existing IRC server codebase from a largely monolithic native application into:
+Convert this repository to a **real thin-host + DLL** architecture as fast as possible without breaking baseline IRC behavior.
 
-- one thin host executable
-- multiple DLLs organized by subsystem
-- stable C ABI boundaries between host and modules
-- an architecture that can later allow selected native DLLs to be replaced by C#/.NET implementations behind compatible host-facing contracts
+The near-term goal is not a perfect final decomposition. The near-term goal is to reach a build where:
 
-This is a **staged refactor of an existing codebase**, not a rewrite.
+- `ngircd.exe` is mostly bootstrap and lifecycle code
+- real subsystem DLLs are produced, not just static-library placeholders
+- every cross-module surface is C ABI and versioned
+- future C# substitution is practical for selected high-level modules
 
-Behavior preservation is a first-class requirement.
-
----
-
-## Operating principles
-
-1. **Do not rewrite from scratch.**
-   - Preserve existing behavior wherever possible.
-   - Prefer extraction, seam creation, and encapsulation over redesigning everything at once.
-
-2. **Do analysis first.**
-   - Before major code edits, inspect the current code thoroughly.
-   - Document the current architecture, coupling, globals, and runtime flow.
-   - Base all module boundaries on real code structure and runtime behavior.
-
-3. **Keep the code buildable frequently.**
-   - Refactor in phases.
-   - Minimize long-lived broken intermediate states.
-   - At the end of each phase, summarize what compiles, what remains legacy, and what risks remain.
-
-4. **All cross-module boundaries must use a C ABI.**
-   - No C++ classes across DLL boundaries.
-   - No STL types across DLL boundaries.
-   - No compiler-specific mangled entrypoints as public contracts.
-   - Use opaque handles, fixed-width integer types, pointer+length buffers, explicit versioning, and explicit ownership.
-
-5. **Design for future managed substitution, but do not implement managed code now.**
-   - Some high-level DLLs may later be implemented in C#/.NET.
-   - Do not assume all modules are good candidates.
-   - Be explicit about which modules should remain native and why.
-
-6. **Prefer explicit ownership and service tables.**
-   - Avoid hidden globals.
-   - Avoid ambiguous memory ownership.
-   - Prefer host-provided service tables and versioned function tables.
-
-7. **Be conservative in hot paths.**
-   - Avoid adding overly chatty ABI boundaries in transport, socket loops, or parser hot paths.
-   - Do not sacrifice core performance or reliability for abstraction purity.
+This is a staged refactor of an existing native codebase.
+It is not a rewrite.
 
 ---
 
-## Primary target architecture
+## What the repository already shows
 
-The target shape is:
+From the current tree and build:
 
-- `host.exe`
-- `core_runtime.dll`
-- `platform.dll`
-- `config.dll`
+- The repo already has split headers and wrapper sources under `include/` and `src/`.
+- The build already emits `build/core_runtime.dll`.
+- Most other new subsystem targets are still static libraries (`*.lib`) and are not yet real DLLs.
+- `ngircd.exe` still directly compiles the original monolithic sources from `original/src/ngircd/...`.
+- The current `host_api` layer is still a wiring stub, not a dynamic-loader-based host.
+- `module_get_api_v1` already exists as the intended ABI pattern and must remain the standard entrypoint shape.
+
+Treat this as a partially-completed extraction, not a clean modular system.
+
+---
+
+## Fastest path principle
+
+Choose the path that gets to **actual DLL usage** fastest while keeping the EXE small:
+
+1. **Keep hot-path code native.**
+   - transport, polling, socket loops, resolver shims, and low-level runtime stay native-first.
+
+2. **Promote existing wrapper targets to real shared libraries before inventing new abstraction layers.**
+   - The repo already has module-shaped source directories. Use them.
+
+3. **Move orchestration out of the EXE before moving deep behavior out of the core.**
+   - Thin host first.
+   - Perfect subsystem purity later.
+
+4. **Prefer coarse DLL boundaries first.**
+   - Too many small DLL seams early will slow the refactor and increase ABI churn.
+
+5. **Do not move allocation ownership across DLLs casually.**
+   - C ABI + explicit allocators only.
+
+---
+
+## Recommended execution order
+
+### Phase 0 - Stabilize the ABI contract
+
+Do first:
+
+- Keep `core_runtime` as the contract anchor.
+- Standardize export/import macros, calling convention macros, status codes, version structs, and service tables there.
+- Require every module to expose `module_get_api_v1`.
+- Add explicit ownership notes for every public struct and function.
+
+This is the foundation for both native DLL loading and future C# compatibility.
+
+### Phase 1 - Make the host executable genuinely thin
+
+Fastest win:
+
+- Move bootstrap/orchestration into `host` and `server_app` layers.
+- Keep `ngircd.exe` responsible only for:
+  - process entry
+  - argument forwarding
+  - loading core modules
+  - resolving exported APIs
+  - top-level lifecycle
+  - fatal startup failure reporting
+
+Do not leave config parsing, protocol dispatch, or server logic in the EXE.
+
+### Phase 2 - Promote existing static module targets to shared libraries
+
+Do this before a large source reorganization.
+
+Immediate target set:
+
+- `core_runtime.dll` (already present)
 - `logging.dll`
+- `config.dll`
+- `platform.dll`
 - `net_transport.dll`
 - `resolver.dll`
-- `irc_protocol.dll`
-- `client_state.dll`
-- `channel_state.dll`
-- `command_handlers.dll`
 - `server_app.dll`
 
-This is the starting target. Adjust only when code inspection proves a better split.
+These are the fastest modules to make real because the repository already has target stubs for them.
+
+Keep these provisional or internal until dependencies are cleaner:
+
+- `irc_protocol`
+- `client_state`
+- `channel_state`
+- `command_handlers`
+
+### Phase 3 - Replace direct EXE-to-legacy calls with module calls
+
+Refactor in this order:
+
+- config/bootstrap path
+- logging path
+- runtime/platform shims
+- server lifecycle
+- resolver/network support hooks
+- protocol/state/command surfaces
+
+The key milestone is when `ngircd.exe` no longer directly owns the original subsystem behavior.
+
+### Phase 4 - Split high-level logic for future managed substitution
+
+Best future .NET candidates:
+
+- `config`
+- `logging` interface layer
+- selected `irc_protocol` validation/dispatch helpers
+- parts of `command_handlers`
+- portions of `server_app` orchestration
+
+Poor .NET candidates for early replacement:
+
+- `platform`
+- `net_transport`
+- resolver internals tied to socket/event timing
+- tightly coupled low-level state mutation in hot loops
 
 ---
 
-## Host executable responsibilities
+## Current practical module strategy
 
-The executable must become as small as practical and should primarily handle:
+### Keep native and low-level
 
-- process entry
-- argument parsing
-- top-level bootstrap
-- dynamic module loading
-- interface resolution
-- service table construction
-- module wiring
-- lifecycle control
-- fatal error reporting
-- shutdown orchestration
+These should remain native-first and performance-conservative:
 
-The host must not permanently retain business logic that belongs in modules.
+- `core_runtime`
+- `platform`
+- `net_transport`
+- most of `resolver`
+
+### Make DLL-backed now
+
+These should become real DLLs as soon as possible:
+
+- `logging`
+- `config`
+- `server_app`
+- `core_runtime`
+
+### Delay full externalization until seams are cleaner
+
+These likely need another cleanup pass before they become externally stable DLLs:
+
+- `irc_protocol`
+- `client_state`
+- `channel_state`
+- `command_handlers`
 
 ---
 
 ## Mandatory ABI rules
 
-Every DLL must expose a clear versioned entrypoint, for example:
+Every public module boundary must:
 
-- `module_get_api_v1`
-
-Every exported public ABI must:
-
-- use explicit export/import macros
-- use explicit calling convention macros
-- use `extern "C"` where applicable
+- use a C ABI only
 - use fixed-width integer types
-- avoid ambiguous ownership
-- avoid CRT allocation mismatch across DLL boundaries
-- define version fields in public structs
-- document lifecycle and threading assumptions
+- expose version fields
+- avoid cross-module CRT ownership assumptions
+- avoid exposing internal structs directly unless they are explicitly stable
+- prefer opaque handles + API tables + caller-owned buffers
+- define thread/lifetime expectations
 
-Preferred patterns:
+Preferred public pattern:
 
-- opaque handles
-- caller-provided buffers
-- explicit create/init/start/stop/destroy functions
-- host-provided allocator/logging/service tables
-- status-code-based error returns
-
----
-
-## Memory ownership rules
-
-These rules are mandatory:
-
-- Never assume memory can be allocated in one module and freed in another unless a shared allocator contract explicitly permits it.
-- Prefer caller-owned buffers.
-- If a callee allocates memory, it must either:
-  - also expose the matching free function, or
-  - use an explicitly shared allocator/service contract.
-- Every public function must clearly document:
-  - input ownership
-  - output ownership
-  - ownership on failure
-  - lifetime of returned pointers
+- one public module header
+- one metadata struct
+- one API function table
+- one `module_get_api_v1` export
+- host-provided service table input
 
 ---
 
-## Error handling rules
+## EXE size rule
 
-Use a common error/status model across modules.
+Always prefer this shape:
 
-Required:
+- thin `ngircd.exe`
+- more code in DLLs
+- no business logic retained in the executable just because it is convenient
 
-- shared status code enum
-- consistent success/failure conventions
-- optional extended diagnostics path
-- no ad hoc mixed conventions across different DLLs
-
-Public ABI docs must state:
-
-- success value
-- recoverable failure behavior
-- fatal failure behavior
-- whether partial side effects can occur
+A small EXE is a success metric, not a side effect.
 
 ---
 
-## Dependency direction rules
+## Build-system rule
 
-Target dependency directions:
+The build must stop pretending modules are DLLs when they are still static-only.
 
-- host -> all modules
-- `server_app.dll` -> high-level modules
-- `command_handlers.dll` -> protocol + state + logging + service interfaces
-- `client_state.dll` -> core/runtime only, plus logging only if justified
-- `channel_state.dll` -> core/runtime only, plus logging only if justified
-- `irc_protocol.dll` -> core/runtime only
-- `resolver.dll` -> platform + core/runtime + logging
-- `net_transport.dll` -> platform + core/runtime + logging
-- `config.dll` -> core/runtime only
-- `logging.dll` -> core/runtime only
-- `platform.dll` -> minimal dependencies
+Required near-term cleanups:
 
-Avoid peer-to-peer tangles. Prefer dependency inversion through service tables.
+- rename `*_api` targets to real module names when they become shared libraries
+- use `SHARED` where the module is intended to be loaded as a DLL
+- centralize export macro definitions per module
+- make it obvious which modules are runtime-loaded versus link-time coupled
 
 ---
 
-## Required first artifacts
+## Definition of done for the next serious milestone
 
-Before major code restructuring, create these files:
+The next milestone is done when all of the following are true:
 
-- `docs/refactor/current-architecture.md`
-- `docs/refactor/target-architecture.md`
-- `docs/refactor/migration-plan.md`
-- `docs/refactor/decision-log.md`
-- `docs/refactor/dotnet-replacement-strategy.md`
+- `ngircd.exe` is orchestration-only
+- at least `core_runtime`, `logging`, `config`, and `server_app` are real DLLs
+- the host resolves module APIs through versioned C ABI entrypoints
+- public ownership rules are explicit
+- no new ABI blocks future C# replacement of the selected high-level modules
 
-Also create module docs under:
-
-- `docs/refactor/modules/<module>.md`
-
-Do not skip this documentation phase.
-
----
-
-## Current architecture analysis requirements
-
-The current architecture document must include:
-
-- executable entry path
-- startup/bootstrap flow
-- config loading flow
-- listener creation and socket path
-- event loop
-- connection lifecycle
-- parse/dispatch path
-- registration/login flow
-- channel management flow
-- message routing flow
-- logging path
-- resolver/DNS/ident flow
-- reload/rehash path if supported
-- shutdown path
-- global state inventory
-- subsystem ownership/coupling inventory
-- build/link structure
-- Windows-specific behavior relevant to modularization
-
-Also identify:
-
-- global mutable state
-- singleton assumptions
-- cyclic dependencies
-- compile-time coupling hotspots
-- cross-cutting helpers
-- direct calls that should become interface-based
-
----
-
-## Global state reduction policy
-
-Reducing uncontrolled global state is a major goal.
-
-For every global encountered, classify it as:
-
-- true process-global
-- host-owned singleton
-- module-owned singleton
-- instance-owned context
-- removable legacy global
-
-Prefer converting globals into:
-
-- module context structs
-- host-owned registries
-- explicit instance state
-- immutable config objects
-
-Do not merely wrap globals in getters and call the problem solved.
-
----
-
-## Recommended migration sequence
-
-Use this sequence unless repository inspection reveals a better order:
-
-### Phase 0: Inventory and guardrails
-- map current files to responsibilities
-- improve or add behavior-preserving tests
-- capture baseline runtime flows
-- prepare build support for modular outputs
-
-### Phase 1: Shared runtime/contracts
-- create shared ABI headers
-- define status codes
-- define export/calling convention macros
-- define allocator/logging/service contracts
-- define versioning helpers
-
-### Phase 2: Host/server seam
-- introduce a thin orchestration seam
-- route startup through a stable internal interface
-- begin isolating bootstrap responsibilities
-
-### Phase 3: Extract low-risk modules
-Extract first:
-- `logging.dll`
-- `config.dll`
-- `core_runtime.dll`
-
-### Phase 4: Extract platform/transport/resolver seams
-- separate raw transport from IRC semantics
-- define connection/event callbacks
-- isolate resolver behavior
-
-### Phase 5: Extract protocol layer
-- parsing
-- validation
-- serialization helpers
-- numeric construction helpers
-
-### Phase 6: Extract state modules
-- `client_state.dll`
-- `channel_state.dll`
-
-### Phase 7: Extract command handling
-- route behavior through explicit service interfaces
-- reduce direct coupling to globals
-
-### Phase 8: Minimize the EXE
-- move remaining orchestration into `server_app.dll`
-- keep EXE limited to bootstrap/module wiring/lifecycle
-
----
-
-## Testing requirements
-
-As refactors proceed, maintain or add tests for:
-
-- startup/shutdown
-- config load
-- client connect/register
-- `CAP LS`
-- `CAP REQ`
-- `CAP END`
-- `NICK`
-- `USER`
-- user registration completion
-- user `MODE`
-- `JOIN`
-- channel `MODE` query
-- `PRIVMSG` to joined channel
-- connection close/disconnect
-- numerics/error replies
-- rehash/reload if supported
-
-Also add:
-
-- smoke tests per extracted DLL
-- ABI/version mismatch tests
-- missing-export/module-load failure tests
-- ownership/lifetime tests where possible
-
-Prefer extending existing tests before inventing a new framework.
-
----
-
-## .NET replacement design policy
-
-Design seams so later replacement by managed code is feasible for selected modules, but do not pretend all modules are suitable.
-
-For each module, classify as:
-
-- Native forever
-- Native first, maybe managed later
-- Good managed candidate
-
-Include reasons such as:
-
-- performance sensitivity
-- marshalling complexity
-- callback frequency
-- OS coupling
-- threading sensitivity
-- debugability
-- fault isolation
-
-Likely better managed candidates:
-- `config.dll`
-- `logging.dll`
-- parts of `server_app.dll`
-- some higher-level command orchestration
-
-Likely native-heavy:
-- `platform.dll`
-- `net_transport.dll`
-- low-level parser/framing hot paths
-- resolver if tightly coupled to OS/network behavior
-
----
-
-## Build system expectations
-
-Update the build system incrementally so it can:
-
-- build the host EXE
-- build DLLs
-- publish public headers
-- use clean export/import macros
-- support Windows as a first-class target
-- preserve developer workflow where possible
-
-Do not break the existing build without a recovery path.
-
----
-
-## Required deliverable style
-
-When making changes:
-
-- show concrete file changes
-- explain why a boundary is being introduced
-- explain why a subsystem belongs in a given module
-- document known compromises
-- summarize remaining legacy coupling after each phase
-- record major decisions in `docs/refactor/decision-log.md`
-
-Do not jump into blind edits without documenting reasoning.
-
----
-
-## Output expectations for each major step
-
-At the end of each major step or phase, provide:
-
-1. what changed
-2. what still depends on legacy monolith internals
-3. what compiles now
-4. what tests were run
-5. what risks remain
-6. what the next smallest safe step is
-
----
-
-## Anti-patterns to avoid
-
-Do not:
-
-- rewrite the server from scratch
-- split DLLs purely by source folder
-- create trivial micro-DLLs
-- expose C++ object models as ABI
-- introduce hidden ownership rules
-- make every tiny parser step a cross-DLL call
-- over-engineer plugin discovery before the basics are stable
-- claim future C# replacement is easy without showing the actual seam constraints
-
----
-
-## Preferred implementation style
-
-- precise
-- conservative
-- staged
-- documented
-- test-backed
-- reversible where practical
-
-When uncertain, choose the least risky path and explain the tradeoff.

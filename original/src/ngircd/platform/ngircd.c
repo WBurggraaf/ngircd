@@ -9,7 +9,12 @@
  * Please read the file COPYING, README and AUTHORS for more information.
  */
 
-#define GLOBAL_INIT
+/*
+ * This file is the thin EXE entry point.  It does NOT define NGIRCd_* globals
+ * (those live in ngircd_impl.dll via ngircd_runtime_globals.c) and does NOT
+ * contain NGIRCd_Init (that lives in ngircd_daemon.c, also in ngircd_impl.dll).
+ * All NGIRCd_* symbols are imported from ngircd_impl.dll at runtime.
+ */
 #include "portab.h"
 
 /**
@@ -51,8 +56,6 @@ static void Show_Version PARAMS(( void ));
 static void Show_Help PARAMS(( void ));
 
 static void Fill_Version PARAMS(( void ));
-
-static void Setup_FDStreams PARAMS(( int fd ));
 
 /**
  * The main() function of ngIRCd.
@@ -495,34 +498,9 @@ Show_Help( void )
 } /* Show_Help */
 
 
-/**
- * Redirect stdin, stdout and stderr to appropriate file handles.
- *
- * @param fd	The file handle stdin, stdout and stderr should be redirected to.
- */
-static void
-Setup_FDStreams(int fd)
-{
-	if (fd < 0)
-		return;
+/* Setup_FDStreams and NGIRCd_getNobodyID moved to src/ngircd_impl/ngircd_daemon.c */
 
-	fflush(stdout);
-	fflush(stderr);
-
-	/* Create new stdin(0), stdout(1) and stderr(2) descriptors */
-	dup2( fd, 0 ); dup2( fd, 1 ); dup2( fd, 2 );
-} /* Setup_FDStreams */
-
-
-#if !defined(SINGLE_USER_OS)
-
-/**
- * Get user and group ID of unprivileged "nobody" user.
- *
- * @param uid	User ID
- * @param gid	Group ID
- * @return	true on success.
- */
+#if 0  /* moved */
 static bool
 NGIRCd_getNobodyID(uid_t *uid, gid_t *gid )
 {
@@ -553,18 +531,12 @@ NGIRCd_getNobodyID(uid_t *uid, gid_t *gid )
 	endpwent();
 
 	return true;
-} /* NGIRCd_getNobodyID */
+} /* NGIRCd_getNobodyID - stub, not compiled */
 
-#endif
+#endif /* moved */
 
-
-/**
- * Initialize ngIRCd daemon.
- *
- * @param NGIRCd_NoDaemon Set to true if ngIRCd should run in the
- *		foreground (and not as a daemon).
- * @return true on success.
- */
+/* NGIRCd_Init moved to src/ngircd_impl/ngircd_daemon.c */
+#if 0
 GLOBAL bool
 NGIRCd_Init(bool NGIRCd_NoDaemon)
 {
@@ -782,7 +754,7 @@ NGIRCd_Init(bool NGIRCd_NoDaemon)
 	if (fd > 2)
 		close(fd);
 	return false;
-} /* NGIRCd_Init */
-
+} /* NGIRCd_Init - stub, not compiled */
+#endif /* moved to ngircd_daemon.c */
 
 /* -eof- */

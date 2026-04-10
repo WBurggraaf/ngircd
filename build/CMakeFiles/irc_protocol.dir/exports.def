@@ -1,0 +1,2 @@
+EXPORTS 
+	irc_protocol_get_api_v1

@@ -53,10 +53,7 @@ server_app_get_bootstrap(config_bootstrap_t *bootstrap)
 static core_status_t SERVER_APP_CALL
 server_app_init_runtime(void)
 {
-    NGIRCd_Start = time(NULL);
-    (void)strftime(NGIRCd_StartStr, sizeof(NGIRCd_StartStr),
-                   "%a %b %d %Y at %H:%M:%S (%Z)",
-                   localtime(&NGIRCd_Start));
+    ngircd_set_start_time();
     return CORE_STATUS_OK;
 }
 
