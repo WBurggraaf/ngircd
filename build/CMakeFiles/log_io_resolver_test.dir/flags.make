@@ -4,7 +4,7 @@
 # compile C with C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe
 C_DEFINES = -DNGIRCD_UNITTEST
 
-C_INCLUDES = -IC:\develop\ngircd\win32\include -IC:\develop\ngircd\original\src\portab -IC:\develop\ngircd\original\src\tool -IC:\develop\ngircd\original\src\ipaddr -IC:\develop\ngircd\original\src\ngircd
+C_INCLUDES = -IC:\develop\ngircd\win32\include -IC:\develop\ngircd\original\src\portab -IC:\develop\ngircd\original\src\tool -IC:\develop\ngircd\original\src\ipaddr -IC:\develop\ngircd\original\src\ngircd -IC:\develop\ngircd\include
 
 C_FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090
 

@@ -223,10 +223,8 @@ Handle_CAP_END(CLIENT *Client)
 		/* User is still logging in ... */
 		Client_CapDel(Client, CLIENT_CAP_PENDING);
 
-		/* If NICK and USER are already present, finish registration now.
-		 * Historically this path waited for CLIENT_WAITCAPEND, but that
-		 * state is never set in the current login flow. */
-		if (Client_ID(Client)[0] != '*' && Client_Type(Client) == CLIENT_GOTUSER) {
+		/* If registration data is already present, finish now. */
+		if (Client_ID(Client)[0] != '*') {
 			return Login_User(Client);
 		}
 	}

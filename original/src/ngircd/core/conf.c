@@ -9,6 +9,8 @@
  * Please read the file COPYING, README and AUTHORS for more information.
  */
 
+#define GLOBAL_INIT
+
 #include "portab.h"
 
 /**
@@ -60,6 +62,8 @@ static void Set_Defaults PARAMS(( bool InitServers ));
 static bool Read_Config PARAMS(( bool TestOnly, bool IsStarting ));
 static void Read_Config_File PARAMS(( const char *File, FILE *fd ));
 static bool Validate_Config PARAMS(( bool TestOnly, bool Rehash ));
+static bool Load_And_Validate_Config PARAMS(( bool TestOnly, bool IsStarting, bool Rehash ));
+static void Dump_Config PARAMS(( void ));
 
 static void Handle_GLOBAL PARAMS((const char *File, int Line,
 				  char *Var, char *Arg ));
@@ -254,8 +258,7 @@ GLOBAL void
 Conf_Init( void )
 {
 	LogDebug("Conf_Init(): loading configuration.");
-	Read_Config(false, true);
-	Validate_Config(false, false);
+	(void)Load_And_Validate_Config(false, true, false);
 }
 
 /**
@@ -267,9 +270,8 @@ GLOBAL bool
 Conf_Rehash( void )
 {
 	LogDebug("Conf_Rehash(): reloading configuration.");
-	if (!Read_Config(false, false))
+	if (!Load_And_Validate_Config(false, false, true))
 		return false;
-	Validate_Config(false, true);
 
 	/* Update CLIENT structure of local server */
 	Client_SetInfo(Client_ThisServer(), Conf_ServerInfo);
@@ -339,20 +341,14 @@ opers_puts(void)
 GLOBAL int
 Conf_Test( void )
 {
-	struct passwd *pwd;
-	struct group *grp;
-	unsigned int i, j;
 	bool config_valid;
-	size_t predef_channel_count;
-	struct Conf_Channel *predef_chan;
 
 	Use_Log = false;
 	LogDebug("Conf_Test(): starting config test mode.");
 
-	if (!Read_Config(true, true))
+	if (!Load_And_Validate_Config(true, true, false))
 		return 1;
-
-	config_valid = Validate_Config(true, false);
+	config_valid = true;
 
 	/* Valid tty? */
 	if(isatty(fileno(stdin)) && isatty(fileno(stdout))) {
@@ -360,6 +356,20 @@ Conf_Test( void )
 		getchar();
 	} else
 		puts("Ok, dump of your server configuration follows:\n");
+
+	Dump_Config();
+
+	return 0;
+}
+
+static void
+Dump_Config(void)
+{
+	struct passwd *pwd;
+	struct group *grp;
+	unsigned int i, j;
+	size_t predef_channel_count;
+	struct Conf_Channel *predef_chan;
 
 	puts("[GLOBAL]");
 	printf("  Name = %s\n", Conf_ServerName);
@@ -477,7 +487,6 @@ Conf_Test( void )
 	for( i = 0; i < MAX_SERVERS; i++ ) {
 		if( ! Conf_Server[i].name[0] ) continue;
 
-		/* Valid "Server" section */
 		puts( "[SERVER]" );
 		printf( "  Name = %s\n", Conf_Server[i].name );
 		printf( "  Host = %s\n", Conf_Server[i].host );
@@ -502,7 +511,6 @@ Conf_Test( void )
 		if (!predef_chan->name[0])
 			continue;
 
-		/* Valid "Channel" section */
 		puts( "[CHANNEL]" );
 		printf("  Name = %s\n", predef_chan->name);
 		for(j = 0; j < predef_chan->modes_num; j++)
@@ -514,7 +522,17 @@ Conf_Test( void )
 		printf("  KeyFile = %s\n\n", predef_chan->keyfile);
 	}
 
-	return (config_valid ? 0 : 1);
+}
+
+/**
+ * Load and validate configuration in one step.
+ */
+static bool
+Load_And_Validate_Config(bool TestOnly, bool IsStarting, bool Rehash)
+{
+	if (!Read_Config(TestOnly, IsStarting))
+		return false;
+	return Validate_Config(TestOnly, Rehash);
 }
 
 /**

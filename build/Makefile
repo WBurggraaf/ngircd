@@ -480,6 +480,162 @@ ContinuousSubmit\fast:
 .PHONY : ContinuousSubmit\fast
 
 #=============================================================================
+# Target rules for targets named core_runtime
+
+# Build rule for target.
+core_runtime: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) core_runtime
+.PHONY : core_runtime
+
+# fast build rule for target.
+core_runtime\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core_runtime.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\core_runtime.dir\build
+.PHONY : core_runtime\fast
+
+#=============================================================================
+# Target rules for targets named logging_api
+
+# Build rule for target.
+logging_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) logging_api
+.PHONY : logging_api
+
+# fast build rule for target.
+logging_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_api.dir\build
+.PHONY : logging_api\fast
+
+#=============================================================================
+# Target rules for targets named config_api
+
+# Build rule for target.
+config_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) config_api
+.PHONY : config_api
+
+# fast build rule for target.
+config_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_api.dir\build
+.PHONY : config_api\fast
+
+#=============================================================================
+# Target rules for targets named platform_api
+
+# Build rule for target.
+platform_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) platform_api
+.PHONY : platform_api
+
+# fast build rule for target.
+platform_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_api.dir\build
+.PHONY : platform_api\fast
+
+#=============================================================================
+# Target rules for targets named net_transport_api
+
+# Build rule for target.
+net_transport_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) net_transport_api
+.PHONY : net_transport_api
+
+# fast build rule for target.
+net_transport_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport_api.dir\build
+.PHONY : net_transport_api\fast
+
+#=============================================================================
+# Target rules for targets named resolver_api
+
+# Build rule for target.
+resolver_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) resolver_api
+.PHONY : resolver_api
+
+# fast build rule for target.
+resolver_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\resolver_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\resolver_api.dir\build
+.PHONY : resolver_api\fast
+
+#=============================================================================
+# Target rules for targets named host_api
+
+# Build rule for target.
+host_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) host_api
+.PHONY : host_api
+
+# fast build rule for target.
+host_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\host_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\host_api.dir\build
+.PHONY : host_api\fast
+
+#=============================================================================
+# Target rules for targets named irc_protocol_api
+
+# Build rule for target.
+irc_protocol_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) irc_protocol_api
+.PHONY : irc_protocol_api
+
+# fast build rule for target.
+irc_protocol_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_protocol_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_protocol_api.dir\build
+.PHONY : irc_protocol_api\fast
+
+#=============================================================================
+# Target rules for targets named client_state_api
+
+# Build rule for target.
+client_state_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) client_state_api
+.PHONY : client_state_api
+
+# fast build rule for target.
+client_state_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client_state_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\client_state_api.dir\build
+.PHONY : client_state_api\fast
+
+#=============================================================================
+# Target rules for targets named channel_state_api
+
+# Build rule for target.
+channel_state_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) channel_state_api
+.PHONY : channel_state_api
+
+# fast build rule for target.
+channel_state_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\channel_state_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\channel_state_api.dir\build
+.PHONY : channel_state_api\fast
+
+#=============================================================================
+# Target rules for targets named command_handlers_api
+
+# Build rule for target.
+command_handlers_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) command_handlers_api
+.PHONY : command_handlers_api
+
+# fast build rule for target.
+command_handlers_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\command_handlers_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\command_handlers_api.dir\build
+.PHONY : command_handlers_api\fast
+
+#=============================================================================
+# Target rules for targets named server_app_api
+
+# Build rule for target.
+server_app_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) server_app_api
+.PHONY : server_app_api
+
+# fast build rule for target.
+server_app_api\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_app_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\server_app_api.dir\build
+.PHONY : server_app_api\fast
+
+#=============================================================================
 # Target rules for targets named ngportab
 
 # Build rule for target.
@@ -1943,6 +2099,294 @@ original\src\tool\tool.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngtool.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngtool.dir\original\src\tool\tool.c.s
 .PHONY : original\src\tool\tool.c.s
 
+src\channel_state\channel_state.obj: src\channel_state\channel_state.c.obj
+.PHONY : src\channel_state\channel_state.obj
+
+# target to build an object file
+src\channel_state\channel_state.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\channel_state_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\channel_state_api.dir\src\channel_state\channel_state.c.obj
+.PHONY : src\channel_state\channel_state.c.obj
+
+src\channel_state\channel_state.i: src\channel_state\channel_state.c.i
+.PHONY : src\channel_state\channel_state.i
+
+# target to preprocess a source file
+src\channel_state\channel_state.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\channel_state_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\channel_state_api.dir\src\channel_state\channel_state.c.i
+.PHONY : src\channel_state\channel_state.c.i
+
+src\channel_state\channel_state.s: src\channel_state\channel_state.c.s
+.PHONY : src\channel_state\channel_state.s
+
+# target to generate assembly for a file
+src\channel_state\channel_state.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\channel_state_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\channel_state_api.dir\src\channel_state\channel_state.c.s
+.PHONY : src\channel_state\channel_state.c.s
+
+src\client_state\client_state.obj: src\client_state\client_state.c.obj
+.PHONY : src\client_state\client_state.obj
+
+# target to build an object file
+src\client_state\client_state.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client_state_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\client_state_api.dir\src\client_state\client_state.c.obj
+.PHONY : src\client_state\client_state.c.obj
+
+src\client_state\client_state.i: src\client_state\client_state.c.i
+.PHONY : src\client_state\client_state.i
+
+# target to preprocess a source file
+src\client_state\client_state.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client_state_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\client_state_api.dir\src\client_state\client_state.c.i
+.PHONY : src\client_state\client_state.c.i
+
+src\client_state\client_state.s: src\client_state\client_state.c.s
+.PHONY : src\client_state\client_state.s
+
+# target to generate assembly for a file
+src\client_state\client_state.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\client_state_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\client_state_api.dir\src\client_state\client_state.c.s
+.PHONY : src\client_state\client_state.c.s
+
+src\command_handlers\command_handlers.obj: src\command_handlers\command_handlers.c.obj
+.PHONY : src\command_handlers\command_handlers.obj
+
+# target to build an object file
+src\command_handlers\command_handlers.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\command_handlers_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\command_handlers_api.dir\src\command_handlers\command_handlers.c.obj
+.PHONY : src\command_handlers\command_handlers.c.obj
+
+src\command_handlers\command_handlers.i: src\command_handlers\command_handlers.c.i
+.PHONY : src\command_handlers\command_handlers.i
+
+# target to preprocess a source file
+src\command_handlers\command_handlers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\command_handlers_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\command_handlers_api.dir\src\command_handlers\command_handlers.c.i
+.PHONY : src\command_handlers\command_handlers.c.i
+
+src\command_handlers\command_handlers.s: src\command_handlers\command_handlers.c.s
+.PHONY : src\command_handlers\command_handlers.s
+
+# target to generate assembly for a file
+src\command_handlers\command_handlers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\command_handlers_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\command_handlers_api.dir\src\command_handlers\command_handlers.c.s
+.PHONY : src\command_handlers\command_handlers.c.s
+
+src\config\config.obj: src\config\config.c.obj
+.PHONY : src\config\config.obj
+
+# target to build an object file
+src\config\config.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_api.dir\src\config\config.c.obj
+.PHONY : src\config\config.c.obj
+
+src\config\config.i: src\config\config.c.i
+.PHONY : src\config\config.i
+
+# target to preprocess a source file
+src\config\config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_api.dir\src\config\config.c.i
+.PHONY : src\config\config.c.i
+
+src\config\config.s: src\config\config.c.s
+.PHONY : src\config\config.s
+
+# target to generate assembly for a file
+src\config\config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_api.dir\src\config\config.c.s
+.PHONY : src\config\config.c.s
+
+src\core_runtime\core_runtime.obj: src\core_runtime\core_runtime.c.obj
+.PHONY : src\core_runtime\core_runtime.obj
+
+# target to build an object file
+src\core_runtime\core_runtime.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core_runtime.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.obj
+.PHONY : src\core_runtime\core_runtime.c.obj
+
+src\core_runtime\core_runtime.i: src\core_runtime\core_runtime.c.i
+.PHONY : src\core_runtime\core_runtime.i
+
+# target to preprocess a source file
+src\core_runtime\core_runtime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core_runtime.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.i
+.PHONY : src\core_runtime\core_runtime.c.i
+
+src\core_runtime\core_runtime.s: src\core_runtime\core_runtime.c.s
+.PHONY : src\core_runtime\core_runtime.s
+
+# target to generate assembly for a file
+src\core_runtime\core_runtime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core_runtime.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.s
+.PHONY : src\core_runtime\core_runtime.c.s
+
+src\host\host.obj: src\host\host.c.obj
+.PHONY : src\host\host.obj
+
+# target to build an object file
+src\host\host.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\host_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\host_api.dir\src\host\host.c.obj
+.PHONY : src\host\host.c.obj
+
+src\host\host.i: src\host\host.c.i
+.PHONY : src\host\host.i
+
+# target to preprocess a source file
+src\host\host.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\host_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\host_api.dir\src\host\host.c.i
+.PHONY : src\host\host.c.i
+
+src\host\host.s: src\host\host.c.s
+.PHONY : src\host\host.s
+
+# target to generate assembly for a file
+src\host\host.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\host_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\host_api.dir\src\host\host.c.s
+.PHONY : src\host\host.c.s
+
+src\irc_protocol\irc_protocol.obj: src\irc_protocol\irc_protocol.c.obj
+.PHONY : src\irc_protocol\irc_protocol.obj
+
+# target to build an object file
+src\irc_protocol\irc_protocol.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_protocol_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_protocol_api.dir\src\irc_protocol\irc_protocol.c.obj
+.PHONY : src\irc_protocol\irc_protocol.c.obj
+
+src\irc_protocol\irc_protocol.i: src\irc_protocol\irc_protocol.c.i
+.PHONY : src\irc_protocol\irc_protocol.i
+
+# target to preprocess a source file
+src\irc_protocol\irc_protocol.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_protocol_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_protocol_api.dir\src\irc_protocol\irc_protocol.c.i
+.PHONY : src\irc_protocol\irc_protocol.c.i
+
+src\irc_protocol\irc_protocol.s: src\irc_protocol\irc_protocol.c.s
+.PHONY : src\irc_protocol\irc_protocol.s
+
+# target to generate assembly for a file
+src\irc_protocol\irc_protocol.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_protocol_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_protocol_api.dir\src\irc_protocol\irc_protocol.c.s
+.PHONY : src\irc_protocol\irc_protocol.c.s
+
+src\logging\logging.obj: src\logging\logging.c.obj
+.PHONY : src\logging\logging.obj
+
+# target to build an object file
+src\logging\logging.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_api.dir\src\logging\logging.c.obj
+.PHONY : src\logging\logging.c.obj
+
+src\logging\logging.i: src\logging\logging.c.i
+.PHONY : src\logging\logging.i
+
+# target to preprocess a source file
+src\logging\logging.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_api.dir\src\logging\logging.c.i
+.PHONY : src\logging\logging.c.i
+
+src\logging\logging.s: src\logging\logging.c.s
+.PHONY : src\logging\logging.s
+
+# target to generate assembly for a file
+src\logging\logging.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_api.dir\src\logging\logging.c.s
+.PHONY : src\logging\logging.c.s
+
+src\net_transport\net_transport.obj: src\net_transport\net_transport.c.obj
+.PHONY : src\net_transport\net_transport.obj
+
+# target to build an object file
+src\net_transport\net_transport.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport_api.dir\src\net_transport\net_transport.c.obj
+.PHONY : src\net_transport\net_transport.c.obj
+
+src\net_transport\net_transport.i: src\net_transport\net_transport.c.i
+.PHONY : src\net_transport\net_transport.i
+
+# target to preprocess a source file
+src\net_transport\net_transport.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport_api.dir\src\net_transport\net_transport.c.i
+.PHONY : src\net_transport\net_transport.c.i
+
+src\net_transport\net_transport.s: src\net_transport\net_transport.c.s
+.PHONY : src\net_transport\net_transport.s
+
+# target to generate assembly for a file
+src\net_transport\net_transport.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport_api.dir\src\net_transport\net_transport.c.s
+.PHONY : src\net_transport\net_transport.c.s
+
+src\platform\platform.obj: src\platform\platform.c.obj
+.PHONY : src\platform\platform.obj
+
+# target to build an object file
+src\platform\platform.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_api.dir\src\platform\platform.c.obj
+.PHONY : src\platform\platform.c.obj
+
+src\platform\platform.i: src\platform\platform.c.i
+.PHONY : src\platform\platform.i
+
+# target to preprocess a source file
+src\platform\platform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_api.dir\src\platform\platform.c.i
+.PHONY : src\platform\platform.c.i
+
+src\platform\platform.s: src\platform\platform.c.s
+.PHONY : src\platform\platform.s
+
+# target to generate assembly for a file
+src\platform\platform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_api.dir\src\platform\platform.c.s
+.PHONY : src\platform\platform.c.s
+
+src\resolver\resolver.obj: src\resolver\resolver.c.obj
+.PHONY : src\resolver\resolver.obj
+
+# target to build an object file
+src\resolver\resolver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\resolver_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\resolver_api.dir\src\resolver\resolver.c.obj
+.PHONY : src\resolver\resolver.c.obj
+
+src\resolver\resolver.i: src\resolver\resolver.c.i
+.PHONY : src\resolver\resolver.i
+
+# target to preprocess a source file
+src\resolver\resolver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\resolver_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\resolver_api.dir\src\resolver\resolver.c.i
+.PHONY : src\resolver\resolver.c.i
+
+src\resolver\resolver.s: src\resolver\resolver.c.s
+.PHONY : src\resolver\resolver.s
+
+# target to generate assembly for a file
+src\resolver\resolver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\resolver_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\resolver_api.dir\src\resolver\resolver.c.s
+.PHONY : src\resolver\resolver.c.s
+
+src\server_app\server_app.obj: src\server_app\server_app.c.obj
+.PHONY : src\server_app\server_app.obj
+
+# target to build an object file
+src\server_app\server_app.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_app_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\server_app_api.dir\src\server_app\server_app.c.obj
+.PHONY : src\server_app\server_app.c.obj
+
+src\server_app\server_app.i: src\server_app\server_app.c.i
+.PHONY : src\server_app\server_app.i
+
+# target to preprocess a source file
+src\server_app\server_app.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_app_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\server_app_api.dir\src\server_app\server_app.c.i
+.PHONY : src\server_app\server_app.c.i
+
+src\server_app\server_app.s: src\server_app\server_app.c.s
+.PHONY : src\server_app\server_app.s
+
+# target to generate assembly for a file
+src\server_app\server_app.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_app_api.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\server_app_api.dir\src\server_app\server_app.c.s
+.PHONY : src\server_app\server_app.c.s
+
 tests\branch_coverage_test.obj: tests\branch_coverage_test.c.obj
 .PHONY : tests\branch_coverage_test.obj
 
@@ -2464,22 +2908,34 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... branch_coverage_test
+	@echo ... channel_state_api
+	@echo ... client_state_api
+	@echo ... command_handlers_api
 	@echo ... conf_whitebox_test
+	@echo ... config_api
+	@echo ... core_runtime
 	@echo ... full_coverage_test
+	@echo ... host_api
 	@echo ... irc_cap_end_test
+	@echo ... irc_protocol_api
 	@echo ... join_check_test
 	@echo ... join_error_test
 	@echo ... log_io_resolver_test
+	@echo ... logging_api
 	@echo ... login_check_test
 	@echo ... login_flow_test
 	@echo ... login_state_test
 	@echo ... message_check_test
 	@echo ... module_iface_test
+	@echo ... net_transport_api
 	@echo ... ngipaddr
 	@echo ... ngircd
 	@echo ... ngportab
 	@echo ... ngtool
 	@echo ... nick_check_test
+	@echo ... platform_api
+	@echo ... resolver_api
+	@echo ... server_app_api
 	@echo ... user_check_test
 	@echo ... original/src/ipaddr/ng_ipaddr.obj
 	@echo ... original/src/ipaddr/ng_ipaddr.i
@@ -2622,6 +3078,42 @@ help:
 	@echo ... original/src/tool/tool.obj
 	@echo ... original/src/tool/tool.i
 	@echo ... original/src/tool/tool.s
+	@echo ... src/channel_state/channel_state.obj
+	@echo ... src/channel_state/channel_state.i
+	@echo ... src/channel_state/channel_state.s
+	@echo ... src/client_state/client_state.obj
+	@echo ... src/client_state/client_state.i
+	@echo ... src/client_state/client_state.s
+	@echo ... src/command_handlers/command_handlers.obj
+	@echo ... src/command_handlers/command_handlers.i
+	@echo ... src/command_handlers/command_handlers.s
+	@echo ... src/config/config.obj
+	@echo ... src/config/config.i
+	@echo ... src/config/config.s
+	@echo ... src/core_runtime/core_runtime.obj
+	@echo ... src/core_runtime/core_runtime.i
+	@echo ... src/core_runtime/core_runtime.s
+	@echo ... src/host/host.obj
+	@echo ... src/host/host.i
+	@echo ... src/host/host.s
+	@echo ... src/irc_protocol/irc_protocol.obj
+	@echo ... src/irc_protocol/irc_protocol.i
+	@echo ... src/irc_protocol/irc_protocol.s
+	@echo ... src/logging/logging.obj
+	@echo ... src/logging/logging.i
+	@echo ... src/logging/logging.s
+	@echo ... src/net_transport/net_transport.obj
+	@echo ... src/net_transport/net_transport.i
+	@echo ... src/net_transport/net_transport.s
+	@echo ... src/platform/platform.obj
+	@echo ... src/platform/platform.i
+	@echo ... src/platform/platform.s
+	@echo ... src/resolver/resolver.obj
+	@echo ... src/resolver/resolver.i
+	@echo ... src/resolver/resolver.s
+	@echo ... src/server_app/server_app.obj
+	@echo ... src/server_app/server_app.i
+	@echo ... src/server_app/server_app.s
 	@echo ... tests/branch_coverage_test.obj
 	@echo ... tests/branch_coverage_test.i
 	@echo ... tests/branch_coverage_test.s

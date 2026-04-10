@@ -8,6 +8,162 @@ include(CTest)
 set(ORIG_SRC "${CMAKE_SOURCE_DIR}/original/src")
 set(WIN32_SRC "${CMAKE_SOURCE_DIR}/win32/src")
 set(WIN32_INC "${CMAKE_SOURCE_DIR}/win32/include")
+set(SHARED_INC "${CMAKE_SOURCE_DIR}/include")
+set(SHARED_SRC "${CMAKE_SOURCE_DIR}/src")
+
+# --- Core runtime contracts ---
+add_library(core_runtime STATIC
+    ${SHARED_SRC}/core_runtime/core_runtime.c
+)
+target_include_directories(core_runtime PUBLIC
+    ${SHARED_INC}
+)
+target_compile_definitions(core_runtime PRIVATE CORE_RUNTIME_BUILD)
+
+# --- Logging contract stub ---
+add_library(logging_api STATIC
+    ${SHARED_SRC}/logging/logging.c
+)
+target_include_directories(logging_api PUBLIC
+    ${SHARED_INC}
+    ${WIN32_INC}
+    ${ORIG_SRC}
+    ${ORIG_SRC}/ngircd
+    ${ORIG_SRC}/portab
+)
+target_compile_definitions(logging_api PRIVATE LOGGING_BUILD)
+target_link_libraries(logging_api PUBLIC core_runtime)
+
+# --- Config contract stub ---
+add_library(config_api STATIC
+    ${SHARED_SRC}/config/config.c
+)
+target_include_directories(config_api PUBLIC
+    ${SHARED_INC}
+    ${WIN32_INC}
+    ${ORIG_SRC}
+    ${ORIG_SRC}/ngircd
+    ${ORIG_SRC}/ipaddr
+    ${ORIG_SRC}/tool
+    ${ORIG_SRC}/portab
+)
+target_compile_definitions(config_api PRIVATE CONFIG_BUILD)
+target_link_libraries(config_api PUBLIC core_runtime)
+
+# --- Platform contract stub ---
+add_library(platform_api STATIC
+    ${SHARED_SRC}/platform/platform.c
+)
+target_include_directories(platform_api PUBLIC
+    ${SHARED_INC}
+    ${WIN32_INC}
+)
+target_compile_definitions(platform_api PRIVATE PLATFORM_BUILD)
+target_link_libraries(platform_api PUBLIC core_runtime)
+
+# --- Transport contract stub ---
+add_library(net_transport_api STATIC
+    ${SHARED_SRC}/net_transport/net_transport.c
+)
+target_include_directories(net_transport_api PUBLIC
+    ${SHARED_INC}
+    ${WIN32_INC}
+    ${ORIG_SRC}
+    ${ORIG_SRC}/ngircd
+    ${ORIG_SRC}/portab
+)
+target_compile_definitions(net_transport_api PRIVATE NET_TRANSPORT_BUILD)
+target_link_libraries(net_transport_api PUBLIC core_runtime)
+
+# --- Resolver contract stub ---
+add_library(resolver_api STATIC
+    ${SHARED_SRC}/resolver/resolver.c
+)
+target_include_directories(resolver_api PUBLIC
+    ${SHARED_INC}
+    ${WIN32_INC}
+    ${ORIG_SRC}
+    ${ORIG_SRC}/ngircd
+    ${ORIG_SRC}/ipaddr
+    ${ORIG_SRC}/portab
+)
+target_compile_definitions(resolver_api PRIVATE RESOLVER_BUILD)
+target_link_libraries(resolver_api PUBLIC core_runtime)
+
+# --- Host wiring stub ---
+add_library(host_api STATIC
+    ${SHARED_SRC}/host/host.c
+)
+target_include_directories(host_api PUBLIC
+    ${SHARED_INC}
+    ${WIN32_INC}
+    ${ORIG_SRC}
+    ${ORIG_SRC}/ngircd
+    ${ORIG_SRC}/portab
+)
+target_compile_definitions(host_api PRIVATE HOST_BUILD)
+target_link_libraries(host_api PUBLIC
+    core_runtime
+    logging_api
+    config_api
+    platform_api
+    net_transport_api
+    resolver_api
+)
+
+# --- IRC protocol contract stub ---
+add_library(irc_protocol_api STATIC
+    ${SHARED_SRC}/irc_protocol/irc_protocol.c
+)
+target_include_directories(irc_protocol_api PUBLIC
+    ${SHARED_INC}
+)
+target_compile_definitions(irc_protocol_api PRIVATE IRC_PROTOCOL_BUILD)
+target_link_libraries(irc_protocol_api PUBLIC core_runtime)
+
+# --- Client state contract stub ---
+add_library(client_state_api STATIC
+    ${SHARED_SRC}/client_state/client_state.c
+)
+target_include_directories(client_state_api PUBLIC
+    ${SHARED_INC}
+)
+target_compile_definitions(client_state_api PRIVATE CLIENT_STATE_BUILD)
+target_link_libraries(client_state_api PUBLIC core_runtime)
+
+# --- Channel state contract stub ---
+add_library(channel_state_api STATIC
+    ${SHARED_SRC}/channel_state/channel_state.c
+)
+target_include_directories(channel_state_api PUBLIC
+    ${SHARED_INC}
+)
+target_compile_definitions(channel_state_api PRIVATE CHANNEL_STATE_BUILD)
+target_link_libraries(channel_state_api PUBLIC core_runtime)
+
+# --- Command handlers contract stub ---
+add_library(command_handlers_api STATIC
+    ${SHARED_SRC}/command_handlers/command_handlers.c
+)
+target_include_directories(command_handlers_api PUBLIC
+    ${SHARED_INC}
+)
+target_compile_definitions(command_handlers_api PRIVATE COMMAND_HANDLERS_BUILD)
+target_link_libraries(command_handlers_api PUBLIC core_runtime)
+
+# --- Server app contract stub ---
+add_library(server_app_api STATIC
+    ${SHARED_SRC}/server_app/server_app.c
+)
+target_include_directories(server_app_api PUBLIC
+    ${SHARED_INC}
+    ${WIN32_INC}
+    ${ORIG_SRC}
+    ${ORIG_SRC}/ngircd
+    ${ORIG_SRC}/portab
+)
+target_compile_definitions(server_app_api PRIVATE SERVER_APP_BUILD)
+target_link_libraries(server_app_api PUBLIC core_runtime)
 
 # --- Portability library (libngportab) ---
 add_library(ngportab STATIC
@@ -19,6 +175,7 @@ add_library(ngportab STATIC
 )
 target_include_directories(ngportab PUBLIC
     ${WIN32_INC}          # config.h and compat headers (HIGHEST PRIORITY)
+    ${SHARED_INC}
     ${ORIG_SRC}/portab
 )
 target_compile_definitions(ngportab PRIVATE _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
@@ -29,6 +186,7 @@ add_library(ngtool STATIC
 )
 target_include_directories(ngtool PUBLIC
     ${WIN32_INC}
+    ${SHARED_INC}
     ${ORIG_SRC}/portab
     ${ORIG_SRC}/tool
 )
@@ -40,6 +198,7 @@ add_library(ngipaddr STATIC
 )
 target_include_directories(ngipaddr PUBLIC
     ${WIN32_INC}
+    ${SHARED_INC}
     ${ORIG_SRC}/portab
     ${ORIG_SRC}/ipaddr
 )
@@ -100,6 +259,7 @@ add_executable(ngircd ${NGIRCD_SOURCES})
 # Include directories: win32 compat headers must come FIRST
 target_include_directories(ngircd PRIVATE
     ${WIN32_INC}              # Highest priority: our config.h and compat headers
+    ${SHARED_INC}
     ${ORIG_SRC}/portab
     ${ORIG_SRC}/tool
     ${ORIG_SRC}/ipaddr
@@ -109,6 +269,18 @@ target_include_directories(ngircd PRIVATE
 target_compile_definitions(ngircd PRIVATE
     _CRT_SECURE_NO_WARNINGS
     _WINSOCK_DEPRECATED_NO_WARNINGS
+    CORE_RUNTIME_BUILD
+    LOGGING_BUILD
+    CONFIG_BUILD
+    PLATFORM_BUILD
+    NET_TRANSPORT_BUILD
+    RESOLVER_BUILD
+    HOST_BUILD
+    IRC_PROTOCOL_BUILD
+    CLIENT_STATE_BUILD
+    CHANNEL_STATE_BUILD
+    COMMAND_HANDLERS_BUILD
+    SERVER_APP_BUILD
 )
 
 # Rename main() only for the original ngircd.c, not for win32_main.c
@@ -117,6 +289,8 @@ set_source_files_properties(${ORIG_SRC}/ngircd/platform/ngircd.c PROPERTIES
 )
 
 target_link_libraries(ngircd
+    host_api
+    server_app_api
     ngportab
     ngtool
     ngipaddr

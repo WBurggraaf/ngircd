@@ -89,6 +89,22 @@ static void Check_Connections PARAMS(( void ));
 static void Check_Servers PARAMS(( void ));
 static void Init_Conn_Struct PARAMS(( CONN_ID Idx ));
 static CONNECTION *Conn_FromSocket PARAMS((int Sock));
+static void Conn_Check_IdleTimeout PARAMS(( time_t t ));
+static void Conn_Report_Status PARAMS(( time_t t, time_t *notify_t ));
+static void Conn_Update_Write_Interest PARAMS(( void ));
+static bool Conn_Update_Read_Interest PARAMS(( time_t t ));
+static void Conn_Wait_For_Activity PARAMS(( bool command_available ));
+static bool Conn_IsReadableClient PARAMS(( const CONNECTION *conn, time_t t ));
+static bool Conn_Handle_Read_Request PARAMS(( CONN_ID Idx, ssize_t len, char *readbuf ));
+static void Conn_Update_Read_Accounting PARAMS(( CONN_ID Idx, CLIENT *c, time_t *t, unsigned int maxbps ));
+static void Conn_Check_Connection_Timeout PARAMS(( CONN_ID Idx, CLIENT *c, time_t time_now, char *msg, size_t msg_len ));
+static void Conn_Check_Server_Timeout PARAMS(( CONN_ID Idx, CLIENT *c, time_t time_now, char *msg, size_t msg_len ));
+static unsigned int Conn_Process_Buffer PARAMS(( CONN_ID Idx ));
+static void Conn_Maybe_Start_Server_Link PARAMS(( int i, time_t time_now ));
+static array My_Listeners;
+static array My_ConnArray;
+static size_t NumConnections, NumConnectionsMax, NumConnectionsAccepted;
+static time_t idle_t = 0;
 
 static CONNECTION *
 Conn_FromSocket(int Sock)
@@ -104,6 +120,137 @@ Conn_FromSocket(int Sock)
 	}
 
 	return NULL;
+}
+
+static void
+Conn_Check_IdleTimeout(time_t t)
+{
+	if (Conf_IdleTimeout > 0 && NumConnectionsAccepted > 0
+	    && idle_t > 0 && t - idle_t >= Conf_IdleTimeout) {
+		LogDebug("Server idle timeout reached: %d second%s. Initiating shutdown ...",
+			 Conf_IdleTimeout,
+			 Conf_IdleTimeout == 1 ? "" : "s");
+		NGIRCd_SignalQuit = true;
+	}
+}
+
+static void
+Conn_Report_Status(time_t t, time_t *notify_t)
+{
+	char status[200];
+
+	if (!Signal_NotifySvcMgr_Possible() || t - *notify_t <= 3)
+		return;
+
+	snprintf(status, sizeof(status),
+		 "WATCHDOG=1\nSTATUS=%ld connection%s established (%ld user%s, %ld server%s), %ld maximum. %ld accepted in total.\n",
+		 (long)NumConnections, NumConnections == 1 ? "" : "s",
+		 Client_MyUserCount(), Client_MyUserCount() == 1 ? "" : "s",
+		 Client_MyServerCount(), Client_MyServerCount() == 1 ? "" : "s",
+		 (long)NumConnectionsMax, (long)NumConnectionsAccepted);
+	Signal_NotifySvcMgr(status);
+	*notify_t = t;
+}
+
+static void
+Conn_Update_Write_Interest(void)
+{
+	int i;
+	size_t wdatalen;
+
+	for (i = 0; i < Pool_Size; i++) {
+		if (My_Connections[i].sock <= NONE)
+			continue;
+
+		wdatalen = array_bytes(&My_Connections[i].wbuf);
+#ifdef ZLIB
+		if (wdatalen > 0 ||
+		    array_bytes(&My_Connections[i].zip.wbuf) > 0)
+#else
+		if (wdatalen > 0)
+#endif
+		{
+#ifdef SSL_SUPPORT
+			if (SSL_WantRead(&My_Connections[i]))
+				continue;
+#endif
+			io_event_add(My_Connections[i].sock, IO_WANTWRITE);
+		}
+	}
+}
+
+static bool
+Conn_Update_Read_Interest(time_t t)
+{
+	int i;
+	bool command_available = false;
+
+	for (i = 0; i < Pool_Size; i++) {
+		if (!Conn_IsReadableClient(&My_Connections[i], t))
+			continue;
+
+		if (array_bytes(&My_Connections[i].rbuf) >= COMMAND_LEN) {
+			io_event_del(My_Connections[i].sock, IO_WANTREAD);
+			command_available = true;
+			continue;
+		}
+
+		io_event_add(My_Connections[i].sock, IO_WANTREAD);
+	}
+
+	return command_available;
+}
+
+static void
+Conn_Wait_For_Activity(bool command_available)
+{
+	int i;
+	struct timeval tv;
+
+	tv.tv_usec = 0;
+	tv.tv_sec = command_available ? 0 : 1;
+
+	i = io_dispatch(&tv);
+	if (i == -1 && errno != EINTR) {
+		Log(LOG_EMERG, "Conn_Handler(): io_dispatch(): %s!",
+		    strerror(errno));
+		Log(LOG_ALERT, "%s exiting due to fatal errors!",
+		    PACKAGE_NAME);
+		exit(1);
+	}
+}
+
+static bool
+Conn_IsReadableClient(const CONNECTION *conn, time_t t)
+{
+	if (conn->sock <= NONE)
+		return false;
+#ifdef SSL_SUPPORT
+	if (SSL_WantWrite(conn))
+		return false;
+#endif
+	if (Proc_InProgress(&conn->proc_stat))
+		return false;
+	if (Conn_OPTION_ISSET(conn, CONN_ISCONNECTING))
+		return false;
+	if (conn->delaytime > t)
+		return false;
+	return true;
+}
+
+static void
+Conn_Check_Connection_Status(CONN_ID i, time_t time_now, char *msg, size_t msg_len)
+{
+	CLIENT *c = Conn_GetClient(i);
+
+	if (c && ((Client_Type(c) == CLIENT_USER)
+		  || (Client_Type(c) == CLIENT_SERVER)
+		  || (Client_Type(c) == CLIENT_SERVICE))) {
+		Conn_Check_Connection_Timeout(i, c, time_now, msg, msg_len);
+		return;
+	}
+
+	Conn_Check_Server_Timeout(i, c, time_now, msg, msg_len);
 }
 
 static void
@@ -136,10 +283,6 @@ static void Account_Connection PARAMS((void));
 static void Throttle_Connection PARAMS((const CONN_ID Idx, CLIENT *Client,
 					const int Reason, unsigned int Value));
 
-static array My_Listeners;
-static array My_ConnArray;
-static size_t NumConnections, NumConnectionsMax, NumConnectionsAccepted;
-
 #ifdef TCPWRAP
 int allow_severity = LOG_INFO;
 int deny_severity = LOG_ERR;
@@ -158,8 +301,6 @@ static void cb_clientserver_ssl PARAMS((int sock, short what));
 static void cb_Read_Resolver_Result PARAMS((int sock, UNUSED short what));
 static void cb_Connect_to_Server PARAMS((int sock, UNUSED short what));
 static void cb_clientserver PARAMS((int sock, short what));
-
-time_t idle_t = 0;
 
 /**
  * Get number of sockets available from systemd(8).
@@ -714,11 +855,8 @@ GLOBAL void
 Conn_Handler(void)
 {
 	int i;
-	size_t wdatalen;
-	struct timeval tv;
-	time_t t, notify_t = 0;
 	bool command_available;
-	char status[200];
+	time_t t, notify_t = 0;
 
 	Log(LOG_NOTICE, "Server \"%s\" (on \"%s\") ready.",
 	    Client_ID(Client_ThisServer()), Client_Hostname(Client_ThisServer()));
@@ -727,7 +865,6 @@ Conn_Handler(void)
 
 	while (!NGIRCd_SignalQuit && !NGIRCd_SignalRestart) {
 		t = time(NULL);
-		command_available = false;
 
 		/* Check configured servers and established links */
 		Check_Servers();
@@ -746,111 +883,17 @@ Conn_Handler(void)
 		}
 
 		/* Look for non-empty write buffers ... */
-		for (i = 0; i < Pool_Size; i++) {
-			if (My_Connections[i].sock <= NONE)
-				continue;
-
-			wdatalen = array_bytes(&My_Connections[i].wbuf);
-#ifdef ZLIB
-			if (wdatalen > 0 ||
-			    array_bytes(&My_Connections[i].zip.wbuf) > 0)
-#else
-			if (wdatalen > 0)
-#endif
-			{
-#ifdef SSL_SUPPORT
-				if (SSL_WantRead(&My_Connections[i]))
-					continue;
-#endif
-				io_event_add(My_Connections[i].sock,
-					     IO_WANTWRITE);
-			}
-		}
+		Conn_Update_Write_Interest();
 
 		/* Check from which sockets we possibly could read ... */
-		for (i = 0; i < Pool_Size; i++) {
-			if (My_Connections[i].sock <= NONE)
-				continue;
-#ifdef SSL_SUPPORT
-			if (SSL_WantWrite(&My_Connections[i]))
-				/* TLS/SSL layer needs to write data; deal
-				 * with this first! */
-				continue;
-#endif
-			if (Proc_InProgress(&My_Connections[i].proc_stat)) {
-				/* Wait for completion of forked subprocess
-				 * and ignore the socket in the meantime ... */
-				io_event_del(My_Connections[i].sock,
-					     IO_WANTREAD);
-				continue;
-			}
+		command_available = Conn_Update_Read_Interest(t);
 
-			if (Conn_OPTION_ISSET(&My_Connections[i], CONN_ISCONNECTING))
-				/* Wait for completion of connect() ... */
-				continue;
-
-			if (My_Connections[i].delaytime > t) {
-				/* There is a "penalty time" set: ignore socket! */
-				io_event_del(My_Connections[i].sock,
-					     IO_WANTREAD);
-				continue;
-			}
-
-			if (array_bytes(&My_Connections[i].rbuf) >= COMMAND_LEN) {
-				/* There is still more data in the read buffer
-				 * than a single valid command can get long:
-				 * so either there is a complete command, or
-				 * invalid data. Therefore don't try to read in
-				 * even more data from the network but wait for
-				 * this command(s) to be handled first! */
-				io_event_del(My_Connections[i].sock,
-					     IO_WANTREAD);
-				command_available = true;
-				continue;
-			}
-
-			io_event_add(My_Connections[i].sock, IO_WANTREAD);
-		}
-
-		/* Don't wait for data when there is still at least one command
-		 * available in a read buffer which can be handled immediately;
-		 * set the timeout for reading from the network to 1 second
-		 * otherwise, which is the granularity with witch we handle
-		 * "penalty times" for example.
-		 * Note: tv_sec/usec are undefined(!) after io_dispatch()
-		 * returns, so we have to set it before each call to it! */
-		tv.tv_usec = 0;
-		tv.tv_sec = command_available ? 0 : 1;
-
-		/* Wait for activity ... */
-		i = io_dispatch(&tv);
-		if (i == -1 && errno != EINTR) {
-			Log(LOG_EMERG, "Conn_Handler(): io_dispatch(): %s!",
-			    strerror(errno));
-			Log(LOG_ALERT, "%s exiting due to fatal errors!",
-			    PACKAGE_NAME);
-			exit(1);
-		}
+		Conn_Wait_For_Activity(command_available);
 
 		t = time(NULL);
-		if (Conf_IdleTimeout > 0 && NumConnectionsAccepted > 0
-		    && idle_t > 0 && t - idle_t >= Conf_IdleTimeout) {
-			/* Should ngIRCd timeout when idle? */
-			LogDebug("Server idle timeout reached: %d second%s. Initiating shutdown ...",
-				 Conf_IdleTimeout,
-				 Conf_IdleTimeout == 1 ? "" : "s");
-			NGIRCd_SignalQuit = true;
-		} else if (Signal_NotifySvcMgr_Possible() && t - notify_t > 3) {
-			/* Send the current status to the service manager. */
-			snprintf(status, sizeof(status),
-				 "WATCHDOG=1\nSTATUS=%ld connection%s established (%ld user%s, %ld server%s), %ld maximum. %ld accepted in total.\n",
-				 (long)NumConnections, NumConnections == 1 ? "" : "s",
-				 Client_MyUserCount(), Client_MyUserCount() == 1 ? "" : "s",
-				 Client_MyServerCount(), Client_MyServerCount() == 1 ? "" : "s",
-				 (long)NumConnectionsMax, (long)NumConnectionsAccepted);
-			Signal_NotifySvcMgr(status);
-			notify_t = t;
-		}
+		Conn_Check_IdleTimeout(t);
+		if (!NGIRCd_SignalQuit)
+			Conn_Report_Status(t, &notify_t);
 	}
 
 	if (NGIRCd_SignalQuit) {
@@ -861,6 +904,220 @@ Conn_Handler(void)
 		Signal_NotifySvcMgr("RELOADING=1\n");
 	}
 } /* Conn_Handler */
+
+static bool
+Conn_Handle_Read_Request(CONN_ID Idx, ssize_t len, char *readbuf)
+{
+	if (len == 0) {
+		LogDebug("Client \"%s:%u\" is closing connection %d ...",
+			 My_Connections[Idx].host,
+			 ng_ipaddr_getport(&My_Connections[Idx].addr), Idx);
+		Conn_Close(Idx, NULL, "Client closed connection", false);
+		return false;
+	}
+
+	if (len < 0) {
+		if (errno == EAGAIN || errno == EWOULDBLOCK)
+			return false;
+
+		Log(LOG_ERR, "Read error on connection %d (socket %d): %s!",
+		    Idx, My_Connections[Idx].sock, strerror(errno));
+		Conn_Close(Idx, "Read error", "Client closed connection", false);
+		return false;
+	}
+
+	Log_BufferPreview("Read_Request(): network payload", Idx, readbuf, (size_t)len);
+	return true;
+}
+
+static void
+Conn_Check_Connection_Timeout(CONN_ID Idx, CLIENT *c, time_t time_now, char *msg, size_t msg_len)
+{
+	if (My_Connections[Idx].lastping > My_Connections[Idx].lastdata) {
+		if (My_Connections[Idx].lastping < time_now - Conf_PongTimeout) {
+			snprintf(msg, msg_len, "Ping timeout: %d seconds", Conf_PongTimeout);
+			LogDebug("Connection %d: %s.", Idx, msg);
+			Conn_Close(Idx, NULL, msg, true);
+		}
+	} else if (My_Connections[Idx].lastdata < time_now - Conf_PingTimeout) {
+		LogDebug("Connection %d: sending PING ...", Idx);
+		Conn_UpdatePing(Idx, time_now);
+		Conn_WriteStr(Idx, "PING :%s", Client_ID(Client_ThisServer()));
+	}
+}
+
+static void
+Conn_Check_Server_Timeout(CONN_ID Idx, CLIENT *c, time_t time_now, char *msg, size_t msg_len)
+{
+	(void)c;
+	(void)msg_len;
+	if (My_Connections[Idx].lastdata < time_now - Conf_PongTimeout) {
+		LogDebug("Unregistered connection %d timed out ...", Idx);
+		Conn_Close(Idx, NULL, "Timeout", false);
+	}
+}
+
+static unsigned int
+Conn_Process_Buffer(CONN_ID Idx)
+{
+#ifndef STRICT_RFC
+	char *ptr1, *ptr2, *first_eol;
+#endif
+	char *ptr;
+	size_t len, delta;
+	time_t starttime;
+#ifdef ZLIB
+	bool old_z;
+#endif
+	unsigned int i, maxcmd = MAX_COMMANDS, len_processed = 0;
+	CLIENT *c;
+
+	c = Conn_GetClient(Idx);
+	starttime = time(NULL);
+
+	assert(c != NULL);
+
+	switch (Client_Type(c)) {
+	    case CLIENT_SERVER:
+		maxcmd = (int)(Client_UserCount() / 5)
+		       + MAX_COMMANDS_SERVER_MIN;
+		if (Conn_LastPing(Idx) == 0)
+			maxcmd *= 5;
+		break;
+	    case CLIENT_SERVICE:
+		maxcmd = MAX_COMMANDS_SERVICE;
+		break;
+	    case CLIENT_USER:
+		if (Client_HasMode(c, 'F'))
+			maxcmd = MAX_COMMANDS_SERVICE;
+		break;
+	}
+
+	for (i=0; i < maxcmd; i++) {
+		if (My_Connections[Idx].delaytime > starttime)
+			return 0;
+#ifdef ZLIB
+		if (Conn_OPTION_ISSET(&My_Connections[Idx], CONN_ZIP)) {
+			if (!Unzip_Buffer(Idx))
+				return 0;
+		}
+#endif
+
+		if (0 == array_bytes(&My_Connections[Idx].rbuf))
+			break;
+
+		if (!array_cat0_temporary(&My_Connections[Idx].rbuf)) {
+			Conn_Close(Idx, NULL,
+				   "Can't allocate memory [Handle_Buffer]",
+				   true);
+			return 0;
+		}
+
+		delta = 2;
+		ptr = strstr(array_start(&My_Connections[Idx].rbuf), "\r\n");
+#ifndef STRICT_RFC
+		ptr1 = strchr(array_start(&My_Connections[Idx].rbuf), '\r');
+		ptr2 = strchr(array_start(&My_Connections[Idx].rbuf), '\n');
+		if (ptr) {
+			first_eol = ptr1 < ptr2 ? ptr1 : ptr2;
+			if (first_eol < ptr) {
+				ptr = first_eol;
+				delta = 1;
+			}
+		} else if (ptr1 || ptr2) {
+			if (ptr1 && ptr2)
+				ptr = ptr1 < ptr2 ? ptr1 : ptr2;
+			else
+				ptr = ptr1 ? ptr1 : ptr2;
+			delta = 1;
+		}
+#endif
+		if (!ptr)
+			break;
+
+		*ptr = '\0';
+		len = ptr - (char *)array_start(&My_Connections[Idx].rbuf) + delta;
+		if (len > (COMMAND_LEN - 1)) {
+			Log(LOG_ERR,
+			    "Request too long (connection %d): %d bytes (max. %d expected)!",
+			    Idx, array_bytes(&My_Connections[Idx].rbuf),
+			    COMMAND_LEN - 1);
+			Conn_Close(Idx, NULL, "Request too long", true);
+			return 0;
+		}
+
+		len_processed += (unsigned int)len;
+		if (len <= delta) {
+			array_moveleft(&My_Connections[Idx].rbuf, 1, len);
+			continue;
+		}
+#ifdef ZLIB
+		old_z = My_Connections[Idx].options & CONN_ZIP;
+#endif
+
+		My_Connections[Idx].msg_in++;
+		if (!Parse_Request(Idx, (char *)array_start(&My_Connections[Idx].rbuf)))
+			return 0;
+
+		array_moveleft(&My_Connections[Idx].rbuf, 1, len);
+#ifdef ZLIB
+		if ((!old_z) && (My_Connections[Idx].options & CONN_ZIP) &&
+		    (array_bytes(&My_Connections[Idx].rbuf) > 0)) {
+			if (!array_copy(&My_Connections[Idx].zip.rbuf,
+				        &My_Connections[Idx].rbuf)) {
+				Conn_Close(Idx, NULL,
+					   "Can't allocate memory [Handle_Buffer]",
+					   true);
+				return 0;
+			}
+
+			array_trunc(&My_Connections[Idx].rbuf);
+			LogDebug("Moved already received data (%u bytes) to uncompression buffer.",
+				 array_bytes(&My_Connections[Idx].zip.rbuf));
+		}
+#endif
+	}
+
+	if (len_processed && array_bytes(&My_Connections[Idx].rbuf) > 2)
+		Throttle_Connection(Idx, c, THROTTLE_CMDS, maxcmd);
+
+	return len_processed;
+}
+
+static void
+Conn_Maybe_Start_Server_Link(int i, time_t time_now)
+{
+	int n;
+
+	if (Conf_Server[i].conn_id != NONE)
+		return;
+	if (!Conf_Server[i].host[0] || Conf_Server[i].port <= 0)
+		return;
+	if (Conf_Server[i].flags & CONF_SFLAG_DISABLED)
+		return;
+	if (Conf_Server[i].lasttry > (time_now - Conf_ConnectRetry))
+		return;
+
+	if (Conf_Server[i].group > NONE) {
+		for (n = 0; n < MAX_SERVERS; n++) {
+			if (n == i)
+				continue;
+			if ((Conf_Server[n].conn_id != NONE) &&
+			    (Conf_Server[n].group == Conf_Server[i].group))
+				return;
+		}
+	}
+
+	Log(LOG_NOTICE,
+	    "Preparing to establish a new server link for \"%s\" ...",
+	    Conf_Server[i].name);
+	Conf_Server[i].lasttry = time_now;
+	Conf_Server[i].conn_id = SERVER_WAIT;
+	assert(Proc_GetPipeFd(&Conf_Server[i].res_stat) < 0);
+	if (!Resolve_Name(&Conf_Server[i].res_stat, Conf_Server[i].host,
+			  cb_Connect_to_Server))
+		Conf_Server[i].conn_id = NONE;
+}
 
 /**
  * Write a text string into the socket of a connection.
@@ -1779,26 +2036,8 @@ Read_Request(CONN_ID Idx)
 #endif
 		len = recv(My_Connections[Idx].sock, readbuf, sizeof(readbuf), 0);
 
-	if (len == 0) {
-		LogDebug("Client \"%s:%u\" is closing connection %d ...",
-			 My_Connections[Idx].host,
-			 ng_ipaddr_getport(&My_Connections[Idx].addr), Idx);
-		Conn_Close(Idx, NULL, "Client closed connection", false);
+	if (!Conn_Handle_Read_Request(Idx, len, readbuf))
 		return;
-	}
-
-	if (len < 0) {
-		if (errno == EAGAIN || errno == EWOULDBLOCK)
-			return;
-
-		Log(LOG_ERR, "Read error on connection %d (socket %d): %s!",
-		    Idx, My_Connections[Idx].sock, strerror(errno));
-		Conn_Close(Idx, "Read error", "Client closed connection",
-			   false);
-		return;
-	}
-
-	Log_BufferPreview("Read_Request(): network payload", Idx, readbuf, (size_t)len);
 
 	/* Now append the newly received data to the connection buffer.
 	 * NOTE: This can lead to connection read buffers being bigger(!) than
@@ -1843,26 +2082,7 @@ Read_Request(CONN_ID Idx)
 	if (!c)
 		return;
 
-	/* Update timestamp of last data received if this connection is
-	 * registered as a user, server or service connection. Don't update
-	 * otherwise, so users have at least Conf_PongTimeout seconds time to
-	 * register with the IRC server -- see Check_Connections().
-	 * Update "lastping", too, if time shifted backwards ... */
-	if (Client_Type(c) == CLIENT_USER
-	    || Client_Type(c) == CLIENT_SERVER
-	    || Client_Type(c) == CLIENT_SERVICE) {
-		t = time(NULL);
-		if (My_Connections[Idx].lastdata != t)
-			My_Connections[Idx].bps = 0;
-
-		My_Connections[Idx].lastdata = t;
-		if (My_Connections[Idx].lastping > t)
-			My_Connections[Idx].lastping = t;
-	}
-
-	/* Look at the data in the (read-) buffer of this connection */
-	if (My_Connections[Idx].bps >= maxbps)
-		Throttle_Connection(Idx, c, THROTTLE_BPS, maxbps);
+	Conn_Update_Read_Accounting(Idx, c, &t, maxbps);
 } /* Read_Request */
 
 /**
@@ -1878,171 +2098,27 @@ Read_Request(CONN_ID Idx)
 static unsigned int
 Handle_Buffer(CONN_ID Idx)
 {
-#ifndef STRICT_RFC
-	char *ptr1, *ptr2, *first_eol;
-#endif
-	char *ptr;
-	size_t len, delta;
-	time_t starttime;
-#ifdef ZLIB
-	bool old_z;
-#endif
-	unsigned int i, maxcmd = MAX_COMMANDS, len_processed = 0;
-	CLIENT *c;
-
-	c = Conn_GetClient(Idx);
-	starttime = time(NULL);
-
-	assert(c != NULL);
-
-	/* Servers get special command limits that depend on the user count */
-	switch (Client_Type(c)) {
-	    case CLIENT_SERVER:
-		maxcmd = (int)(Client_UserCount() / 5)
-		       + MAX_COMMANDS_SERVER_MIN;
-		/* Allow servers to handle even more commands while peering
-		 * to speed up server login and network synchronization. */
-		if (Conn_LastPing(Idx) == 0)
-			maxcmd *= 5;
-		break;
-	    case CLIENT_SERVICE:
-		maxcmd = MAX_COMMANDS_SERVICE;
-		break;
-	    case CLIENT_USER:
-		if (Client_HasMode(c, 'F'))
-			maxcmd = MAX_COMMANDS_SERVICE;
-		break;
-	}
-
-	for (i=0; i < maxcmd; i++) {
-		/* Check penalty */
-		if (My_Connections[Idx].delaytime > starttime)
-			return 0;
-#ifdef ZLIB
-		/* Unpack compressed data, if compression is in use */
-		if (Conn_OPTION_ISSET(&My_Connections[Idx], CONN_ZIP)) {
-			/* When unzipping fails, Unzip_Buffer() shuts
-			 * down the connection itself */
-			if (!Unzip_Buffer(Idx))
-				return 0;
-		}
-#endif
-
-		if (0 == array_bytes(&My_Connections[Idx].rbuf))
-			break;
-
-		/* Make sure that the buffer is NULL terminated */
-		if (!array_cat0_temporary(&My_Connections[Idx].rbuf)) {
-			Conn_Close(Idx, NULL,
-				   "Can't allocate memory [Handle_Buffer]",
-				   true);
-			return 0;
-		}
-
-		/* RFC 2812, section "2.3 Messages", 5th paragraph:
-		 * "IRC messages are always lines of characters terminated
-		 * with a CR-LF (Carriage Return - Line Feed) pair [...]". */
-		delta = 2;
-		ptr = strstr(array_start(&My_Connections[Idx].rbuf), "\r\n");
-
-#ifndef STRICT_RFC
-		/* Check for non-RFC-compliant request (only CR or LF)?
-		 * Unfortunately, there are quite a few clients out there
-		 * that do this -- e. g. mIRC, BitchX, and Trillian :-( */
-		ptr1 = strchr(array_start(&My_Connections[Idx].rbuf), '\r');
-		ptr2 = strchr(array_start(&My_Connections[Idx].rbuf), '\n');
-		if (ptr) {
-			/* Check if there is a single CR or LF _before_ the
-			 * correct CR+LF line terminator:  */
-			first_eol = ptr1 < ptr2 ? ptr1 : ptr2;
-			if (first_eol < ptr) {
-				/* Single CR or LF before CR+LF found */
-				ptr = first_eol;
-				delta = 1;
-			}
-		} else if (ptr1 || ptr2) {
-			/* No CR+LF terminated command found, but single
-			 * CR or LF found ... */
-			if (ptr1 && ptr2)
-				ptr = ptr1 < ptr2 ? ptr1 : ptr2;
-			else
-				ptr = ptr1 ? ptr1 : ptr2;
-			delta = 1;
-		}
-#endif
-
-		if (!ptr)
-			break;
-
-		/* Complete (=line terminated) request found, handle it! */
-		*ptr = '\0';
-
-		len = ptr - (char *)array_start(&My_Connections[Idx].rbuf) + delta;
-
-		if (len > (COMMAND_LEN - 1)) {
-			/* Request must not exceed 512 chars (incl. CR+LF!),
-			 * see RFC 2812. Disconnect Client if this happens. */
-			Log(LOG_ERR,
-			    "Request too long (connection %d): %d bytes (max. %d expected)!",
-			    Idx, array_bytes(&My_Connections[Idx].rbuf),
-			    COMMAND_LEN - 1);
-			Conn_Close(Idx, NULL, "Request too long", true);
-			return 0;
-		}
-
-		len_processed += (unsigned int)len;
-		if (len <= delta) {
-			/* Request is empty (only '\r\n', '\r' or '\n');
-			 * delta is 2 ('\r\n') or 1 ('\r' or '\n'), see above */
-			array_moveleft(&My_Connections[Idx].rbuf, 1, len);
-			continue;
-		}
-#ifdef ZLIB
-		/* remember if stream is already compressed */
-		old_z = My_Connections[Idx].options & CONN_ZIP;
-#endif
-
-		My_Connections[Idx].msg_in++;
-		if (!Parse_Request
-		    (Idx, (char *)array_start(&My_Connections[Idx].rbuf)))
-			return 0; /* error -> connection has been closed */
-
-		array_moveleft(&My_Connections[Idx].rbuf, 1, len);
-#ifdef ZLIB
-		if ((!old_z) && (My_Connections[Idx].options & CONN_ZIP) &&
-		    (array_bytes(&My_Connections[Idx].rbuf) > 0)) {
-			/* The last command activated socket compression.
-			 * Data that was read after that needs to be copied
-			 * to the unzip buffer for decompression: */
-			if (!array_copy
-			    (&My_Connections[Idx].zip.rbuf,
-			     &My_Connections[Idx].rbuf)) {
-				Conn_Close(Idx, NULL,
-					   "Can't allocate memory [Handle_Buffer]",
-					   true);
-				return 0;
-			}
-
-			array_trunc(&My_Connections[Idx].rbuf);
-			LogDebug
-			    ("Moved already received data (%u bytes) to uncompression buffer.",
-			     array_bytes(&My_Connections[Idx].zip.rbuf));
-		}
-#endif
-	}
-#if DEBUG_BUFFER
-	LogDebug("Connection %d: Processed %ld commands (max=%ld), %ld bytes. %ld bytes left in read buffer.",
-		 Idx, i, maxcmd, len_processed,
-		 array_bytes(&My_Connections[Idx].rbuf));
-#endif
-
-	/* If data has been processed but there is still data in the read
-	 * buffer, the command limit triggered. Enforce the penalty time: */
-	if (len_processed && array_bytes(&My_Connections[Idx].rbuf) > 2)
-		Throttle_Connection(Idx, c, THROTTLE_CMDS, maxcmd);
-
-	return len_processed;
+	return Conn_Process_Buffer(Idx);
 } /* Handle_Buffer */
+
+static void
+Conn_Update_Read_Accounting(CONN_ID Idx, CLIENT *c, time_t *t, unsigned int maxbps)
+{
+	if (Client_Type(c) == CLIENT_USER
+	    || Client_Type(c) == CLIENT_SERVER
+	    || Client_Type(c) == CLIENT_SERVICE) {
+		*t = time(NULL);
+		if (My_Connections[Idx].lastdata != *t)
+			My_Connections[Idx].bps = 0;
+
+		My_Connections[Idx].lastdata = *t;
+		if (My_Connections[Idx].lastping > *t)
+			My_Connections[Idx].lastping = *t;
+	}
+
+	if (My_Connections[Idx].bps >= maxbps)
+		Throttle_Connection(Idx, c, THROTTLE_BPS, maxbps);
+}
 
 /**
  * Check whether established connections are still alive or not.
@@ -2052,7 +2128,6 @@ Handle_Buffer(CONN_ID Idx)
 static void
 Check_Connections(void)
 {
-	CLIENT *c;
 	CONN_ID i;
 	char msg[64];
 	time_t time_now;
@@ -2062,46 +2137,7 @@ Check_Connections(void)
 	for (i = 0; i < Pool_Size; i++) {
 		if (My_Connections[i].sock < 0)
 			continue;
-
-		c = Conn_GetClient(i);
-		if (c && ((Client_Type(c) == CLIENT_USER)
-			  || (Client_Type(c) == CLIENT_SERVER)
-			  || (Client_Type(c) == CLIENT_SERVICE))) {
-			/* connected User, Server or Service */
-			if (My_Connections[i].lastping >
-			    My_Connections[i].lastdata) {
-				/* We already sent a ping */
-				if (My_Connections[i].lastping <
-				    time_now - Conf_PongTimeout) {
-					/* Timeout */
-					snprintf(msg, sizeof(msg),
-						 "Ping timeout: %d seconds",
-						 Conf_PongTimeout);
-					LogDebug("Connection %d: %s.", i, msg);
-					Conn_Close(i, NULL, msg, true);
-				}
-			} else if (My_Connections[i].lastdata <
-				   time_now - Conf_PingTimeout) {
-				/* We need to send a PING ... */
-				LogDebug("Connection %d: sending PING ...", i);
-				Conn_UpdatePing(i, time_now);
-				Conn_WriteStr(i, "PING :%s",
-					      Client_ID(Client_ThisServer()));
-			}
-		} else {
-			/* The connection is not fully established yet, so
-			 * we don't do the PING-PONG game here but instead
-			 * disconnect the client after "a short time" if it's
-			 * still not registered. */
-
-			if (My_Connections[i].lastdata <
-			    time_now - Conf_PongTimeout) {
-				LogDebug
-				    ("Unregistered connection %d timed out ...",
-				     i);
-				Conn_Close(i, NULL, "Timeout", false);
-			}
-		}
+		Conn_Check_Connection_Status(i, time_now, msg, sizeof(msg));
 	}
 } /* Check_Connections */
 
@@ -2111,48 +2147,13 @@ Check_Connections(void)
 static void
 Check_Servers(void)
 {
-	int i, n;
+	int i;
 	time_t time_now;
 
 	time_now = time(NULL);
 
-	/* Check all configured servers */
-	for (i = 0; i < MAX_SERVERS; i++) {
-		if (Conf_Server[i].conn_id != NONE)
-			continue;	/* Already establishing or connected */
-		if (!Conf_Server[i].host[0] || Conf_Server[i].port <= 0)
-			continue;	/* No host and/or port configured */
-		if (Conf_Server[i].flags & CONF_SFLAG_DISABLED)
-			continue;	/* Disabled configuration entry */
-		if (Conf_Server[i].lasttry > (time_now - Conf_ConnectRetry))
-			continue;	/* We have to wait a little bit ... */
-
-		/* Is there already a connection in this group? */
-		if (Conf_Server[i].group > NONE) {
-			for (n = 0; n < MAX_SERVERS; n++) {
-				if (n == i)
-					continue;
-				if ((Conf_Server[n].conn_id != NONE) &&
-				    (Conf_Server[n].group == Conf_Server[i].group))
-					break;
-			}
-			if (n < MAX_SERVERS)
-				continue;
-		}
-
-		/* Okay, try to connect now */
-		Log(LOG_NOTICE,
-		    "Preparing to establish a new server link for \"%s\" ...",
-		    Conf_Server[i].name);
-		Conf_Server[i].lasttry = time_now;
-		Conf_Server[i].conn_id = SERVER_WAIT;
-		assert(Proc_GetPipeFd(&Conf_Server[i].res_stat) < 0);
-
-		/* Start resolver subprocess ... */
-		if (!Resolve_Name(&Conf_Server[i].res_stat, Conf_Server[i].host,
-				  cb_Connect_to_Server))
-			Conf_Server[i].conn_id = NONE;
-	}
+	for (i = 0; i < MAX_SERVERS; i++)
+		Conn_Maybe_Start_Server_Link(i, time_now);
 } /* Check_Servers */
 
 /**

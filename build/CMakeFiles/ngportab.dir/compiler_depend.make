@@ -4,169 +4,160 @@
 CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: C:\develop\ngircd\original\src\portab\strdup.c
 CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\sys\types.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stddef.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\sal.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\concurrencysal.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vadefs.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\inttypes.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdint.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdbool.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
+CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
 
 
 CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: C:\develop\ngircd\original\src\portab\strlcpy.c
 CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\sys\types.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stddef.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\sal.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\concurrencysal.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vadefs.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\inttypes.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdint.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdbool.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\string.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_memory.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_memcpy_s.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\errno.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime_string.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_wstring.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
+CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
 
 
 CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: C:\develop\ngircd\original\src\portab\strndup.c
 CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\sys\types.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stddef.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\sal.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\concurrencysal.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vadefs.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\inttypes.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdint.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdbool.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\string.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_memory.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_memcpy_s.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\errno.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime_string.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_wstring.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stdlib.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_malloc.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_search.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_wstdlib.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\limits.h"
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdlib.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_malloc.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_search.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdlib.h"
+CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
 
 
 CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: C:\develop\ngircd\original\src\portab\strtok_r.c
 CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\sys\types.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stddef.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\sal.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\concurrencysal.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vadefs.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\inttypes.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdint.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdbool.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
+CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
 
 
 CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: C:\develop\ngircd\original\src\portab\vsnprintf.c
 CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\sys\types.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stddef.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\sal.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\concurrencysal.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vadefs.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\inttypes.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdint.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdbool.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdarg.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stdio.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_wstdio.h"
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_stdio_config.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
+CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
 
 
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h":
 
 C:\develop\ngircd\original\src\portab\strdup.c:
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdbool.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vadefs.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\sys\types.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\concurrencysal.h":
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h":
 
 C:\develop\ngircd\original\src\portab\portab.h:
 
-C:\develop\ngircd\win32\include\config.h:
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdarg.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stddef.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_stdio_config.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\sal.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\inttypes.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\stdint.h":
-
 C:\develop\ngircd\original\src\portab\strlcpy.c:
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\string.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_memory.h":
+C:\develop\ngircd\win32\include\config.h:
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_memcpy_s.h":
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\errno.h":
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\vcruntime_string.h":
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_wstring.h":
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h":
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h":
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h":
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h":
 
 C:\develop\ngircd\original\src\portab\strndup.c:
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stdlib.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\stdio.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_malloc.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdlib.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_search.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_wstdlib.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h":
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\VC\include\limits.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_malloc.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_search.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdlib.h":
 
 C:\develop\ngircd\original\src\portab\strtok_r.c:
 
 C:\develop\ngircd\original\src\portab\vsnprintf.c:
 
-"C:\Program Files\Microsoft Visual Studio\18\Community\SDK\ScopeCppSDK\vc15\SDK\Include\ucrt\corecrt_wstdio.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":

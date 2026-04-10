@@ -38,27 +38,21 @@
 #include "conn.h"
 #include "class.h"
 #include "channel.h"
-#include "conf.h"
 #include "log.h"
 #include "sighandlers.h"
-#include "io.h"
+
+#include "host/host.h"
+#include "config/config.h"
+#include "server_app/server_app.h"
 
 #include "ngircd.h"
 
 static void Show_Version PARAMS(( void ));
 static void Show_Help PARAMS(( void ));
 
-static void Pidfile_Create PARAMS(( pid_t pid ));
-static void Pidfile_Delete PARAMS(( void ));
-
 static void Fill_Version PARAMS(( void ));
 
-static void Random_Init PARAMS(( void ));
-
 static void Setup_FDStreams PARAMS(( int fd ));
-
-static bool NGIRCd_Init PARAMS(( bool ));
-
 
 /**
  * The main() function of ngIRCd.
@@ -77,6 +71,10 @@ main(int argc, const char *argv[])
 	bool NGIRCd_NoDaemon = false, NGIRCd_NoSyslog = false;
 	int i;
 	size_t n;
+	host_module_set_t module_set;
+	const host_wiring_t *wiring;
+	const config_api_t *config_api;
+	const server_app_api_t *server_app_api;
 
 #if defined(DEBUG) && defined(HAVE_MTRACE)
 	/* enable GNU libc memory tracing when running in debug mode
@@ -94,6 +92,24 @@ main(int argc, const char *argv[])
 #endif
 
 	Fill_Version();
+
+	module_set.core_runtime = NULL;
+	module_set.logging = logging_get_api_v1();
+	module_set.config = config_get_api_v1();
+	module_set.platform = platform_get_api_v1();
+	module_set.net_transport = net_transport_get_api_v1();
+	module_set.resolver = resolver_get_api_v1();
+	wiring = host_get_wiring_v1();
+	if (!wiring || wiring->wire(&module_set) != CORE_STATUS_OK) {
+		fprintf(stderr, "%s: host wiring validation failed!\n", PACKAGE_NAME);
+		exit(1);
+	}
+	server_app_api = server_app_get_api_v1();
+	if (!server_app_api || server_app_api->api_major != 1u) {
+		fprintf(stderr, "%s: server_app API mismatch!\n", PACKAGE_NAME);
+		exit(1);
+	}
+	config_api = config_get_api_v1();
 
 	/* parse conmmand line */
 	for (i = 1; i < argc; i++) {
@@ -240,94 +256,87 @@ main(int argc, const char *argv[])
 
 	if (configtest) {
 		Show_Version(); puts("");
-		exit(Conf_Test());
+		if (!config_api || !config_api->test)
+			exit(1);
+		exit(config_api->test());
+	}
+
+	if (server_app_api->create() != CORE_STATUS_OK
+	    || server_app_api->start() != CORE_STATUS_OK) {
+		fprintf(stderr, "%s: server_app startup failed!\n", PACKAGE_NAME);
+		exit(1);
 	}
 
 	while (!NGIRCd_SignalQuit) {
-		/* Initialize global variables */
-		NGIRCd_Start = time(NULL);
-		(void)strftime(NGIRCd_StartStr, 64,
-			       "%a %b %d %Y at %H:%M:%S (%Z)",
-			       localtime(&NGIRCd_Start));
-
 		NGIRCd_SignalRestart = false;
 		NGIRCd_SignalQuit = false;
 
-		Log_Init(!NGIRCd_NoSyslog);
-		Random_Init();
-		Conf_Init();
-		Log_ReInit();
+		if (server_app_api->init_runtime() != CORE_STATUS_OK) {
+			Log(LOG_ALERT, "Fatal: Could not initialize server runtime!");
+			exit(1);
+		}
+
+		if (server_app_api->init_random() != CORE_STATUS_OK) {
+			Log(LOG_ALERT, "Fatal: Could not initialize random state!");
+			exit(1);
+		}
+		if (server_app_api->init_preloop(!NGIRCd_NoSyslog) != CORE_STATUS_OK) {
+			Log(LOG_ALERT, "Fatal: Could not initialize server pre-loop state!");
+			exit(1);
+		}
 
 		/* Initialize the "main program":
 		 * chroot environment, user and group ID, ... */
-		if (!NGIRCd_Init(NGIRCd_NoDaemon)) {
+		if (server_app_api->init_daemon((int)NGIRCd_NoDaemon) != CORE_STATUS_OK) {
 			Log(LOG_ALERT, "Fatal: Initialization failed, exiting!");
 			exit(1);
 		}
 
-		if (!io_library_init(CONNECTION_POOL)) {
+		if (server_app_api->init_runtime_loop() != CORE_STATUS_OK) {
 			Log(LOG_ALERT,
-			    "Fatal: Could not initialize IO routines: %s",
-			    strerror(errno));
+			    "Fatal: Could not initialize IO and runtime loop!");
 			exit(1);
 		}
-
-		if (!Signals_Init()) {
-			Log(LOG_ALERT,
-			    "Fatal: Could not set up signal handlers: %s",
-			    strerror(errno));
-			exit(1);
-		}
-
-		Channel_Init();
-		Conn_Init();
-		Class_Init();
-		Client_Init();
 
 		/* Create protocol and server identification. The syntax
 		 * used by ngIRCd in PASS commands and the known "extended
 		 * flags" are described in doc/Protocol.txt. */
-#ifdef IRCPLUS
-		snprintf(NGIRCd_ProtoID, sizeof NGIRCd_ProtoID, "%s%s %s|%s:%s",
-			 PROTOVER, PROTOIRCPLUS, PACKAGE_NAME, PACKAGE_VERSION,
-			 IRCPLUSFLAGS);
-#ifdef ZLIB
-		strlcat(NGIRCd_ProtoID, "Z", sizeof NGIRCd_ProtoID);
-#endif
-		if (Conf_OperCanMode)
-			strlcat(NGIRCd_ProtoID, "o", sizeof NGIRCd_ProtoID);
-#else /* IRCPLUS */
-		snprintf(NGIRCd_ProtoID, sizeof NGIRCd_ProtoID, "%s%s %s|%s",
-			 PROTOVER, PROTOIRC, PACKAGE_NAME, PACKAGE_VERSION);
-#endif /* IRCPLUS */
-		strlcat(NGIRCd_ProtoID, " P", sizeof NGIRCd_ProtoID);
-#ifdef ZLIB
-		strlcat(NGIRCd_ProtoID, "Z", sizeof NGIRCd_ProtoID);
-#endif
+		if (server_app_api->build_proto_id(
+			    NGIRCd_ProtoID, sizeof NGIRCd_ProtoID) != CORE_STATUS_OK) {
+			Log(LOG_ALERT, "Fatal: Could not build protocol ID!");
+			exit(1);
+		}
 		LogDebug("Protocol and server ID is \"%s\".", NGIRCd_ProtoID);
 
-		Channel_InitPredefined();
+		if (server_app_api->init_predefined_channels() != CORE_STATUS_OK) {
+			Log(LOG_ALERT, "Fatal: Could not initialize predefined channels!");
+			exit(1);
+		}
 
-		if (Conn_InitListeners() < 1) {
+		if (server_app_api->init_listeners() != CORE_STATUS_OK) {
 			Log(LOG_ALERT,
 			    "Server isn't listening on a single port!" );
 			Log(LOG_ALERT,
 			    "%s exiting due to fatal errors!", PACKAGE_NAME);
-			Pidfile_Delete();
+			(void)server_app_api->delete_pidfile();
+			exit(1);
+		}
+
+		if (server_app_api->create_pidfile() != CORE_STATUS_OK) {
+			Log(LOG_ALERT, "Fatal: Could not create PID file!");
 			exit(1);
 		}
 
 		/* Main Run Loop */
-		Conn_Handler();
-
-		Conn_Exit();
-		Client_Exit();
-		Channel_Exit();
-		Class_Exit();
-		Log_Exit();
-		Signals_Exit();
+		if (server_app_api->run_loop() != CORE_STATUS_OK)
+			Log(LOG_ALERT, "Fatal: Main run loop failed!");
+		if (server_app_api->shutdown_runtime() != CORE_STATUS_OK)
+			Log(LOG_ALERT, "Fatal: Could not shut down runtime cleanly!");
+		if (server_app_api->shutdown_runtime_loop() != CORE_STATUS_OK)
+			Log(LOG_ALERT, "Fatal: Could not shut down transport cleanly!");
 	}
-	Pidfile_Delete();
+	(void)server_app_api->stop();
+	(void)server_app_api->delete_pidfile();
 
 	return 0;
 } /* main */
@@ -487,62 +496,6 @@ Show_Help( void )
 
 
 /**
- * Delete the file containing the process ID (PID).
- */
-static void
-Pidfile_Delete( void )
-{
-	/* Pidfile configured? */
-	if( ! Conf_PidFile[0] ) return;
-
-	LogDebug( "Removing PID file (%s) ...", Conf_PidFile );
-
-	if( unlink( Conf_PidFile ))
-		Log( LOG_ERR, "Error unlinking PID file (%s): %s", Conf_PidFile, strerror( errno ));
-} /* Pidfile_Delete */
-
-
-/**
- * Create the file containing the process ID of ngIRCd ("PID file").
- *
- * @param pid	The process ID to be stored in this file.
- */
-static void
-Pidfile_Create(pid_t pid)
-{
-	int pidfd;
-	char pidbuf[64];
-	int len;
-
-	/* Pidfile configured? */
-	if( ! Conf_PidFile[0] ) return;
-
-	LogDebug( "Creating PID file (%s) ...", Conf_PidFile );
-
-	pidfd = open( Conf_PidFile, O_RDWR|O_CREAT|O_EXCL, S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH);
-	if ( pidfd < 0 ) {
-		Log( LOG_ERR, "Error writing PID file (%s): %s", Conf_PidFile, strerror( errno ));
-		return;
-	}
-
-	len = snprintf(pidbuf, sizeof pidbuf, "%ld\n", (long)pid);
-	if (len < 0 || len >= (int)sizeof pidbuf) {
-		Log(LOG_ERR, "Error converting process ID!");
-		close(pidfd);
-		return;
-	}
-
-	if (write(pidfd, pidbuf, (size_t)len) != (ssize_t)len)
-		Log(LOG_ERR, "Can't write PID file (%s): %s!", Conf_PidFile,
-		    strerror(errno));
-
-	if (close(pidfd) != 0)
-		Log(LOG_ERR, "Error closing PID file (%s): %s!", Conf_PidFile,
-		    strerror(errno));
-} /* Pidfile_Create */
-
-
-/**
  * Redirect stdin, stdout and stderr to appropriate file handles.
  *
  * @param fd	The file handle stdin, stdout and stderr should be redirected to.
@@ -605,45 +558,6 @@ NGIRCd_getNobodyID(uid_t *uid, gid_t *gid )
 #endif
 
 
-#ifdef HAVE_ARC4RANDOM
-static void
-Random_Init(void)
-{
-
-}
-#else
-static bool
-Random_Init_Kern(const char *file)
-{
-	unsigned int seed;
-	bool ret = false;
-	int fd = open(file, O_RDONLY);
-	if (fd >= 0) {
-		if (read(fd, &seed, sizeof(seed)) == sizeof(seed))
-			ret = true;
-		close(fd);
-		srand(seed);
-	}
-	return ret;
-}
-
-/**
- * Initialize libc rand(3) number generator
- */
-static void
-Random_Init(void)
-{
-	if (Random_Init_Kern("/dev/urandom"))
-		return;
-	if (Random_Init_Kern("/dev/random"))
-		return;
-	if (Random_Init_Kern("/dev/arandom"))
-		return;
-	srand(rand() ^ (unsigned)getpid() ^ (unsigned)time(NULL));
-}
-#endif
-
-
 /**
  * Initialize ngIRCd daemon.
  *
@@ -651,7 +565,7 @@ Random_Init(void)
  *		foreground (and not as a daemon).
  * @return true on success.
  */
-static bool
+GLOBAL bool
 NGIRCd_Init(bool NGIRCd_NoDaemon)
 {
 	static bool initialized;
@@ -660,6 +574,11 @@ NGIRCd_Init(bool NGIRCd_NoDaemon)
 	struct group *grp;
 	int real_errno, fd = -1;
 	pid_t pid;
+	const config_api_t *config_api = config_get_api_v1();
+	config_bootstrap_t bootstrap;
+	const char *chroot_dir = NULL;
+	uid_t effective_uid;
+	gid_t effective_gid;
 
 	LogDebug("NGIRCd_Init(%d): starting.", NGIRCd_NoDaemon);
 
@@ -683,48 +602,72 @@ NGIRCd_Init(bool NGIRCd_NoDaemon)
 #endif
 
 	/* Change root */
-	if (Conf_Chroot[0]) {
-		if (chdir(Conf_Chroot) != 0) {
+	if (config_api && config_api->get_bootstrap &&
+	    config_api->get_bootstrap(&bootstrap) == CORE_STATUS_OK &&
+	    bootstrap.chroot_dir[0]) {
+		chroot_dir = bootstrap.chroot_dir;
+
+		if (chdir(chroot_dir) != 0) {
 			Log(LOG_ERR, "Can't chdir() in ChrootDir (%s): %s!",
-			    Conf_Chroot, strerror(errno));
+			    chroot_dir, strerror(errno));
 			goto out;
 		}
 
-		if (chroot(Conf_Chroot) != 0) {
+		if (chroot(chroot_dir) != 0) {
 			Log(LOG_ERR,
 			    "Can't change root directory to \"%s\": %s!",
-			    Conf_Chroot, strerror(errno));
+			    chroot_dir, strerror(errno));
 			goto out;
 		} else {
 			chrooted = true;
 			Log(LOG_INFO,
 			    "Changed root and working directory to \"%s\".",
-			    Conf_Chroot);
+			    chroot_dir);
 		}
 	}
 
 #if !defined(SINGLE_USER_OS)
 	/* Check user ID */
-	if (Conf_UID == 0) {
+	if (config_api && config_api->get_bootstrap &&
+	    config_api->get_bootstrap(&bootstrap) == CORE_STATUS_OK &&
+	    bootstrap.uid == 0) {
+		uid_t nobody_uid = 0;
+		gid_t nobody_gid = 0;
+
 		pwd = getpwuid(0);
 		Log(LOG_INFO,
 		    "ServerUID must not be %s(0), using \"nobody\" instead.",
 		    pwd ? pwd->pw_name : "?");
-		if (!NGIRCd_getNobodyID(&Conf_UID, &Conf_GID)) {
+		if (!NGIRCd_getNobodyID(&nobody_uid, &nobody_gid)) {
 			Log(LOG_WARNING,
 			    "Could not get user/group ID of user \"nobody\": %s",
 			    errno ? strerror(errno) : "not found" );
 			goto out;
 		}
+		bootstrap.uid = nobody_uid;
+		bootstrap.gid = nobody_gid;
+	}
+
+	if (config_api && config_api->get_bootstrap &&
+	    config_api->get_bootstrap(&bootstrap) == CORE_STATUS_OK) {
+		effective_uid = bootstrap.uid;
+		effective_gid = bootstrap.gid;
+	} else {
+		effective_uid = getuid();
+		effective_gid = getgid();
 	}
 
 	/* Change group ID */
-	if (getgid() != Conf_GID) {
-		if (setgid(Conf_GID) != 0) {
+	if (config_api && config_api->get_bootstrap &&
+	    config_api->get_bootstrap(&bootstrap) == CORE_STATUS_OK &&
+	    getgid() != bootstrap.gid) {
+		const gid_t gid = bootstrap.gid;
+
+		if (setgid(gid) != 0) {
 			real_errno = errno;
-			grp = getgrgid(Conf_GID);
+			grp = getgrgid(gid);
 			Log(LOG_ERR, "Can't change group ID to %s(%u): %s!",
-			    grp ? grp->gr_name : "?", Conf_GID,
+			    grp ? grp->gr_name : "?", gid,
 			    strerror(real_errno));
 			if (real_errno != EPERM && real_errno != EINVAL)
 				goto out;
@@ -745,12 +688,16 @@ NGIRCd_Init(bool NGIRCd_NoDaemon)
 #endif
 
 	/* Change user ID */
-	if (getuid() != Conf_UID) {
-		if (setuid(Conf_UID) != 0) {
+	if (config_api && config_api->get_bootstrap &&
+	    config_api->get_bootstrap(&bootstrap) == CORE_STATUS_OK &&
+	    getuid() != bootstrap.uid) {
+		const uid_t uid = bootstrap.uid;
+
+		if (setuid(uid) != 0) {
 			real_errno = errno;
-			pwd = getpwuid(Conf_UID);
+			pwd = getpwuid(uid);
 			Log(LOG_ERR, "Can't change user ID to %s(%u): %s!",
-			    pwd ? pwd->pw_name : "?", Conf_UID,
+			    pwd ? pwd->pw_name : "?", uid,
 			    strerror(real_errno));
 			if (real_errno != EPERM && real_errno != EINVAL)
 				goto out;
@@ -793,23 +740,21 @@ NGIRCd_Init(bool NGIRCd_NoDaemon)
 	}
 	pid = getpid();
 
-	Pidfile_Create(pid);
-
 	/* Check UID/GID we are running as, can be different from values
 	 * configured (e. g. if we were already started with a UID>0. */
-	Conf_UID = getuid();
-	Conf_GID = getgid();
+	effective_uid = getuid();
+	effective_gid = getgid();
 
-	pwd = getpwuid(Conf_UID);
-	grp = getgrgid(Conf_GID);
+	pwd = getpwuid(effective_uid);
+	grp = getgrgid(effective_gid);
 
 	Log(LOG_INFO, "Running as user %s(%ld), group %s(%ld), with PID %ld.",
-	    pwd ? pwd->pw_name : "unknown", (long)Conf_UID,
-	    grp ? grp->gr_name : "unknown", (long)Conf_GID, (long)pid);
+	    pwd ? pwd->pw_name : "unknown", (long)effective_uid,
+	    grp ? grp->gr_name : "unknown", (long)effective_gid, (long)pid);
 
 	if (chrooted) {
 		Log(LOG_INFO, "Running with root directory \"%s\".",
-		    Conf_Chroot );
+		    chroot_dir ? chroot_dir : "");
 		return true;
 	} else
 		Log(LOG_INFO, "Not running with changed root directory.");
@@ -830,7 +775,7 @@ NGIRCd_Init(bool NGIRCd_NoDaemon)
 			    "Can't change working directory to \"%s\": %s!",
 			    pwd->pw_dir, strerror(errno));
 	} else
-		Log(LOG_ERR, "Can't get user information for UID %d!?", Conf_UID);
+		Log(LOG_ERR, "Can't get user information for UID %d!?", (int)effective_uid);
 
 	return true;
  out:

@@ -68,6 +68,8 @@ GLOBAL char NGIRCd_ConfFile[FNAME_LEN];
 /** Protocol and server identification string; see doc/Protocol.txt */
 GLOBAL char NGIRCd_ProtoID[COMMAND_LEN];
 
+GLOBAL bool NGIRCd_Init PARAMS((bool NoDaemon));
+
 #endif
 
 /* -eof- */
