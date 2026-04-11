@@ -1,0 +1,4 @@
+EXPORTS
+   DotNetRuntimeDebugHeader DATA
+   platform_get_api_v1
+   module_get_api_v1

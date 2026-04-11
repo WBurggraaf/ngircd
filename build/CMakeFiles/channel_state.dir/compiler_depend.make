@@ -11,6 +11,7 @@ CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj: "C:\Pr
 CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj: C:\develop\ngircd\include\core\runtime\core_runtime.h
 CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj: C:\develop\ngircd\include\core\runtime\module_api.h
 
 
 
@@ -33,3 +34,5 @@ C:\develop\ngircd\include\core\runtime\core_runtime.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h":
+
+C:\develop\ngircd\include\core\runtime\module_api.h:

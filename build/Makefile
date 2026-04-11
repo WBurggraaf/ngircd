@@ -532,17 +532,17 @@ core_runtime\fast:
 .PHONY : core_runtime\fast
 
 #=============================================================================
-# Target rules for targets named platform
+# Target rules for targets named platform_build
 
 # Build rule for target.
-platform: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) platform
-.PHONY : platform
+platform_build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) platform_build
+.PHONY : platform_build
 
 # fast build rule for target.
-platform\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform.dir\build
-.PHONY : platform\fast
+platform_build\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_build.dir\build
+.PHONY : platform_build\fast
 
 #=============================================================================
 # Target rules for targets named irc_protocol
@@ -1193,7 +1193,6 @@ src\platform\platform.obj: src\platform\platform.c.obj
 
 # target to build an object file
 src\platform\platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform.dir\src\platform\platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_module_test.dir\src\platform\platform.c.obj
 .PHONY : src\platform\platform.c.obj
 
@@ -1202,7 +1201,6 @@ src\platform\platform.i: src\platform\platform.c.i
 
 # target to preprocess a source file
 src\platform\platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform.dir\src\platform\platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_module_test.dir\src\platform\platform.c.i
 .PHONY : src\platform\platform.c.i
 
@@ -1211,7 +1209,6 @@ src\platform\platform.s: src\platform\platform.c.s
 
 # target to generate assembly for a file
 src\platform\platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform.dir\src\platform\platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_module_test.dir\src\platform\platform.c.s
 .PHONY : src\platform\platform.c.s
 
@@ -3235,6 +3232,7 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
+	@echo ... platform_build
 	@echo ... branch_coverage_test
 	@echo ... channel_state
 	@echo ... client_state
@@ -3266,7 +3264,6 @@ help:
 	@echo ... ngportab
 	@echo ... ngtool
 	@echo ... nick_check_test
-	@echo ... platform
 	@echo ... platform_module_test
 	@echo ... resolver
 	@echo ... server_app

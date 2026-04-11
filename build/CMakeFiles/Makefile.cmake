@@ -85,7 +85,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ngtool.dir/DependInfo.cmake"
   "CMakeFiles/ngipaddr.dir/DependInfo.cmake"
   "CMakeFiles/core_runtime.dir/DependInfo.cmake"
-  "CMakeFiles/platform.dir/DependInfo.cmake"
+  "CMakeFiles/platform_build.dir/DependInfo.cmake"
   "CMakeFiles/irc_protocol.dir/DependInfo.cmake"
   "CMakeFiles/client_state.dir/DependInfo.cmake"
   "CMakeFiles/channel_state.dir/DependInfo.cmake"

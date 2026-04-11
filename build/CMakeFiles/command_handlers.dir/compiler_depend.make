@@ -11,6 +11,7 @@ CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c
 CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj: C:\develop\ngircd\include\core\runtime\core_runtime.h
 CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj: C:\develop\ngircd\include\core\runtime\module_api.h
 
 
 
@@ -33,3 +34,5 @@ C:\develop\ngircd\include\core\runtime\core_runtime.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h":
+
+C:\develop\ngircd\include\core\runtime\module_api.h:

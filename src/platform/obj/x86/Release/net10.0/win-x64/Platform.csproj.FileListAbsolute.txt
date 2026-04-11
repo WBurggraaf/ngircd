@@ -1,0 +1,12 @@
+C:\develop\ngircd\src\platform\bin\x86\Release\net10.0\win-x64\Platform.deps.json
+C:\develop\ngircd\src\platform\bin\x86\Release\net10.0\win-x64\Platform.dll
+C:\develop\ngircd\src\platform\bin\x86\Release\net10.0\win-x64\Platform.pdb
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\Platform.GeneratedMSBuildEditorConfig.editorconfig
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\Platform.AssemblyInfoInputs.cache
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\Platform.AssemblyInfo.cs
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\Platform.csproj.CoreCompileInputs.cache
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\Platform.sourcelink.json
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\Platform.dll
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\refint\Platform.dll
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\Platform.pdb
+C:\develop\ngircd\src\platform\obj\x86\Release\net10.0\win-x64\ref\Platform.dll

@@ -1,0 +1,31 @@
+# Build outputs
+/build/
+/out/
+/bin/
+/obj/
+
+# .NET / NativeAOT artifacts
+**/bin/
+**/obj/
+**/publish/
+**/*.nupkg
+**/*.snupkg
+**/*.pdb
+
+# Visual Studio / MSVC intermediates
+*.ilk
+*.idb
+*.exp
+*.lib
+*.aps
+*.user
+*.suo
+
+# Logs and runtime noise
+*.log
+*.trn
+ngircd-root.log
+
+# OS cruft
+.DS_Store
+Thumbs.db

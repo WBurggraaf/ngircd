@@ -1,0 +1,1 @@
+C:\develop\ngircd\build\platform_managed\Platform.dll

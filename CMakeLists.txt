@@ -83,14 +83,39 @@ target_compile_definitions(core_runtime PRIVATE CORE_RUNTIME_BUILD)
 set_target_properties(core_runtime PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 # ---------------------------------------------------------------------------
-# platform.dll  — OS primitives, no legacy deps, C# P/Invoke ready
+# platform.dll  — NativeAOT managed implementation, still a native DLL to C.
+#
+# The managed project is published outside the CMake/NMake graph because the
+# NativeAOT task host is not reliable under this generator. The custom command
+# below copies the published native artifacts into the build tree so NMake has
+# a concrete file-producing rule to follow.
 # ---------------------------------------------------------------------------
 
-add_library(platform SHARED ${SHARED_SRC}/platform/platform.c)
-target_include_directories(platform PUBLIC ${SHARED_INC} PRIVATE ${WIN32_INC})
-target_compile_definitions(platform PRIVATE PLATFORM_BUILD)
-target_link_libraries(platform PUBLIC core_runtime ws2_32)
-set_target_properties(platform PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
+set(PLATFORM_OUT_DIR "${CMAKE_BINARY_DIR}/platform_managed")
+set(PLATFORM_PUB_DIR "${CMAKE_SOURCE_DIR}/src/platform/bin/x86/Release/net10.0/win-x64/native")
+set(PLATFORM_PUB_DLL "${PLATFORM_PUB_DIR}/Platform.dll")
+set(PLATFORM_PUB_LIB "${PLATFORM_PUB_DIR}/Platform.lib")
+set(PLATFORM_DLL "${PLATFORM_OUT_DIR}/platform.dll")
+set(PLATFORM_LIB "${PLATFORM_OUT_DIR}/platform.lib")
+
+add_custom_command(
+    OUTPUT "${PLATFORM_DLL}" "${PLATFORM_LIB}"
+    COMMAND ${CMAKE_COMMAND} -E make_directory "${PLATFORM_OUT_DIR}"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different "${PLATFORM_PUB_DLL}" "${PLATFORM_DLL}"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different "${PLATFORM_PUB_LIB}" "${PLATFORM_LIB}"
+    DEPENDS "${PLATFORM_PUB_DLL}" "${PLATFORM_PUB_LIB}"
+    COMMENT "Staging managed platform.dll"
+    VERBATIM
+)
+
+add_custom_target(platform_build ALL DEPENDS "${PLATFORM_DLL}" "${PLATFORM_LIB}")
+
+add_library(platform SHARED IMPORTED GLOBAL)
+set_target_properties(platform PROPERTIES
+    IMPORTED_LOCATION "${PLATFORM_DLL}"
+    IMPORTED_IMPLIB "${PLATFORM_LIB}"
+)
+add_dependencies(platform platform_build)
 
 # ---------------------------------------------------------------------------
 # Stub DLLs — no legacy deps, C# P/Invoke ready today

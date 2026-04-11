@@ -30,7 +30,7 @@ C:/develop/ngircd/build/CMakeFiles/ngportab.dir
 C:/develop/ngircd/build/CMakeFiles/ngtool.dir
 C:/develop/ngircd/build/CMakeFiles/ngipaddr.dir
 C:/develop/ngircd/build/CMakeFiles/core_runtime.dir
-C:/develop/ngircd/build/CMakeFiles/platform.dir
+C:/develop/ngircd/build/CMakeFiles/platform_build.dir
 C:/develop/ngircd/build/CMakeFiles/irc_protocol.dir
 C:/develop/ngircd/build/CMakeFiles/client_state.dir
 C:/develop/ngircd/build/CMakeFiles/channel_state.dir
