@@ -1,2 +1,3 @@
 EXPORTS 
 	channel_state_get_api_v1
+	module_get_api_v1

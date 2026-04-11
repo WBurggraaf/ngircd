@@ -4,6 +4,12 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "protocol/irc_protocol/irc_protocol.h"
+#include "protocol/command_handlers/command_handlers.h"
+#include "state/client_state/client_state.h"
+#include "state/channel_state/channel_state.h"
+#include "app/server_app/server_app.h"
+
 #ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -115,6 +121,11 @@ host_load_modules(const char *dll_dir, host_module_set_t *out,
         { "platform.dll",      CORE_MODULE_KIND_PLATFORM,      offsetof(host_module_set_t, platform)      },
         { "net_transport.dll", CORE_MODULE_KIND_NET_TRANSPORT, offsetof(host_module_set_t, net_transport) },
         { "resolver.dll",      CORE_MODULE_KIND_RESOLVER,      offsetof(host_module_set_t, resolver)      },
+        { "irc_protocol.dll",  CORE_MODULE_KIND_IRC_PROTOCOL,  offsetof(host_module_set_t, irc_protocol)  },
+        { "client_state.dll",  CORE_MODULE_KIND_CLIENT_STATE,  offsetof(host_module_set_t, client_state)  },
+        { "channel_state.dll", CORE_MODULE_KIND_CHANNEL_STATE, offsetof(host_module_set_t, channel_state) },
+        { "command_handlers.dll", CORE_MODULE_KIND_COMMAND_HANDLERS, offsetof(host_module_set_t, command_handlers) },
+        { "server_app.dll",    CORE_MODULE_KIND_SERVER_APP,    offsetof(host_module_set_t, server_app)    },
     };
 
     for (size_t i = 0; i < sizeof(modules) / sizeof(modules[0]); i++) {
@@ -162,14 +173,21 @@ static core_status_t host_wire_modules(const host_module_set_t *modules)
         return CORE_STATUS_INVALID_ARGUMENT;
     if (modules->logging == NULL || modules->config == NULL
         || modules->platform == NULL || modules->net_transport == NULL
-        || modules->resolver == NULL)
+        || modules->resolver == NULL || modules->irc_protocol == NULL
+        || modules->client_state == NULL || modules->channel_state == NULL
+        || modules->command_handlers == NULL || modules->server_app == NULL)
         return CORE_STATUS_INVALID_ARGUMENT;
 
     if (modules->logging->api_major != 1u
         || modules->config->api_major != 1u
         || modules->platform->api_major != 1u
         || modules->net_transport->api_major != 1u
-        || modules->resolver->api_major != 1u)
+        || modules->resolver->api_major != 1u
+        || modules->irc_protocol->api_major != 1u
+        || modules->client_state->api_major != 1u
+        || modules->channel_state->api_major != 1u
+        || modules->command_handlers->api_major != 1u
+        || modules->server_app->api_major != 1u)
         return CORE_STATUS_UNSUPPORTED;
 
     return CORE_STATUS_OK;

@@ -11,6 +11,12 @@
 #include "net/transport/net_transport.h"
 #include "net/resolver/resolver.h"
 
+typedef struct irc_protocol_api irc_protocol_api_t;
+typedef struct command_handlers_api command_handlers_api_t;
+typedef struct client_state_api client_state_api_t;
+typedef struct channel_state_api channel_state_api_t;
+typedef struct server_app_api server_app_api_t;
+
 typedef struct host_module_set {
     const core_module_api_t *core_runtime;
     const logging_api_t *logging;
@@ -18,6 +24,11 @@ typedef struct host_module_set {
     const platform_api_t *platform;
     const net_transport_api_t *net_transport;
     const resolver_api_t *resolver;
+    const irc_protocol_api_t *irc_protocol;
+    const command_handlers_api_t *command_handlers;
+    const client_state_api_t *client_state;
+    const channel_state_api_t *channel_state;
+    const server_app_api_t *server_app;
 } host_module_set_t;
 
 typedef struct host_wiring {

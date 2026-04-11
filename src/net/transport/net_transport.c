@@ -231,17 +231,11 @@ net_transport_get_api_v1(void)
     return &NetTransportApi;
 }
 
-static const core_module_metadata_t NetTransportMetadata = {
-    1u, 0u, CORE_MODULE_KIND_NET_TRANSPORT, "net_transport", "1.0"
-};
-
-static const core_module_api_t NetTransportModuleApi = {
-    1u, 0u, &NetTransportMetadata, &NetTransportApi
-};
+CORE_RUNTIME_DECLARE_MODULE_API(CORE_MODULE_KIND_NET_TRANSPORT, "net_transport", &NetTransportApi);
 
 NET_TRANSPORT_API const core_module_api_t * NET_TRANSPORT_CALL
 module_get_api_v1(void)
 {
-    return &NetTransportModuleApi;
+    return &module_module_api;
 }
 

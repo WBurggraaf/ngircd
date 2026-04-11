@@ -308,17 +308,11 @@ server_app_get_api_v1(void)
     return &ServerAppApi;
 }
 
-static const core_module_metadata_t ServerAppMetadata = {
-    1u, 0u, CORE_MODULE_KIND_SERVER_APP, "server_app", "1.0"
-};
-
-static const core_module_api_t ServerAppModuleApi = {
-    1u, 0u, &ServerAppMetadata, &ServerAppApi
-};
+CORE_RUNTIME_DECLARE_MODULE_API(CORE_MODULE_KIND_SERVER_APP, "server_app", &ServerAppApi);
 
 SERVER_APP_API const core_module_api_t * SERVER_APP_CALL
 module_get_api_v1(void)
 {
-    return &ServerAppModuleApi;
+    return &module_module_api;
 }
 

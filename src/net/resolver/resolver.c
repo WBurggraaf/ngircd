@@ -40,17 +40,11 @@ resolver_get_api_v1(void)
     return &ResolverApi;
 }
 
-static const core_module_metadata_t ResolverMetadata = {
-    1u, 0u, CORE_MODULE_KIND_RESOLVER, "resolver", "1.0"
-};
-
-static const core_module_api_t ResolverModuleApi = {
-    1u, 0u, &ResolverMetadata, &ResolverApi
-};
+CORE_RUNTIME_DECLARE_MODULE_API(CORE_MODULE_KIND_RESOLVER, "resolver", &ResolverApi);
 
 RESOLVER_API const core_module_api_t * RESOLVER_CALL
 module_get_api_v1(void)
 {
-    return &ResolverModuleApi;
+    return &module_module_api;
 }
 

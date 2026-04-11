@@ -25,6 +25,11 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/errno.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime_string.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
+C:/develop/ngircd/include/protocol/irc_protocol/irc_protocol.h
+C:/develop/ngircd/include/protocol/command_handlers/command_handlers.h
+C:/develop/ngircd/include/state/client_state/client_state.h
+C:/develop/ngircd/include/state/channel_state/channel_state.h
+C:/develop/ngircd/include/app/server_app/server_app.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/windows.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winapifamily.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winpackagefamily.h

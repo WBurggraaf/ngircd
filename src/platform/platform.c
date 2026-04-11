@@ -62,17 +62,11 @@ platform_get_api_v1(void)
     return &PlatformApi;
 }
 
-static const core_module_metadata_t PlatformMetadata = {
-    1u, 0u, CORE_MODULE_KIND_PLATFORM, "platform", "1.0"
-};
-
-static const core_module_api_t PlatformModuleApi = {
-    1u, 0u, &PlatformMetadata, &PlatformApi
-};
+CORE_RUNTIME_DECLARE_MODULE_API(CORE_MODULE_KIND_PLATFORM, "platform", &PlatformApi);
 
 PLATFORM_API const core_module_api_t * PLATFORM_CALL
 module_get_api_v1(void)
 {
-    return &PlatformModuleApi;
+    return &module_module_api;
 }
 

@@ -101,17 +101,11 @@ config_get_api_v1(void)
     return &ConfigApi;
 }
 
-static const core_module_metadata_t ConfigMetadata = {
-    1u, 0u, CORE_MODULE_KIND_CONFIG, "config", "1.0"
-};
-
-static const core_module_api_t ConfigModuleApi = {
-    1u, 0u, &ConfigMetadata, &ConfigApi
-};
+CORE_RUNTIME_DECLARE_MODULE_API(CORE_MODULE_KIND_CONFIG, "config", &ConfigApi);
 
 CONFIG_API const core_module_api_t * CONFIG_CALL
 module_get_api_v1(void)
 {
-    return &ConfigModuleApi;
+    return &module_module_api;
 }
 

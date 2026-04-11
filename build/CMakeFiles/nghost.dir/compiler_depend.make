@@ -29,6 +29,11 @@ CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows K
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\protocol\irc_protocol\irc_protocol.h
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\protocol\command_handlers\command_handlers.h
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\state\client_state\client_state.h
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\state\channel_state\channel_state.h
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\app\server_app\server_app.h
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\windows.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
@@ -165,11 +170,11 @@ C:\develop\ngircd\include\app\host\host.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h":
 
-C:\develop\ngircd\include\core\runtime\core_runtime.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h":
+C:\develop\ngircd\include\core\runtime\core_runtime.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h":
 
@@ -191,9 +196,9 @@ C:\develop\ngircd\include\core\runtime\module_api.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h":
 
-C:\develop\ngircd\include\app\logging\logging.h:
+C:\develop\ngircd\include\state\client_state\client_state.h:
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h":
+C:\develop\ngircd\include\app\logging\logging.h:
 
 C:\develop\ngircd\include\platform\platform.h:
 
@@ -227,6 +232,8 @@ C:\develop\ngircd\include\net\resolver\resolver.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h":
 
+C:\develop\ngircd\include\app\server_app\server_app.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h":
@@ -237,6 +244,12 @@ C:\develop\ngircd\include\net\resolver\resolver.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h":
 
+C:\develop\ngircd\include\protocol\irc_protocol\irc_protocol.h:
+
+C:\develop\ngircd\include\protocol\command_handlers\command_handlers.h:
+
+C:\develop\ngircd\include\state\channel_state\channel_state.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\ctype.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\windows.h":
@@ -246,8 +259,6 @@ C:\develop\ngircd\include\net\resolver\resolver.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h":
 
@@ -276,6 +287,10 @@ C:\develop\ngircd\include\net\resolver\resolver.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 

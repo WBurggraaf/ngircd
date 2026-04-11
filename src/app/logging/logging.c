@@ -64,17 +64,11 @@ logging_get_api_v1(void)
     return &LoggingApi;
 }
 
-static const core_module_metadata_t LoggingMetadata = {
-    1u, 0u, CORE_MODULE_KIND_LOGGING, "logging", "1.0"
-};
-
-static const core_module_api_t LoggingModuleApi = {
-    1u, 0u, &LoggingMetadata, &LoggingApi
-};
+CORE_RUNTIME_DECLARE_MODULE_API(CORE_MODULE_KIND_LOGGING, "logging", &LoggingApi);
 
 LOGGING_API const core_module_api_t * LOGGING_CALL
 module_get_api_v1(void)
 {
-    return &LoggingModuleApi;
+    return &module_module_api;
 }
 
