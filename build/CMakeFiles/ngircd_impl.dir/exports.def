@@ -151,8 +151,6 @@ EXPORTS
 	Conf_SetServer
 	Conf_Test
 	Conf_UnsetServer
-	ConnShim_Exit
-	ConnShim_Init
 	Conn_ClearFlags
 	Conn_Close
 	Conn_CloseAllSockets
@@ -168,7 +166,6 @@ EXPORTS
 	Conn_Flag
 	Conn_GetAuthPing
 	Conn_GetCertFp
-	Conn_GetCipherInfo
 	Conn_GetClient
 	Conn_GetFromProc
 	Conn_GetIPAInfo
@@ -192,7 +189,6 @@ EXPORTS
 	Conn_SendQ
 	Conn_SetAuthPing
 	Conn_SetCertFp
-	Conn_SetEncoding
 	Conn_SetFlag
 	Conn_SetOption
 	Conn_SetPassword
@@ -200,7 +196,6 @@ EXPORTS
 	Conn_StartLogin
 	Conn_StartTime
 	Conn_SyncServerStruct
-	Conn_UnsetEncoding
 	Conn_UpdateIdle
 	Conn_UpdatePing
 	Conn_UsesSSL
@@ -382,6 +377,7 @@ EXPORTS
 	io_event_setcb
 	io_library_init
 	io_library_shutdown
+	io_set_ops
 	io_setcloexec
 	io_setnonblock
 	localtime

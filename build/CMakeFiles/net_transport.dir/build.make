@@ -81,112 +81,21 @@ CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\net_transport.dir\src\net_transport\net_transport.c.s /c C:\develop\ngircd\src\net_transport\net_transport.c
 <<
 
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.obj: CMakeFiles\net_transport.dir\flags.make
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn.c
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.obj: CMakeFiles\net_transport.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/net_transport.dir/original/src/ngircd/net/conn.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.obj /FdCMakeFiles\net_transport.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\net\conn.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/net_transport.dir/original/src/ngircd/net/conn.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\net\conn.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/net_transport.dir/original/src/ngircd/net/conn.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.s /c C:\develop\ngircd\original\src\ngircd\net\conn.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.obj: CMakeFiles\net_transport.dir\flags.make
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.obj: CMakeFiles\net_transport.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-encoding.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.obj /FdCMakeFiles\net_transport.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-encoding.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-encoding.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.s /c C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.obj: CMakeFiles\net_transport.dir\flags.make
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn-func.c
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.obj: CMakeFiles\net_transport.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-func.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.obj /FdCMakeFiles\net_transport.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\net\conn-func.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-func.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\net\conn-func.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-func.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.s /c C:\develop\ngircd\original\src\ngircd\net\conn-func.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.obj: CMakeFiles\net_transport.dir\flags.make
-CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\net\io.c
-CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.obj: CMakeFiles\net_transport.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/net_transport.dir/original/src/ngircd/net/io.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.obj /FdCMakeFiles\net_transport.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\net\io.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/net_transport.dir/original/src/ngircd/net/io.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\net\io.c
-<<
-
-CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/net_transport.dir/original/src/ngircd/net/io.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.s /c C:\develop\ngircd\original\src\ngircd\net\io.c
-<<
-
 # Object files for target net_transport
 net_transport_OBJECTS = \
-"CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj" \
-"CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.obj" \
-"CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.obj" \
-"CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.obj" \
-"CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.obj"
+"CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj"
 
 # External object files for target net_transport
 net_transport_EXTERNAL_OBJECTS =
 
 net_transport.dll: CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj
-net_transport.dll: CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.obj
-net_transport.dll: CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.obj
-net_transport.dll: CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.obj
-net_transport.dll: CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.obj
 net_transport.dll: CMakeFiles\net_transport.dir\build.make
 net_transport.dll: ngircd_impl.lib
-net_transport.dll: ngportab.lib
-net_transport.dll: ngtool.lib
-net_transport.dll: ngipaddr.lib
 net_transport.dll: core_runtime.lib
 net_transport.dll: CMakeFiles\net_transport.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library net_transport.dll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library net_transport.dll"
 	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_dll --msvc-ver=1950 --intdir=CMakeFiles\net_transport.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\net_transport.dir\objects1.rsp @<<
- /out:net_transport.dll /implib:net_transport.lib /pdb:C:\develop\ngircd\build\net_transport.pdb /dll /version:0.0 /DEBUG /machine:x64 /debug /INCREMENTAL  ngircd_impl.lib ngportab.lib ngtool.lib ngipaddr.lib ws2_32.lib core_runtime.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  
+ /out:net_transport.dll /implib:net_transport.lib /pdb:C:\develop\ngircd\build\net_transport.pdb /dll /version:0.0 /machine:x64 /debug /INCREMENTAL  ngircd_impl.lib core_runtime.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  
 <<
 
 # Rule to build all files generated by this target.

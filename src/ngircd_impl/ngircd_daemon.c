@@ -102,10 +102,7 @@ NGIRCd_Init(bool NGIRCd_NoDaemon)
 	bool chrooted = false;
 	struct passwd *pwd;
 	struct group *grp;
-	int fd = -1;
-#if !defined(SINGLE_USER_OS)
-	int real_errno;
-#endif
+	int real_errno, fd = -1;
 	pid_t pid;
 	uid_t effective_uid;
 	gid_t effective_gid;

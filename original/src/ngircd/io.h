@@ -21,14 +21,6 @@
 #define IO_WANTREAD	1
 #define IO_WANTWRITE	2
 
-#ifdef NET_TRANSPORT_BUILD
-# undef GLOBAL
-# define GLOBAL
-# define IO_API extern
-#else
-# define IO_API GLOBAL
-#endif
-
 /* init library.
    sets up epoll/kqueue descriptors and tries to allocate space for ioevlen
    file descriptors. ioevlen is just the _initial_ size, not a limit. */
@@ -61,6 +53,6 @@ bool io_setcloexec PARAMS((int fd));
 /* watch fds for activity */
 int io_dispatch PARAMS((struct timeval *tv));
 
-IO_API void io_set_ops PARAMS((const NgIoOps *Ops));
+GLOBAL void io_set_ops PARAMS((const NgIoOps *Ops));
 
 #endif /* io_H_included */

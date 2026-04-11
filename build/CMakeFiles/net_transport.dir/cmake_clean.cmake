@@ -1,12 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-encoding.c.obj"
-  "CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-encoding.c.obj.d"
-  "CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-func.c.obj"
-  "CMakeFiles/net_transport.dir/original/src/ngircd/net/conn-func.c.obj.d"
-  "CMakeFiles/net_transport.dir/original/src/ngircd/net/conn.c.obj"
-  "CMakeFiles/net_transport.dir/original/src/ngircd/net/conn.c.obj.d"
-  "CMakeFiles/net_transport.dir/original/src/ngircd/net/io.c.obj"
-  "CMakeFiles/net_transport.dir/original/src/ngircd/net/io.c.obj.d"
   "CMakeFiles/net_transport.dir/src/net_transport/net_transport.c.obj"
   "CMakeFiles/net_transport.dir/src/net_transport/net_transport.c.obj.d"
   "net_transport.dll"
