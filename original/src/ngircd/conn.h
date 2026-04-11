@@ -136,7 +136,6 @@ GLOBAL void Conn_StartLogin PARAMS((CONN_ID Idx));
 GLOBAL void Conn_Handler PARAMS(( void ));
 
 GLOBAL bool Conn_WriteStr PARAMS(( CONN_ID Idx, const char *Format, ... ));
-GLOBAL bool Conn_WriteStrBuf PARAMS(( CONN_ID Idx, const char *Str ));
 
 GLOBAL char* Conn_Password PARAMS(( CONN_ID Idx ));
 GLOBAL void Conn_SetPassword PARAMS(( CONN_ID Idx, const char *Pwd ));

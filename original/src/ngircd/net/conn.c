@@ -1217,30 +1217,6 @@ va_dcl
 	return ok;
 } /* Conn_WriteStr */
 
-/**
- * Send a pre-formatted string to a connection (non-variadic entry point).
- * Used by compatibility shims that cannot forward variadic arguments.
- * Appends CRLF and delegates to Conn_Write().
- *
- * @param Idx	Connection index.
- * @param Str	Pre-formatted string (without CRLF terminator).
- * @returns	true on success, false otherwise.
- */
-GLOBAL bool
-Conn_WriteStrBuf(CONN_ID Idx, const char *Str)
-{
-	char buffer[COMMAND_LEN];
-	size_t len;
-
-	assert(Idx > NONE);
-	assert(Str != NULL);
-
-	strlcpy(buffer, Str, sizeof(buffer) - 2);
-	len = strlcat(buffer, "\r\n", sizeof(buffer));
-	My_Connections[Idx].msg_out++;
-	return Conn_Write(Idx, buffer, len);
-} /* Conn_WriteStrBuf */
-
 GLOBAL char*
 Conn_Password( CONN_ID Idx )
 {
