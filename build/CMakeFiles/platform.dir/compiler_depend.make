@@ -12,6 +12,7 @@ CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\include\c
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
+CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\include\core_runtime\module_api.h
 CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\win32\include\config.h
 CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\win32\include\win32compat.h
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
@@ -191,6 +192,8 @@ C:\develop\ngircd\include\core_runtime\core_runtime.h:
 
 C:\develop\ngircd\win32\include\config.h:
 
+C:\develop\ngircd\include\core_runtime\module_api.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
 
 C:\develop\ngircd\win32\include\win32compat.h:
@@ -275,8 +278,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\interlockedapi.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h":
@@ -292,6 +293,8 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\profileapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\heapapi.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\interlockedapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processthreadsapi.h":
 

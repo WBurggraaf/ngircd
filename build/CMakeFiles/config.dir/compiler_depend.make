@@ -13,6 +13,7 @@ CMakeFiles\config.dir\src\config\config.c.obj: "C:\Program Files (x86)\Windows K
 CMakeFiles\config.dir\src\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\config.dir\src\config\config.c.obj: C:\develop\ngircd\include\core_runtime\core_runtime.h
 CMakeFiles\config.dir\src\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
+CMakeFiles\config.dir\src\config\config.c.obj: C:\develop\ngircd\include\core_runtime\module_api.h
 CMakeFiles\config.dir\src\config\config.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\config.dir\src\config\config.c.obj: C:\develop\ngircd\win32\include\config.h
 CMakeFiles\config.dir\src\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
@@ -215,13 +216,15 @@ C:\develop\ngircd\include\core_runtime\core_runtime.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h":
 
+C:\develop\ngircd\win32\include\config.h:
+
+C:\develop\ngircd\include\core_runtime\module_api.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h":
 
 C:\develop\ngircd\original\src\portab\portab.h:
-
-C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 
@@ -258,8 +261,6 @@ C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 
 C:\develop\ngircd\win32\include\sys\socket.h:
 
@@ -308,6 +309,8 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h":
 

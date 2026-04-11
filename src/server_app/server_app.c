@@ -15,16 +15,26 @@
 #include <unistd.h>
 #endif
 
+#include "core_runtime/module_api.h"
 #include "portab/portab.h"
 #include "ngircd/defines.h"
 #include "ngircd/ngircd.h"
-#include "config/config.h"
-#include "logging/logging.h"
-#include "net_transport/net_transport.h"
+
+/* Cached module APIs populated by server_app_create() from the injected table */
+static const config_api_t        *s_config_api    = NULL;
+static const logging_api_t       *s_logging_api   = NULL;
+static const net_transport_api_t *s_transport_api = NULL;
 
 static core_status_t SERVER_APP_CALL
-server_app_create(void)
+server_app_create(const host_module_set_t *modules)
 {
+    if (!modules)
+        return CORE_STATUS_INVALID_ARGUMENT;
+    if (!modules->config || !modules->logging || !modules->net_transport)
+        return CORE_STATUS_INVALID_ARGUMENT;
+    s_config_api    = modules->config;
+    s_logging_api   = modules->logging;
+    s_transport_api = modules->net_transport;
     return CORE_STATUS_OK;
 }
 
@@ -43,11 +53,9 @@ server_app_stop(void)
 static core_status_t
 server_app_get_bootstrap(config_bootstrap_t *bootstrap)
 {
-    const config_api_t *config_api = config_get_api_v1();
-
-    if (!config_api || !config_api->get_bootstrap || !bootstrap)
+    if (!s_config_api || !s_config_api->get_bootstrap || !bootstrap)
         return CORE_STATUS_INTERNAL_ERROR;
-    return config_api->get_bootstrap(bootstrap);
+    return s_config_api->get_bootstrap(bootstrap);
 }
 
 static core_status_t SERVER_APP_CALL
@@ -89,36 +97,31 @@ server_app_init_random(void)
 static core_status_t SERVER_APP_CALL
 server_app_init_preloop(int syslog_mode)
 {
-    const config_api_t *config_api = config_get_api_v1();
-    const logging_api_t *logging_api = logging_get_api_v1();
-
-    if (!config_api || !config_api->init
-        || config_api->init() != CORE_STATUS_OK)
+    if (!s_config_api || !s_config_api->init
+        || s_config_api->init() != CORE_STATUS_OK)
         return CORE_STATUS_INTERNAL_ERROR;
-    if (!logging_api || !logging_api->init || !logging_api->reinit)
+    if (!s_logging_api || !s_logging_api->init || !s_logging_api->reinit)
         return CORE_STATUS_INTERNAL_ERROR;
-    if (logging_api->init(syslog_mode) != CORE_STATUS_OK)
+    if (s_logging_api->init(syslog_mode) != CORE_STATUS_OK)
         return CORE_STATUS_INTERNAL_ERROR;
-    logging_api->reinit();
+    s_logging_api->reinit();
     return CORE_STATUS_OK;
 }
 
 static core_status_t SERVER_APP_CALL
 server_app_init_runtime_loop(void)
 {
-    const net_transport_api_t *transport_api = net_transport_get_api_v1();
-
-    if (!transport_api || !transport_api->init
-        || !transport_api->init_connections)
+    if (!s_transport_api || !s_transport_api->init
+        || !s_transport_api->init_connections)
         return CORE_STATUS_INTERNAL_ERROR;
-    if (transport_api->init(CONNECTION_POOL) != CORE_STATUS_OK)
+    if (s_transport_api->init(CONNECTION_POOL) != CORE_STATUS_OK)
         return CORE_STATUS_INTERNAL_ERROR;
     if (!Signals_Init())
         return CORE_STATUS_INTERNAL_ERROR;
     Channel_Init();
     Class_Init();
     Client_Init();
-    if (transport_api->init_connections() != CORE_STATUS_OK)
+    if (s_transport_api->init_connections() != CORE_STATUS_OK)
         return CORE_STATUS_INTERNAL_ERROR;
     return CORE_STATUS_OK;
 }
@@ -156,11 +159,9 @@ server_app_build_proto_id(char *buffer, size_t buffer_size)
 static core_status_t SERVER_APP_CALL
 server_app_init_listeners(void)
 {
-    const net_transport_api_t *transport_api = net_transport_get_api_v1();
-
-    if (!transport_api || !transport_api->init_listeners)
+    if (!s_transport_api || !s_transport_api->init_listeners)
         return CORE_STATUS_INTERNAL_ERROR;
-    return transport_api->init_listeners();
+    return s_transport_api->init_listeners();
 }
 
 static core_status_t SERVER_APP_CALL
@@ -174,7 +175,6 @@ static core_status_t SERVER_APP_CALL
 server_app_create_pidfile(void)
 {
     config_bootstrap_t bootstrap;
-    const logging_api_t *logging_api = logging_get_api_v1();
     int pidfd;
     char pidbuf[64];
     int len;
@@ -188,31 +188,31 @@ server_app_create_pidfile(void)
     if (!pidfile || !pidfile[0])
         return CORE_STATUS_OK;
 
-    if (logging_api && logging_api->debug)
-        logging_api->debug("Creating PID file (%s) ...", pidfile);
+    if (s_logging_api && s_logging_api->debug)
+        s_logging_api->debug("Creating PID file (%s) ...", pidfile);
 
     pidfd = open(pidfile, O_RDWR|O_CREAT|O_EXCL, S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH);
     if (pidfd < 0) {
-        if (logging_api && logging_api->log)
-            logging_api->log(LOG_ERR, "Error writing PID file (%s): %s", pidfile, strerror(errno));
+        if (s_logging_api && s_logging_api->log)
+            s_logging_api->log(LOG_ERR, "Error writing PID file (%s): %s", pidfile, strerror(errno));
         return CORE_STATUS_INTERNAL_ERROR;
     }
 
     len = snprintf(pidbuf, sizeof pidbuf, "%ld\n", (long)pid);
     if (len < 0 || len >= (int)sizeof pidbuf) {
-        if (logging_api && logging_api->log)
-            logging_api->log(LOG_ERR, "Error converting process ID!");
+        if (s_logging_api && s_logging_api->log)
+            s_logging_api->log(LOG_ERR, "Error converting process ID!");
         close(pidfd);
         return CORE_STATUS_INTERNAL_ERROR;
     }
 
     if (write(pidfd, pidbuf, (size_t)len) != (ssize_t)len) {
-        if (logging_api && logging_api->log)
-            logging_api->log(LOG_ERR, "Can't write PID file (%s): %s!", pidfile, strerror(errno));
+        if (s_logging_api && s_logging_api->log)
+            s_logging_api->log(LOG_ERR, "Can't write PID file (%s): %s!", pidfile, strerror(errno));
     }
     if (close(pidfd) != 0) {
-        if (logging_api && logging_api->log)
-            logging_api->log(LOG_ERR, "Error closing PID file (%s): %s!", pidfile, strerror(errno));
+        if (s_logging_api && s_logging_api->log)
+            s_logging_api->log(LOG_ERR, "Error closing PID file (%s): %s!", pidfile, strerror(errno));
     }
     return CORE_STATUS_OK;
 }
@@ -220,18 +220,15 @@ server_app_create_pidfile(void)
 static core_status_t SERVER_APP_CALL
 server_app_run_loop(void)
 {
-    const net_transport_api_t *transport_api = net_transport_get_api_v1();
-
-    if (!transport_api || !transport_api->run)
+    if (!s_transport_api || !s_transport_api->run)
         return CORE_STATUS_INTERNAL_ERROR;
-    return transport_api->run();
+    return s_transport_api->run();
 }
 
 static core_status_t SERVER_APP_CALL
 server_app_delete_pidfile(void)
 {
     config_bootstrap_t bootstrap;
-    const logging_api_t *logging_api = logging_get_api_v1();
     const char *pidfile;
 
     if (server_app_get_bootstrap(&bootstrap) != CORE_STATUS_OK)
@@ -241,11 +238,11 @@ server_app_delete_pidfile(void)
     if (!pidfile || !pidfile[0])
         return CORE_STATUS_OK;
 
-    if (logging_api && logging_api->debug)
-        logging_api->debug("Removing PID file (%s) ...", pidfile);
+    if (s_logging_api && s_logging_api->debug)
+        s_logging_api->debug("Removing PID file (%s) ...", pidfile);
     if (unlink(pidfile)) {
-        if (logging_api && logging_api->log)
-            logging_api->log(LOG_ERR, "Error unlinking PID file (%s): %s", pidfile, strerror(errno));
+        if (s_logging_api && s_logging_api->log)
+            s_logging_api->log(LOG_ERR, "Error unlinking PID file (%s): %s", pidfile, strerror(errno));
     }
     return CORE_STATUS_OK;
 }
@@ -253,20 +250,17 @@ server_app_delete_pidfile(void)
 static core_status_t SERVER_APP_CALL
 server_app_shutdown_runtime(void)
 {
-    const logging_api_t *logging_api = logging_get_api_v1();
-    const net_transport_api_t *transport_api = net_transport_get_api_v1();
-
-    if (transport_api && transport_api->close_all_sockets)
-        transport_api->close_all_sockets(-1);
-    if (transport_api && transport_api->shutdown_listeners)
-        transport_api->shutdown_listeners();
-    if (transport_api && transport_api->shutdown_connections)
-        transport_api->shutdown_connections();
+    if (s_transport_api && s_transport_api->close_all_sockets)
+        s_transport_api->close_all_sockets(-1);
+    if (s_transport_api && s_transport_api->shutdown_listeners)
+        s_transport_api->shutdown_listeners();
+    if (s_transport_api && s_transport_api->shutdown_connections)
+        s_transport_api->shutdown_connections();
     Client_Exit();
     Channel_Exit();
     Class_Exit();
-    if (logging_api && logging_api->shutdown)
-        logging_api->shutdown();
+    if (s_logging_api && s_logging_api->shutdown)
+        s_logging_api->shutdown();
     Signals_Exit();
     return CORE_STATUS_OK;
 }
@@ -274,10 +268,8 @@ server_app_shutdown_runtime(void)
 static core_status_t SERVER_APP_CALL
 server_app_shutdown_runtime_loop(void)
 {
-    const net_transport_api_t *transport_api = net_transport_get_api_v1();
-
-    if (transport_api && transport_api->shutdown)
-        transport_api->shutdown();
+    if (s_transport_api && s_transport_api->shutdown)
+        s_transport_api->shutdown();
     return CORE_STATUS_OK;
 }
 
@@ -314,4 +306,18 @@ SERVER_APP_API const server_app_api_t * SERVER_APP_CALL
 server_app_get_api_v1(void)
 {
     return &ServerAppApi;
+}
+
+static const core_module_metadata_t ServerAppMetadata = {
+    1u, 0u, CORE_MODULE_KIND_SERVER_APP, "server_app", "1.0"
+};
+
+static const core_module_api_t ServerAppModuleApi = {
+    1u, 0u, &ServerAppMetadata, &ServerAppApi
+};
+
+SERVER_APP_API const core_module_api_t * SERVER_APP_CALL
+module_get_api_v1(void)
+{
+    return &ServerAppModuleApi;
 }

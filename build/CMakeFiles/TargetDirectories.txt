@@ -57,6 +57,12 @@ C:/develop/ngircd/build/CMakeFiles/user_check_test.dir
 C:/develop/ngircd/build/CMakeFiles/branch_coverage_test.dir
 C:/develop/ngircd/build/CMakeFiles/message_check_test.dir
 C:/develop/ngircd/build/CMakeFiles/full_coverage_test.dir
+C:/develop/ngircd/build/CMakeFiles/core_runtime_test.dir
+C:/develop/ngircd/build/CMakeFiles/host_wiring_test.dir
+C:/develop/ngircd/build/CMakeFiles/logging_module_test.dir
+C:/develop/ngircd/build/CMakeFiles/config_module_test.dir
+C:/develop/ngircd/build/CMakeFiles/platform_module_test.dir
+C:/develop/ngircd/build/CMakeFiles/server_app_unit_test.dir
 C:/develop/ngircd/build/CMakeFiles/test.dir
 C:/develop/ngircd/build/CMakeFiles/edit_cache.dir
 C:/develop/ngircd/build/CMakeFiles/rebuild_cache.dir

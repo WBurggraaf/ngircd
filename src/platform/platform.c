@@ -2,6 +2,8 @@
 
 #include <fcntl.h>
 
+#include "core_runtime/module_api.h"
+
 #ifdef _WIN32
 #include "config.h"
 #include "win32compat.h"
@@ -58,4 +60,18 @@ PLATFORM_API const platform_api_t * PLATFORM_CALL
 platform_get_api_v1(void)
 {
     return &PlatformApi;
+}
+
+static const core_module_metadata_t PlatformMetadata = {
+    1u, 0u, CORE_MODULE_KIND_PLATFORM, "platform", "1.0"
+};
+
+static const core_module_api_t PlatformModuleApi = {
+    1u, 0u, &PlatformMetadata, &PlatformApi
+};
+
+PLATFORM_API const core_module_api_t * PLATFORM_CALL
+module_get_api_v1(void)
+{
+    return &PlatformModuleApi;
 }

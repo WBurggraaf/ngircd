@@ -1,5 +1,6 @@
 #include "net_transport/net_transport.h"
 
+#include "core_runtime/module_api.h"
 #include "portab/portab.h"
 #include "conn.h"
 #include "ngircd/io.h"
@@ -228,4 +229,18 @@ NET_TRANSPORT_API const net_transport_api_t * NET_TRANSPORT_CALL
 net_transport_get_api_v1(void)
 {
     return &NetTransportApi;
+}
+
+static const core_module_metadata_t NetTransportMetadata = {
+    1u, 0u, CORE_MODULE_KIND_NET_TRANSPORT, "net_transport", "1.0"
+};
+
+static const core_module_api_t NetTransportModuleApi = {
+    1u, 0u, &NetTransportMetadata, &NetTransportApi
+};
+
+NET_TRANSPORT_API const core_module_api_t * NET_TRANSPORT_CALL
+module_get_api_v1(void)
+{
+    return &NetTransportModuleApi;
 }

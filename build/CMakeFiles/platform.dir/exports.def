@@ -1,2 +1,3 @@
 EXPORTS 
+	module_get_api_v1
 	platform_get_api_v1

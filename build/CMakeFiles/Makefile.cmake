@@ -112,4 +112,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/branch_coverage_test.dir/DependInfo.cmake"
   "CMakeFiles/message_check_test.dir/DependInfo.cmake"
   "CMakeFiles/full_coverage_test.dir/DependInfo.cmake"
+  "CMakeFiles/core_runtime_test.dir/DependInfo.cmake"
+  "CMakeFiles/host_wiring_test.dir/DependInfo.cmake"
+  "CMakeFiles/logging_module_test.dir/DependInfo.cmake"
+  "CMakeFiles/config_module_test.dir/DependInfo.cmake"
+  "CMakeFiles/platform_module_test.dir/DependInfo.cmake"
+  "CMakeFiles/server_app_unit_test.dir/DependInfo.cmake"
   )

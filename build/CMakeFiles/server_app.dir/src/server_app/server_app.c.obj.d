@@ -7,6 +7,16 @@ C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stddef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h
 C:/develop/ngircd/include/core_runtime/core_runtime.h
+C:/develop/ngircd/include/host/host.h
+C:/develop/ngircd/include/core_runtime/module_api.h
+C:/develop/ngircd/include/config/config.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
+C:/develop/ngircd/include/logging/logging.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdarg.h
+C:/develop/ngircd/include/platform/platform.h
+C:/develop/ngircd/include/net_transport/net_transport.h
+C:/develop/ngircd/include/resolver/resolver.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h
@@ -16,8 +26,6 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/errno.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime_string.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stdlib.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_search.h
@@ -33,7 +41,6 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winpackagefam
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/windows.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/sdkddkver.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/excpt.h
-C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdarg.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/windef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/minwindef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/specstrings.h
@@ -163,6 +170,3 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wdirect
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/stat.h
 C:/develop/ngircd/original/src/ngircd/defines.h
 C:/develop/ngircd/original/src/ngircd/ngircd.h
-C:/develop/ngircd/include/config/config.h
-C:/develop/ngircd/include/logging/logging.h
-C:/develop/ngircd/include/net_transport/net_transport.h

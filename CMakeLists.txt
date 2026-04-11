@@ -277,11 +277,13 @@ target_compile_definitions(ngircd PRIVATE
 )
 target_link_libraries(ngircd PRIVATE
     ngircd_impl
-    logging config net_transport resolver server_app
-    platform core_runtime
+    server_app
+    core_runtime
     ngportab ngtool ngipaddr
     ws2_32
 )
+# Link host.lib for host_load_modules and host_get_wiring_v1.
+# (logging, config, platform, net_transport, resolver are loaded dynamically)
 # Link host.lib via linker flag rather than CMake target to avoid NMake's
 # reserved "host" pseudo-target issue (U1073 "don't know how to make 'host.lib'").
 # add_dependencies ensures nghost is built before ngircd links.
@@ -475,4 +477,114 @@ if(BUILD_TESTING)
                 --config ${CMAKE_SOURCE_DIR}/tests/configs/does-not-exist.conf --configtest
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
     set_tests_properties(ngircd_configtest_invalid PROPERTIES WILL_FAIL TRUE)
+
+    # ---------------------------------------------------------------------------
+    # New unit tests: module API layer and host wiring
+    # ---------------------------------------------------------------------------
+
+    # core_runtime_test: version, status helpers, module_kind constants
+    add_executable(core_runtime_test
+        tests/core_runtime_test.c
+        ${SHARED_SRC}/core_runtime/core_runtime.c
+    )
+    target_include_directories(core_runtime_test PRIVATE ${SHARED_INC})
+    target_compile_definitions(core_runtime_test PRIVATE
+        CORE_RUNTIME_BUILD _CRT_SECURE_NO_WARNINGS)
+    if(MSVC)
+        target_compile_options(core_runtime_test PRIVATE /W3 /Zi /wd4005)
+        target_link_options(core_runtime_test PRIVATE /DEBUG)
+    endif()
+    add_test(NAME core_runtime_test COMMAND core_runtime_test)
+
+    # host_wiring_test: host_get_wiring_v1, wire() validation with mock structs
+    add_executable(host_wiring_test
+        tests/host_wiring_test.c
+        ${SHARED_SRC}/host/host.c
+    )
+    target_include_directories(host_wiring_test PRIVATE
+        ${SHARED_INC} ${WIN32_INC})
+    target_compile_definitions(host_wiring_test PRIVATE
+        HOST_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+    target_link_libraries(host_wiring_test PRIVATE core_runtime)
+    if(MSVC)
+        target_compile_options(host_wiring_test PRIVATE
+            /W3 /Zi /wd4005 /wd4244 /wd4090)
+        target_link_options(host_wiring_test PRIVATE /DEBUG)
+    endif()
+    add_test(NAME host_wiring_test COMMAND host_wiring_test)
+
+    # logging_module_test: logging_get_api_v1, module_get_api_v1, smoke
+    add_executable(logging_module_test
+        tests/logging_module_test.c
+        ${SHARED_SRC}/logging/logging.c
+    )
+    target_include_directories(logging_module_test PRIVATE
+        ${SHARED_INC} ${WIN32_INC}
+        ${ORIG_SRC} ${ORIG_SRC}/portab ${ORIG_SRC}/ngircd)
+    target_compile_definitions(logging_module_test PRIVATE
+        LOGGING_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+    target_link_libraries(logging_module_test PRIVATE core_runtime)
+    if(MSVC)
+        target_compile_options(logging_module_test PRIVATE
+            /W3 /Zi /wd4005 /wd4013 /wd4996)
+        target_link_options(logging_module_test PRIVATE /DEBUG)
+    endif()
+    add_test(NAME logging_module_test COMMAND logging_module_test)
+
+    # config_module_test: config_get_api_v1, get_bootstrap, module_get_api_v1
+    add_executable(config_module_test
+        tests/config_module_test.c
+        tests/test_support.c
+        tests/conf_func_stubs.c
+        ${ORIG_SRC}/ngircd/core/array.c
+        ${SHARED_SRC}/config/config.c
+    )
+    target_include_directories(config_module_test PRIVATE
+        ${SHARED_INC} ${WIN32_INC}
+        ${ORIG_SRC} ${ORIG_SRC}/portab ${ORIG_SRC}/tool ${ORIG_SRC}/ipaddr ${ORIG_SRC}/ngircd)
+    target_compile_definitions(config_module_test PRIVATE
+        CONFIG_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+    target_link_libraries(config_module_test PRIVATE core_runtime ngportab ws2_32)
+    if(MSVC)
+        target_compile_options(config_module_test PRIVATE
+            /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090)
+        target_link_options(config_module_test PRIVATE /DEBUG)
+    endif()
+    add_test(NAME config_module_test COMMAND config_module_test)
+
+    # platform_module_test: platform_get_api_v1, module_get_api_v1, error paths
+    add_executable(platform_module_test
+        tests/platform_module_test.c
+        ${SHARED_SRC}/platform/platform.c
+    )
+    target_include_directories(platform_module_test PRIVATE
+        ${SHARED_INC} ${WIN32_INC})
+    target_compile_definitions(platform_module_test PRIVATE
+        PLATFORM_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+    target_link_libraries(platform_module_test PRIVATE core_runtime)
+    if(MSVC)
+        target_compile_options(platform_module_test PRIVATE
+            /W3 /Zi /wd4005 /wd4996)
+        target_link_options(platform_module_test PRIVATE /DEBUG)
+    endif()
+    add_test(NAME platform_module_test COMMAND platform_module_test)
+
+    # server_app_unit_test: links DLLs; tests create/start/stop/build_proto_id
+    # and module_get_api_v1 via GetProcAddress
+    add_executable(server_app_unit_test
+        tests/server_app_unit_test.c
+    )
+    target_include_directories(server_app_unit_test PRIVATE
+        ${SHARED_INC} ${WIN32_INC} ${ORIG_SRC}/portab)
+    target_compile_definitions(server_app_unit_test PRIVATE
+        _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+    target_link_libraries(server_app_unit_test PRIVATE
+        server_app logging config net_transport core_runtime)
+    if(MSVC)
+        target_compile_options(server_app_unit_test PRIVATE
+            /W3 /Zi /wd4005 /wd4996)
+        target_link_options(server_app_unit_test PRIVATE /DEBUG)
+    endif()
+    add_test(NAME server_app_unit_test COMMAND server_app_unit_test)
+
 endif()

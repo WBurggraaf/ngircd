@@ -1,5 +1,6 @@
 #include "resolver/resolver.h"
 
+#include "core_runtime/module_api.h"
 #include "portab/portab.h"
 #include "ngircd/proc.h"
 #include "ipaddr/ng_ipaddr.h"
@@ -37,4 +38,18 @@ RESOLVER_API const resolver_api_t * RESOLVER_CALL
 resolver_get_api_v1(void)
 {
     return &ResolverApi;
+}
+
+static const core_module_metadata_t ResolverMetadata = {
+    1u, 0u, CORE_MODULE_KIND_RESOLVER, "resolver", "1.0"
+};
+
+static const core_module_api_t ResolverModuleApi = {
+    1u, 0u, &ResolverMetadata, &ResolverApi
+};
+
+RESOLVER_API const core_module_api_t * RESOLVER_CALL
+module_get_api_v1(void)
+{
+    return &ResolverModuleApi;
 }

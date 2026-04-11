@@ -15,6 +15,7 @@ CMakeFiles\logging.dir\src\logging\logging.c.obj: "C:\Program Files (x86)\Window
 CMakeFiles\logging.dir\src\logging\logging.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
 CMakeFiles\logging.dir\src\logging\logging.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\logging.dir\src\logging\logging.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
+CMakeFiles\logging.dir\src\logging\logging.c.obj: C:\develop\ngircd\include\core_runtime\module_api.h
 CMakeFiles\logging.dir\src\logging\logging.c.obj: C:\develop\ngircd\original\src\ngircd\log.h
 CMakeFiles\logging.dir\src\logging\logging.c.obj: C:\develop\ngircd\original\src\ngircd\module_iface.h
 CMakeFiles\logging.dir\src\logging\logging.c.obj: C:\develop\ngircd\original\src\portab\portab.h
@@ -58,13 +59,15 @@ C:\develop\ngircd\include\core_runtime\core_runtime.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h":
 
+C:\develop\ngircd\win32\include\config.h:
+
+C:\develop\ngircd\include\core_runtime\module_api.h:
+
 C:\develop\ngircd\original\src\ngircd\log.h:
 
 C:\develop\ngircd\original\src\ngircd\module_iface.h:
 
 C:\develop\ngircd\original\src\portab\portab.h:
-
-C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 

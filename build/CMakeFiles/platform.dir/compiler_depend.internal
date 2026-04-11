@@ -13,6 +13,7 @@ CMakeFiles/platform.dir/src/platform/platform.c.obj
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stddef.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/fcntl.h
+ C:/develop/ngircd/include/core_runtime/module_api.h
  C:/develop/ngircd/win32/include/config.h
  C:/develop/ngircd/win32/include/win32compat.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/winsock2.h

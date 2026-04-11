@@ -5,6 +5,7 @@
 #include <stddef.h>
 
 #include "core_runtime/core_runtime.h"
+#include "host/host.h"
 
 #ifdef _WIN32
 #  ifdef SERVER_APP_BUILD
@@ -21,7 +22,7 @@
 typedef struct server_app_api {
     uint32_t api_major;
     uint32_t api_minor;
-    core_status_t (SERVER_APP_CALL *create)(void);
+    core_status_t (SERVER_APP_CALL *create)(const host_module_set_t *modules);
     core_status_t (SERVER_APP_CALL *start)(void);
     core_status_t (SERVER_APP_CALL *stop)(void);
     core_status_t (SERVER_APP_CALL *init_runtime)(void);

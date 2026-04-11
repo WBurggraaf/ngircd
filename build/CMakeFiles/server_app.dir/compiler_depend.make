@@ -11,6 +11,16 @@ CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files\Mic
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\core_runtime\core_runtime.h
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\host\host.h
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\core_runtime\module_api.h
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\config\config.h
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\logging\logging.h
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\platform\platform.h
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\net_transport\net_transport.h
+CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\resolver\resolver.h
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
@@ -20,8 +30,6 @@ CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x8
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdlib.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_malloc.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_search.h"
@@ -37,7 +45,6 @@ CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x8
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\windows.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"
@@ -167,9 +174,6 @@ CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x8
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\stat.h"
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\original\src\ngircd\defines.h
 CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\original\src\ngircd\ngircd.h
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\config\config.h
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\logging\logging.h
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\include\net_transport\net_transport.h
 
 
 
@@ -178,6 +182,10 @@ C:\develop\ngircd\src\server_app\server_app.c:
 C:\develop\ngircd\include\server_app\server_app.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wow64apiset.h":
+
+C:\develop\ngircd\include\net_transport\net_transport.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
@@ -201,11 +209,41 @@ C:\develop\ngircd\include\server_app\server_app.h:
 
 C:\develop\ngircd\include\core_runtime\core_runtime.h:
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":
+
+C:\develop\ngircd\include\host\host.h:
+
+C:\develop\ngircd\win32\include\config.h:
+
+C:\develop\ngircd\include\core_runtime\module_api.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h":
+
+C:\develop\ngircd\include\config\config.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h":
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namedpipeapi.h":
+
+C:\develop\ngircd\include\logging\logging.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h":
+
+C:\develop\ngircd\include\platform\platform.h:
+
+C:\develop\ngircd\include\resolver\resolver.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
 
@@ -235,16 +273,6 @@ C:\develop\ngircd\win32\include\syslog.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi.h":
@@ -265,12 +293,6 @@ C:\develop\ngircd\original\src\portab\portab.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h":
-
-C:\develop\ngircd\win32\include\config.h:
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
-
 C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h":
@@ -287,27 +309,23 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h":
-
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnt.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 
@@ -316,6 +334,10 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h":
 
@@ -328,10 +350,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 C:\develop\ngircd\original\src\ngircd\io.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h":
-
-C:\develop\ngircd\include\logging\logging.h:
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namedpipeapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\profileapi.h":
 
@@ -356,10 +374,6 @@ C:\develop\ngircd\include\logging\logging.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoolapiset.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi.h":
-
-C:\develop\ngircd\include\net_transport\net_transport.h:
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wow64apiset.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securitybaseapi.h":
 
@@ -456,5 +470,3 @@ C:\develop\ngircd\win32\include\sys\time.h:
 C:\develop\ngircd\original\src\ngircd\defines.h:
 
 C:\develop\ngircd\original\src\ngircd\ngircd.h:
-
-C:\develop\ngircd\include\config\config.h:

@@ -1,2 +1,6 @@
 EXPORTS 
+	__local_stdio_printf_options
 	host_get_wiring_v1
+	host_load_modules
+	snprintf
+	vsnprintf

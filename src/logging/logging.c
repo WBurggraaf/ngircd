@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+#include "core_runtime/module_api.h"
 #include "ngircd/log.h"
 
 static core_status_t LOGGING_CALL
@@ -61,4 +62,18 @@ LOGGING_API const logging_api_t * LOGGING_CALL
 logging_get_api_v1(void)
 {
     return &LoggingApi;
+}
+
+static const core_module_metadata_t LoggingMetadata = {
+    1u, 0u, CORE_MODULE_KIND_LOGGING, "logging", "1.0"
+};
+
+static const core_module_api_t LoggingModuleApi = {
+    1u, 0u, &LoggingMetadata, &LoggingApi
+};
+
+LOGGING_API const core_module_api_t * LOGGING_CALL
+module_get_api_v1(void)
+{
+    return &LoggingModuleApi;
 }

@@ -1,5 +1,6 @@
 #include "config/config.h"
 
+#include "core_runtime/module_api.h"
 #include "portab/portab.h"
 #include "conn.h"
 #include "ngircd/conf.h"
@@ -98,4 +99,18 @@ CONFIG_API const config_api_t * CONFIG_CALL
 config_get_api_v1(void)
 {
     return &ConfigApi;
+}
+
+static const core_module_metadata_t ConfigMetadata = {
+    1u, 0u, CORE_MODULE_KIND_CONFIG, "config", "1.0"
+};
+
+static const core_module_api_t ConfigModuleApi = {
+    1u, 0u, &ConfigMetadata, &ConfigApi
+};
+
+CONFIG_API const core_module_api_t * CONFIG_CALL
+module_get_api_v1(void)
+{
+    return &ConfigModuleApi;
 }

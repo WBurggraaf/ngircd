@@ -96,12 +96,14 @@ main(int argc, const char *argv[])
 
 	Fill_Version();
 
-	module_set.core_runtime = NULL;
-	module_set.logging = logging_get_api_v1();
-	module_set.config = config_get_api_v1();
-	module_set.platform = platform_get_api_v1();
-	module_set.net_transport = net_transport_get_api_v1();
-	module_set.resolver = resolver_get_api_v1();
+	{
+		char loader_err[256];
+		if (host_load_modules(NULL, &module_set,
+		                      loader_err, sizeof loader_err) != CORE_STATUS_OK) {
+			fprintf(stderr, "%s: %s\n", PACKAGE_NAME, loader_err);
+			exit(1);
+		}
+	}
 	wiring = host_get_wiring_v1();
 	if (!wiring || wiring->wire(&module_set) != CORE_STATUS_OK) {
 		fprintf(stderr, "%s: host wiring validation failed!\n", PACKAGE_NAME);
@@ -112,7 +114,7 @@ main(int argc, const char *argv[])
 		fprintf(stderr, "%s: server_app API mismatch!\n", PACKAGE_NAME);
 		exit(1);
 	}
-	config_api = config_get_api_v1();
+	config_api = module_set.config;
 
 	/* parse conmmand line */
 	for (i = 1; i < argc; i++) {
@@ -264,7 +266,7 @@ main(int argc, const char *argv[])
 		exit(config_api->test());
 	}
 
-	if (server_app_api->create() != CORE_STATUS_OK
+	if (server_app_api->create(&module_set) != CORE_STATUS_OK
 	    || server_app_api->start() != CORE_STATUS_OK) {
 		fprintf(stderr, "%s: server_app startup failed!\n", PACKAGE_NAME);
 		exit(1);

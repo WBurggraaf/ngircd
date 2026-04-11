@@ -11,6 +11,7 @@ CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj: "C:\Program 
 CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj: C:\develop\ngircd\include\core_runtime\core_runtime.h
 CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj: C:\develop\ngircd\include\core_runtime\module_api.h
 CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj: C:\develop\ngircd\win32\include\config.h
 CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
@@ -195,13 +196,15 @@ C:\develop\ngircd\include\net_transport\net_transport.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h":
 
+C:\develop\ngircd\win32\include\config.h:
+
+C:\develop\ngircd\include\core_runtime\module_api.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h":
 
 C:\develop\ngircd\original\src\portab\portab.h:
-
-C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 
