@@ -545,6 +545,19 @@ platform_build\fast:
 .PHONY : platform_build\fast
 
 #=============================================================================
+# Target rules for targets named config_build
+
+# Build rule for target.
+config_build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) config_build
+.PHONY : config_build
+
+# fast build rule for target.
+config_build\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_build.dir\build
+.PHONY : config_build\fast
+
+#=============================================================================
 # Target rules for targets named irc_protocol
 
 # Build rule for target.
@@ -634,19 +647,6 @@ logging: cmake_check_build_system
 logging\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging.dir\build
 .PHONY : logging\fast
-
-#=============================================================================
-# Target rules for targets named config
-
-# Build rule for target.
-config: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) config
-.PHONY : config
-
-# fast build rule for target.
-config\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\build
-.PHONY : config\fast
 
 #=============================================================================
 # Target rules for targets named net_transport
@@ -965,7 +965,6 @@ src\app\config\config.obj: src\app\config\config.c.obj
 
 # target to build an object file
 src\app\config\config.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\src\app\config\config.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\app\config\config.c.obj
 .PHONY : src\app\config\config.c.obj
 
@@ -974,7 +973,6 @@ src\app\config\config.i: src\app\config\config.c.i
 
 # target to preprocess a source file
 src\app\config\config.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\src\app\config\config.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\app\config\config.c.i
 .PHONY : src\app\config\config.c.i
 
@@ -983,7 +981,6 @@ src\app\config\config.s: src\app\config\config.c.s
 
 # target to generate assembly for a file
 src\app\config\config.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\src\app\config\config.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\app\config\config.c.s
 .PHONY : src\app\config\config.c.s
 
@@ -3232,13 +3229,13 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
+	@echo ... config_build
 	@echo ... platform_build
 	@echo ... branch_coverage_test
 	@echo ... channel_state
 	@echo ... client_state
 	@echo ... command_handlers
 	@echo ... conf_whitebox_test
-	@echo ... config
 	@echo ... config_module_test
 	@echo ... core_runtime
 	@echo ... core_runtime_test

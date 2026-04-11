@@ -57,6 +57,7 @@ all: CMakeFiles\ngtool.dir\all
 all: CMakeFiles\ngipaddr.dir\all
 all: CMakeFiles\core_runtime.dir\all
 all: CMakeFiles\platform_build.dir\all
+all: CMakeFiles\config_build.dir\all
 all: CMakeFiles\irc_protocol.dir\all
 all: CMakeFiles\client_state.dir\all
 all: CMakeFiles\channel_state.dir\all
@@ -64,7 +65,6 @@ all: CMakeFiles\command_handlers.dir\all
 all: CMakeFiles\nghost.dir\all
 all: CMakeFiles\ngircd_impl.dir\all
 all: CMakeFiles\logging.dir\all
-all: CMakeFiles\config.dir\all
 all: CMakeFiles\net_transport.dir\all
 all: CMakeFiles\resolver.dir\all
 all: CMakeFiles\server_app.dir\all
@@ -97,6 +97,7 @@ codegen: CMakeFiles\ngtool.dir\codegen
 codegen: CMakeFiles\ngipaddr.dir\codegen
 codegen: CMakeFiles\core_runtime.dir\codegen
 codegen: CMakeFiles\platform_build.dir\codegen
+codegen: CMakeFiles\config_build.dir\codegen
 codegen: CMakeFiles\irc_protocol.dir\codegen
 codegen: CMakeFiles\client_state.dir\codegen
 codegen: CMakeFiles\channel_state.dir\codegen
@@ -104,7 +105,6 @@ codegen: CMakeFiles\command_handlers.dir\codegen
 codegen: CMakeFiles\nghost.dir\codegen
 codegen: CMakeFiles\ngircd_impl.dir\codegen
 codegen: CMakeFiles\logging.dir\codegen
-codegen: CMakeFiles\config.dir\codegen
 codegen: CMakeFiles\net_transport.dir\codegen
 codegen: CMakeFiles\resolver.dir\codegen
 codegen: CMakeFiles\server_app.dir\codegen
@@ -169,6 +169,7 @@ clean: CMakeFiles\ngtool.dir\clean
 clean: CMakeFiles\ngipaddr.dir\clean
 clean: CMakeFiles\core_runtime.dir\clean
 clean: CMakeFiles\platform_build.dir\clean
+clean: CMakeFiles\config_build.dir\clean
 clean: CMakeFiles\irc_protocol.dir\clean
 clean: CMakeFiles\client_state.dir\clean
 clean: CMakeFiles\channel_state.dir\clean
@@ -176,7 +177,6 @@ clean: CMakeFiles\command_handlers.dir\clean
 clean: CMakeFiles\nghost.dir\clean
 clean: CMakeFiles\ngircd_impl.dir\clean
 clean: CMakeFiles\logging.dir\clean
-clean: CMakeFiles\config.dir\clean
 clean: CMakeFiles\net_transport.dir\clean
 clean: CMakeFiles\resolver.dir\clean
 clean: CMakeFiles\server_app.dir\clean
@@ -1202,12 +1202,12 @@ CMakeFiles\ngipaddr.dir\clean:
 CMakeFiles\core_runtime.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\core_runtime.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\core_runtime.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\core_runtime.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\core_runtime.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=18 "Built target core_runtime"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=17,18 "Built target core_runtime"
 .PHONY : CMakeFiles\core_runtime.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\core_runtime.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\core_runtime.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\core_runtime.dir\rule
@@ -1219,7 +1219,7 @@ core_runtime: CMakeFiles\core_runtime.dir\rule
 # codegen rule for target.
 CMakeFiles\core_runtime.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\core_runtime.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\core_runtime.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=18 "Finished codegen for target core_runtime"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=17,18 "Finished codegen for target core_runtime"
 .PHONY : CMakeFiles\core_runtime.dir\codegen
 
 # clean rule for target.
@@ -1260,6 +1260,38 @@ CMakeFiles\platform_build.dir\clean:
 .PHONY : CMakeFiles\platform_build.dir\clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/config_build.dir
+
+# All Build rule for target.
+CMakeFiles\config_build.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_build.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_build.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=13 "Built target config_build"
+.PHONY : CMakeFiles\config_build.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\config_build.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\config_build.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
+.PHONY : CMakeFiles\config_build.dir\rule
+
+# Convenience name for target.
+config_build: CMakeFiles\config_build.dir\rule
+.PHONY : config_build
+
+# codegen rule for target.
+CMakeFiles\config_build.dir\codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_build.dir\codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=13 "Finished codegen for target config_build"
+.PHONY : CMakeFiles\config_build.dir\codegen
+
+# clean rule for target.
+CMakeFiles\config_build.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_build.dir\clean
+.PHONY : CMakeFiles\config_build.dir\clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/irc_protocol.dir
 
 # All Build rule for target.
@@ -1271,7 +1303,7 @@ CMakeFiles\irc_protocol.dir\all: CMakeFiles\core_runtime.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\irc_protocol.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\irc_protocol.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\irc_protocol.dir\rule
@@ -1303,7 +1335,7 @@ CMakeFiles\client_state.dir\all: CMakeFiles\core_runtime.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\client_state.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\client_state.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\client_state.dir\rule
@@ -1335,7 +1367,7 @@ CMakeFiles\channel_state.dir\all: CMakeFiles\core_runtime.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\channel_state.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\channel_state.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\channel_state.dir\rule
@@ -1367,7 +1399,7 @@ CMakeFiles\command_handlers.dir\all: CMakeFiles\core_runtime.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\command_handlers.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\command_handlers.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\command_handlers.dir\rule
@@ -1394,12 +1426,12 @@ CMakeFiles\command_handlers.dir\clean:
 CMakeFiles\nghost.dir\all: CMakeFiles\core_runtime.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\nghost.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nghost.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\nghost.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nghost.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=55 "Built target nghost"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=54,55 "Built target nghost"
 .PHONY : CMakeFiles\nghost.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\nghost.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\nghost.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\nghost.dir\rule
@@ -1411,7 +1443,7 @@ nghost: CMakeFiles\nghost.dir\rule
 # codegen rule for target.
 CMakeFiles\nghost.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\nghost.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nghost.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=55 "Finished codegen for target nghost"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=54,55 "Finished codegen for target nghost"
 .PHONY : CMakeFiles\nghost.dir\codegen
 
 # clean rule for target.
@@ -1423,10 +1455,10 @@ CMakeFiles\nghost.dir\clean:
 # Target rules for target CMakeFiles/ngircd_impl.dir
 
 # All Build rule for target.
-CMakeFiles\ngircd_impl.dir\all: CMakeFiles\ngportab.dir\all
-CMakeFiles\ngircd_impl.dir\all: CMakeFiles\ngtool.dir\all
 CMakeFiles\ngircd_impl.dir\all: CMakeFiles\ngipaddr.dir\all
 CMakeFiles\ngircd_impl.dir\all: CMakeFiles\platform_build.dir\all
+CMakeFiles\ngircd_impl.dir\all: CMakeFiles\ngportab.dir\all
+CMakeFiles\ngircd_impl.dir\all: CMakeFiles\ngtool.dir\all
 CMakeFiles\ngircd_impl.dir\all: CMakeFiles\core_runtime.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\build
@@ -1435,7 +1467,7 @@ CMakeFiles\ngircd_impl.dir\all: CMakeFiles\core_runtime.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\ngircd_impl.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\ngircd_impl.dir\rule
@@ -1459,11 +1491,11 @@ CMakeFiles\ngircd_impl.dir\clean:
 # Target rules for target CMakeFiles/logging.dir
 
 # All Build rule for target.
-CMakeFiles\logging.dir\all: CMakeFiles\ngircd_impl.dir\all
 CMakeFiles\logging.dir\all: CMakeFiles\core_runtime.dir\all
+CMakeFiles\logging.dir\all: CMakeFiles\ngircd_impl.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=41,42 "Built target logging"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=41 "Built target logging"
 .PHONY : CMakeFiles\logging.dir\all
 
 # Build rule for subdir invocation for target.
@@ -1480,7 +1512,7 @@ logging: CMakeFiles\logging.dir\rule
 # codegen rule for target.
 CMakeFiles\logging.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=41,42 "Finished codegen for target logging"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=41 "Finished codegen for target logging"
 .PHONY : CMakeFiles\logging.dir\codegen
 
 # clean rule for target.
@@ -1489,52 +1521,19 @@ CMakeFiles\logging.dir\clean:
 .PHONY : CMakeFiles\logging.dir\clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/config.dir
-
-# All Build rule for target.
-CMakeFiles\config.dir\all: CMakeFiles\ngircd_impl.dir\all
-CMakeFiles\config.dir\all: CMakeFiles\core_runtime.dir\all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=13 "Built target config"
-.PHONY : CMakeFiles\config.dir\all
-
-# Build rule for subdir invocation for target.
-CMakeFiles\config.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 35
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
-.PHONY : CMakeFiles\config.dir\rule
-
-# Convenience name for target.
-config: CMakeFiles\config.dir\rule
-.PHONY : config
-
-# codegen rule for target.
-CMakeFiles\config.dir\codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=13 "Finished codegen for target config"
-.PHONY : CMakeFiles\config.dir\codegen
-
-# clean rule for target.
-CMakeFiles\config.dir\clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config.dir\clean
-.PHONY : CMakeFiles\config.dir\clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/net_transport.dir
 
 # All Build rule for target.
-CMakeFiles\net_transport.dir\all: CMakeFiles\ngircd_impl.dir\all
 CMakeFiles\net_transport.dir\all: CMakeFiles\core_runtime.dir\all
+CMakeFiles\net_transport.dir\all: CMakeFiles\ngircd_impl.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=54 "Built target net_transport"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=53 "Built target net_transport"
 .PHONY : CMakeFiles\net_transport.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\net_transport.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\net_transport.dir\rule
@@ -1546,7 +1545,7 @@ net_transport: CMakeFiles\net_transport.dir\rule
 # codegen rule for target.
 CMakeFiles\net_transport.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=54 "Finished codegen for target net_transport"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=53 "Finished codegen for target net_transport"
 .PHONY : CMakeFiles\net_transport.dir\codegen
 
 # clean rule for target.
@@ -1558,8 +1557,8 @@ CMakeFiles\net_transport.dir\clean:
 # Target rules for target CMakeFiles/resolver.dir
 
 # All Build rule for target.
-CMakeFiles\resolver.dir\all: CMakeFiles\ngircd_impl.dir\all
 CMakeFiles\resolver.dir\all: CMakeFiles\core_runtime.dir\all
+CMakeFiles\resolver.dir\all: CMakeFiles\ngircd_impl.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\resolver.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\resolver.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\resolver.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\resolver.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=95 "Built target resolver"
@@ -1567,7 +1566,7 @@ CMakeFiles\resolver.dir\all: CMakeFiles\core_runtime.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\resolver.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\resolver.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\resolver.dir\rule
@@ -1591,12 +1590,12 @@ CMakeFiles\resolver.dir\clean:
 # Target rules for target CMakeFiles/server_app.dir
 
 # All Build rule for target.
+CMakeFiles\server_app.dir\all: CMakeFiles\config_build.dir\all
 CMakeFiles\server_app.dir\all: CMakeFiles\ngportab.dir\all
 CMakeFiles\server_app.dir\all: CMakeFiles\ngtool.dir\all
-CMakeFiles\server_app.dir\all: CMakeFiles\ngircd_impl.dir\all
 CMakeFiles\server_app.dir\all: CMakeFiles\core_runtime.dir\all
-CMakeFiles\server_app.dir\all: CMakeFiles\config.dir\all
 CMakeFiles\server_app.dir\all: CMakeFiles\net_transport.dir\all
+CMakeFiles\server_app.dir\all: CMakeFiles\ngircd_impl.dir\all
 CMakeFiles\server_app.dir\all: CMakeFiles\logging.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_app.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\server_app.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_app.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\server_app.dir\build
@@ -1629,13 +1628,13 @@ CMakeFiles\server_app.dir\clean:
 # Target rules for target CMakeFiles/ngircd.dir
 
 # All Build rule for target.
+CMakeFiles\ngircd.dir\all: CMakeFiles\ngipaddr.dir\all
 CMakeFiles\ngircd.dir\all: CMakeFiles\ngportab.dir\all
 CMakeFiles\ngircd.dir\all: CMakeFiles\ngtool.dir\all
-CMakeFiles\ngircd.dir\all: CMakeFiles\ngipaddr.dir\all
-CMakeFiles\ngircd.dir\all: CMakeFiles\ngircd_impl.dir\all
 CMakeFiles\ngircd.dir\all: CMakeFiles\core_runtime.dir\all
-CMakeFiles\ngircd.dir\all: CMakeFiles\nghost.dir\all
 CMakeFiles\ngircd.dir\all: CMakeFiles\server_app.dir\all
+CMakeFiles\ngircd.dir\all: CMakeFiles\nghost.dir\all
+CMakeFiles\ngircd.dir\all: CMakeFiles\ngircd_impl.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=57,58 "Built target ngircd"
@@ -1643,7 +1642,7 @@ CMakeFiles\ngircd.dir\all: CMakeFiles\server_app.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\ngircd.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\ngircd.dir\rule
@@ -1670,7 +1669,7 @@ CMakeFiles\ngircd.dir\clean:
 CMakeFiles\module_iface_test.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=52,53 "Built target module_iface_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=51,52 "Built target module_iface_test"
 .PHONY : CMakeFiles\module_iface_test.dir\all
 
 # Build rule for subdir invocation for target.
@@ -1687,7 +1686,7 @@ module_iface_test: CMakeFiles\module_iface_test.dir\rule
 # codegen rule for target.
 CMakeFiles\module_iface_test.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=52,53 "Finished codegen for target module_iface_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=51,52 "Finished codegen for target module_iface_test"
 .PHONY : CMakeFiles\module_iface_test.dir\codegen
 
 # clean rule for target.
@@ -1699,9 +1698,9 @@ CMakeFiles\module_iface_test.dir\clean:
 # Target rules for target CMakeFiles/conf_whitebox_test.dir
 
 # All Build rule for target.
+CMakeFiles\conf_whitebox_test.dir\all: CMakeFiles\ngipaddr.dir\all
 CMakeFiles\conf_whitebox_test.dir\all: CMakeFiles\ngportab.dir\all
 CMakeFiles\conf_whitebox_test.dir\all: CMakeFiles\ngtool.dir\all
-CMakeFiles\conf_whitebox_test.dir\all: CMakeFiles\ngipaddr.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=10,11,12 "Built target conf_whitebox_test"
@@ -1733,17 +1732,17 @@ CMakeFiles\conf_whitebox_test.dir\clean:
 # Target rules for target CMakeFiles/log_io_resolver_test.dir
 
 # All Build rule for target.
+CMakeFiles\log_io_resolver_test.dir\all: CMakeFiles\ngipaddr.dir\all
 CMakeFiles\log_io_resolver_test.dir\all: CMakeFiles\ngportab.dir\all
 CMakeFiles\log_io_resolver_test.dir\all: CMakeFiles\ngtool.dir\all
-CMakeFiles\log_io_resolver_test.dir\all: CMakeFiles\ngipaddr.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=37,38,39,40 "Built target log_io_resolver_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=36,37,38,39,40 "Built target log_io_resolver_test"
 .PHONY : CMakeFiles\log_io_resolver_test.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\log_io_resolver_test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\log_io_resolver_test.dir\rule
@@ -1755,7 +1754,7 @@ log_io_resolver_test: CMakeFiles\log_io_resolver_test.dir\rule
 # codegen rule for target.
 CMakeFiles\log_io_resolver_test.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=37,38,39,40 "Finished codegen for target log_io_resolver_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=36,37,38,39,40 "Finished codegen for target log_io_resolver_test"
 .PHONY : CMakeFiles\log_io_resolver_test.dir\codegen
 
 # clean rule for target.
@@ -1866,12 +1865,12 @@ CMakeFiles\join_check_test.dir\clean:
 CMakeFiles\join_error_test.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=34,35,36 "Built target join_error_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=34,35 "Built target join_error_test"
 .PHONY : CMakeFiles\join_error_test.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\join_error_test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\join_error_test.dir\rule
@@ -1883,7 +1882,7 @@ join_error_test: CMakeFiles\join_error_test.dir\rule
 # codegen rule for target.
 CMakeFiles\join_error_test.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=34,35,36 "Finished codegen for target join_error_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=34,35 "Finished codegen for target join_error_test"
 .PHONY : CMakeFiles\join_error_test.dir\codegen
 
 # clean rule for target.
@@ -2058,12 +2057,12 @@ CMakeFiles\branch_coverage_test.dir\clean:
 CMakeFiles\message_check_test.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=50,51 "Built target message_check_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=50 "Built target message_check_test"
 .PHONY : CMakeFiles\message_check_test.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\message_check_test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\message_check_test.dir\rule
@@ -2075,7 +2074,7 @@ message_check_test: CMakeFiles\message_check_test.dir\rule
 # codegen rule for target.
 CMakeFiles\message_check_test.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=50,51 "Finished codegen for target message_check_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=50 "Finished codegen for target message_check_test"
 .PHONY : CMakeFiles\message_check_test.dir\codegen
 
 # clean rule for target.
@@ -2090,12 +2089,12 @@ CMakeFiles\message_check_test.dir\clean:
 CMakeFiles\full_coverage_test.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=21,22,23,24,25,26,27 "Built target full_coverage_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=21,22,23,24,25,26 "Built target full_coverage_test"
 .PHONY : CMakeFiles\full_coverage_test.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\full_coverage_test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\full_coverage_test.dir\rule
@@ -2107,7 +2106,7 @@ full_coverage_test: CMakeFiles\full_coverage_test.dir\rule
 # codegen rule for target.
 CMakeFiles\full_coverage_test.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=21,22,23,24,25,26,27 "Finished codegen for target full_coverage_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=21,22,23,24,25,26 "Finished codegen for target full_coverage_test"
 .PHONY : CMakeFiles\full_coverage_test.dir\codegen
 
 # clean rule for target.
@@ -2154,12 +2153,12 @@ CMakeFiles\core_runtime_test.dir\clean:
 CMakeFiles\host_wiring_test.dir\all: CMakeFiles\core_runtime.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\host_wiring_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\host_wiring_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\host_wiring_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\host_wiring_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=28 "Built target host_wiring_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=27,28 "Built target host_wiring_test"
 .PHONY : CMakeFiles\host_wiring_test.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\host_wiring_test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\host_wiring_test.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\host_wiring_test.dir\rule
@@ -2171,7 +2170,7 @@ host_wiring_test: CMakeFiles\host_wiring_test.dir\rule
 # codegen rule for target.
 CMakeFiles\host_wiring_test.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\host_wiring_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\host_wiring_test.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=28 "Finished codegen for target host_wiring_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=27,28 "Finished codegen for target host_wiring_test"
 .PHONY : CMakeFiles\host_wiring_test.dir\codegen
 
 # clean rule for target.
@@ -2186,12 +2185,12 @@ CMakeFiles\host_wiring_test.dir\clean:
 CMakeFiles\logging_module_test.dir\all: CMakeFiles\core_runtime.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=43 "Built target logging_module_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=42,43 "Built target logging_module_test"
 .PHONY : CMakeFiles\logging_module_test.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\logging_module_test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\logging_module_test.dir\rule
@@ -2203,7 +2202,7 @@ logging_module_test: CMakeFiles\logging_module_test.dir\rule
 # codegen rule for target.
 CMakeFiles\logging_module_test.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=43 "Finished codegen for target logging_module_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=42,43 "Finished codegen for target logging_module_test"
 .PHONY : CMakeFiles\logging_module_test.dir\codegen
 
 # clean rule for target.
@@ -2219,7 +2218,7 @@ CMakeFiles\config_module_test.dir\all: CMakeFiles\ngportab.dir\all
 CMakeFiles\config_module_test.dir\all: CMakeFiles\core_runtime.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=14,15,16,17 "Built target config_module_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=14,15,16 "Built target config_module_test"
 .PHONY : CMakeFiles\config_module_test.dir\all
 
 # Build rule for subdir invocation for target.
@@ -2236,7 +2235,7 @@ config_module_test: CMakeFiles\config_module_test.dir\rule
 # codegen rule for target.
 CMakeFiles\config_module_test.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=14,15,16,17 "Finished codegen for target config_module_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=14,15,16 "Finished codegen for target config_module_test"
 .PHONY : CMakeFiles\config_module_test.dir\codegen
 
 # clean rule for target.
@@ -2256,7 +2255,7 @@ CMakeFiles\platform_module_test.dir\all: CMakeFiles\core_runtime.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\platform_module_test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\platform_module_test.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\develop\ngircd\build\CMakeFiles 0
 .PHONY : CMakeFiles\platform_module_test.dir\rule
@@ -2280,8 +2279,8 @@ CMakeFiles\platform_module_test.dir\clean:
 # Target rules for target CMakeFiles/server_app_unit_test.dir
 
 # All Build rule for target.
+CMakeFiles\server_app_unit_test.dir\all: CMakeFiles\config_build.dir\all
 CMakeFiles\server_app_unit_test.dir\all: CMakeFiles\core_runtime.dir\all
-CMakeFiles\server_app_unit_test.dir\all: CMakeFiles\config.dir\all
 CMakeFiles\server_app_unit_test.dir\all: CMakeFiles\net_transport.dir\all
 CMakeFiles\server_app_unit_test.dir\all: CMakeFiles\server_app.dir\all
 CMakeFiles\server_app_unit_test.dir\all: CMakeFiles\logging.dir\all

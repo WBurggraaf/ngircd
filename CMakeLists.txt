@@ -82,40 +82,48 @@ target_include_directories(core_runtime PUBLIC ${SHARED_INC})
 target_compile_definitions(core_runtime PRIVATE CORE_RUNTIME_BUILD)
 set_target_properties(core_runtime PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
+function(stage_managed_native_library target_name publish_dir publish_base)
+    set(out_dir "${CMAKE_BINARY_DIR}/${target_name}_managed")
+    set(pub_dll "${publish_dir}/${publish_base}.dll")
+    set(pub_lib "${publish_dir}/${publish_base}.lib")
+    set(out_dll "${out_dir}/${target_name}.dll")
+    set(out_lib "${out_dir}/${target_name}.lib")
+
+    add_custom_command(
+        OUTPUT "${out_dll}" "${out_lib}"
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${out_dir}"
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different "${pub_dll}" "${out_dll}"
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different "${pub_lib}" "${out_lib}"
+        DEPENDS "${pub_dll}" "${pub_lib}"
+        COMMENT "Staging managed ${target_name}.dll"
+        VERBATIM
+    )
+
+    add_custom_target(${target_name}_build ALL DEPENDS "${out_dll}" "${out_lib}")
+
+    add_library(${target_name} SHARED IMPORTED GLOBAL)
+    set_target_properties(${target_name} PROPERTIES
+        IMPORTED_LOCATION "${out_dll}"
+        IMPORTED_IMPLIB "${out_lib}"
+    )
+    add_dependencies(${target_name} ${target_name}_build)
+endfunction()
+
 # ---------------------------------------------------------------------------
 # platform.dll  — NativeAOT managed implementation, still a native DLL to C.
-#
-# The managed project is published outside the CMake/NMake graph because the
-# NativeAOT task host is not reliable under this generator. The custom command
-# below copies the published native artifacts into the build tree so NMake has
-# a concrete file-producing rule to follow.
 # ---------------------------------------------------------------------------
 
-set(PLATFORM_OUT_DIR "${CMAKE_BINARY_DIR}/platform_managed")
-set(PLATFORM_PUB_DIR "${CMAKE_SOURCE_DIR}/src/platform/bin/x86/Release/net10.0/win-x64/native")
-set(PLATFORM_PUB_DLL "${PLATFORM_PUB_DIR}/Platform.dll")
-set(PLATFORM_PUB_LIB "${PLATFORM_PUB_DIR}/Platform.lib")
-set(PLATFORM_DLL "${PLATFORM_OUT_DIR}/platform.dll")
-set(PLATFORM_LIB "${PLATFORM_OUT_DIR}/platform.lib")
-
-add_custom_command(
-    OUTPUT "${PLATFORM_DLL}" "${PLATFORM_LIB}"
-    COMMAND ${CMAKE_COMMAND} -E make_directory "${PLATFORM_OUT_DIR}"
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different "${PLATFORM_PUB_DLL}" "${PLATFORM_DLL}"
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different "${PLATFORM_PUB_LIB}" "${PLATFORM_LIB}"
-    DEPENDS "${PLATFORM_PUB_DLL}" "${PLATFORM_PUB_LIB}"
-    COMMENT "Staging managed platform.dll"
-    VERBATIM
+stage_managed_native_library(
+    platform
+    "${CMAKE_SOURCE_DIR}/src/platform/bin/x86/Release/net10.0/win-x64/native"
+    "Platform"
 )
 
-add_custom_target(platform_build ALL DEPENDS "${PLATFORM_DLL}" "${PLATFORM_LIB}")
-
-add_library(platform SHARED IMPORTED GLOBAL)
-set_target_properties(platform PROPERTIES
-    IMPORTED_LOCATION "${PLATFORM_DLL}"
-    IMPORTED_IMPLIB "${PLATFORM_LIB}"
+stage_managed_native_library(
+    config
+    "${CMAKE_SOURCE_DIR}/src/app/config/bin/x86/Release/net10.0/win-x64/native"
+    "Config"
 )
-add_dependencies(platform platform_build)
 
 # ---------------------------------------------------------------------------
 # Stub DLLs — no legacy deps, C# P/Invoke ready today
@@ -295,13 +303,6 @@ target_include_directories(logging PUBLIC ${SHARED_INC}
     PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
 target_compile_definitions(logging PRIVATE LOGGING_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(logging PUBLIC core_runtime PRIVATE ngircd_impl)
-
-add_library(config SHARED ${SHARED_SRC}/app/config/config.c)
-target_include_directories(config PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC}
-            ${SUPPORT_SRC} ${SUPPORT_SRC}/ipaddr ${SUPPORT_SRC}/tool ${SUPPORT_SRC}/portab)
-target_compile_definitions(config PRIVATE CONFIG_BUILD NGIRCD_IMPL_CONSUMER)
-target_link_libraries(config PUBLIC core_runtime PRIVATE ngircd_impl)
 
 add_library(net_transport SHARED ${SHARED_SRC}/net/transport/net_transport.c)
 target_include_directories(net_transport PUBLIC ${SHARED_INC}

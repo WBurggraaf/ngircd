@@ -31,6 +31,7 @@ C:/develop/ngircd/build/CMakeFiles/ngtool.dir
 C:/develop/ngircd/build/CMakeFiles/ngipaddr.dir
 C:/develop/ngircd/build/CMakeFiles/core_runtime.dir
 C:/develop/ngircd/build/CMakeFiles/platform_build.dir
+C:/develop/ngircd/build/CMakeFiles/config_build.dir
 C:/develop/ngircd/build/CMakeFiles/irc_protocol.dir
 C:/develop/ngircd/build/CMakeFiles/client_state.dir
 C:/develop/ngircd/build/CMakeFiles/channel_state.dir
@@ -38,7 +39,6 @@ C:/develop/ngircd/build/CMakeFiles/command_handlers.dir
 C:/develop/ngircd/build/CMakeFiles/nghost.dir
 C:/develop/ngircd/build/CMakeFiles/ngircd_impl.dir
 C:/develop/ngircd/build/CMakeFiles/logging.dir
-C:/develop/ngircd/build/CMakeFiles/config.dir
 C:/develop/ngircd/build/CMakeFiles/net_transport.dir
 C:/develop/ngircd/build/CMakeFiles/resolver.dir
 C:/develop/ngircd/build/CMakeFiles/server_app.dir
