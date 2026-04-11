@@ -126,11 +126,7 @@ add_library(ngircd_impl SHARED
     ${ORIG_SRC}/ngircd/core/client.c
     ${ORIG_SRC}/ngircd/core/client-cap.c
     ${ORIG_SRC}/ngircd/core/conf.c
-    ${ORIG_SRC}/ngircd/net/conn.c
-    ${ORIG_SRC}/ngircd/net/conn-encoding.c
-    ${ORIG_SRC}/ngircd/net/conn-func.c
     ${ORIG_SRC}/ngircd/core/hash.c
-    ${ORIG_SRC}/ngircd/net/io.c
     ${ORIG_SRC}/ngircd/proto/irc.c
     ${ORIG_SRC}/ngircd/proto/irc-cap.c
     ${ORIG_SRC}/ngircd/proto/irc-channel.c
@@ -223,11 +219,33 @@ target_include_directories(config PUBLIC ${SHARED_INC}
 target_compile_definitions(config PRIVATE CONFIG_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(config PUBLIC core_runtime PRIVATE ngircd_impl)
 
-add_library(net_transport SHARED ${SHARED_SRC}/net_transport/net_transport.c)
+add_library(net_transport SHARED
+    ${SHARED_SRC}/net_transport/net_transport.c
+    ${ORIG_SRC}/ngircd/net/conn.c
+    ${ORIG_SRC}/ngircd/net/conn-encoding.c
+    ${ORIG_SRC}/ngircd/net/conn-func.c
+    ${ORIG_SRC}/ngircd/net/io.c
+)
 target_include_directories(net_transport PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${ORIG_SRC} ${ORIG_SRC}/ngircd ${ORIG_SRC}/portab)
-target_compile_definitions(net_transport PRIVATE NET_TRANSPORT_BUILD NGIRCD_IMPL_CONSUMER)
-target_link_libraries(net_transport PUBLIC core_runtime PRIVATE ngircd_impl)
+    PRIVATE ${WIN32_INC} ${ORIG_SRC} ${ORIG_SRC}/ngircd
+            ${ORIG_SRC}/portab ${ORIG_SRC}/tool ${ORIG_SRC}/ipaddr)
+target_compile_definitions(net_transport PRIVATE NET_TRANSPORT_BUILD NGIRCD_IMPL_CONSUMER
+    _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+target_link_libraries(net_transport PUBLIC core_runtime
+    PRIVATE ngircd_impl ngportab ngtool ngipaddr ws2_32)
+if(MSVC)
+    target_compile_options(net_transport PRIVATE
+        /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090)
+    target_link_options(net_transport PRIVATE /DEBUG)
+endif()
+
+# Phase 2: ngircd_impl proto files call Conn_*/io_* which now live in net_transport.dll.
+# CMake forbids SHARED→SHARED cycles in target_link_libraries. Use raw import-lib reference
+# instead. add_dependencies ensures net_transport.lib exists before ngircd_impl links.
+add_dependencies(ngircd_impl net_transport)
+if(MSVC)
+    target_link_options(ngircd_impl PRIVATE "$<TARGET_LINKER_FILE:net_transport>")
+endif()
 
 add_library(resolver SHARED ${SHARED_SRC}/resolver/resolver.c)
 target_include_directories(resolver PUBLIC ${SHARED_INC}
