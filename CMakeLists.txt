@@ -4,9 +4,20 @@ project(ngircd C)
 set(CMAKE_C_STANDARD 99)
 include(CTest)
 
+# MSVC command prompts on this machine are exposing x86 library paths even
+# when the compiler/linker are x64. Prepend the matching x64 directories so
+# link.exe resolves the correct runtime and Windows SDK libraries.
+if(MSVC AND CMAKE_SIZEOF_VOID_P EQUAL 8)
+    file(TO_CMAKE_PATH "$ENV{VCToolsInstallDir}lib/x64" MSVC_X64_LIB_DIR)
+    file(TO_CMAKE_PATH "$ENV{UniversalCRTSdkDir}lib/$ENV{UCRTVersion}/ucrt/x64" UCRT_X64_LIB_DIR)
+    file(TO_CMAKE_PATH "$ENV{WindowsSdkDir}lib/$ENV{WindowsSDKVersion}/um/x64" WINSDK_X64_LIB_DIR)
+    link_directories("${MSVC_X64_LIB_DIR}" "${UCRT_X64_LIB_DIR}" "${WINSDK_X64_LIB_DIR}")
+endif()
+
 # Source directories
 set(SERVER_SRC "${CMAKE_SOURCE_DIR}/src/server")
 set(SERVER_ROOT "${CMAKE_SOURCE_DIR}/src/server")
+set(SERVER_CORE_INC "${CMAKE_SOURCE_DIR}/src/server/core")
 set(SERVER_CORE_INC "${CMAKE_SOURCE_DIR}/src/server/core")
 set(SERVER_CORE_MISC_INC "${CMAKE_SOURCE_DIR}/src/server/core/misc")
 set(SERVER_CORE_CHANNEL_INC "${CMAKE_SOURCE_DIR}/src/server/core/channel")
@@ -77,7 +88,7 @@ set_target_properties(core_runtime PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
 add_library(platform SHARED ${SHARED_SRC}/platform/platform.c)
 target_include_directories(platform PUBLIC ${SHARED_INC} PRIVATE ${WIN32_INC})
 target_compile_definitions(platform PRIVATE PLATFORM_BUILD)
-target_link_libraries(platform PUBLIC core_runtime)
+target_link_libraries(platform PUBLIC core_runtime ws2_32)
 set_target_properties(platform PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 # ---------------------------------------------------------------------------
@@ -368,7 +379,9 @@ if(BUILD_TESTING)
         ${SERVER_SRC}/core/module/module_iface.c
     )
     target_include_directories(module_iface_test PRIVATE
-        ${WIN32_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_CORE_MISC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_CORE_MISC_INC}
+        ${SERVER_NET_CONN_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     target_link_libraries(module_iface_test PRIVATE ws2_32)
     add_test(NAME module_iface_test COMMAND module_iface_test)
     if(MSVC)
@@ -384,7 +397,11 @@ if(BUILD_TESTING)
         ${SERVER_SRC}/core/module/module_iface.c
     )
     target_include_directories(conf_whitebox_test PRIVATE
-        ${WIN32_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool
+        ${WIN32_INC}
+        ${SERVER_CORE_CHANNEL_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC}
+        ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_CORE_MISC_INC}
+        ${SERVER_NET_CONN_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool
         ${SUPPORT_SRC}/ipaddr)
     target_compile_definitions(conf_whitebox_test PRIVATE NGIRCD_UNITTEST)
     target_compile_options(conf_whitebox_test PRIVATE
@@ -403,7 +420,13 @@ if(BUILD_TESTING)
         ${WIN32_SRC}/win32_resolve.c
     )
     target_include_directories(log_io_resolver_test PRIVATE
-        ${WIN32_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool
+        ${SHARED_INC} ${WIN32_INC} ${SERVER_CORE_MISC_INC} ${SERVER_CORE_CONFIG_INC}
+        ${SERVER_CORE_CHANNEL_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_LOGGING_INC}
+        ${SERVER_CORE_MODULE_INC}
+        ${SERVER_NET_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC}
+        ${SERVER_PROTO_INC} ${SERVER_PROTO_IRC_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_LOGIN_INC}
+        ${SERVER_PROTO_MESSAGE_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool
         ${SUPPORT_SRC}/ipaddr)
     target_compile_definitions(log_io_resolver_test PRIVATE NGIRCD_UNITTEST)
     target_compile_options(log_io_resolver_test PRIVATE
@@ -416,21 +439,24 @@ if(BUILD_TESTING)
         tests/login_state_test.c
         ${SERVER_SRC}/proto/login/login_state.c)
     target_include_directories(login_state_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_state_test COMMAND login_state_test)
 
     add_executable(login_check_test
         tests/login_check_test.c
         ${SERVER_SRC}/proto/login/login_check.c)
     target_include_directories(login_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_check_test COMMAND login_check_test)
 
     add_executable(join_check_test
         tests/join_check_test.c
         ${SERVER_SRC}/proto/join/join_check.c)
     target_include_directories(join_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_JOIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME join_check_test COMMAND join_check_test)
 
     add_executable(join_error_test
@@ -438,35 +464,42 @@ if(BUILD_TESTING)
         ${SERVER_SRC}/proto/join/join_error.c
         ${SERVER_SRC}/proto/join/join_check.c)
     target_include_directories(join_error_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_JOIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME join_error_test COMMAND join_error_test)
 
     add_executable(login_flow_test
         tests/login_flow_test.c
         ${SERVER_SRC}/proto/login/login_flow.c)
     target_include_directories(login_flow_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_flow_test COMMAND login_flow_test)
 
     add_executable(irc_cap_end_test
         tests/irc_cap_end_test.c
         ${SERVER_SRC}/proto/irc/irc-cap.c)
     target_include_directories(irc_cap_end_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_IRC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_CORE_INC} ${SERVER_PROTO_IRC_INC} ${SERVER_NET_CONN_INC}
+        ${SERVER_CORE_CHANNEL_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC}
+        ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME irc_cap_end_test COMMAND irc_cap_end_test)
 
     add_executable(nick_check_test
         tests/nick_check_test.c
         ${SERVER_SRC}/proto/nick/nick_check.c)
     target_include_directories(nick_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_NICK_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME nick_check_test COMMAND nick_check_test)
 
     add_executable(user_check_test
         tests/user_check_test.c
         ${SERVER_SRC}/proto/user/user_check.c)
     target_include_directories(user_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_USER_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_USER_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME user_check_test COMMAND user_check_test)
 
     add_executable(branch_coverage_test
@@ -479,14 +512,17 @@ if(BUILD_TESTING)
         ${SERVER_SRC}/proto/user/user_check.c
         ${SERVER_SRC}/proto/message/message_check.c)
     target_include_directories(branch_coverage_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SERVER_PROTO_MESSAGE_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SERVER_PROTO_MESSAGE_INC}
+        ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME branch_coverage_test COMMAND branch_coverage_test)
 
     add_executable(message_check_test
         tests/message_check_test.c
         ${SERVER_SRC}/proto/message/message_check.c)
     target_include_directories(message_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_MESSAGE_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_MESSAGE_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME message_check_test COMMAND message_check_test)
 
     add_executable(full_coverage_test
@@ -501,7 +537,9 @@ if(BUILD_TESTING)
         ${SERVER_SRC}/proto/message/message_check.c
         ${SERVER_SRC}/core/module/module_iface.c)
     target_include_directories(full_coverage_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SERVER_PROTO_MESSAGE_INC} ${SERVER_CORE_MODULE_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SERVER_PROTO_MESSAGE_INC}
+        ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     target_compile_options(full_coverage_test PRIVATE /W3 /wd4005)
     target_link_libraries(full_coverage_test PRIVATE ws2_32)
     add_test(NAME full_coverage_test COMMAND full_coverage_test)
@@ -578,6 +616,8 @@ if(BUILD_TESTING)
     )
     target_include_directories(logging_module_test PRIVATE
         ${SHARED_INC} ${SHARED_INC}/app ${WIN32_INC} ${SERVER_ROOT}
+        ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_CORE_MISC_INC}
+        ${SERVER_NET_CONN_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_CLIENT_INC}
         ${SERVER_SRC} ${SUPPORT_SRC}/portab)
     target_compile_definitions(logging_module_test PRIVATE
         LOGGING_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
@@ -599,6 +639,7 @@ if(BUILD_TESTING)
     )
     target_include_directories(config_module_test PRIVATE
         ${SHARED_INC} ${SHARED_INC}/app ${WIN32_INC} ${SERVER_ROOT}
+        ${SERVER_CORE_MISC_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MODULE_INC}
         ${SERVER_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool ${SUPPORT_SRC}/ipaddr)
     target_compile_definitions(config_module_test PRIVATE
         CONFIG_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)

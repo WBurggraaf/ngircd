@@ -10,7 +10,7 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stddef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/inttypes.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdint.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdbool.h
-C:/develop/ngircd/src/server/ngircd/proto/login_flow.h
+C:/develop/ngircd/src/server/proto/login/login_flow.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h

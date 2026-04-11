@@ -10,22 +10,22 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stddef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/inttypes.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdint.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdbool.h
-C:/develop/ngircd/src/server/ngircd/proto/login_check.h
-C:/develop/ngircd/src/server/ngircd/proto/join_check.h
-C:/develop/ngircd/src/server/ngircd/proto/join_error.h
-C:/develop/ngircd/src/server/ngircd/proto/login_flow.h
-C:/develop/ngircd/src/server/ngircd/proto/login_state.h
-C:/develop/ngircd/src/server/ngircd/conn.h
+C:/develop/ngircd/src/server/proto/login/login_check.h
+C:/develop/ngircd/src/server/proto/join/join_check.h
+C:/develop/ngircd/src/server/proto/join/join_error.h
+C:/develop/ngircd/src/server/proto/login/login_flow.h
+C:/develop/ngircd/src/server/proto/login/login_state.h
+C:/develop/ngircd/src/server/net/conn/conn.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
-C:/develop/ngircd/src/server/ngircd/conf-ssl.h
-C:/develop/ngircd/src/server/ngircd/client.h
-C:/develop/ngircd/src/server/ngircd/defines.h
-C:/develop/ngircd/src/server/ngircd/proc.h
-C:/develop/ngircd/src/server/ngircd/proto/nick_check.h
-C:/develop/ngircd/src/server/ngircd/proto/user_check.h
-C:/develop/ngircd/src/server/ngircd/proto/message_check.h
-C:/develop/ngircd/src/server/ngircd/module_iface.h
+C:/develop/ngircd/src/server/core/config/conf-ssl.h
+C:/develop/ngircd/src/server/core/client/client.h
+C:/develop/ngircd/src/server/core/misc/defines.h
+C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/server/proto/nick/nick_check.h
+C:/develop/ngircd/src/server/proto/user/user_check.h
+C:/develop/ngircd/src/server/proto/message/message_check.h
+C:/develop/ngircd/src/server/core/module/module_iface.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h

@@ -4,7 +4,7 @@
 # compile C with C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe
 C_DEFINES = -DCONFIG_BUILD -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS
 
-C_INCLUDES = -IC:\develop\ngircd\include -IC:\develop\ngircd\include\app -IC:\develop\ngircd\src\platform\windows\include -IC:\develop\ngircd\src\server -IC:\develop\ngircd\src\support\portab -IC:\develop\ngircd\src\support\tool -IC:\develop\ngircd\src\support\ipaddr -IC:\develop\ngircd\src\support
+C_INCLUDES = -IC:\develop\ngircd\include -IC:\develop\ngircd\include\app -IC:\develop\ngircd\src\platform\windows\include -IC:\develop\ngircd\src\server -IC:\develop\ngircd\src\server\core\misc -IC:\develop\ngircd\src\server\net\conn -IC:\develop\ngircd\src\server\core\client -IC:\develop\ngircd\src\server\core\config -IC:\develop\ngircd\src\server\core\module -IC:\develop\ngircd\src\support\portab -IC:\develop\ngircd\src\support\tool -IC:\develop\ngircd\src\support\ipaddr -IC:\develop\ngircd\src\support
 
 C_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090
 
