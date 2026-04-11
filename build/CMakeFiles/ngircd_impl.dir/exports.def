@@ -304,7 +304,6 @@ EXPORTS
 	Log_Init_Subprocess
 	Log_ReInit
 	Log_ServerNotice
-	Log_SetOps
 	Log_Subprocess
 	Login_Autojoin
 	Login_Check_Pass
@@ -368,7 +367,6 @@ EXPORTS
 	array_start
 	array_trunc
 	array_truncate
-	fprintf
 	io_close
 	io_dispatch
 	io_event_add

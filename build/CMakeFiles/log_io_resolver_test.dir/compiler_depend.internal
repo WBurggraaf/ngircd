@@ -194,9 +194,28 @@ CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stdio.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h
+ C:/develop/ngircd/src/server/core/misc/ngircd.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
- C:/develop/ngircd/src/platform/windows/include/unistd.h
+ C:/develop/ngircd/src/server/core/misc/defines.h
+ C:/develop/ngircd/src/state/connection/conn.h
+ C:/develop/ngircd/src/server/core/config/conf-ssl.h
+ C:/develop/ngircd/src/state/client/client.h
+ C:/develop/ngircd/src/state/connection/proc.h
+ C:/develop/ngircd/src/state/channel/channel.h
+ C:/develop/ngircd/src/server/proto/irc/irc-write.h
+ C:/develop/ngircd/src/server/core/config/conf.h
+ C:/develop/ngircd/src/server/core/misc/array.h
+ C:/develop/ngircd/src/support/tool/tool.h
+ C:/develop/ngircd/src/support/ipaddr/ng_ipaddr.h
+ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/assert.h
+ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/string.h
+ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memory.h
+ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_s.h
+ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/errno.h
+ C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime_string.h
+ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
+ C:/develop/ngircd/src/platform/windows/include/sys/socket.h
  C:/develop/ngircd/src/platform/windows/include/win32compat.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/winsock2.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winapifamily.h
@@ -217,12 +236,6 @@ CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/kernelspecs.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/basetsd.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/guiddef.h
- C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/string.h
- C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memory.h
- C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_s.h
- C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/errno.h
- C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime_string.h
- C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/pshpack4.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/poppack.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/pshpack4.h
@@ -323,7 +336,6 @@ CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj
  C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/limits.h
  C:/develop/ngircd/src/state/connection/io.h
  C:/develop/ngircd/src/server/core/module/module_iface.h
- C:/develop/ngircd/src/state/connection/proc.h
  C:/develop/ngircd/src/platform/windows/include/sys/time.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/process.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_startup.h
@@ -334,19 +346,6 @@ CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/direct.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wdirect.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/fcntl.h
- C:/develop/ngircd/src/server/core/misc/ngircd.h
- C:/develop/ngircd/src/server/core/misc/defines.h
- C:/develop/ngircd/src/state/connection/conn.h
- C:/develop/ngircd/src/server/core/config/conf-ssl.h
- C:/develop/ngircd/src/state/client/client.h
- C:/develop/ngircd/src/state/channel/channel.h
- C:/develop/ngircd/src/server/proto/irc/irc-write.h
- C:/develop/ngircd/src/server/core/config/conf.h
- C:/develop/ngircd/src/server/core/misc/array.h
- C:/develop/ngircd/src/support/tool/tool.h
- C:/develop/ngircd/src/support/ipaddr/ng_ipaddr.h
- C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/assert.h
- C:/develop/ngircd/src/platform/windows/include/sys/socket.h
  C:/develop/ngircd/src/platform/windows/include/netinet/in.h
  C:/develop/ngircd/src/platform/windows/include/arpa/inet.h
  C:/develop/ngircd/src/server/core/logging/log.h

@@ -34,8 +34,6 @@
 
 #include "module_iface.h"
 
-GLOBAL void Log_SetOps PARAMS((const NgLogOps *Ops));
-
 GLOBAL void Log_Init PARAMS(( bool Syslog_Mode ));
 GLOBAL void Log_Exit PARAMS(( void ));
 

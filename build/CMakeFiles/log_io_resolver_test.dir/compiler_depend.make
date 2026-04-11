@@ -193,9 +193,28 @@ CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Progr
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\ngircd.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\unistd.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\conn.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\client\client.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\proc.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\channel\channel.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\proto\irc\irc-write.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\array.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\support\tool\tool.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\socket.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\win32compat.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
@@ -216,12 +235,6 @@ CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Progr
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\kernelspecs.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\guiddef.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
@@ -322,7 +335,6 @@ CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Progr
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
@@ -333,19 +345,6 @@ CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Progr
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\ngircd.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\conn.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\client\client.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\channel\channel.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\proto\irc\irc-write.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\array.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\support\tool\tool.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\socket.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\netinet\in.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\arpa\inet.h
 CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\logging\log.h

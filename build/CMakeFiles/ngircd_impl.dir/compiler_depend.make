@@ -759,9 +759,28 @@ CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files\
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\ngircd.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\unistd.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\conn.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\client\client.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\proc.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\channel\channel.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\proto\irc\irc-write.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\array.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\support\tool\tool.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
+CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\socket.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\win32compat.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
@@ -782,12 +801,6 @@ CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files 
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\kernelspecs.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\guiddef.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
@@ -888,7 +901,6 @@ CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files 
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
@@ -899,19 +911,6 @@ CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files 
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\ngircd.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\connection\conn.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\client\client.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\state\channel\channel.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\proto\irc\irc-write.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\misc\array.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\support\tool\tool.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\socket.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\netinet\in.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\platform\windows\include\arpa\inet.h
 CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\logging\log.h

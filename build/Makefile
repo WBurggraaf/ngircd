@@ -1011,30 +1011,6 @@ src\app\host\host.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\host_wiring_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\host_wiring_test.dir\src\app\host\host.c.s
 .PHONY : src\app\host\host.c.s
 
-src\app\logging\logging.obj: src\app\logging\logging.c.obj
-.PHONY : src\app\logging\logging.obj
-
-# target to build an object file
-src\app\logging\logging.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj
-.PHONY : src\app\logging\logging.c.obj
-
-src\app\logging\logging.i: src\app\logging\logging.c.i
-.PHONY : src\app\logging\logging.i
-
-# target to preprocess a source file
-src\app\logging\logging.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.i
-.PHONY : src\app\logging\logging.c.i
-
-src\app\logging\logging.s: src\app\logging\logging.c.s
-.PHONY : src\app\logging\logging.s
-
-# target to generate assembly for a file
-src\app\logging\logging.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.s
-.PHONY : src\app\logging\logging.c.s
-
 src\app\server_app\server_app.obj: src\app\server_app\server_app.c.obj
 .PHONY : src\app\server_app\server_app.obj
 
@@ -3269,9 +3245,6 @@ help:
 	@echo ... src/app/host/host.obj
 	@echo ... src/app/host/host.i
 	@echo ... src/app/host/host.s
-	@echo ... src/app/logging/logging.obj
-	@echo ... src/app/logging/logging.i
-	@echo ... src/app/logging/logging.s
 	@echo ... src/app/server_app/server_app.obj
 	@echo ... src/app/server_app/server_app.i
 	@echo ... src/app/server_app/server_app.s

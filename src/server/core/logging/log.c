@@ -23,13 +23,6 @@
 # include <varargs.h>
 #endif
 #include <stdio.h>
-#include <sys/types.h>
-#include <time.h>
-#include <unistd.h>
-
-#ifdef SYSLOG
-# include <syslog.h>
-#endif
 
 #include "ngircd.h"
 #include "conn.h"
@@ -39,21 +32,6 @@
 
 #include "log.h"
 
-static bool Use_Syslog;
-
-static void
-Log_SetOps_Default(bool Syslog_Mode)
-{
-	Use_Syslog = Syslog_Mode;
-}
-
-GLOBAL void
-Log_SetOps(const NgLogOps *Ops)
-{
-	NgLog_SetOps(Ops);
-}
-
-
 static void
 Log_Message(int Level, const char *msg)
 {
@@ -61,19 +39,7 @@ Log_Message(int Level, const char *msg)
 
 	if (ops && ops->log) {
 		ops->log(Level, msg);
-		return;
 	}
-	if (!Use_Syslog) {
-		/* log to console */
-		fprintf(stdout, "[%ld:%d %4ld] %s\n", (long)getpid(), Level,
-				(long)(time(NULL) - NGIRCd_Start), msg);
-		fflush(stdout);
-	}
-#ifdef SYSLOG
-	else {
-		syslog(Level, "%s", msg);
-	}
-#endif
 }
 
 
@@ -88,24 +54,13 @@ Log_Init(bool Syslog_Mode)
 {
 	const NgLogOps *ops = NgLog_GetOps();
 
+	(void)Syslog_Mode;
 	LogDebug("Log_Init(%d) starting.", Syslog_Mode);
 	if (ops && ops->init) {
 		ops->init(Syslog_Mode);
-		return;
 	}
-	Log_SetOps_Default(Syslog_Mode);
-
-#ifdef SYSLOG
-#ifndef LOG_CONS     /* Kludge: mips-dec-ultrix4.5 has no LOG_CONS */
-#define LOG_CONS 0
-#endif
-#ifdef LOG_DAEMON
-	openlog(PACKAGE, LOG_CONS|LOG_PID, LOG_DAEMON);
-#else
-	openlog(PACKAGE, LOG_CONS|LOG_PID, 0);
-#endif
-#endif
-	Log(LOG_NOTICE, "%s starting ...", NGIRCd_Version);
+	if (ops && ops->log)
+		Log(LOG_NOTICE, "%s starting ...", NGIRCd_Version);
 } /* Log_Init */
 
 
@@ -120,15 +75,7 @@ Log_ReInit(void)
 	LogDebug("Log_ReInit() called.");
 	if (ops && ops->reinit) {
 		ops->reinit();
-		return;
 	}
-#ifdef SYSLOG
-#ifndef LOG_CONS     /* Kludge: mips-dec-ultrix4.5 has no LOG_CONS */
-#define LOG_CONS 0
-#endif
-	closelog();
-	openlog(PACKAGE, LOG_CONS|LOG_PID, Conf_SyslogFacility);
-#endif
 }
 
 
@@ -140,14 +87,11 @@ Log_Exit( void )
 	LogDebug("Log_Exit() called.");
 	if (ops && ops->exit) {
 		ops->exit();
-		return;
 	}
-	Log(LOG_NOTICE, "%s done%s, served %lu connection%s.", PACKAGE_NAME,
-	    NGIRCd_SignalRestart ? " (restarting)" : "", Conn_CountAccepted(),
-	    Conn_CountAccepted() == 1 ? "" : "s");
-#ifdef SYSLOG
-	closelog();
-#endif
+	if (ops && ops->log)
+		Log(LOG_NOTICE, "%s done%s, served %lu connection%s.", PACKAGE_NAME,
+		    NGIRCd_SignalRestart ? " (restarting)" : "", Conn_CountAccepted(),
+		    Conn_CountAccepted() == 1 ? "" : "s");
 } /* Log_Exit */
 
 
@@ -245,9 +189,6 @@ va_dcl
 GLOBAL void
 Log_Init_Subprocess(char UNUSED *Name)
 {
-#ifdef SYSLOG
-	openlog(PACKAGE, LOG_CONS|LOG_PID, Conf_SyslogFacility);
-#endif
 	Log_Subprocess(LOG_DEBUG, "%s sub-process starting, PID %ld.",
 		     Name, (long)getpid());
 }
@@ -258,9 +199,6 @@ Log_Exit_Subprocess(char UNUSED *Name)
 {
 	Log_Subprocess(LOG_DEBUG, "%s sub-process %ld done.",
 		     Name, (long)getpid());
-#ifdef SYSLOG
-	closelog( );
-#endif
 }
 
 

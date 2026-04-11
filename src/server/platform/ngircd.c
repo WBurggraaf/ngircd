@@ -25,6 +25,7 @@
 
 #include <assert.h>
 #include <errno.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -44,6 +45,7 @@
 #include "class.h"
 #include "channel.h"
 #include "log.h"
+#include "module_iface.h"
 #include "sighandlers.h"
 
 #include "host/host.h"
@@ -56,6 +58,74 @@ static void Show_Version PARAMS(( void ));
 static void Show_Help PARAMS(( void ));
 
 static void Fill_Version PARAMS(( void ));
+
+static const logging_api_t *s_logging_api = NULL;
+
+static void
+bridge_log_init(bool syslog_mode)
+{
+	if (s_logging_api && s_logging_api->init)
+		(void)s_logging_api->init(syslog_mode ? 1 : 0);
+}
+
+static void
+bridge_log_exit(void)
+{
+	if (s_logging_api && s_logging_api->shutdown)
+		s_logging_api->shutdown();
+}
+
+static void
+bridge_log_reinit(void)
+{
+	if (s_logging_api && s_logging_api->reinit)
+		s_logging_api->reinit();
+}
+
+static void
+bridge_log_message(int level, const char *message)
+{
+	if (s_logging_api && s_logging_api->log_message)
+		s_logging_api->log_message(level, message ? message : "");
+}
+
+static void
+bridge_log_debug(const char *message)
+{
+	if (s_logging_api && s_logging_api->debug_message)
+		s_logging_api->debug_message(message ? message : "");
+}
+
+static void
+bridge_log_fatal(const char *message)
+{
+	if (s_logging_api && s_logging_api->fatal_message)
+		s_logging_api->fatal_message(message ? message : "");
+}
+
+static const NgLogOps NgManagedLogOps = {
+	bridge_log_init,
+	bridge_log_exit,
+	bridge_log_reinit,
+	bridge_log_message,
+	bridge_log_debug
+};
+
+static void
+log_fatal(const char *fmt, ...)
+{
+	char msg[1024];
+	va_list ap;
+
+	va_start(ap, fmt);
+	vsnprintf(msg, sizeof msg, fmt, ap);
+	va_end(ap);
+
+	if (s_logging_api && s_logging_api->fatal_message)
+		bridge_log_fatal(msg);
+	else
+		Log(LOG_ALERT, "%s", msg);
+}
 
 /**
  * The main() function of ngIRCd.
@@ -100,21 +170,24 @@ main(int argc, const char *argv[])
 		char loader_err[256];
 		if (host_load_modules(NULL, &module_set,
 		                      loader_err, sizeof loader_err) != CORE_STATUS_OK) {
-			fprintf(stderr, "%s: %s\n", PACKAGE_NAME, loader_err);
+			log_fatal("%s: %s", PACKAGE_NAME, loader_err);
 			exit(1);
 		}
 	}
 	wiring = host_get_wiring_v1();
 	if (!wiring || wiring->wire(&module_set) != CORE_STATUS_OK) {
-		fprintf(stderr, "%s: host wiring validation failed!\n", PACKAGE_NAME);
+		log_fatal("%s: host wiring validation failed!", PACKAGE_NAME);
 		exit(1);
 	}
 	server_app_api = server_app_get_api_v1();
 	if (!server_app_api || server_app_api->api_major != 1u) {
-		fprintf(stderr, "%s: server_app API mismatch!\n", PACKAGE_NAME);
+		log_fatal("%s: server_app API mismatch!", PACKAGE_NAME);
 		exit(1);
 	}
 	config_api = module_set.config;
+	s_logging_api = module_set.logging;
+	if (s_logging_api)
+		NgLog_SetOps(&NgManagedLogOps);
 
 	/* parse conmmand line */
 	for (i = 1; i < argc; i++) {
@@ -228,22 +301,16 @@ main(int argc, const char *argv[])
 #endif
 
 				if (!ok) {
-					fprintf(stderr,
-						"%s: invalid option \"-%c\"!\n",
-						PACKAGE_NAME, argv[i][n]);
-					fprintf(stderr,
-						"Try \"%s --help\" for more information.\n",
-						PACKAGE_NAME);
+					log_fatal("%s: invalid option \"-%c\"!", PACKAGE_NAME, argv[i][n]);
+					log_fatal("Try \"%s --help\" for more information.", PACKAGE_NAME);
 					exit(2);
 				}
 			}
 
 		}
 		if (!ok) {
-			fprintf(stderr, "%s: invalid option \"%s\"!\n",
-				PACKAGE_NAME, argv[i]);
-			fprintf(stderr, "Try \"%s --help\" for more information.\n",
-				PACKAGE_NAME);
+			log_fatal("%s: invalid option \"%s\"!", PACKAGE_NAME, argv[i]);
+			log_fatal("Try \"%s --help\" for more information.", PACKAGE_NAME);
 			exit(2);
 		}
 	}
@@ -268,7 +335,7 @@ main(int argc, const char *argv[])
 
 	if (server_app_api->create(&module_set) != CORE_STATUS_OK
 	    || server_app_api->start() != CORE_STATUS_OK) {
-		fprintf(stderr, "%s: server_app startup failed!\n", PACKAGE_NAME);
+		log_fatal("%s: server_app startup failed!", PACKAGE_NAME);
 		exit(1);
 	}
 

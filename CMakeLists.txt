@@ -639,25 +639,28 @@ if(BUILD_TESTING)
     endif()
     add_test(NAME host_wiring_test COMMAND host_wiring_test)
 
-    # logging_module_test: logging_get_api_v1, module_get_api_v1, smoke
-    add_executable(logging_module_test
-        tests/logging_module_test.c
-        ${SHARED_SRC}/app/logging/logging.c
-    )
-    target_include_directories(logging_module_test PRIVATE
-        ${SHARED_INC} ${SHARED_INC}/app ${WIN32_INC} ${SERVER_ROOT}
-        ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_CORE_MISC_INC}
-        ${SERVER_NET_CONN_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_CLIENT_INC}
-        ${SERVER_SRC} ${SUPPORT_SRC}/portab)
+    # logging_module_test: exercises the managed Logging.dll (NativeAOT C#).
+    # Links against the IMPORTED logging target (no source compilation, no stubs).
+    # The managed DLL is staged as logging.dll but the import table records it as
+    # "Logging.dll" (the C# project output name). Copy it with the original casing
+    # to CMAKE_BINARY_DIR so Windows finds it next to the test executable.
+    add_executable(logging_module_test tests/logging_module_test.c)
+    target_include_directories(logging_module_test PRIVATE ${SHARED_INC} ${WIN32_INC})
     target_compile_definitions(logging_module_test PRIVATE
-        LOGGING_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
-    target_link_libraries(logging_module_test PRIVATE core_runtime)
+        _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+    target_link_libraries(logging_module_test PRIVATE core_runtime logging)
     if(MSVC)
-        target_compile_options(logging_module_test PRIVATE
-            /W3 /Zi /wd4005 /wd4013 /wd4996)
+        target_compile_options(logging_module_test PRIVATE /W3 /Zi)
         target_link_options(logging_module_test PRIVATE /DEBUG)
     endif()
-    add_test(NAME logging_module_test COMMAND logging_module_test)
+    # Copy managed Logging.dll (capital L) next to the test exe so the loader finds it.
+    add_custom_command(TARGET logging_module_test POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${CMAKE_BINARY_DIR}/logging_managed/logging.dll"
+            "${CMAKE_BINARY_DIR}/Logging.dll"
+        COMMENT "Copying Logging.dll to build dir for logging_module_test")
+    add_test(NAME logging_module_test COMMAND logging_module_test
+        WORKING_DIRECTORY "${CMAKE_BINARY_DIR}")
 
     # config_module_test: config_get_api_v1, get_bootstrap, module_get_api_v1
     add_executable(config_module_test

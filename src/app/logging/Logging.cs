@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Text;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -36,6 +38,7 @@ internal static unsafe class LoggingExports
         public nint reinit;
         public nint log_message;
         public nint debug_message;
+        public nint fatal_message;
     }
 
     private static readonly nint moduleName = Marshal.StringToHGlobalAnsi("logging");
@@ -55,6 +58,7 @@ internal static unsafe class LoggingExports
     private static readonly nint reinitPtr = (nint)(delegate* unmanaged[Cdecl]<void>)&Reinit;
     private static readonly nint logMessagePtr = (nint)(delegate* unmanaged[Cdecl]<int, nint, void>)&LogMessage;
     private static readonly nint debugMessagePtr = (nint)(delegate* unmanaged[Cdecl]<nint, void>)&DebugMessage;
+    private static readonly nint fatalMessagePtr = (nint)(delegate* unmanaged[Cdecl]<nint, void>)&FatalMessage;
     private static readonly LoggingApi apiValue = new LoggingApi
     {
         api_major = 1u,
@@ -63,7 +67,8 @@ internal static unsafe class LoggingExports
         shutdown = shutdownPtr,
         reinit = reinitPtr,
         log_message = logMessagePtr,
-        debug_message = debugMessagePtr
+        debug_message = debugMessagePtr,
+        fatal_message = fatalMessagePtr
     };
     private static readonly nint apiPtr = Alloc(apiValue);
     private static readonly CoreModuleApi moduleApiValue = new CoreModuleApi
@@ -74,6 +79,9 @@ internal static unsafe class LoggingExports
         api = apiPtr
     };
     private static readonly nint moduleApiPtr = Alloc(moduleApiValue);
+    private static readonly StreamWriter stdout = new StreamWriter(Console.OpenStandardOutput()) { AutoFlush = true };
+    private static readonly StreamWriter stderr = new StreamWriter(Console.OpenStandardError()) { AutoFlush = true };
+    private static readonly string logfilePath = Path.Combine(Environment.CurrentDirectory, "ngircd-root.log");
 
     private static nint Alloc<T>(T value) where T : unmanaged
     {
@@ -89,7 +97,11 @@ internal static unsafe class LoggingExports
     public static nint ModuleGetApiV1() => moduleApiPtr;
 
     [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
-    private static uint Init(int syslogMode) => CoreStatusOk;
+    private static uint Init(int syslogMode)
+    {
+        SafeWriteLine(5, $"managed logging init syslog={syslogMode}");
+        return CoreStatusOk;
+    }
 
     [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
     private static void Shutdown() { }
@@ -100,12 +112,48 @@ internal static unsafe class LoggingExports
     [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
     private static void LogMessage(int level, nint message)
     {
-        Console.WriteLine($"[{level}] {Marshal.PtrToStringAnsi(message) ?? string.Empty}");
+        WriteLine(level, Marshal.PtrToStringAnsi(message) ?? string.Empty);
     }
 
     [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
     private static void DebugMessage(nint message)
     {
-        Console.WriteLine(Marshal.PtrToStringAnsi(message) ?? string.Empty);
+        WriteLine(7, Marshal.PtrToStringAnsi(message) ?? string.Empty);
+    }
+
+    [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
+    private static void FatalMessage(nint message)
+    {
+        WriteLine(1, Marshal.PtrToStringAnsi(message) ?? string.Empty);
+    }
+
+    private static void WriteLine(int level, string message)
+    {
+        var line = $"[{Environment.ProcessId}:{level} {DateTimeOffset.UtcNow.ToUnixTimeSeconds():D4}] {message}";
+        SafeWriteLine(level, line);
+    }
+
+    private static void SafeWriteLine(int level, string line)
+    {
+        try
+        {
+            File.AppendAllText(logfilePath, line + Environment.NewLine, Encoding.UTF8);
+        }
+        catch
+        {
+            // Ignore file sink failures; keep the stream sinks alive.
+        }
+
+        try
+        {
+            if (level <= 3)
+                stderr.WriteLine(line);
+            else
+                stdout.WriteLine(line);
+        }
+        catch
+        {
+            // Ignore stream failures as well; the caller is unmanaged.
+        }
     }
 }

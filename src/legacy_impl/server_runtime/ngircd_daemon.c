@@ -91,7 +91,9 @@ Setup_FDStreams(int fd)
 	fflush(stdout);
 	fflush(stderr);
 
-	dup2(fd, 0); dup2(fd, 1); dup2(fd, 2);
+	/* Detach stdin, but keep stdout/stderr attached so the managed logger
+	 * continues to emit visible output after daemon startup. */
+	dup2(fd, 0);
 }
 
 
@@ -220,9 +222,9 @@ NGIRCd_Init(bool NGIRCd_NoDaemon)
 			exit(0);
 		}
 		if (pid < 0) {
-			fprintf(stderr,
-				"%s: Can't fork: %s!\nFatal error, exiting now ...\n",
-				PACKAGE_NAME, strerror(errno));
+			Log(LOG_ALERT,
+			    "%s: Can't fork: %s! Fatal error, exiting now ...",
+			    PACKAGE_NAME, strerror(errno));
 			exit(1);
 		}
 

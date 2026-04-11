@@ -163,6 +163,11 @@ CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\platform\platform.h
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\net\transport\net_transport.h
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\net\resolver\resolver.h
+CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\protocol\irc_protocol\irc_protocol.h
+CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\protocol\command_handlers\command_handlers.h
+CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\state\client_state\client_state.h
+CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\state\channel_state\channel_state.h
+CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\app\server_app\server_app.h
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"

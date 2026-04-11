@@ -12,6 +12,11 @@
  */
 
 #include "app/host/host.h"
+#include "protocol/irc_protocol/irc_protocol.h"
+#include "protocol/command_handlers/command_handlers.h"
+#include "state/client_state/client_state.h"
+#include "state/channel_state/channel_state.h"
+#include "app/server_app/server_app.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -66,15 +71,35 @@ int main(void)
 
     MOCK_API(resolver_api_t, mock_res, 1u);
     ms.resolver = &mock_res;
+    CHECK(w->wire(&ms) == CORE_STATUS_INVALID_ARGUMENT, "wire_no_irc_protocol");
 
-    /* ---- All fields present with api_major == 1 → OK ---- */
+    MOCK_API(irc_protocol_api_t, mock_irc, 1u);
+    ms.irc_protocol = &mock_irc;
+    CHECK(w->wire(&ms) == CORE_STATUS_INVALID_ARGUMENT, "wire_no_client_state");
+
+    MOCK_API(client_state_api_t, mock_cst, 1u);
+    ms.client_state = &mock_cst;
+    CHECK(w->wire(&ms) == CORE_STATUS_INVALID_ARGUMENT, "wire_no_channel_state");
+
+    MOCK_API(channel_state_api_t, mock_chan, 1u);
+    ms.channel_state = &mock_chan;
+    CHECK(w->wire(&ms) == CORE_STATUS_INVALID_ARGUMENT, "wire_no_command_handlers");
+
+    MOCK_API(command_handlers_api_t, mock_cmd, 1u);
+    ms.command_handlers = &mock_cmd;
+    CHECK(w->wire(&ms) == CORE_STATUS_INVALID_ARGUMENT, "wire_no_server_app");
+
+    MOCK_API(server_app_api_t, mock_sapp, 1u);
+    ms.server_app = &mock_sapp;
+
+    /* ---- All 10 fields present with api_major == 1 → OK ---- */
     CHECK(w->wire(&ms) == CORE_STATUS_OK, "wire_all_valid");
 
     /* ---- Wrong api_major in each slot → UNSUPPORTED ---- */
     MOCK_API(logging_api_t, bad_log, 2u);
     ms.logging = &bad_log;
     CHECK(w->wire(&ms) == CORE_STATUS_UNSUPPORTED, "wire_bad_logging_version");
-    ms.logging = &mock_log;                     /* restore */
+    ms.logging = &mock_log;
 
     MOCK_API(config_api_t, bad_cfg, 0u);
     ms.config = &bad_cfg;
@@ -96,6 +121,31 @@ int main(void)
     CHECK(w->wire(&ms) == CORE_STATUS_UNSUPPORTED, "wire_bad_resolver_version");
     ms.resolver = &mock_res;
 
+    MOCK_API(irc_protocol_api_t, bad_irc, 2u);
+    ms.irc_protocol = &bad_irc;
+    CHECK(w->wire(&ms) == CORE_STATUS_UNSUPPORTED, "wire_bad_irc_protocol_version");
+    ms.irc_protocol = &mock_irc;
+
+    MOCK_API(client_state_api_t, bad_cst, 2u);
+    ms.client_state = &bad_cst;
+    CHECK(w->wire(&ms) == CORE_STATUS_UNSUPPORTED, "wire_bad_client_state_version");
+    ms.client_state = &mock_cst;
+
+    MOCK_API(channel_state_api_t, bad_chan, 2u);
+    ms.channel_state = &bad_chan;
+    CHECK(w->wire(&ms) == CORE_STATUS_UNSUPPORTED, "wire_bad_channel_state_version");
+    ms.channel_state = &mock_chan;
+
+    MOCK_API(command_handlers_api_t, bad_cmd, 2u);
+    ms.command_handlers = &bad_cmd;
+    CHECK(w->wire(&ms) == CORE_STATUS_UNSUPPORTED, "wire_bad_command_handlers_version");
+    ms.command_handlers = &mock_cmd;
+
+    MOCK_API(server_app_api_t, bad_sapp, 2u);
+    ms.server_app = &bad_sapp;
+    CHECK(w->wire(&ms) == CORE_STATUS_UNSUPPORTED, "wire_bad_server_app_version");
+    ms.server_app = &mock_sapp;
+
     /* ---- Back to all valid after all restores ---- */
     CHECK(w->wire(&ms) == CORE_STATUS_OK, "wire_all_valid_after_restores");
 
@@ -105,7 +155,7 @@ int main(void)
     CHECK(w->wire(&ms) == CORE_STATUS_UNSUPPORTED, "wire_logging_major_zero");
     ms.logging = &mock_log;
 
-    printf("host_wiring_test: all 19 checks passed\n");
+    printf("host_wiring_test: all 34 checks passed\n");
     return 0;
 }
 

@@ -25,6 +25,7 @@ typedef struct logging_api {
     void (LOGGING_CALL *reinit)(void);
     void (LOGGING_CALL *log_message)(int level, const char *message);
     void (LOGGING_CALL *debug_message)(const char *message);
+    void (LOGGING_CALL *fatal_message)(const char *message);
 } logging_api_t;
 
 typedef const logging_api_t * (LOGGING_CALL *logging_get_api_v1_fn)(void);
