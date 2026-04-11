@@ -1,6 +1,5 @@
 @echo off
 setlocal
-call "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
 cd /d "%~dp0"
 if not exist build\ngircd.exe (
   echo build\ngircd.exe not found. Build first.

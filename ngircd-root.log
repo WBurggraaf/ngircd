@@ -1,363 +1,271 @@
-[50420:7    0] Conf_Init(): loading configuration.
-[50420:6    0] Using specified configuration file "C:\develop\ngircd\ngircd-win32.conf" ...
-[50420:7    0] Read_Config_File(): C:\develop\ngircd\ngircd-win32.conf
-[50420:4    0] Not specifying a full path name to "C:\develop\ngircd\ngircd-win32.conf" can cause problems when rehashing the server!
-[50420:7    0] Configuration: Operators=0, Servers=0[0], Channels=0
-[50420:7    0] Log_Init(0) starting.
-[50420:5    0] ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows starting ...
-[50420:7    0] Log_ReInit() called.
-[50420:7    0] NGIRCd_Init(1): starting.
-[50420:6    0] Running as user unknown(1), group unknown(1), with PID 50420.
-[50420:6    0] Not running with changed root directory.
-[50420:6    0] IO subsystem: select (initial maxfd 100).
-[50420:7    0] Signals_Init(): registering Windows signal handlers.
-[50420:7    0] Enlarged connection pool for 32 sockets (33 items, 14256 bytes)
-[50420:7    0] Protocol and server ID is "0210-IRC+ ngIRCd|27-win32:CHLMSX P".
-[50420:7    0] Created new channel structure for "&SERVER".
-[50420:7    0] NewListener(): socket=440 af=2 listen_addr=127.0.0.1 port=6789
-[50420:6    0] Now listening on [127.0.0.1]:6789 (socket 440).
-[50420:7    0] Creating PID file (C:/develop/ngircd/runtime/ngircd.pid) ...
-[50420:5    0] Server "ngircd.test.server" (on "HTIWILCO") ready.
-[50420:7    0] Conn_Handler(): entering main loop (Pool_Size=33).
-[50420:7    8] io_docallback(fd=440, what=1): callback=00007FF9AF6C72D0 registered=1.
-[50420:7    8] cb_listen(sock=440): readable, accepting ...
-[50420:7    8] New_Connection(): accepting on listen socket=440
-[50420:7    8] Enlarged connection pool for 436 sockets (437 items, 188784 bytes)
-[50420:7    8] Updating hostname of "*": "" -> "127.0.0.1"
-[50420:6    8] Accepted connection 436 from "127.0.0.1:52439" on socket 440.
-[50420:7    8] New_Connection(): idx=436 sock=436 peer=127.0.0.1:52439 listen_sock=440
-[50420:7    8] Total number of connections now 1 (max 1).
-[50420:7    8] Conn_StartLogin(idx=436): dns=0 ident=0 notice=1
-[50420:7    8] Conn_StartLogin(idx=436): writing processing notice
-[50420:7    8] Conn_StartLogin(idx=436): flushing notice buffer.
-[50420:7    8] Handle_Write(idx=436): enter.
-[50420:7    8] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    8] Handle_Write(idx=436): sock=436 wbuf.used=42 wbuf.mem=00000237D53CE5C0
-[50420:7    8] Handle_Write(): outbound buffer(idx=436): len=42 preview=32 bytes hex=[4E 4F 54 49 43 45 20 2A 20 3A 2A 2A 2A 20 50 72 6F 63 65 73 73 69 6E 67 20 79 6F 75 72 20 63 6F] ...
-[50420:7    8] Handle_Write(idx=436): wdatalen=42 after array_bytes().
-[50420:7    8] Handle_Write(idx=436): writing 42 bytes to sock=436.
-[50420:7    8] Handle_Write(idx=436): write/send returned 42.
-[50420:7    8] Handle_Write(idx=436): moving buffer left by 42 bytes.
-[50420:7    8] Handle_Write(idx=436): wbuf.used=0 after moveleft.
-[50420:7    8] Handle_Write(idx=436): wrote 42 bytes.
-[50420:7    8] Conn_StartLogin(idx=436): notice buffer flushed.
-[50420:7    8] Conn_StartLogin(idx=436): starting resolver.
-[50420:7    8] Resolve_Addr_Ident(): loopback socket pair registered for 127.0.0.1 (fd=452).
-[50420:7    8] io_docallback(fd=452, what=1): callback=00007FF9AF6C6CB0 registered=1.
-[50420:7    8] Resolver: Got callback on fd 452, events 1
-[50420:7    8] Proc_Read(): pipe_fd=452, buflen=256.
-[50420:7    8] Proc_Close(): pipe_fd=452.
-[50420:7    8] Got result from resolver: "" (1 bytes read).
-[50420:7    8] Handle_Write(idx=436): enter.
-[50420:7    8] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    8] Handle_Write(idx=436): sock=436 wbuf.used=0 wbuf.mem=00000237D53CE5C0
-[50420:7    8] Handle_Write(idx=436): wdatalen=0 after array_bytes().
-[50420:7    8] Handle_Write(idx=436): no pending data.
-[50420:7    8] Handle_Write(idx=436): dropping write event for sock=436.
-[50420:7    8] io_docallback(fd=436, what=1): callback=00007FF9AF6C7170 registered=1.
-[50420:7    8] cb_clientserver(sock=436, what=1, idx=436)
-[50420:7    8] Read_Request(idx=436 sock=436 host=127.0.0.1)
-[50420:7    8] Read_Request(): network payload(idx=436): len=42 preview=32 bytes hex=[43 41 50 20 4C 53 20 33 30 32 0A 4E 49 43 4B 20 77 69 6C 63 6F 0A 55 53 45 52 20 77 69 6C 63 6F] ...
-[50420:7    8] Read_Request(): append to rbuf(idx=436): len=42 preview=32 bytes hex=[43 41 50 20 4C 53 20 33 30 32 0A 4E 49 43 4B 20 77 69 6C 63 6F 0A 55 53 45 52 20 77 69 6C 63 6F] ...
-[50420:7    8] Read_Request(idx=436): read 42 bytes.
-[50420:7    8] Read_Request(idx=436): rbuf.used=42 bytes_in=42 bytes_out=42.
-[50420:7    8] Parse_Request(idx=436): raw='CAP LS 302'
-[50420:7    8] Parse_Request(idx=436): raw_len=10
-[50420:7    8] Handle_Request(idx=436): client_type=1 command=CAP argc=2 prefix=(none)
-[50420:7    8] Handle_Request(idx=436): cmd=CAP client_type=1 argc=2
-[50420:7    8] Parse_Request(idx=436): cmd=CAP argc=2 prefix=(none)
-[50420:7    8] Parse_Request(idx=436): argv[0]='LS'
-[50420:7    8] Parse_Request(idx=436): argv[1]='302'
-[50420:7    8] Handle_Request(idx=436): dispatching CAP handler=00007FF9AF6B16E0
-[50420:7    8] Dispatch(idx=436): CAP -> 00007FF9AF6B16E0
-[50420:7    8] Got "CAP LS" command from "*" ...
-[50420:7    8] Add capability 1, new capability of "*" is 1.
-[50420:7    8] Add capability 2, new capability of "*" is 3.
-[50420:7    8] Parse_Request(idx=436): raw='NICK wilco'
-[50420:7    8] Parse_Request(idx=436): raw_len=10
-[50420:7    8] Handle_Request(idx=436): client_type=1 command=NICK argc=1 prefix=(none)
-[50420:7    8] Handle_Request(idx=436): cmd=NICK client_type=1 argc=1
-[50420:7    8] Parse_Request(idx=436): cmd=NICK argc=1 prefix=(none)
-[50420:7    8] Parse_Request(idx=436): argv[0]='wilco'
-[50420:7    8] Handle_Request(idx=436): dispatching NICK handler=00007FF9AF6B1172
-[50420:7    8] Dispatch(idx=436): NICK -> 00007FF9AF6B1172
-[50420:7    8] Connection 436: got valid NICK command ...
-[50420:7    8] Parse_Request(idx=436): raw='USER wilco 0 * :...'
-[50420:7    8] Parse_Request(idx=436): raw_len=19
-[50420:7    8] Handle_Request(idx=436): client_type=4 command=USER argc=4 prefix=(none)
-[50420:7    8] Handle_Request(idx=436): cmd=USER client_type=4 argc=4
-[50420:7    8] Parse_Request(idx=436): cmd=USER argc=4 prefix=(none)
-[50420:7    8] Parse_Request(idx=436): argv[0]='wilco'
-[50420:7    8] Parse_Request(idx=436): argv[1]='0'
-[50420:7    8] Parse_Request(idx=436): argv[2]='*'
-[50420:7    8] Parse_Request(idx=436): argv[3]='...'
-[50420:7    8] Handle_Request(idx=436): dispatching USER handler=00007FF9AF6B1442
-[50420:7    8] Dispatch(idx=436): USER -> 00007FF9AF6B1442
-[50420:7    8] Connection 436: got valid USER command ...
-[50420:7    8] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7    8] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7    8] Handle_Write(idx=436): enter.
-[50420:7    8] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    8] Handle_Write(idx=436): sock=436 wbuf.used=44 wbuf.mem=00000237D53CE9B0
-[50420:7    8] Handle_Write(): outbound buffer(idx=436): len=44 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 43 41 50 20 2A 20 4C 53 20 3A 6D 75] ...
-[50420:7    8] Handle_Write(idx=436): wdatalen=44 after array_bytes().
-[50420:7    8] Handle_Write(idx=436): writing 44 bytes to sock=436.
-[50420:7    8] Handle_Write(idx=436): write/send returned 44.
-[50420:7    8] Handle_Write(idx=436): moving buffer left by 44 bytes.
-[50420:7    8] Handle_Write(idx=436): wbuf.used=0 after moveleft.
-[50420:7    8] Handle_Write(idx=436): wrote 44 bytes.
-[50420:7    8] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7    8] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7    8] Handle_Write(idx=436): enter.
-[50420:7    8] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    8] Handle_Write(idx=436): sock=436 wbuf.used=0 wbuf.mem=00000237D53CE9B0
-[50420:7    8] Handle_Write(idx=436): wdatalen=0 after array_bytes().
-[50420:7    8] Handle_Write(idx=436): no pending data.
-[50420:7    8] Handle_Write(idx=436): dropping write event for sock=436.
-[50420:7    8] io_docallback(fd=436, what=1): callback=00007FF9AF6C7170 registered=1.
-[50420:7    8] cb_clientserver(sock=436, what=1, idx=436)
-[50420:7    8] Read_Request(idx=436 sock=436 host=127.0.0.1)
-[50420:7    8] Read_Request(): network payload(idx=436): len=22 preview=22 bytes hex=[43 41 50 20 52 45 51 20 3A 6D 75 6C 74 69 2D 70 72 65 66 69 78 0A]
-[50420:7    8] Read_Request(): append to rbuf(idx=436): len=22 preview=22 bytes hex=[43 41 50 20 52 45 51 20 3A 6D 75 6C 74 69 2D 70 72 65 66 69 78 0A]
-[50420:7    8] Read_Request(idx=436): read 22 bytes.
-[50420:7    8] Read_Request(idx=436): rbuf.used=22 bytes_in=64 bytes_out=86.
-[50420:7    8] Parse_Request(idx=436): raw='CAP REQ :multi-prefix'
-[50420:7    8] Parse_Request(idx=436): raw_len=21
-[50420:7    8] Handle_Request(idx=436): client_type=8 command=CAP argc=2 prefix=(none)
-[50420:7    8] Handle_Request(idx=436): cmd=CAP client_type=8 argc=2
-[50420:7    8] Parse_Request(idx=436): cmd=CAP argc=2 prefix=(none)
-[50420:7    8] Parse_Request(idx=436): argv[0]='REQ'
-[50420:7    8] Parse_Request(idx=436): argv[1]='multi-prefix'
-[50420:7    8] Handle_Request(idx=436): dispatching CAP handler=00007FF9AF6B16E0
-[50420:7    8] Dispatch(idx=436): CAP -> 00007FF9AF6B16E0
-[50420:7    8] Got "CAP REQ" command from "wilco" ...
-[50420:7    8] Add capability 1, new capability of "wilco" is 3.
-[50420:7    8] Add capability 2, new capability of "wilco" is 3.
-[50420:7    8] Set new capability of "wilco" to 7.
-[50420:7    8] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7    8] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7    8] Handle_Write(idx=436): enter.
-[50420:7    8] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    8] Handle_Write(idx=436): sock=436 wbuf.used=49 wbuf.mem=00000237D53CE860
-[50420:7    8] Handle_Write(): outbound buffer(idx=436): len=49 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 43 41 50 20 77 69 6C 63 6F 20 41 43] ...
-[50420:7    8] Handle_Write(idx=436): wdatalen=49 after array_bytes().
-[50420:7    8] Handle_Write(idx=436): writing 49 bytes to sock=436.
-[50420:7    8] Handle_Write(idx=436): write/send returned 49.
-[50420:7    8] Handle_Write(idx=436): moving buffer left by 49 bytes.
-[50420:7    8] Handle_Write(idx=436): wbuf.used=0 after moveleft.
-[50420:7    8] Handle_Write(idx=436): wrote 49 bytes.
-[50420:7    8] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7    8] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7    8] Handle_Write(idx=436): enter.
-[50420:7    8] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    8] Handle_Write(idx=436): sock=436 wbuf.used=0 wbuf.mem=00000237D53CE860
-[50420:7    8] Handle_Write(idx=436): wdatalen=0 after array_bytes().
-[50420:7    8] Handle_Write(idx=436): no pending data.
-[50420:7    8] Handle_Write(idx=436): dropping write event for sock=436.
-[50420:7    8] io_docallback(fd=436, what=1): callback=00007FF9AF6C7170 registered=1.
-[50420:7    8] cb_clientserver(sock=436, what=1, idx=436)
-[50420:7    8] Read_Request(idx=436 sock=436 host=127.0.0.1)
-[50420:7    8] Read_Request(): network payload(idx=436): len=17 preview=17 bytes hex=[43 41 50 20 4C 49 53 54 0A 43 41 50 20 45 4E 44 0A]
-[50420:7    8] Read_Request(): append to rbuf(idx=436): len=17 preview=17 bytes hex=[43 41 50 20 4C 49 53 54 0A 43 41 50 20 45 4E 44 0A]
-[50420:7    8] Read_Request(idx=436): read 17 bytes.
-[50420:7    8] Read_Request(idx=436): rbuf.used=17 bytes_in=81 bytes_out=135.
-[50420:7    8] Parse_Request(idx=436): raw='CAP LIST'
-[50420:7    8] Parse_Request(idx=436): raw_len=8
-[50420:7    8] Handle_Request(idx=436): client_type=8 command=CAP argc=1 prefix=(none)
-[50420:7    8] Handle_Request(idx=436): cmd=CAP client_type=8 argc=1
-[50420:7    8] Parse_Request(idx=436): cmd=CAP argc=1 prefix=(none)
-[50420:7    8] Parse_Request(idx=436): argv[0]='LIST'
-[50420:7    8] Handle_Request(idx=436): dispatching CAP handler=00007FF9AF6B16E0
-[50420:7    8] Dispatch(idx=436): CAP -> 00007FF9AF6B16E0
-[50420:7    8] Got "CAP LIST" command from "wilco" ...
-[50420:7    8] Parse_Request(idx=436): raw='CAP END'
-[50420:7    8] Parse_Request(idx=436): raw_len=7
-[50420:7    8] Handle_Request(idx=436): client_type=8 command=CAP argc=1 prefix=(none)
-[50420:7    8] Handle_Request(idx=436): cmd=CAP client_type=8 argc=1
-[50420:7    8] Parse_Request(idx=436): cmd=CAP argc=1 prefix=(none)
-[50420:7    8] Parse_Request(idx=436): argv[0]='END'
-[50420:7    8] Handle_Request(idx=436): dispatching CAP handler=00007FF9AF6B16E0
-[50420:7    8] Dispatch(idx=436): CAP -> 00007FF9AF6B16E0
-[50420:7    8] Got "CAP END" command from "wilco" ...
-[50420:7    8] Delete capability 1, new capability of "wilco" is 6.
-[50420:5    8] User "wilco!~wilco@127.0.0.1" registered (connection 436).
-[50420:7    8] Add penalty time on connection 436: 1 second, total 1 second.
-[50420:7    8] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7    8] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7    8] Handle_Write(idx=436): enter.
-[50420:7    8] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    8] Handle_Write(idx=436): sock=436 wbuf.used=1617 wbuf.mem=00000237D53D6570
-[50420:7    8] Handle_Write(): outbound buffer(idx=436): len=1617 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 43 41 50 20 77 69 6C 63 6F 20 4C 49] ...
-[50420:7    8] Handle_Write(idx=436): wdatalen=1617 after array_bytes().
-[50420:7    8] Handle_Write(idx=436): writing 1617 bytes to sock=436.
-[50420:7    8] Handle_Write(idx=436): write/send returned 1617.
-[50420:7    8] Handle_Write(idx=436): moving buffer left by 1617 bytes.
-[50420:7    8] Handle_Write(idx=436): wbuf.used=0 after moveleft.
-[50420:7    8] Handle_Write(idx=436): wrote 1617 bytes.
-[50420:7    8] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7    8] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7    8] Handle_Write(idx=436): enter.
-[50420:7    8] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    8] Handle_Write(idx=436): sock=436 wbuf.used=0 wbuf.mem=00000237D53D6570
-[50420:7    8] Handle_Write(idx=436): wdatalen=0 after array_bytes().
-[50420:7    8] Handle_Write(idx=436): no pending data.
-[50420:7    8] Handle_Write(idx=436): dropping write event for sock=436.
-[50420:7    9] io_docallback(fd=436, what=1): callback=00007FF9AF6C7170 registered=1.
-[50420:7    9] cb_clientserver(sock=436, what=1, idx=436)
-[50420:7    9] Read_Request(idx=436 sock=436 host=127.0.0.1)
-[50420:7    9] Read_Request(): network payload(idx=436): len=14 preview=14 bytes hex=[4D 4F 44 45 20 77 69 6C 63 6F 20 2B 69 0A]
-[50420:7    9] Read_Request(): append to rbuf(idx=436): len=14 preview=14 bytes hex=[4D 4F 44 45 20 77 69 6C 63 6F 20 2B 69 0A]
-[50420:7    9] Read_Request(idx=436): read 14 bytes.
-[50420:7    9] Read_Request(idx=436): rbuf.used=14 bytes_in=95 bytes_out=1752.
-[50420:7    9] Parse_Request(idx=436): raw='MODE wilco +i'
-[50420:7    9] Parse_Request(idx=436): raw_len=13
-[50420:7    9] Handle_Request(idx=436): client_type=16 command=MODE argc=2 prefix=(none)
-[50420:7    9] Handle_Request(idx=436): cmd=MODE client_type=16 argc=2
-[50420:7    9] Parse_Request(idx=436): cmd=MODE argc=2 prefix=(none)
-[50420:7    9] Parse_Request(idx=436): argv[0]='wilco'
-[50420:7    9] Parse_Request(idx=436): argv[1]='+i'
-[50420:7    9] Add penalty time on connection 436: 1 second, total 1 second.
-[50420:7    9] Handle_Request(idx=436): dispatching MODE handler=00007FF9AF6B11BD
-[50420:7    9] Dispatch(idx=436): MODE -> 00007FF9AF6B11BD
-[50420:7    9] User "wilco!~wilco@127.0.0.1": Mode change, now "i".
-[50420:7    9] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7    9] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7    9] Handle_Write(idx=436): enter.
-[50420:7    9] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    9] Handle_Write(idx=436): sock=436 wbuf.used=40 wbuf.mem=00000237D53D6570
-[50420:7    9] Handle_Write(): outbound buffer(idx=436): len=40 preview=32 bytes hex=[3A 77 69 6C 63 6F 21 7E 77 69 6C 63 6F 40 31 32 37 2E 30 2E 30 2E 31 20 4D 4F 44 45 20 77 69 6C] ...
-[50420:7    9] Handle_Write(idx=436): wdatalen=40 after array_bytes().
-[50420:7    9] Handle_Write(idx=436): writing 40 bytes to sock=436.
-[50420:7    9] Handle_Write(idx=436): write/send returned 40.
-[50420:7    9] Handle_Write(idx=436): moving buffer left by 40 bytes.
-[50420:7    9] Handle_Write(idx=436): wbuf.used=0 after moveleft.
-[50420:7    9] Handle_Write(idx=436): wrote 40 bytes.
-[50420:7    9] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7    9] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7    9] Handle_Write(idx=436): enter.
-[50420:7    9] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7    9] Handle_Write(idx=436): sock=436 wbuf.used=0 wbuf.mem=00000237D53D6570
-[50420:7    9] Handle_Write(idx=436): wdatalen=0 after array_bytes().
-[50420:7    9] Handle_Write(idx=436): no pending data.
-[50420:7    9] Handle_Write(idx=436): dropping write event for sock=436.
-[50420:7    9] io_docallback(fd=436, what=1): callback=00007FF9AF6C7170 registered=1.
-[50420:7    9] cb_clientserver(sock=436, what=1, idx=436)
-[50420:7    9] Read_Request(idx=436 sock=436 host=127.0.0.1)
-[50420:7    9] Read_Request(): network payload(idx=436): len=11 preview=11 bytes hex=[4A 4F 49 4E 20 23 74 65 73 74 0A]
-[50420:7    9] Read_Request(): append to rbuf(idx=436): len=11 preview=11 bytes hex=[4A 4F 49 4E 20 23 74 65 73 74 0A]
-[50420:7    9] Read_Request(idx=436): read 11 bytes.
-[50420:7    9] Read_Request(idx=436): rbuf.used=11 bytes_in=106 bytes_out=1792.
-[50420:7   10] Parse_Request(idx=436): raw='JOIN #test'
-[50420:7   10] Parse_Request(idx=436): raw_len=10
-[50420:7   10] Handle_Request(idx=436): client_type=16 command=JOIN argc=1 prefix=(none)
-[50420:7   10] Handle_Request(idx=436): cmd=JOIN client_type=16 argc=1
-[50420:7   10] Parse_Request(idx=436): cmd=JOIN argc=1 prefix=(none)
-[50420:7   10] Parse_Request(idx=436): argv[0]='#test'
-[50420:7   10] Handle_Request(idx=436): dispatching JOIN handler=00007FF9AF6B11D6
-[50420:7   10] Dispatch(idx=436): JOIN -> 00007FF9AF6B11D6
-[50420:7   10] Created new channel structure for "#test".
-[50420:7   10] User "wilco!~wilco@127.0.0.1" joined channel "#test".
-[50420:7   10] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7   10] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7   10] Handle_Write(idx=436): enter.
-[50420:7   10] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7   10] Handle_Write(idx=436): sock=436 wbuf.used=140 wbuf.mem=00000237D53D6570
-[50420:7   10] Handle_Write(): outbound buffer(idx=436): len=140 preview=32 bytes hex=[3A 77 69 6C 63 6F 21 7E 77 69 6C 63 6F 40 31 32 37 2E 30 2E 30 2E 31 20 4A 4F 49 4E 20 3A 23 74] ...
-[50420:7   10] Handle_Write(idx=436): wdatalen=140 after array_bytes().
-[50420:7   10] Handle_Write(idx=436): writing 140 bytes to sock=436.
-[50420:7   10] Handle_Write(idx=436): write/send returned 140.
-[50420:7   10] Handle_Write(idx=436): moving buffer left by 140 bytes.
-[50420:7   10] Handle_Write(idx=436): wbuf.used=0 after moveleft.
-[50420:7   10] Handle_Write(idx=436): wrote 140 bytes.
-[50420:7   10] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7   10] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7   10] Handle_Write(idx=436): enter.
-[50420:7   10] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7   10] Handle_Write(idx=436): sock=436 wbuf.used=0 wbuf.mem=00000237D53D6570
-[50420:7   10] Handle_Write(idx=436): wdatalen=0 after array_bytes().
-[50420:7   10] Handle_Write(idx=436): no pending data.
-[50420:7   10] Handle_Write(idx=436): dropping write event for sock=436.
-[50420:7   10] io_docallback(fd=436, what=1): callback=00007FF9AF6C7170 registered=1.
-[50420:7   10] cb_clientserver(sock=436, what=1, idx=436)
-[50420:7   10] Read_Request(idx=436 sock=436 host=127.0.0.1)
-[50420:7   10] Read_Request(): network payload(idx=436): len=11 preview=11 bytes hex=[4D 4F 44 45 20 23 74 65 73 74 0A]
-[50420:7   10] Read_Request(): append to rbuf(idx=436): len=11 preview=11 bytes hex=[4D 4F 44 45 20 23 74 65 73 74 0A]
-[50420:7   10] Read_Request(idx=436): read 11 bytes.
-[50420:7   10] Read_Request(idx=436): rbuf.used=11 bytes_in=117 bytes_out=1932.
-[50420:7   10] Parse_Request(idx=436): raw='MODE #test'
-[50420:7   10] Parse_Request(idx=436): raw_len=10
-[50420:7   10] Handle_Request(idx=436): client_type=16 command=MODE argc=1 prefix=(none)
-[50420:7   10] Handle_Request(idx=436): cmd=MODE client_type=16 argc=1
-[50420:7   10] Parse_Request(idx=436): cmd=MODE argc=1 prefix=(none)
-[50420:7   10] Parse_Request(idx=436): argv[0]='#test'
-[50420:7   10] Add penalty time on connection 436: 1 second, total 1 second.
-[50420:7   10] Handle_Request(idx=436): dispatching MODE handler=00007FF9AF6B11BD
-[50420:7   10] Dispatch(idx=436): MODE -> 00007FF9AF6B11BD
-[50420:7   10] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7   10] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7   10] Handle_Write(idx=436): enter.
-[50420:7   10] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7   10] Handle_Write(idx=436): sock=436 wbuf.used=87 wbuf.mem=00000237D53D6570
-[50420:7   10] Handle_Write(): outbound buffer(idx=436): len=87 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 33 32 34 20 77 69 6C 63 6F 20 23 74] ...
-[50420:7   10] Handle_Write(idx=436): wdatalen=87 after array_bytes().
-[50420:7   10] Handle_Write(idx=436): writing 87 bytes to sock=436.
-[50420:7   10] Handle_Write(idx=436): write/send returned 87.
-[50420:7   10] Handle_Write(idx=436): moving buffer left by 87 bytes.
-[50420:7   10] Handle_Write(idx=436): wbuf.used=0 after moveleft.
-[50420:7   10] Handle_Write(idx=436): wrote 87 bytes.
-[50420:7   10] io_docallback(fd=436, what=2): callback=00007FF9AF6C7170 registered=3.
-[50420:7   10] cb_clientserver(sock=436, what=2, idx=436)
-[50420:7   10] Handle_Write(idx=436): enter.
-[50420:7   10] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7   10] Handle_Write(idx=436): sock=436 wbuf.used=0 wbuf.mem=00000237D53D6570
-[50420:7   10] Handle_Write(idx=436): wdatalen=0 after array_bytes().
-[50420:7   10] Handle_Write(idx=436): no pending data.
-[50420:7   10] Handle_Write(idx=436): dropping write event for sock=436.
-[50420:7   12] io_docallback(fd=436, what=1): callback=00007FF9AF6C7170 registered=1.
-[50420:7   12] cb_clientserver(sock=436, what=1, idx=436)
-[50420:7   12] Read_Request(idx=436 sock=436 host=127.0.0.1)
-[50420:7   12] Read_Request(): network payload(idx=436): len=42 preview=32 bytes hex=[50 52 49 56 4D 53 47 20 23 74 65 73 74 20 3A 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C] ...
-[50420:7   12] Read_Request(): append to rbuf(idx=436): len=42 preview=32 bytes hex=[50 52 49 56 4D 53 47 20 23 74 65 73 74 20 3A 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C 5C] ...
-[50420:7   12] Read_Request(idx=436): read 42 bytes.
-[50420:7   12] Read_Request(idx=436): rbuf.used=42 bytes_in=159 bytes_out=2019.
-[50420:7   12] Parse_Request(idx=436): raw='PRIVMSG #test :\\\\\\\\\\\\\\\\\\\\\\\\\\'
-[50420:7   12] Parse_Request(idx=436): raw_len=41
-[50420:7   12] Handle_Request(idx=436): client_type=16 command=PRIVMSG argc=2 prefix=(none)
-[50420:7   12] Handle_Request(idx=436): cmd=PRIVMSG client_type=16 argc=2
-[50420:7   12] Parse_Request(idx=436): cmd=PRIVMSG argc=2 prefix=(none)
-[50420:7   12] Parse_Request(idx=436): argv[0]='#test'
-[50420:7   12] Parse_Request(idx=436): argv[1]='\\\\\\\\\\\\\\\\\\\\\\\\\\'
-[50420:7   12] Handle_Request(idx=436): dispatching PRIVMSG handler=00007FF9AF6B1979
-[50420:7   12] Dispatch(idx=436): PRIVMSG -> 00007FF9AF6B1979
-[50420:7   27] io_docallback(fd=436, what=1): callback=00007FF9AF6C7170 registered=1.
-[50420:7   27] cb_clientserver(sock=436, what=1, idx=436)
-[50420:7   27] Read_Request(idx=436 sock=436 host=127.0.0.1)
-[50420:7   27] Read_Request(): network payload(idx=436): len=7 preview=7 bytes hex=[51 55 49 54 20 3A 0A]
-[50420:7   27] Read_Request(): append to rbuf(idx=436): len=7 preview=7 bytes hex=[51 55 49 54 20 3A 0A]
-[50420:7   27] Read_Request(idx=436): read 7 bytes.
-[50420:7   27] Read_Request(idx=436): rbuf.used=7 bytes_in=166 bytes_out=2019.
-[50420:7   27] Parse_Request(idx=436): raw='QUIT :'
-[50420:7   27] Parse_Request(idx=436): raw_len=6
-[50420:7   27] Handle_Request(idx=436): client_type=16 command=QUIT argc=1 prefix=(none)
-[50420:7   27] Handle_Request(idx=436): cmd=QUIT client_type=16 argc=1
-[50420:7   27] Parse_Request(idx=436): cmd=QUIT argc=1 prefix=(none)
-[50420:7   27] Parse_Request(idx=436): argv[0]=''
-[50420:7   27] Handle_Request(idx=436): dispatching QUIT handler=00007FF9AF6B12C6
-[50420:7   27] Dispatch(idx=436): QUIT -> 00007FF9AF6B12C6
-[50420:6   27] Shutting down connection 436 (Got QUIT command) with "127.0.0.1:52439" ...
-[50420:7   27] Handle_Write(idx=436): enter.
-[50420:7   27] Handle_Write(idx=436): base=00000237D53EDBD0 conn=00000237D541BB90 pool=437
-[50420:7   27] Handle_Write(idx=436): sock=436 wbuf.used=145 wbuf.mem=00000237D53D6570
-[50420:7   27] Handle_Write(): outbound buffer(idx=436): len=145 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 4E 4F 54 49 43 45 20 77 69 6C 63 6F] ...
-[50420:7   27] Handle_Write(idx=436): wdatalen=145 after array_bytes().
-[50420:7   27] Handle_Write(idx=436): writing 145 bytes to sock=436.
-[50420:7   27] Handle_Write(idx=436): write/send returned 145.
-[50420:7   27] Handle_Write(idx=436): moving buffer left by 145 bytes.
-[50420:7   27] Handle_Write(idx=436): wbuf.used=0 after moveleft.
-[50420:7   27] Handle_Write(idx=436): wrote 145 bytes.
-[50420:5   27] User "wilco!~wilco@127.0.0.1" unregistered (connection 436): Got QUIT command.
-[50420:7   27] User "wilco!~wilco@127.0.0.1" left channel "#test" ("").
-[50420:7   27] Freed channel structure for "#test".
-[50420:6   27] Connection 436 with "127.0.0.1:52439" closed (in: 0.2k, out: 2.1k).
-[50420:7   27] Shutdown of connection 436 completed, 0 connections left.
-^C
+[32180:7    0] Conf_Init(): loading configuration.
+[32180:6    0] Using specified configuration file "C:\develop\ngircd\ngircd-win32.conf" ...
+[32180:7    0] Read_Config_File(): C:\develop\ngircd\ngircd-win32.conf
+[32180:4    0] Not specifying a full path name to "C:\develop\ngircd\ngircd-win32.conf" can cause problems when rehashing the server!
+[32180:7    0] Configuration: Operators=0, Servers=0[0], Channels=0
+[32180:7    0] Log_Init(0) starting.
+[32180:5    0] ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows starting ...
+[32180:7    0] Log_ReInit() called.
+[32180:7    0] NGIRCd_Init(1): starting.
+[32180:6    0] Running as user unknown(1), group unknown(1), with PID 32180.
+[32180:6    0] Not running with changed root directory.
+[32180:6    0] IO subsystem: select (initial maxfd 100).
+[32180:7    0] Signals_Init(): registering Windows signal handlers.
+[32180:7    0] Enlarged connection pool for 32 sockets (33 items, 14256 bytes)
+[32180:7    0] Protocol and server ID is "0210-IRC+ ngIRCd|27-win32:CHLMSX P".
+[32180:7    0] Created new channel structure for "&SERVER".
+[32180:7    0] NewListener(): socket=428 af=2 listen_addr=127.0.0.1 port=6789
+[32180:6    0] Now listening on [127.0.0.1]:6789 (socket 428).
+[32180:7    0] Creating PID file (C:/develop/ngircd/runtime/ngircd.pid) ...
+[32180:5    0] Server "ngircd.test.server" (on "HTIWILCO") ready.
+[32180:7    0] Conn_Handler(): entering main loop (Pool_Size=33).
+[32180:7    5] io_docallback(fd=428, what=1): callback=00007FF9AB9E72D0 registered=1.
+[32180:7    5] cb_listen(sock=428): readable, accepting ...
+[32180:7    5] New_Connection(): accepting on listen socket=428
+[32180:7    5] Enlarged connection pool for 424 sockets (425 items, 183600 bytes)
+[32180:7    5] Updating hostname of "*": "" -> "127.0.0.1"
+[32180:6    5] Accepted connection 424 from "127.0.0.1:56812" on socket 428.
+[32180:7    5] New_Connection(): idx=424 sock=424 peer=127.0.0.1:56812 listen_sock=428
+[32180:7    5] Total number of connections now 1 (max 1).
+[32180:7    5] Conn_StartLogin(idx=424): dns=0 ident=0 notice=1
+[32180:7    5] Conn_StartLogin(idx=424): writing processing notice
+[32180:7    5] Conn_StartLogin(idx=424): flushing notice buffer.
+[32180:7    5] Handle_Write(idx=424): enter.
+[32180:7    5] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    5] Handle_Write(idx=424): sock=424 wbuf.used=42 wbuf.mem=000002773F342AF0
+[32180:7    5] Handle_Write(): outbound buffer(idx=424): len=42 preview=32 bytes hex=[4E 4F 54 49 43 45 20 2A 20 3A 2A 2A 2A 20 50 72 6F 63 65 73 73 69 6E 67 20 79 6F 75 72 20 63 6F] ...
+[32180:7    5] Handle_Write(idx=424): wdatalen=42 after array_bytes().
+[32180:7    5] Handle_Write(idx=424): writing 42 bytes to sock=424.
+[32180:7    5] Handle_Write(idx=424): write/send returned 42.
+[32180:7    5] Handle_Write(idx=424): moving buffer left by 42 bytes.
+[32180:7    5] Handle_Write(idx=424): wbuf.used=0 after moveleft.
+[32180:7    5] Handle_Write(idx=424): wrote 42 bytes.
+[32180:7    5] Conn_StartLogin(idx=424): notice buffer flushed.
+[32180:7    5] Conn_StartLogin(idx=424): starting resolver.
+[32180:7    5] Resolve_Addr_Ident(): loopback socket pair registered for 127.0.0.1 (fd=440).
+[32180:7    5] io_docallback(fd=440, what=1): callback=00007FF9AB9E6CB0 registered=1.
+[32180:7    5] Resolver: Got callback on fd 440, events 1
+[32180:7    5] Proc_Read(): pipe_fd=440, buflen=256.
+[32180:7    5] Proc_Close(): pipe_fd=440.
+[32180:7    5] Got result from resolver: "" (1 bytes read).
+[32180:7    5] Handle_Write(idx=424): enter.
+[32180:7    5] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    5] Handle_Write(idx=424): sock=424 wbuf.used=0 wbuf.mem=000002773F342AF0
+[32180:7    5] Handle_Write(idx=424): wdatalen=0 after array_bytes().
+[32180:7    5] Handle_Write(idx=424): no pending data.
+[32180:7    5] Handle_Write(idx=424): dropping write event for sock=424.
+[32180:7    5] io_docallback(fd=424, what=1): callback=00007FF9AB9E7170 registered=1.
+[32180:7    5] cb_clientserver(sock=424, what=1, idx=424)
+[32180:7    5] Read_Request(idx=424 sock=424 host=127.0.0.1)
+[32180:7    5] Read_Request(): network payload(idx=424): len=42 preview=32 bytes hex=[43 41 50 20 4C 53 20 33 30 32 0A 4E 49 43 4B 20 77 69 6C 63 6F 0A 55 53 45 52 20 77 69 6C 63 6F] ...
+[32180:7    5] Read_Request(): append to rbuf(idx=424): len=42 preview=32 bytes hex=[43 41 50 20 4C 53 20 33 30 32 0A 4E 49 43 4B 20 77 69 6C 63 6F 0A 55 53 45 52 20 77 69 6C 63 6F] ...
+[32180:7    5] Read_Request(idx=424): read 42 bytes.
+[32180:7    5] Read_Request(idx=424): rbuf.used=42 bytes_in=42 bytes_out=42.
+[32180:7    5] Parse_Request(idx=424): raw='CAP LS 302'
+[32180:7    5] Parse_Request(idx=424): raw_len=10
+[32180:7    5] Handle_Request(idx=424): client_type=1 command=CAP argc=2 prefix=(none)
+[32180:7    5] Handle_Request(idx=424): cmd=CAP client_type=1 argc=2
+[32180:7    5] Parse_Request(idx=424): cmd=CAP argc=2 prefix=(none)
+[32180:7    5] Parse_Request(idx=424): argv[0]='LS'
+[32180:7    5] Parse_Request(idx=424): argv[1]='302'
+[32180:7    5] Handle_Request(idx=424): dispatching CAP handler=00007FF9AB9D16E0
+[32180:7    5] Dispatch(idx=424): CAP -> 00007FF9AB9D16E0
+[32180:7    5] Got "CAP LS" command from "*" ...
+[32180:7    5] Add capability 1, new capability of "*" is 1.
+[32180:7    5] Add capability 2, new capability of "*" is 3.
+[32180:7    5] Parse_Request(idx=424): raw='NICK wilco'
+[32180:7    5] Parse_Request(idx=424): raw_len=10
+[32180:7    5] Handle_Request(idx=424): client_type=1 command=NICK argc=1 prefix=(none)
+[32180:7    5] Handle_Request(idx=424): cmd=NICK client_type=1 argc=1
+[32180:7    5] Parse_Request(idx=424): cmd=NICK argc=1 prefix=(none)
+[32180:7    5] Parse_Request(idx=424): argv[0]='wilco'
+[32180:7    5] Handle_Request(idx=424): dispatching NICK handler=00007FF9AB9D1172
+[32180:7    5] Dispatch(idx=424): NICK -> 00007FF9AB9D1172
+[32180:7    5] Connection 424: got valid NICK command ...
+[32180:7    5] Parse_Request(idx=424): raw='USER wilco 0 * :...'
+[32180:7    5] Parse_Request(idx=424): raw_len=19
+[32180:7    5] Handle_Request(idx=424): client_type=4 command=USER argc=4 prefix=(none)
+[32180:7    5] Handle_Request(idx=424): cmd=USER client_type=4 argc=4
+[32180:7    5] Parse_Request(idx=424): cmd=USER argc=4 prefix=(none)
+[32180:7    5] Parse_Request(idx=424): argv[0]='wilco'
+[32180:7    5] Parse_Request(idx=424): argv[1]='0'
+[32180:7    5] Parse_Request(idx=424): argv[2]='*'
+[32180:7    5] Parse_Request(idx=424): argv[3]='...'
+[32180:7    5] Handle_Request(idx=424): dispatching USER handler=00007FF9AB9D1442
+[32180:7    5] Dispatch(idx=424): USER -> 00007FF9AB9D1442
+[32180:7    5] Connection 424: got valid USER command ...
+[32180:7    5] io_docallback(fd=424, what=2): callback=00007FF9AB9E7170 registered=3.
+[32180:7    5] cb_clientserver(sock=424, what=2, idx=424)
+[32180:7    5] Handle_Write(idx=424): enter.
+[32180:7    5] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    5] Handle_Write(idx=424): sock=424 wbuf.used=44 wbuf.mem=000002773F342850
+[32180:7    5] Handle_Write(): outbound buffer(idx=424): len=44 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 43 41 50 20 2A 20 4C 53 20 3A 6D 75] ...
+[32180:7    5] Handle_Write(idx=424): wdatalen=44 after array_bytes().
+[32180:7    5] Handle_Write(idx=424): writing 44 bytes to sock=424.
+[32180:7    5] Handle_Write(idx=424): write/send returned 44.
+[32180:7    5] Handle_Write(idx=424): moving buffer left by 44 bytes.
+[32180:7    5] Handle_Write(idx=424): wbuf.used=0 after moveleft.
+[32180:7    5] Handle_Write(idx=424): wrote 44 bytes.
+[32180:7    5] io_docallback(fd=424, what=2): callback=00007FF9AB9E7170 registered=3.
+[32180:7    5] cb_clientserver(sock=424, what=2, idx=424)
+[32180:7    5] Handle_Write(idx=424): enter.
+[32180:7    5] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    5] Handle_Write(idx=424): sock=424 wbuf.used=0 wbuf.mem=000002773F342850
+[32180:7    5] Handle_Write(idx=424): wdatalen=0 after array_bytes().
+[32180:7    5] Handle_Write(idx=424): no pending data.
+[32180:7    5] Handle_Write(idx=424): dropping write event for sock=424.
+[32180:7    5] io_docallback(fd=424, what=1): callback=00007FF9AB9E7170 registered=1.
+[32180:7    5] cb_clientserver(sock=424, what=1, idx=424)
+[32180:7    5] Read_Request(idx=424 sock=424 host=127.0.0.1)
+[32180:7    5] Read_Request(): network payload(idx=424): len=22 preview=22 bytes hex=[43 41 50 20 52 45 51 20 3A 6D 75 6C 74 69 2D 70 72 65 66 69 78 0A]
+[32180:7    5] Read_Request(): append to rbuf(idx=424): len=22 preview=22 bytes hex=[43 41 50 20 52 45 51 20 3A 6D 75 6C 74 69 2D 70 72 65 66 69 78 0A]
+[32180:7    5] Read_Request(idx=424): read 22 bytes.
+[32180:7    5] Read_Request(idx=424): rbuf.used=22 bytes_in=64 bytes_out=86.
+[32180:7    5] Parse_Request(idx=424): raw='CAP REQ :multi-prefix'
+[32180:7    5] Parse_Request(idx=424): raw_len=21
+[32180:7    5] Handle_Request(idx=424): client_type=8 command=CAP argc=2 prefix=(none)
+[32180:7    5] Handle_Request(idx=424): cmd=CAP client_type=8 argc=2
+[32180:7    5] Parse_Request(idx=424): cmd=CAP argc=2 prefix=(none)
+[32180:7    5] Parse_Request(idx=424): argv[0]='REQ'
+[32180:7    5] Parse_Request(idx=424): argv[1]='multi-prefix'
+[32180:7    5] Handle_Request(idx=424): dispatching CAP handler=00007FF9AB9D16E0
+[32180:7    5] Dispatch(idx=424): CAP -> 00007FF9AB9D16E0
+[32180:7    5] Got "CAP REQ" command from "wilco" ...
+[32180:7    5] Add capability 1, new capability of "wilco" is 3.
+[32180:7    5] Add capability 2, new capability of "wilco" is 3.
+[32180:7    5] Set new capability of "wilco" to 7.
+[32180:7    5] io_docallback(fd=424, what=2): callback=00007FF9AB9E7170 registered=3.
+[32180:7    5] cb_clientserver(sock=424, what=2, idx=424)
+[32180:7    5] Handle_Write(idx=424): enter.
+[32180:7    5] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    5] Handle_Write(idx=424): sock=424 wbuf.used=49 wbuf.mem=000002773F342FC0
+[32180:7    5] Handle_Write(): outbound buffer(idx=424): len=49 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 43 41 50 20 77 69 6C 63 6F 20 41 43] ...
+[32180:7    5] Handle_Write(idx=424): wdatalen=49 after array_bytes().
+[32180:7    5] Handle_Write(idx=424): writing 49 bytes to sock=424.
+[32180:7    5] Handle_Write(idx=424): write/send returned 49.
+[32180:7    5] Handle_Write(idx=424): moving buffer left by 49 bytes.
+[32180:7    5] Handle_Write(idx=424): wbuf.used=0 after moveleft.
+[32180:7    5] Handle_Write(idx=424): wrote 49 bytes.
+[32180:7    5] io_docallback(fd=424, what=2): callback=00007FF9AB9E7170 registered=3.
+[32180:7    5] cb_clientserver(sock=424, what=2, idx=424)
+[32180:7    5] Handle_Write(idx=424): enter.
+[32180:7    5] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    5] Handle_Write(idx=424): sock=424 wbuf.used=0 wbuf.mem=000002773F342FC0
+[32180:7    5] Handle_Write(idx=424): wdatalen=0 after array_bytes().
+[32180:7    5] Handle_Write(idx=424): no pending data.
+[32180:7    5] Handle_Write(idx=424): dropping write event for sock=424.
+[32180:7    5] io_docallback(fd=424, what=1): callback=00007FF9AB9E7170 registered=1.
+[32180:7    5] cb_clientserver(sock=424, what=1, idx=424)
+[32180:7    5] Read_Request(idx=424 sock=424 host=127.0.0.1)
+[32180:7    5] Read_Request(): network payload(idx=424): len=17 preview=17 bytes hex=[43 41 50 20 4C 49 53 54 0A 43 41 50 20 45 4E 44 0A]
+[32180:7    5] Read_Request(): append to rbuf(idx=424): len=17 preview=17 bytes hex=[43 41 50 20 4C 49 53 54 0A 43 41 50 20 45 4E 44 0A]
+[32180:7    5] Read_Request(idx=424): read 17 bytes.
+[32180:7    5] Read_Request(idx=424): rbuf.used=17 bytes_in=81 bytes_out=135.
+[32180:7    5] Parse_Request(idx=424): raw='CAP LIST'
+[32180:7    5] Parse_Request(idx=424): raw_len=8
+[32180:7    5] Handle_Request(idx=424): client_type=8 command=CAP argc=1 prefix=(none)
+[32180:7    5] Handle_Request(idx=424): cmd=CAP client_type=8 argc=1
+[32180:7    5] Parse_Request(idx=424): cmd=CAP argc=1 prefix=(none)
+[32180:7    5] Parse_Request(idx=424): argv[0]='LIST'
+[32180:7    5] Handle_Request(idx=424): dispatching CAP handler=00007FF9AB9D16E0
+[32180:7    5] Dispatch(idx=424): CAP -> 00007FF9AB9D16E0
+[32180:7    5] Got "CAP LIST" command from "wilco" ...
+[32180:7    5] Parse_Request(idx=424): raw='CAP END'
+[32180:7    5] Parse_Request(idx=424): raw_len=7
+[32180:7    5] Handle_Request(idx=424): client_type=8 command=CAP argc=1 prefix=(none)
+[32180:7    5] Handle_Request(idx=424): cmd=CAP client_type=8 argc=1
+[32180:7    5] Parse_Request(idx=424): cmd=CAP argc=1 prefix=(none)
+[32180:7    5] Parse_Request(idx=424): argv[0]='END'
+[32180:7    5] Handle_Request(idx=424): dispatching CAP handler=00007FF9AB9D16E0
+[32180:7    5] Dispatch(idx=424): CAP -> 00007FF9AB9D16E0
+[32180:7    5] Got "CAP END" command from "wilco" ...
+[32180:7    5] Delete capability 1, new capability of "wilco" is 6.
+[32180:5    5] User "wilco!~wilco@127.0.0.1" registered (connection 424).
+[32180:7    5] Add penalty time on connection 424: 1 second, total 1 second.
+[32180:7    5] io_docallback(fd=424, what=2): callback=00007FF9AB9E7170 registered=3.
+[32180:7    5] cb_clientserver(sock=424, what=2, idx=424)
+[32180:7    5] Handle_Write(idx=424): enter.
+[32180:7    5] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    5] Handle_Write(idx=424): sock=424 wbuf.used=1617 wbuf.mem=000002773F3635D0
+[32180:7    5] Handle_Write(): outbound buffer(idx=424): len=1617 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 43 41 50 20 77 69 6C 63 6F 20 4C 49] ...
+[32180:7    5] Handle_Write(idx=424): wdatalen=1617 after array_bytes().
+[32180:7    5] Handle_Write(idx=424): writing 1617 bytes to sock=424.
+[32180:7    5] Handle_Write(idx=424): write/send returned 1617.
+[32180:7    5] Handle_Write(idx=424): moving buffer left by 1617 bytes.
+[32180:7    5] Handle_Write(idx=424): wbuf.used=0 after moveleft.
+[32180:7    5] Handle_Write(idx=424): wrote 1617 bytes.
+[32180:7    5] io_docallback(fd=424, what=2): callback=00007FF9AB9E7170 registered=3.
+[32180:7    5] cb_clientserver(sock=424, what=2, idx=424)
+[32180:7    5] Handle_Write(idx=424): enter.
+[32180:7    5] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    5] Handle_Write(idx=424): sock=424 wbuf.used=0 wbuf.mem=000002773F3635D0
+[32180:7    5] Handle_Write(idx=424): wdatalen=0 after array_bytes().
+[32180:7    5] Handle_Write(idx=424): no pending data.
+[32180:7    5] Handle_Write(idx=424): dropping write event for sock=424.
+[32180:7    5] io_docallback(fd=424, what=1): callback=00007FF9AB9E7170 registered=1.
+[32180:7    5] cb_clientserver(sock=424, what=1, idx=424)
+[32180:7    5] Read_Request(idx=424 sock=424 host=127.0.0.1)
+[32180:7    5] Read_Request(): network payload(idx=424): len=14 preview=14 bytes hex=[4D 4F 44 45 20 77 69 6C 63 6F 20 2B 69 0A]
+[32180:7    5] Read_Request(): append to rbuf(idx=424): len=14 preview=14 bytes hex=[4D 4F 44 45 20 77 69 6C 63 6F 20 2B 69 0A]
+[32180:7    5] Read_Request(idx=424): read 14 bytes.
+[32180:7    5] Read_Request(idx=424): rbuf.used=14 bytes_in=95 bytes_out=1752.
+[32180:7    6] Parse_Request(idx=424): raw='MODE wilco +i'
+[32180:7    6] Parse_Request(idx=424): raw_len=13
+[32180:7    6] Handle_Request(idx=424): client_type=16 command=MODE argc=2 prefix=(none)
+[32180:7    6] Handle_Request(idx=424): cmd=MODE client_type=16 argc=2
+[32180:7    6] Parse_Request(idx=424): cmd=MODE argc=2 prefix=(none)
+[32180:7    6] Parse_Request(idx=424): argv[0]='wilco'
+[32180:7    6] Parse_Request(idx=424): argv[1]='+i'
+[32180:7    6] Add penalty time on connection 424: 1 second, total 1 second.
+[32180:7    6] Handle_Request(idx=424): dispatching MODE handler=00007FF9AB9D11BD
+[32180:7    6] Dispatch(idx=424): MODE -> 00007FF9AB9D11BD
+[32180:7    6] User "wilco!~wilco@127.0.0.1": Mode change, now "i".
+[32180:7    6] io_docallback(fd=424, what=2): callback=00007FF9AB9E7170 registered=3.
+[32180:7    6] cb_clientserver(sock=424, what=2, idx=424)
+[32180:7    6] Handle_Write(idx=424): enter.
+[32180:7    6] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    6] Handle_Write(idx=424): sock=424 wbuf.used=40 wbuf.mem=000002773F3635D0
+[32180:7    6] Handle_Write(): outbound buffer(idx=424): len=40 preview=32 bytes hex=[3A 77 69 6C 63 6F 21 7E 77 69 6C 63 6F 40 31 32 37 2E 30 2E 30 2E 31 20 4D 4F 44 45 20 77 69 6C] ...
+[32180:7    6] Handle_Write(idx=424): wdatalen=40 after array_bytes().
+[32180:7    6] Handle_Write(idx=424): writing 40 bytes to sock=424.
+[32180:7    6] Handle_Write(idx=424): write/send returned 40.
+[32180:7    6] Handle_Write(idx=424): moving buffer left by 40 bytes.
+[32180:7    6] Handle_Write(idx=424): wbuf.used=0 after moveleft.
+[32180:7    6] Handle_Write(idx=424): wrote 40 bytes.
+[32180:7    6] io_docallback(fd=424, what=2): callback=00007FF9AB9E7170 registered=3.
+[32180:7    6] cb_clientserver(sock=424, what=2, idx=424)
+[32180:7    6] Handle_Write(idx=424): enter.
+[32180:7    6] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7    6] Handle_Write(idx=424): sock=424 wbuf.used=0 wbuf.mem=000002773F3635D0
+[32180:7    6] Handle_Write(idx=424): wdatalen=0 after array_bytes().
+[32180:7    6] Handle_Write(idx=424): no pending data.
+[32180:7    6] Handle_Write(idx=424): dropping write event for sock=424.
+[32180:7   13] io_docallback(fd=424, what=1): callback=00007FF9AB9E7170 registered=1.
+[32180:7   13] cb_clientserver(sock=424, what=1, idx=424)
+[32180:7   13] Read_Request(idx=424 sock=424 host=127.0.0.1)
+[32180:7   13] Read_Request(): network payload(idx=424): len=7 preview=7 bytes hex=[51 55 49 54 20 3A 0A]
+[32180:7   13] Read_Request(): append to rbuf(idx=424): len=7 preview=7 bytes hex=[51 55 49 54 20 3A 0A]
+[32180:7   13] Read_Request(idx=424): read 7 bytes.
+[32180:7   13] Read_Request(idx=424): rbuf.used=7 bytes_in=102 bytes_out=1792.
+[32180:7   13] Parse_Request(idx=424): raw='QUIT :'
+[32180:7   13] Parse_Request(idx=424): raw_len=6
+[32180:7   13] Handle_Request(idx=424): client_type=16 command=QUIT argc=1 prefix=(none)
+[32180:7   13] Handle_Request(idx=424): cmd=QUIT client_type=16 argc=1
+[32180:7   13] Parse_Request(idx=424): cmd=QUIT argc=1 prefix=(none)
+[32180:7   13] Parse_Request(idx=424): argv[0]=''
+[32180:7   13] Handle_Request(idx=424): dispatching QUIT handler=00007FF9AB9D12C6
+[32180:7   13] Dispatch(idx=424): QUIT -> 00007FF9AB9D12C6
+[32180:6   13] Shutting down connection 424 (Got QUIT command) with "127.0.0.1:56812" ...
+[32180:7   13] Handle_Write(idx=424): enter.
+[32180:7   13] Handle_Write(idx=424): base=000002773F3650E0 conn=000002773F391C60 pool=425
+[32180:7   13] Handle_Write(idx=424): sock=424 wbuf.used=145 wbuf.mem=000002773F3635D0
+[32180:7   13] Handle_Write(): outbound buffer(idx=424): len=145 preview=32 bytes hex=[3A 6E 67 69 72 63 64 2E 74 65 73 74 2E 73 65 72 76 65 72 20 4E 4F 54 49 43 45 20 77 69 6C 63 6F] ...
+[32180:7   13] Handle_Write(idx=424): wdatalen=145 after array_bytes().
+[32180:7   13] Handle_Write(idx=424): writing 145 bytes to sock=424.
+[32180:7   13] Handle_Write(idx=424): write/send returned 145.
+[32180:7   13] Handle_Write(idx=424): moving buffer left by 145 bytes.
+[32180:7   13] Handle_Write(idx=424): wbuf.used=0 after moveleft.
+[32180:7   13] Handle_Write(idx=424): wrote 145 bytes.
+[32180:5   13] User "wilco!~wilco@127.0.0.1" unregistered (connection 424): Got QUIT command.
+[32180:6   13] Connection 424 with "127.0.0.1:56812" closed (in: 0.1k, out: 1.9k).
+[32180:7   13] Shutdown of connection 424 completed, 0 connections left.
