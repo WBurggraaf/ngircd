@@ -4,7 +4,8 @@
  * Phase 2 compatibility bridge: conn.c (and conn-func.c, conn-encoding.c,
  * io.c) have been moved from ngircd_impl into net_transport.dll.
  *
- * ngircd_impl's proto and core files still call Conn_*/io_* by direct name.
+ * ngircd_impl's proto and core files still call Conn_ and io_ symbols by
+ * direct name.
  * This shim provides those symbols inside ngircd_impl.dll by loading
  * net_transport.dll at runtime (via LoadLibraryA) and forwarding every call
  * through GetProcAddress-resolved function pointers.

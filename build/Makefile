@@ -1352,7 +1352,7 @@ original\src\ngircd\net\conn-encoding.obj: original\src\ngircd\net\conn-encoding
 
 # target to build an object file
 original\src\ngircd\net\conn-encoding.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.obj
 .PHONY : original\src\ngircd\net\conn-encoding.c.obj
 
 original\src\ngircd\net\conn-encoding.i: original\src\ngircd\net\conn-encoding.c.i
@@ -1360,7 +1360,7 @@ original\src\ngircd\net\conn-encoding.i: original\src\ngircd\net\conn-encoding.c
 
 # target to preprocess a source file
 original\src\ngircd\net\conn-encoding.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.i
 .PHONY : original\src\ngircd\net\conn-encoding.c.i
 
 original\src\ngircd\net\conn-encoding.s: original\src\ngircd\net\conn-encoding.c.s
@@ -1368,7 +1368,7 @@ original\src\ngircd\net\conn-encoding.s: original\src\ngircd\net\conn-encoding.c
 
 # target to generate assembly for a file
 original\src\ngircd\net\conn-encoding.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-encoding.c.s
 .PHONY : original\src\ngircd\net\conn-encoding.c.s
 
 original\src\ngircd\net\conn-func.obj: original\src\ngircd\net\conn-func.c.obj
@@ -1376,7 +1376,7 @@ original\src\ngircd\net\conn-func.obj: original\src\ngircd\net\conn-func.c.obj
 
 # target to build an object file
 original\src\ngircd\net\conn-func.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.obj
 .PHONY : original\src\ngircd\net\conn-func.c.obj
 
 original\src\ngircd\net\conn-func.i: original\src\ngircd\net\conn-func.c.i
@@ -1384,7 +1384,7 @@ original\src\ngircd\net\conn-func.i: original\src\ngircd\net\conn-func.c.i
 
 # target to preprocess a source file
 original\src\ngircd\net\conn-func.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.i
 .PHONY : original\src\ngircd\net\conn-func.c.i
 
 original\src\ngircd\net\conn-func.s: original\src\ngircd\net\conn-func.c.s
@@ -1392,7 +1392,7 @@ original\src\ngircd\net\conn-func.s: original\src\ngircd\net\conn-func.c.s
 
 # target to generate assembly for a file
 original\src\ngircd\net\conn-func.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn-func.c.s
 .PHONY : original\src\ngircd\net\conn-func.c.s
 
 original\src\ngircd\net\conn.obj: original\src\ngircd\net\conn.c.obj
@@ -1400,7 +1400,7 @@ original\src\ngircd\net\conn.obj: original\src\ngircd\net\conn.c.obj
 
 # target to build an object file
 original\src\ngircd\net\conn.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.obj
 .PHONY : original\src\ngircd\net\conn.c.obj
 
 original\src\ngircd\net\conn.i: original\src\ngircd\net\conn.c.i
@@ -1408,7 +1408,7 @@ original\src\ngircd\net\conn.i: original\src\ngircd\net\conn.c.i
 
 # target to preprocess a source file
 original\src\ngircd\net\conn.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.i
 .PHONY : original\src\ngircd\net\conn.c.i
 
 original\src\ngircd\net\conn.s: original\src\ngircd\net\conn.c.s
@@ -1416,7 +1416,7 @@ original\src\ngircd\net\conn.s: original\src\ngircd\net\conn.c.s
 
 # target to generate assembly for a file
 original\src\ngircd\net\conn.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\conn.c.s
 .PHONY : original\src\ngircd\net\conn.c.s
 
 original\src\ngircd\net\io.obj: original\src\ngircd\net\io.c.obj
@@ -1424,7 +1424,7 @@ original\src\ngircd\net\io.obj: original\src\ngircd\net\io.c.obj
 
 # target to build an object file
 original\src\ngircd\net\io.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\original\src\ngircd\net\io.c.obj
 .PHONY : original\src\ngircd\net\io.c.obj
 
@@ -1433,7 +1433,7 @@ original\src\ngircd\net\io.i: original\src\ngircd\net\io.c.i
 
 # target to preprocess a source file
 original\src\ngircd\net\io.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\original\src\ngircd\net\io.c.i
 .PHONY : original\src\ngircd\net\io.c.i
 
@@ -1442,7 +1442,7 @@ original\src\ngircd\net\io.s: original\src\ngircd\net\io.c.s
 
 # target to generate assembly for a file
 original\src\ngircd\net\io.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\original\src\ngircd\net\io.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\original\src\ngircd\net\io.c.s
 .PHONY : original\src\ngircd\net\io.c.s
 
@@ -2420,6 +2420,30 @@ src\net_transport\net_transport.s: src\net_transport\net_transport.c.s
 src\net_transport\net_transport.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\src\net_transport\net_transport.c.s
 .PHONY : src\net_transport\net_transport.c.s
+
+src\ngircd_impl\conn_shim.obj: src\ngircd_impl\conn_shim.c.obj
+.PHONY : src\ngircd_impl\conn_shim.obj
+
+# target to build an object file
+src\ngircd_impl\conn_shim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj
+.PHONY : src\ngircd_impl\conn_shim.c.obj
+
+src\ngircd_impl\conn_shim.i: src\ngircd_impl\conn_shim.c.i
+.PHONY : src\ngircd_impl\conn_shim.i
+
+# target to preprocess a source file
+src\ngircd_impl\conn_shim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.i
+.PHONY : src\ngircd_impl\conn_shim.c.i
+
+src\ngircd_impl\conn_shim.s: src\ngircd_impl\conn_shim.c.s
+.PHONY : src\ngircd_impl\conn_shim.s
+
+# target to generate assembly for a file
+src\ngircd_impl\conn_shim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.s
+.PHONY : src\ngircd_impl\conn_shim.c.s
 
 src\ngircd_impl\ngircd_daemon.obj: src\ngircd_impl\ngircd_daemon.c.obj
 .PHONY : src\ngircd_impl\ngircd_daemon.obj
@@ -3440,6 +3464,9 @@ help:
 	@echo ... src/net_transport/net_transport.obj
 	@echo ... src/net_transport/net_transport.i
 	@echo ... src/net_transport/net_transport.s
+	@echo ... src/ngircd_impl/conn_shim.obj
+	@echo ... src/ngircd_impl/conn_shim.i
+	@echo ... src/ngircd_impl/conn_shim.s
 	@echo ... src/ngircd_impl/ngircd_daemon.obj
 	@echo ... src/ngircd_impl/ngircd_daemon.i
 	@echo ... src/ngircd_impl/ngircd_daemon.s

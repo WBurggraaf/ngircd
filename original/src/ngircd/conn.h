@@ -50,6 +50,11 @@ typedef int CONN_ID;
 
 #ifdef CONN_MODULE
 
+#ifdef NET_TRANSPORT_BUILD
+# undef GLOBAL
+# define GLOBAL
+#endif
+
 #include "defines.h"
 #include "array.h"
 #include "tool.h"
@@ -123,52 +128,58 @@ extern long WCounter;
 #endif /* CONN_MODULE */
 
 
-GLOBAL void Conn_Init PARAMS((void ));
-GLOBAL void Conn_Exit PARAMS(( void ));
+#ifdef NET_TRANSPORT_BUILD
+# define CONN_API extern
+#else
+# define CONN_API GLOBAL
+#endif
 
-GLOBAL void Conn_CloseAllSockets PARAMS((int ExceptOf));
+CONN_API void Conn_Init PARAMS((void ));
+CONN_API void Conn_Exit PARAMS(( void ));
 
-GLOBAL unsigned int Conn_InitListeners PARAMS(( void ));
-GLOBAL void Conn_ExitListeners PARAMS(( void ));
+CONN_API void Conn_CloseAllSockets PARAMS((int ExceptOf));
 
-GLOBAL void Conn_StartLogin PARAMS((CONN_ID Idx));
+CONN_API unsigned int Conn_InitListeners PARAMS(( void ));
+CONN_API void Conn_ExitListeners PARAMS(( void ));
 
-GLOBAL void Conn_Handler PARAMS(( void ));
+CONN_API void Conn_StartLogin PARAMS((CONN_ID Idx));
 
-GLOBAL bool Conn_WriteStr PARAMS(( CONN_ID Idx, const char *Format, ... ));
-GLOBAL bool Conn_WriteStrBuf PARAMS(( CONN_ID Idx, const char *Str ));
+CONN_API void Conn_Handler PARAMS(( void ));
 
-GLOBAL char* Conn_Password PARAMS(( CONN_ID Idx ));
-GLOBAL void Conn_SetPassword PARAMS(( CONN_ID Idx, const char *Pwd ));
+CONN_API bool Conn_WriteStr PARAMS(( CONN_ID Idx, const char *Format, ... ));
+CONN_API bool Conn_WriteStrBuf PARAMS(( CONN_ID Idx, const char *Str ));
 
-GLOBAL void Conn_Close PARAMS(( CONN_ID Idx, const char *LogMsg, const char *FwdMsg, bool InformClient ));
+CONN_API char* Conn_Password PARAMS(( CONN_ID Idx ));
+CONN_API void Conn_SetPassword PARAMS(( CONN_ID Idx, const char *Pwd ));
 
-GLOBAL void Conn_SyncServerStruct PARAMS(( void ));
+CONN_API void Conn_Close PARAMS(( CONN_ID Idx, const char *LogMsg, const char *FwdMsg, bool InformClient ));
 
-GLOBAL CONN_ID Conn_GetFromProc PARAMS((int fd));
-GLOBAL CLIENT* Conn_GetClient PARAMS((CONN_ID i));
-GLOBAL PROC_STAT* Conn_GetProcStat PARAMS((CONN_ID i));
+CONN_API void Conn_SyncServerStruct PARAMS(( void ));
 
-GLOBAL char *Conn_GetCertFp PARAMS((CONN_ID Idx));
-GLOBAL bool Conn_SetCertFp PARAMS((CONN_ID Idx, const char *fingerprint));
-GLOBAL bool Conn_UsesSSL PARAMS((CONN_ID Idx));
+CONN_API CONN_ID Conn_GetFromProc PARAMS((int fd));
+CONN_API CLIENT* Conn_GetClient PARAMS((CONN_ID i));
+CONN_API PROC_STAT* Conn_GetProcStat PARAMS((CONN_ID i));
+
+CONN_API char *Conn_GetCertFp PARAMS((CONN_ID Idx));
+CONN_API bool Conn_SetCertFp PARAMS((CONN_ID Idx, const char *fingerprint));
+CONN_API bool Conn_UsesSSL PARAMS((CONN_ID Idx));
 
 #ifdef SSL_SUPPORT
-GLOBAL bool Conn_GetCipherInfo PARAMS((CONN_ID Idx, char *buf, size_t len));
+CONN_API bool Conn_GetCipherInfo PARAMS((CONN_ID Idx, char *buf, size_t len));
 #endif
 
-GLOBAL const char *Conn_GetIPAInfo PARAMS((CONN_ID Idx));
+CONN_API const char *Conn_GetIPAInfo PARAMS((CONN_ID Idx));
 
-GLOBAL long Conn_Count PARAMS((void));
-GLOBAL long Conn_CountMax PARAMS((void));
-GLOBAL long Conn_CountAccepted PARAMS((void));
+CONN_API long Conn_Count PARAMS((void));
+CONN_API long Conn_CountMax PARAMS((void));
+CONN_API long Conn_CountAccepted PARAMS((void));
 
 #ifndef STRICT_RFC
-GLOBAL long Conn_GetAuthPing PARAMS((CONN_ID Idx));
-GLOBAL void Conn_SetAuthPing PARAMS((CONN_ID Idx, long ID));
+CONN_API long Conn_GetAuthPing PARAMS((CONN_ID Idx));
+CONN_API void Conn_SetAuthPing PARAMS((CONN_ID Idx, long ID));
 #endif
 
-GLOBAL void Conn_DebugDump PARAMS((void));
+CONN_API void Conn_DebugDump PARAMS((void));
 
 #endif
 

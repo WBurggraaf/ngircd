@@ -1605,705 +1605,6 @@ CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj: C:\develop\ngircd\
 CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj: C:\develop\ngircd\original\src\ngircd\op.h
 
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\portab\portab.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\win32\include\strings.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\conn.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\conf-ssl.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\client.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\defines.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\proc.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\array.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\tool\tool.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\win32\include\sys\socket.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\win32\include\win32compat.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\windows.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\ctype.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\kernelspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\guiddef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namedpipeapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\profileapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\heapapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ioapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\synchapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\interlockedapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processthreadsapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\sysinfoapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\memoryapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\enclaveapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoollegacyapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoolapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wow64apiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securitybaseapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namespaceapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\systemtopologyapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processtopologyapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securityappcontainer.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\realtimeapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winerror.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\timezoneapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wingdi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winuser.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\tvout.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\datetimeapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\stringapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincon.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincontypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi3.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winver.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\verrsrc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winreg.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\reason.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnetwk.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\wnnc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsvc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\imm.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ime_cmodes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2def.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\inaddr.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\qos.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\io.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\module_iface.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\win32\include\sys\time.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\math.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_math.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_startup.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wprocess.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\win32\include\netinet\in.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\win32\include\arpa\inet.h
-
-
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn-func.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\portab\portab.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\log.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\module_iface.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\proc.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\conn.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\conf-ssl.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\client.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\defines.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\array.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\tool\tool.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\win32\include\sys\socket.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\win32\include\win32compat.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\windows.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\ctype.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\kernelspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\guiddef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namedpipeapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\profileapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\heapapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ioapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\synchapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\interlockedapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processthreadsapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\sysinfoapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\memoryapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\enclaveapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoollegacyapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoolapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wow64apiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securitybaseapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namespaceapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\systemtopologyapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processtopologyapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securityappcontainer.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\realtimeapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winerror.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\timezoneapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wingdi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winuser.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\tvout.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\datetimeapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\stringapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincon.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincontypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi3.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winver.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\verrsrc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winreg.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\reason.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnetwk.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\wnnc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsvc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\imm.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ime_cmodes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2def.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\inaddr.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\qos.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\io.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\win32\include\sys\time.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\math.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_math.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_startup.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wprocess.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\win32\include\netinet\in.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\win32\include\arpa\inet.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\conf.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\conn-func.h
-
-
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\portab\portab.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdlib.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_malloc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_search.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdlib.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\win32\include\unistd.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\win32\include\win32compat.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\windows.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\ctype.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\kernelspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\guiddef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namedpipeapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\profileapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\heapapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ioapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\synchapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\interlockedapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processthreadsapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\sysinfoapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\memoryapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\enclaveapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoollegacyapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoolapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wow64apiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securitybaseapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namespaceapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\systemtopologyapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processtopologyapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securityappcontainer.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\realtimeapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winerror.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\timezoneapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wingdi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winuser.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\tvout.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\datetimeapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\stringapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincon.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincontypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi3.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winver.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\verrsrc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winreg.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\reason.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnetwk.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\wnnc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsvc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\imm.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ime_cmodes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2def.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\inaddr.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\qos.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\io.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\module_iface.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\proc.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\win32\include\sys\time.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\math.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_math.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_startup.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wprocess.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\win32\include\strings.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\win32\include\sys\socket.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\stat.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\win32\include\netinet\in.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\conn.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\conf-ssl.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\client.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\defines.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\array.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\tool\tool.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\win32\include\arpa\inet.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\ngircd.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\class.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\conn-ssl.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\conf.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\conn-zip.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\conn-func.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\log.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\parse.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\resolve.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\sighandlers.h
-
-
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\net\io.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\portab\portab.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\win32\include\unistd.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\win32\include\win32compat.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\windows.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnt.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\ctype.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\kernelspecs.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\guiddef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namedpipeapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\profileapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\heapapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ioapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\synchapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\interlockedapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processthreadsapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\sysinfoapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\memoryapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\enclaveapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoollegacyapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoolapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wow64apiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securitybaseapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namespaceapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\systemtopologyapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processtopologyapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securityappcontainer.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\realtimeapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winerror.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\timezoneapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wingdi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winuser.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\tvout.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\datetimeapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\stringapiset.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincon.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincontypes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi2.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi3.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winver.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\verrsrc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winreg.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\reason.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnetwk.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\wnnc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsvc.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\imm.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ime_cmodes.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2def.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\inaddr.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\qos.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\io.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\module_iface.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\proc.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\win32\include\sys\time.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\math.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_math.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_startup.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wprocess.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\stat.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\array.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\log.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\defines.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\conn.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\conf-ssl.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\client.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\conf.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\tool\tool.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\win32\include\sys\socket.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\win32\include\netinet\in.h
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\win32\include\arpa\inet.h
-
-
 CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-cap.c
 CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj: C:\develop\ngircd\win32\include\config.h
@@ -4112,6 +3413,153 @@ CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj: "C:\Progr
 CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj: C:\develop\ngircd\original\src\ngircd\proto\user_check.h
 
 
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\src\ngircd_impl\conn_shim.c
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\windows.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnt.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\ctype.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\kernelspecs.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\guiddef.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namedpipeapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\profileapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\heapapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ioapiset.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\synchapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\interlockedapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processthreadsapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\sysinfoapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\memoryapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\enclaveapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoollegacyapiset.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\threadpoolapiset.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wow64apiset.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securitybaseapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\namespaceapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\systemtopologyapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processtopologyapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\securityappcontainer.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\realtimeapiset.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winerror.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\timezoneapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wingdi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winuser.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\tvout.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\datetimeapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\stringapiset.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnls.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincon.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\wincontypes.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi2.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\consoleapi3.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winver.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\verrsrc.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winreg.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\reason.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnetwk.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\wnnc.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsvc.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\imm.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ime_cmodes.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\portab\portab.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\conn.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\conf-ssl.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\client.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\defines.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\proc.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\conn-func.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\conn-encoding.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\io.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\original\src\ngircd\module_iface.h
+CMakeFiles\ngircd_impl.dir\src\ngircd_impl\conn_shim.c.obj: C:\develop\ngircd\win32\include\sys\time.h
+
+
 CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj: C:\develop\ngircd\src\ngircd_impl\ngircd_daemon.c
 CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj: C:\develop\ngircd\original\src\portab\portab.h
 CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj: C:\develop\ngircd\win32\include\config.h
@@ -4826,8 +4274,6 @@ C:\develop\ngircd\original\src\ngircd\conn-zip.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winnt.h":
 
-C:\develop\ngircd\original\src\ngircd\net\conn.c:
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h":
@@ -4891,8 +4337,6 @@ C:\develop\ngircd\original\src\ngircd\io.h:
 C:\develop\ngircd\win32\include\dirent.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ioapiset.h":
-
-C:\develop\ngircd\original\src\ngircd\net\io.c:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\synchapi.h":
 
@@ -4986,8 +4430,6 @@ C:\develop\ngircd\original\src\ngircd\core\lists.c:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h":
 
-C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c:
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h":
@@ -5072,14 +4514,6 @@ C:\develop\ngircd\original\src\ngircd\core\op.c:
 
 C:\develop\ngircd\original\src\ngircd\op.h:
 
-C:\develop\ngircd\original\src\ngircd\net\conn-func.c:
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\stat.h":
-
-C:\develop\ngircd\original\src\ngircd\conn-ssl.h:
-
-C:\develop\ngircd\original\src\ngircd\sighandlers.h:
-
 C:\develop\ngircd\original\src\ngircd\irc-cap.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\signal.h":
@@ -5128,11 +4562,19 @@ C:\develop\ngircd\original\src\ngircd\proto\parse.c:
 
 C:\develop\ngircd\original\src\ngircd\proto\user_check.c:
 
+C:\develop\ngircd\src\ngircd_impl\conn_shim.c:
+
+C:\develop\ngircd\original\src\ngircd\conn-encoding.h:
+
 C:\develop\ngircd\src\ngircd_impl\ngircd_daemon.c:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\stat.h":
 
 C:\develop\ngircd\src\ngircd_impl\ngircd_runtime_globals.c:
 
 C:\develop\ngircd\win32\src\win32_proc.c:
+
+C:\develop\ngircd\original\src\ngircd\sighandlers.h:
 
 C:\develop\ngircd\win32\src\win32_resolve.c:
 

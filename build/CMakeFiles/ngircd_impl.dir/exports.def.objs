@@ -1,16 +1,13 @@
 CMakeFiles/ngircd_impl.dir/src/ngircd_impl/ngircd_runtime_globals.c.obj
 CMakeFiles/ngircd_impl.dir/src/ngircd_impl/ngircd_daemon.c.obj
+CMakeFiles/ngircd_impl.dir/src/ngircd_impl/conn_shim.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/array.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/channel.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/class.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/client.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/client-cap.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/conf.c.obj
-CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn.c.obj
-CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn-encoding.c.obj
-CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn-func.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/hash.c.obj
-CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/io.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-cap.c.obj
 CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-channel.c.obj
