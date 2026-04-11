@@ -558,6 +558,19 @@ config_build\fast:
 .PHONY : config_build\fast
 
 #=============================================================================
+# Target rules for targets named logging_build
+
+# Build rule for target.
+logging_build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) logging_build
+.PHONY : logging_build
+
+# fast build rule for target.
+logging_build\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_build.dir\build
+.PHONY : logging_build\fast
+
+#=============================================================================
 # Target rules for targets named irc_protocol
 
 # Build rule for target.
@@ -634,19 +647,6 @@ ngircd_impl: cmake_check_build_system
 ngircd_impl\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\build
 .PHONY : ngircd_impl\fast
-
-#=============================================================================
-# Target rules for targets named logging
-
-# Build rule for target.
-logging: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) logging
-.PHONY : logging
-
-# fast build rule for target.
-logging\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging.dir\build
-.PHONY : logging\fast
 
 #=============================================================================
 # Target rules for targets named net_transport
@@ -1016,7 +1016,6 @@ src\app\logging\logging.obj: src\app\logging\logging.c.obj
 
 # target to build an object file
 src\app\logging\logging.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging.dir\src\app\logging\logging.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj
 .PHONY : src\app\logging\logging.c.obj
 
@@ -1025,7 +1024,6 @@ src\app\logging\logging.i: src\app\logging\logging.c.i
 
 # target to preprocess a source file
 src\app\logging\logging.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging.dir\src\app\logging\logging.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.i
 .PHONY : src\app\logging\logging.c.i
 
@@ -1034,7 +1032,6 @@ src\app\logging\logging.s: src\app\logging\logging.c.s
 
 # target to generate assembly for a file
 src\app\logging\logging.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging.dir\src\app\logging\logging.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\logging_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.s
 .PHONY : src\app\logging\logging.c.s
 
@@ -3230,6 +3227,7 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... config_build
+	@echo ... logging_build
 	@echo ... platform_build
 	@echo ... branch_coverage_test
 	@echo ... channel_state
@@ -3246,7 +3244,6 @@ help:
 	@echo ... join_check_test
 	@echo ... join_error_test
 	@echo ... log_io_resolver_test
-	@echo ... logging
 	@echo ... logging_module_test
 	@echo ... login_check_test
 	@echo ... login_flow_test

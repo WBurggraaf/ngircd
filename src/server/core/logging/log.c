@@ -57,6 +57,12 @@ Log_SetOps(const NgLogOps *Ops)
 static void
 Log_Message(int Level, const char *msg)
 {
+	const NgLogOps *ops = NgLog_GetOps();
+
+	if (ops && ops->log) {
+		ops->log(Level, msg);
+		return;
+	}
 	if (!Use_Syslog) {
 		/* log to console */
 		fprintf(stdout, "[%ld:%d %4ld] %s\n", (long)getpid(), Level,

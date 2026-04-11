@@ -188,31 +188,43 @@ server_app_create_pidfile(void)
     if (!pidfile || !pidfile[0])
         return CORE_STATUS_OK;
 
-    if (s_logging_api && s_logging_api->debug)
-        s_logging_api->debug("Creating PID file (%s) ...", pidfile);
+    if (s_logging_api && s_logging_api->debug_message) {
+        char msg[256];
+        snprintf(msg, sizeof msg, "Creating PID file (%s) ...", pidfile);
+        s_logging_api->debug_message(msg);
+    }
 
     pidfd = open(pidfile, O_RDWR|O_CREAT|O_EXCL, S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH);
     if (pidfd < 0) {
-        if (s_logging_api && s_logging_api->log)
-            s_logging_api->log(LOG_ERR, "Error writing PID file (%s): %s", pidfile, strerror(errno));
+        if (s_logging_api && s_logging_api->log_message) {
+            char msg[256];
+            snprintf(msg, sizeof msg, "Error writing PID file (%s): %s", pidfile, strerror(errno));
+            s_logging_api->log_message(LOG_ERR, msg);
+        }
         return CORE_STATUS_INTERNAL_ERROR;
     }
 
     len = snprintf(pidbuf, sizeof pidbuf, "%ld\n", (long)pid);
     if (len < 0 || len >= (int)sizeof pidbuf) {
-        if (s_logging_api && s_logging_api->log)
-            s_logging_api->log(LOG_ERR, "Error converting process ID!");
+        if (s_logging_api && s_logging_api->log_message)
+            s_logging_api->log_message(LOG_ERR, "Error converting process ID!");
         close(pidfd);
         return CORE_STATUS_INTERNAL_ERROR;
     }
 
     if (write(pidfd, pidbuf, (size_t)len) != (ssize_t)len) {
-        if (s_logging_api && s_logging_api->log)
-            s_logging_api->log(LOG_ERR, "Can't write PID file (%s): %s!", pidfile, strerror(errno));
+        if (s_logging_api && s_logging_api->log_message) {
+            char msg[256];
+            snprintf(msg, sizeof msg, "Can't write PID file (%s): %s!", pidfile, strerror(errno));
+            s_logging_api->log_message(LOG_ERR, msg);
+        }
     }
     if (close(pidfd) != 0) {
-        if (s_logging_api && s_logging_api->log)
-            s_logging_api->log(LOG_ERR, "Error closing PID file (%s): %s!", pidfile, strerror(errno));
+        if (s_logging_api && s_logging_api->log_message) {
+            char msg[256];
+            snprintf(msg, sizeof msg, "Error closing PID file (%s): %s!", pidfile, strerror(errno));
+            s_logging_api->log_message(LOG_ERR, msg);
+        }
     }
     return CORE_STATUS_OK;
 }
@@ -238,11 +250,17 @@ server_app_delete_pidfile(void)
     if (!pidfile || !pidfile[0])
         return CORE_STATUS_OK;
 
-    if (s_logging_api && s_logging_api->debug)
-        s_logging_api->debug("Removing PID file (%s) ...", pidfile);
+    if (s_logging_api && s_logging_api->debug_message) {
+        char msg[256];
+        snprintf(msg, sizeof msg, "Removing PID file (%s) ...", pidfile);
+        s_logging_api->debug_message(msg);
+    }
     if (unlink(pidfile)) {
-        if (s_logging_api && s_logging_api->log)
-            s_logging_api->log(LOG_ERR, "Error unlinking PID file (%s): %s", pidfile, strerror(errno));
+        if (s_logging_api && s_logging_api->log_message) {
+            char msg[256];
+            snprintf(msg, sizeof msg, "Error unlinking PID file (%s): %s", pidfile, strerror(errno));
+            s_logging_api->log_message(LOG_ERR, msg);
+        }
     }
     return CORE_STATUS_OK;
 }

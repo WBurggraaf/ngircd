@@ -125,6 +125,12 @@ stage_managed_native_library(
     "Config"
 )
 
+stage_managed_native_library(
+    logging
+    "${CMAKE_SOURCE_DIR}/src/app/logging/bin/x86/Release/net10.0/win-x64/native"
+    "Logging"
+)
+
 # ---------------------------------------------------------------------------
 # Stub DLLs — no legacy deps, C# P/Invoke ready today
 # ---------------------------------------------------------------------------
@@ -297,12 +303,6 @@ endif()
 #   server_app    ← core_runtime, ngircd_impl, logging, config, net_transport
 #   ngircd.exe    ← ngircd_impl + all wrapper DLLs
 # ---------------------------------------------------------------------------
-
-add_library(logging SHARED ${SHARED_SRC}/app/logging/logging.c)
-target_include_directories(logging PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
-target_compile_definitions(logging PRIVATE LOGGING_BUILD NGIRCD_IMPL_CONSUMER)
-target_link_libraries(logging PUBLIC core_runtime PRIVATE ngircd_impl)
 
 add_library(net_transport SHARED ${SHARED_SRC}/net/transport/net_transport.c)
 target_include_directories(net_transport PUBLIC ${SHARED_INC}

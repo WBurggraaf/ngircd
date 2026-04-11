@@ -19,8 +19,8 @@ static int resolver_calls;
 static void test_log_init(bool syslog_mode) { (void)syslog_mode; log_init_calls++; }
 static void test_log_exit(void) { log_exit_calls++; }
 static void test_log_reinit(void) { log_reinit_calls++; }
-static void test_log(int level, const char *fmt, ...) { (void)level; (void)fmt; }
-static void test_debug(const char *fmt, ...) { (void)fmt; }
+static void test_log(int level, const char *msg) { (void)level; (void)msg; }
+static void test_debug(const char *msg) { (void)msg; }
 
 static bool test_io_init(unsigned int event_capacity) { (void)event_capacity; io_init_calls++; return true; }
 static void test_io_shutdown(void) { io_shutdown_calls++; }

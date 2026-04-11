@@ -5,9 +5,9 @@
  * Provides no-op stubs for Log_*, so no ngircd_impl link needed.
  *
  * Tests:
- *   - logging_get_api_v1()  struct integrity
- *   - module_get_api_v1()   metadata integrity
- *   - logging_log / logging_debug smoke (exercise code paths)
+ *   - logging_get_api_v1()   struct integrity
+ *   - module_get_api_v1()    metadata integrity
+ *   - logging_log/debug smoke (exercise code paths)
  */
 
 #include "app/logging/logging.h"
@@ -47,8 +47,8 @@ int main(void)
     CHECK(api->init     != NULL,        "logging_init_ptr_not_null");
     CHECK(api->shutdown != NULL,        "logging_shutdown_ptr_not_null");
     CHECK(api->reinit   != NULL,        "logging_reinit_ptr_not_null");
-    CHECK(api->log      != NULL,        "logging_log_ptr_not_null");
-    CHECK(api->debug    != NULL,        "logging_debug_ptr_not_null");
+    CHECK(api->log_message   != NULL,   "logging_log_ptr_not_null");
+    CHECK(api->debug_message != NULL,   "logging_debug_ptr_not_null");
 
     /* ---- Smoke: exercise init/reinit/shutdown code paths ---- */
     CHECK(api->init(0)  == CORE_STATUS_OK, "logging_init_returns_ok");
@@ -56,8 +56,8 @@ int main(void)
     api->shutdown(); /* no-op stub path */
 
     /* ---- Smoke: log and debug should not crash ---- */
-    api->log(0, "test %d", 42);
-    api->debug("dbg %s", "hello");
+    api->log_message(0, "test 42");
+    api->debug_message("dbg hello");
 
     /* ---- module_get_api_v1 metadata ---- */
     const core_module_api_t *m = module_get_api_v1();

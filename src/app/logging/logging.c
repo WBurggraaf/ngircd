@@ -25,27 +25,15 @@ logging_reinit(void)
 }
 
 static void LOGGING_CALL
-logging_log(int level, const char *format, ...)
+logging_log_message(int level, const char *message)
 {
-    va_list ap;
-    char buffer[1024];
-
-    va_start(ap, format);
-    vsnprintf(buffer, sizeof(buffer), format, ap);
-    va_end(ap);
-    Log(level, "%s", buffer);
+    Log(level, "%s", message ? message : "");
 }
 
 static void LOGGING_CALL
-logging_debug(const char *format, ...)
+logging_debug_message(const char *message)
 {
-    va_list ap;
-    char buffer[1024];
-
-    va_start(ap, format);
-    vsnprintf(buffer, sizeof(buffer), format, ap);
-    va_end(ap);
-    LogDebug("%s", buffer);
+    LogDebug("%s", message ? message : "");
 }
 
 static const logging_api_t LoggingApi = {
@@ -54,8 +42,8 @@ static const logging_api_t LoggingApi = {
     logging_init,
     logging_shutdown,
     logging_reinit,
-    logging_log,
-    logging_debug
+    logging_log_message,
+    logging_debug_message
 };
 
 LOGGING_API const logging_api_t * LOGGING_CALL

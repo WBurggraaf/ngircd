@@ -3,12 +3,11 @@
 
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: C:\develop\ngircd\src\app\logging\logging.c
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: C:\develop\ngircd\include\app\logging\logging.h
-CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
+CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
-CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: C:\develop\ngircd\include\core\runtime\core_runtime.h
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
@@ -28,17 +27,17 @@ CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: C:\develop\ngi
 
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: C:\develop\ngircd\tests\logging_module_test.c
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: C:\develop\ngircd\include\app\logging\logging.h
-CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
+CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
-CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: C:\develop\ngircd\include\core\runtime\core_runtime.h
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: C:\develop\ngircd\include\core\runtime\module_api.h
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
+CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
@@ -54,8 +53,6 @@ C:\develop\ngircd\src\app\logging\logging.c:
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h":
 
 C:\develop\ngircd\include\app\logging\logging.h:
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h":
 
 C:\develop\ngircd\tests\logging_module_test.c:
 
@@ -92,3 +89,5 @@ C:\develop\ngircd\src\support\portab\portab.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h":
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h":

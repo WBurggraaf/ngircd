@@ -16,7 +16,6 @@ CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: C:\develop\ngircd\inclu
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\app\logging\logging.h
-CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\platform\platform.h
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\net\transport\net_transport.h
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\net\resolver\resolver.h
@@ -39,6 +38,7 @@ CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files (x86)
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
+CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
 CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"
@@ -160,7 +160,6 @@ CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\app\logging\logging.h
-CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\platform\platform.h
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\net\transport\net_transport.h
 CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj: C:\develop\ngircd\include\net\resolver\resolver.h

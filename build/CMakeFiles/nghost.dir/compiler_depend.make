@@ -16,7 +16,6 @@ CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\app\con
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\app\logging\logging.h
-CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\platform\platform.h
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\net\transport\net_transport.h
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\include\net\resolver\resolver.h
@@ -39,6 +38,7 @@ CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows K
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
 CMakeFiles\nghost.dir\src\app\host\host.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"

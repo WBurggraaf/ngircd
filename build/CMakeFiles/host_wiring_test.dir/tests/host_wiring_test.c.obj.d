@@ -12,7 +12,6 @@ C:/develop/ngircd/include/app/config/config.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
 C:/develop/ngircd/include/app/logging/logging.h
-C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdarg.h
 C:/develop/ngircd/include/platform/platform.h
 C:/develop/ngircd/include/net/transport/net_transport.h
 C:/develop/ngircd/include/net/resolver/resolver.h

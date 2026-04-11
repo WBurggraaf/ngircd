@@ -26,17 +26,17 @@ test_log_reinit(void)
 }
 
 static void
-test_log(int level, const char *fmt, ...)
+test_log(int level, const char *msg)
 {
 	(void)level;
-	(void)fmt;
+	(void)msg;
 	log_calls++;
 }
 
 static void
-test_debug(const char *fmt, ...)
+test_debug(const char *msg)
 {
-	(void)fmt;
+	(void)msg;
 	warn_calls++;
 }
 

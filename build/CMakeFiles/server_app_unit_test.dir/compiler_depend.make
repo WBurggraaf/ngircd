@@ -17,7 +17,6 @@ CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: C:\develop
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: C:\develop\ngircd\include\app\logging\logging.h
-CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: C:\develop\ngircd\include\platform\platform.h
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: C:\develop\ngircd\include\net\transport\net_transport.h
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: C:\develop\ngircd\include\net\resolver\resolver.h
@@ -35,6 +34,7 @@ CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Progra
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h"
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h"
+CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h"
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h"
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h"
 CMakeFiles\server_app_unit_test.dir\tests\server_app_unit_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"

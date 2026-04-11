@@ -28,8 +28,8 @@ typedef struct NgLogOps {
 	void (*init)(bool syslog_mode);
 	void (*exit)(void);
 	void (*reinit)(void);
-	void (*log)(int level, const char *fmt, ...);
-	void (*debug)(const char *fmt, ...);
+	void (*log)(int level, const char *message);
+	void (*debug)(const char *message);
 } NgLogOps;
 
 typedef struct NgIoOps {
