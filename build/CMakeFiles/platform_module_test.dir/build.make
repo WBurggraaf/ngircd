@@ -81,43 +81,24 @@ CMakeFiles\platform_module_test.dir\tests\platform_module_test.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\platform_module_test.dir\tests\platform_module_test.c.s /c C:\develop\ngircd\tests\platform_module_test.c
 <<
 
-CMakeFiles\platform_module_test.dir\src\platform\platform.c.obj: CMakeFiles\platform_module_test.dir\flags.make
-CMakeFiles\platform_module_test.dir\src\platform\platform.c.obj: C:\develop\ngircd\src\platform\platform.c
-CMakeFiles\platform_module_test.dir\src\platform\platform.c.obj: CMakeFiles\platform_module_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/platform_module_test.dir/src/platform/platform.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\platform_module_test.dir\src\platform\platform.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\platform_module_test.dir\src\platform\platform.c.obj /FdCMakeFiles\platform_module_test.dir\ /FS -c C:\develop\ngircd\src\platform\platform.c
-<<
-
-CMakeFiles\platform_module_test.dir\src\platform\platform.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/platform_module_test.dir/src/platform/platform.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\platform_module_test.dir\src\platform\platform.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\platform\platform.c
-<<
-
-CMakeFiles\platform_module_test.dir\src\platform\platform.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/platform_module_test.dir/src/platform/platform.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\platform_module_test.dir\src\platform\platform.c.s /c C:\develop\ngircd\src\platform\platform.c
-<<
-
 # Object files for target platform_module_test
 platform_module_test_OBJECTS = \
-"CMakeFiles\platform_module_test.dir\tests\platform_module_test.c.obj" \
-"CMakeFiles\platform_module_test.dir\src\platform\platform.c.obj"
+"CMakeFiles\platform_module_test.dir\tests\platform_module_test.c.obj"
 
 # External object files for target platform_module_test
 platform_module_test_EXTERNAL_OBJECTS =
 
 platform_module_test.exe: CMakeFiles\platform_module_test.dir\tests\platform_module_test.c.obj
-platform_module_test.exe: CMakeFiles\platform_module_test.dir\src\platform\platform.c.obj
 platform_module_test.exe: CMakeFiles\platform_module_test.dir\build.make
 platform_module_test.exe: core_runtime.lib
+platform_module_test.exe: platform_managed\platform.lib
 platform_module_test.exe: CMakeFiles\platform_module_test.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable platform_module_test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable platform_module_test.exe"
 	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\platform_module_test.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\platform_module_test.dir\objects1.rsp @<<
- /out:platform_module_test.exe /implib:platform_module_test.lib /pdb:C:\develop\ngircd\build\platform_module_test.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /DEBUG   -LIBPATH:C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\lib\x64  -LIBPATH:C:\PROGRA~2\WI3CF2~1\10\lib\100261~1.0\ucrt\x64  -LIBPATH:C:\PROGRA~2\WI3CF2~1\10\lib\100261~1.0\um\x64  core_runtime.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:platform_module_test.exe /implib:platform_module_test.lib /pdb:C:\develop\ngircd\build\platform_module_test.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /DEBUG   -LIBPATH:C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\lib\x64  -LIBPATH:C:\PROGRA~2\WI3CF2~1\10\lib\100261~1.0\ucrt\x64  -LIBPATH:C:\PROGRA~2\WI3CF2~1\10\lib\100261~1.0\um\x64  core_runtime.lib platform_managed\platform.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying Platform.dll to build dir for platform_module_test"
+	echo >nul && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/develop/ngircd/build/platform_managed/platform.dll C:/develop/ngircd/build/Platform.dll
 
 # Rule to build all files generated by this target.
 CMakeFiles\platform_module_test.dir\build: platform_module_test.exe

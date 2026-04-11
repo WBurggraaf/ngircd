@@ -960,30 +960,6 @@ server_app_unit_test\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_app_unit_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\server_app_unit_test.dir\build
 .PHONY : server_app_unit_test\fast
 
-src\app\config\config.obj: src\app\config\config.c.obj
-.PHONY : src\app\config\config.obj
-
-# target to build an object file
-src\app\config\config.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\app\config\config.c.obj
-.PHONY : src\app\config\config.c.obj
-
-src\app\config\config.i: src\app\config\config.c.i
-.PHONY : src\app\config\config.i
-
-# target to preprocess a source file
-src\app\config\config.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\app\config\config.c.i
-.PHONY : src\app\config\config.c.i
-
-src\app\config\config.s: src\app\config\config.c.s
-.PHONY : src\app\config\config.s
-
-# target to generate assembly for a file
-src\app\config\config.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\app\config\config.c.s
-.PHONY : src\app\config\config.c.s
-
 src\app\host\host.obj: src\app\host\host.c.obj
 .PHONY : src\app\host\host.obj
 
@@ -1157,30 +1133,6 @@ src\net\transport\net_transport.s: src\net\transport\net_transport.c.s
 src\net\transport\net_transport.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\net_transport.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.s
 .PHONY : src\net\transport\net_transport.c.s
-
-src\platform\platform.obj: src\platform\platform.c.obj
-.PHONY : src\platform\platform.obj
-
-# target to build an object file
-src\platform\platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_module_test.dir\src\platform\platform.c.obj
-.PHONY : src\platform\platform.c.obj
-
-src\platform\platform.i: src\platform\platform.c.i
-.PHONY : src\platform\platform.i
-
-# target to preprocess a source file
-src\platform\platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_module_test.dir\src\platform\platform.c.i
-.PHONY : src\platform\platform.c.i
-
-src\platform\platform.s: src\platform\platform.c.s
-.PHONY : src\platform\platform.s
-
-# target to generate assembly for a file
-src\platform\platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\platform_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\platform_module_test.dir\src\platform\platform.c.s
-.PHONY : src\platform\platform.c.s
 
 src\platform\windows\src\win32_main.obj: src\platform\windows\src\win32_main.c.obj
 .PHONY : src\platform\windows\src\win32_main.obj
@@ -1391,7 +1343,6 @@ src\server\core\misc\array.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\array.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj
 .PHONY : src\server\core\misc\array.c.obj
 
 src\server\core\misc\array.i: src\server\core\misc\array.c.i
@@ -1402,7 +1353,6 @@ src\server\core\misc\array.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\array.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.i
 .PHONY : src\server\core\misc\array.c.i
 
 src\server\core\misc\array.s: src\server\core\misc\array.c.s
@@ -1413,7 +1363,6 @@ src\server\core\misc\array.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\array.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.s
 .PHONY : src\server\core\misc\array.c.s
 
 src\server\core\misc\class.obj: src\server\core\misc\class.c.obj
@@ -2634,30 +2583,6 @@ tests\branch_coverage_test.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\tests\branch_coverage_test.c.s
 .PHONY : tests\branch_coverage_test.c.s
 
-tests\conf_func_stubs.obj: tests\conf_func_stubs.c.obj
-.PHONY : tests\conf_func_stubs.obj
-
-# target to build an object file
-tests\conf_func_stubs.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.obj
-.PHONY : tests\conf_func_stubs.c.obj
-
-tests\conf_func_stubs.i: tests\conf_func_stubs.c.i
-.PHONY : tests\conf_func_stubs.i
-
-# target to preprocess a source file
-tests\conf_func_stubs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.i
-.PHONY : tests\conf_func_stubs.c.i
-
-tests\conf_func_stubs.s: tests\conf_func_stubs.c.s
-.PHONY : tests\conf_func_stubs.s
-
-# target to generate assembly for a file
-tests\conf_func_stubs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.s
-.PHONY : tests\conf_func_stubs.c.s
-
 tests\conf_whitebox_test.obj: tests\conf_whitebox_test.c.obj
 .PHONY : tests\conf_whitebox_test.obj
 
@@ -3120,7 +3045,6 @@ tests\test_support.obj: tests\test_support.c.obj
 # target to build an object file
 tests\test_support.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\tests\test_support.c.obj
 .PHONY : tests\test_support.c.obj
 
 tests\test_support.i: tests\test_support.c.i
@@ -3129,7 +3053,6 @@ tests\test_support.i: tests\test_support.c.i
 # target to preprocess a source file
 tests\test_support.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\tests\test_support.c.i
 .PHONY : tests\test_support.c.i
 
 tests\test_support.s: tests\test_support.c.s
@@ -3138,7 +3061,6 @@ tests\test_support.s: tests\test_support.c.s
 # target to generate assembly for a file
 tests\test_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\tests\test_support.c.s
 .PHONY : tests\test_support.c.s
 
 tests\user_check_test.obj: tests\user_check_test.c.obj
@@ -3239,9 +3161,6 @@ help:
 	@echo ... server_app
 	@echo ... server_app_unit_test
 	@echo ... user_check_test
-	@echo ... src/app/config/config.obj
-	@echo ... src/app/config/config.i
-	@echo ... src/app/config/config.s
 	@echo ... src/app/host/host.obj
 	@echo ... src/app/host/host.i
 	@echo ... src/app/host/host.s
@@ -3263,9 +3182,6 @@ help:
 	@echo ... src/net/transport/net_transport.obj
 	@echo ... src/net/transport/net_transport.i
 	@echo ... src/net/transport/net_transport.s
-	@echo ... src/platform/platform.obj
-	@echo ... src/platform/platform.i
-	@echo ... src/platform/platform.s
 	@echo ... src/platform/windows/src/win32_main.obj
 	@echo ... src/platform/windows/src/win32_main.i
 	@echo ... src/platform/windows/src/win32_main.s
@@ -3434,9 +3350,6 @@ help:
 	@echo ... tests/branch_coverage_test.obj
 	@echo ... tests/branch_coverage_test.i
 	@echo ... tests/branch_coverage_test.s
-	@echo ... tests/conf_func_stubs.obj
-	@echo ... tests/conf_func_stubs.i
-	@echo ... tests/conf_func_stubs.s
 	@echo ... tests/conf_whitebox_test.obj
 	@echo ... tests/conf_whitebox_test.i
 	@echo ... tests/conf_whitebox_test.s

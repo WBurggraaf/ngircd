@@ -20,6 +20,9 @@
 #include "defines.h"
 #include "ngircd.h"
 
+/* Forward declaration — avoids pulling in conn.h/conf.h include chains */
+extern void Conf_Init(void);
+
 /* Cached module APIs populated by server_app_create() from the injected table */
 static const config_api_t        *s_config_api    = NULL;
 static const logging_api_t       *s_logging_api   = NULL;
@@ -97,6 +100,9 @@ server_app_init_random(void)
 static core_status_t SERVER_APP_CALL
 server_app_init_preloop(int syslog_mode)
 {
+    /* Parse the config file and populate Conf_* globals used by legacy code */
+    Conf_Init();
+
     if (!s_config_api || !s_config_api->init
         || s_config_api->init() != CORE_STATUS_OK)
         return CORE_STATUS_INTERNAL_ERROR;

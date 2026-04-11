@@ -1,17 +1,17 @@
-Start testing: Apr 11 23:26 W. Europe Summer Time
+Start testing: Apr 11 23:37 W. Europe Summer Time
 ----------------------------------------------------------
 1/27 Testing: module_iface_test
 1/27 Test: module_iface_test
 Command: "C:/develop/ngircd/build/module_iface_test.exe"
 Directory: C:/develop/ngircd/build
-"module_iface_test" start time: Apr 11 23:26 W. Europe Summer Time
+"module_iface_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"module_iface_test" end time: Apr 11 23:26 W. Europe Summer Time
+"module_iface_test" end time: Apr 11 23:37 W. Europe Summer Time
 "module_iface_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -19,14 +19,14 @@ Test Passed.
 2/27 Test: conf_whitebox_test
 Command: "C:/develop/ngircd/build/conf_whitebox_test.exe"
 Directory: C:/develop/ngircd/build
-"conf_whitebox_test" start time: Apr 11 23:26 W. Europe Summer Time
+"conf_whitebox_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"conf_whitebox_test" end time: Apr 11 23:26 W. Europe Summer Time
+"conf_whitebox_test" end time: Apr 11 23:37 W. Europe Summer Time
 "conf_whitebox_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -34,14 +34,14 @@ Test Passed.
 3/27 Test: log_io_resolver_test
 Command: "C:/develop/ngircd/build/log_io_resolver_test.exe"
 Directory: C:/develop/ngircd/build
-"log_io_resolver_test" start time: Apr 11 23:26 W. Europe Summer Time
+"log_io_resolver_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"log_io_resolver_test" end time: Apr 11 23:26 W. Europe Summer Time
+"log_io_resolver_test" end time: Apr 11 23:37 W. Europe Summer Time
 "log_io_resolver_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -49,14 +49,14 @@ Test Passed.
 4/27 Test: login_state_test
 Command: "C:/develop/ngircd/build/login_state_test.exe"
 Directory: C:/develop/ngircd/build
-"login_state_test" start time: Apr 11 23:26 W. Europe Summer Time
+"login_state_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"login_state_test" end time: Apr 11 23:26 W. Europe Summer Time
+"login_state_test" end time: Apr 11 23:37 W. Europe Summer Time
 "login_state_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -64,14 +64,14 @@ Test Passed.
 5/27 Test: login_check_test
 Command: "C:/develop/ngircd/build/login_check_test.exe"
 Directory: C:/develop/ngircd/build
-"login_check_test" start time: Apr 11 23:26 W. Europe Summer Time
+"login_check_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"login_check_test" end time: Apr 11 23:26 W. Europe Summer Time
+"login_check_test" end time: Apr 11 23:37 W. Europe Summer Time
 "login_check_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -79,14 +79,14 @@ Test Passed.
 6/27 Test: join_check_test
 Command: "C:/develop/ngircd/build/join_check_test.exe"
 Directory: C:/develop/ngircd/build
-"join_check_test" start time: Apr 11 23:26 W. Europe Summer Time
+"join_check_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"join_check_test" end time: Apr 11 23:26 W. Europe Summer Time
+"join_check_test" end time: Apr 11 23:37 W. Europe Summer Time
 "join_check_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -94,14 +94,14 @@ Test Passed.
 7/27 Test: join_error_test
 Command: "C:/develop/ngircd/build/join_error_test.exe"
 Directory: C:/develop/ngircd/build
-"join_error_test" start time: Apr 11 23:26 W. Europe Summer Time
+"join_error_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"join_error_test" end time: Apr 11 23:26 W. Europe Summer Time
+"join_error_test" end time: Apr 11 23:37 W. Europe Summer Time
 "join_error_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -109,14 +109,14 @@ Test Passed.
 8/27 Test: login_flow_test
 Command: "C:/develop/ngircd/build/login_flow_test.exe"
 Directory: C:/develop/ngircd/build
-"login_flow_test" start time: Apr 11 23:26 W. Europe Summer Time
+"login_flow_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"login_flow_test" end time: Apr 11 23:26 W. Europe Summer Time
+"login_flow_test" end time: Apr 11 23:37 W. Europe Summer Time
 "login_flow_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -124,14 +124,14 @@ Test Passed.
 9/27 Test: irc_cap_end_test
 Command: "C:/develop/ngircd/build/irc_cap_end_test.exe"
 Directory: C:/develop/ngircd/build
-"irc_cap_end_test" start time: Apr 11 23:26 W. Europe Summer Time
+"irc_cap_end_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"irc_cap_end_test" end time: Apr 11 23:26 W. Europe Summer Time
+"irc_cap_end_test" end time: Apr 11 23:37 W. Europe Summer Time
 "irc_cap_end_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -139,14 +139,14 @@ Test Passed.
 10/27 Test: nick_check_test
 Command: "C:/develop/ngircd/build/nick_check_test.exe"
 Directory: C:/develop/ngircd/build
-"nick_check_test" start time: Apr 11 23:26 W. Europe Summer Time
+"nick_check_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"nick_check_test" end time: Apr 11 23:26 W. Europe Summer Time
+"nick_check_test" end time: Apr 11 23:37 W. Europe Summer Time
 "nick_check_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -154,14 +154,14 @@ Test Passed.
 11/27 Test: user_check_test
 Command: "C:/develop/ngircd/build/user_check_test.exe"
 Directory: C:/develop/ngircd/build
-"user_check_test" start time: Apr 11 23:26 W. Europe Summer Time
+"user_check_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"user_check_test" end time: Apr 11 23:26 W. Europe Summer Time
+"user_check_test" end time: Apr 11 23:37 W. Europe Summer Time
 "user_check_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -169,14 +169,14 @@ Test Passed.
 12/27 Test: branch_coverage_test
 Command: "C:/develop/ngircd/build/branch_coverage_test.exe"
 Directory: C:/develop/ngircd/build
-"branch_coverage_test" start time: Apr 11 23:26 W. Europe Summer Time
+"branch_coverage_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"branch_coverage_test" end time: Apr 11 23:26 W. Europe Summer Time
+"branch_coverage_test" end time: Apr 11 23:37 W. Europe Summer Time
 "branch_coverage_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -184,14 +184,14 @@ Test Passed.
 13/27 Test: message_check_test
 Command: "C:/develop/ngircd/build/message_check_test.exe"
 Directory: C:/develop/ngircd/build
-"message_check_test" start time: Apr 11 23:26 W. Europe Summer Time
+"message_check_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"message_check_test" end time: Apr 11 23:26 W. Europe Summer Time
+"message_check_test" end time: Apr 11 23:37 W. Europe Summer Time
 "message_check_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -199,7 +199,7 @@ Test Passed.
 14/27 Test: full_coverage_test
 Command: "C:/develop/ngircd/build/full_coverage_test.exe"
 Directory: C:/develop/ngircd/build
-"full_coverage_test" start time: Apr 11 23:26 W. Europe Summer Time
+"full_coverage_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 All 151 tests passed.
@@ -207,7 +207,7 @@ All 151 tests passed.
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"full_coverage_test" end time: Apr 11 23:26 W. Europe Summer Time
+"full_coverage_test" end time: Apr 11 23:37 W. Europe Summer Time
 "full_coverage_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -215,7 +215,7 @@ Test Passed.
 15/27 Test: ngircd_configtest
 Command: "C:/develop/ngircd/build/ngircd.exe" "--config" "C:/develop/ngircd/build/ngircd-win32-test.conf" "--configtest"
 Directory: C:/develop/ngircd
-"ngircd_configtest" start time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows
@@ -225,70 +225,11 @@ Homepage: <http://ngircd.barton.de/>
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Using specified configuration file "C:/develop/ngircd/build/ngircd-win32-test.conf" ...
-Reading configuration from "C:/develop/ngircd/build/ngircd-win32-test.conf" ...
- - Can't read help text file "./Commands.txt": No such file or directory
- - No help text available, HELP command will be of limited use.
- - Not specifying a full path name to "C:/develop/ngircd/build/ngircd-win32-test.conf" can cause problems when rehashing the server!
-Ok, dump of your server configuration follows:
-
-[GLOBAL]
-  Name = ngircd.test.server
-  AdminInfo1 = 
-  AdminInfo2 = 
-  AdminEMail = admin@irc.server
-  HelpFile = ./Commands.txt
-  Info = ngIRCd 27-win32
-  Listen = 127.0.0.1
-  MotdFile = 
-  MotdPhrase = Hello from Windows
-  Network = 
-  Password = 
-  PidFile = 
-  Ports = 6789
-  ServerGID = 0
-  ServerUID = 0
-
-[LIMITS]
-  ConnectRetry = 60
-  IdleTimeout = 0
-  MaxConnections = 0
-  MaxConnectionsIP = 5
-  MaxJoins = 10
-  MaxNickLength = 9
-  MaxPenaltyTime = -1
-  MaxListSize = 100
-  PingTimeout = 120
-  PongTimeout = 20
-
-[OPTIONS]
-  AllowedChannelTypes = #&+
-  AllowRemoteOper = no
-  ChrootDir = 
-  CloakHost = 
-  CloakHostModeX = 
-  CloakHostSalt = XVKzQ5C$+ZYv22:HF5jwj/1[)3M:Bi$j
-  CloakUserToNick = no
-  ConnectIPv4 = yes
-  ConnectIPv6 = yes
-  DefaultChannelModes = 
-  DefaultUserModes = 
-  DNS = yes
-  IncludeDir = 
-  MorePrivacy = no
-  NoticeBeforeRegistration = no
-  OperCanUseMode = no
-  OperChanPAutoOp = yes
-  OperServerMode = no
-  RequireAuthPing = no
-  ScrubCTCP = no
-  WebircPassword = 
-
 <end of output>
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"ngircd_configtest" end time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest" end time: Apr 11 23:37 W. Europe Summer Time
 "ngircd_configtest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -296,7 +237,7 @@ Test Passed.
 16/27 Test: ngircd_configtest_rich
 Command: "C:/develop/ngircd/build/ngircd.exe" "--config" "C:/develop/ngircd/tests/configs/rich.conf" "--configtest"
 Directory: C:/develop/ngircd
-"ngircd_configtest_rich" start time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_rich" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows
@@ -306,109 +247,11 @@ Homepage: <http://ngircd.barton.de/>
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Using specified configuration file "C:/develop/ngircd/tests/configs/rich.conf" ...
-Reading configuration from "C:/develop/ngircd/tests/configs/rich.conf" ...
- - C:/develop/ngircd/tests/configs/rich.conf, line 9 (section "Global"): Unknown variable "WebircPassword"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 10 (section "Global"): Unknown variable "CloakHost"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 11 (section "Global"): Unknown variable "CloakHostModeX"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 12 (section "Global"): Unknown variable "MorePrivacy"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 13 (section "Global"): Unknown variable "NoticeBeforeRegistration"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 50: Value of "Group" is not a number!
- - C:/develop/ngircd/tests/configs/rich.conf, line 51 (section "Server"): Unknown variable "Nick"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 57 (section "Channel"): "Key" is deprecated here, use "Modes = +k <key>"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 58 (section "Channel"): "MaxUsers" is deprecated here, use "Modes = +l <limit>"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 59 (section "Channel"): Unknown variable "Invite"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 60 (section "Channel"): Unknown variable "Private"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 61 (section "Channel"): Unknown variable "Secret"!
- - C:/develop/ngircd/tests/configs/rich.conf, line 62 (section "Channel"): Unknown variable "TopicProtect"!
-Reading configuration from "./ngircd-win32.conf" ...
- - Can't read help text file "./original/doc/Commands.txt": No such file or directory
- - No help text available, HELP command will be of limited use.
- - Not specifying a full path name to "C:/develop/ngircd/tests/configs/rich.conf" can cause problems when rehashing the server!
- - Maximum penalty increase ('MaxPenaltyTime') is set to 5, this is not recommended!
-Ok, dump of your server configuration follows:
-
-[GLOBAL]
-  Name = ngircd.test.server
-  AdminInfo1 = 
-  AdminInfo2 = 
-  AdminEMail = admin@irc.server
-  HelpFile = ./original/doc/Commands.txt
-  Info = Windows test server
-  Listen = 127.0.0.1
-  MotdFile = 
-  MotdPhrase = Rich coverage test
-  Network = testnet
-  Password = 
-  PidFile = C:/develop/ngircd/runtime/ngircd.pid
-  Ports = 6789
-  ServerGID = 0
-  ServerUID = 0
-
-[LIMITS]
-  ConnectRetry = 30
-  IdleTimeout = 60
-  MaxConnections = 32
-  MaxConnectionsIP = 4
-  MaxJoins = 4
-  MaxNickLength = 15
-  MaxPenaltyTime = 5
-  MaxListSize = 200
-  PingTimeout = 90
-  PongTimeout = 15
-
-[OPTIONS]
-  AllowedChannelTypes = #&+
-  AllowRemoteOper = yes
-  ChrootDir = 
-  CloakHost = 
-  CloakHostModeX = 
-  CloakHostSalt = O8k@"YvFSSZW=mp:O!=`JK@:'V^5p7Qm
-  CloakUserToNick = no
-  ConnectIPv4 = no
-  ConnectIPv6 = yes
-  DefaultChannelModes = nt
-  DefaultUserModes = i
-  DNS = no
-  IncludeDir = .
-  MorePrivacy = no
-  NoticeBeforeRegistration = yes
-  OperCanUseMode = yes
-  OperChanPAutoOp = yes
-  OperServerMode = no
-  RequireAuthPing = yes
-  ScrubCTCP = yes
-  WebircPassword = 
-
-[OPERATOR]
-  Name = root
-  Password = secret
-  Mask = 
-
-[SERVER]
-  Name = upstream.example.org
-  Host = 127.0.0.1
-  Port = 6669
-  MyPassword = localpass
-  PeerPassword = remotepass
-  ServiceMask = 
-  Group = 0
-  Passive = no
-
-[CHANNEL]
-  Name = #test
-  Modes = +nt
-  Key = secretkey
-  MaxUsers = 50
-  Topic = Coverage channel
-  Autojoin = no
-  KeyFile = 
-
 <end of output>
-Test time =   0.04 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ngircd_configtest_rich" end time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_rich" end time: Apr 11 23:37 W. Europe Summer Time
 "ngircd_configtest_rich" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -416,7 +259,7 @@ Test Passed.
 17/27 Test: ngircd_configtest_ipv6
 Command: "C:/develop/ngircd/build/ngircd.exe" "--config" "C:/develop/ngircd/tests/configs/ipv6.conf" "--configtest"
 Directory: C:/develop/ngircd
-"ngircd_configtest_ipv6" start time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_ipv6" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows
@@ -426,68 +269,11 @@ Homepage: <http://ngircd.barton.de/>
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Using specified configuration file "C:/develop/ngircd/tests/configs/ipv6.conf" ...
-Reading configuration from "C:/develop/ngircd/tests/configs/ipv6.conf" ...
- - Not specifying a full path name to "C:/develop/ngircd/tests/configs/ipv6.conf" can cause problems when rehashing the server!
-Ok, dump of your server configuration follows:
-
-[GLOBAL]
-  Name = ngircd.ipv6.test
-  AdminInfo1 = Test
-  AdminInfo2 = Test
-  AdminEMail = test@example.org
-  HelpFile = C:/develop/ngircd/archive/upstream-ngircd/doc/Commands.txt
-  Info = ngIRCd 27-win32
-  Listen = ::1
-  MotdFile = 
-  MotdPhrase = IPv6 smoke test
-  Network = 
-  Password = 
-  PidFile = 
-  Ports = 6667
-  ServerGID = 0
-  ServerUID = 0
-
-[LIMITS]
-  ConnectRetry = 60
-  IdleTimeout = 0
-  MaxConnections = 0
-  MaxConnectionsIP = 5
-  MaxJoins = 10
-  MaxNickLength = 9
-  MaxPenaltyTime = -1
-  MaxListSize = 100
-  PingTimeout = 120
-  PongTimeout = 20
-
-[OPTIONS]
-  AllowedChannelTypes = #&+
-  AllowRemoteOper = no
-  ChrootDir = 
-  CloakHost = 
-  CloakHostModeX = 
-  CloakHostSalt = Lf3ffs79Uzz<mv3/\69h2n@onTGkNrdt
-  CloakUserToNick = no
-  ConnectIPv4 = yes
-  ConnectIPv6 = no
-  DefaultChannelModes = 
-  DefaultUserModes = 
-  DNS = no
-  IncludeDir = 
-  MorePrivacy = no
-  NoticeBeforeRegistration = no
-  OperCanUseMode = no
-  OperChanPAutoOp = yes
-  OperServerMode = no
-  RequireAuthPing = no
-  ScrubCTCP = no
-  WebircPassword = 
-
 <end of output>
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"ngircd_configtest_ipv6" end time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_ipv6" end time: Apr 11 23:37 W. Europe Summer Time
 "ngircd_configtest_ipv6" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -495,7 +281,7 @@ Test Passed.
 18/27 Test: ngircd_configtest_unknown_section
 Command: "C:/develop/ngircd/build/ngircd.exe" "--config" "C:/develop/ngircd/tests/configs/unknown_section.conf" "--configtest"
 Directory: C:/develop/ngircd
-"ngircd_configtest_unknown_section" start time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_unknown_section" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows
@@ -505,69 +291,11 @@ Homepage: <http://ngircd.barton.de/>
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Using specified configuration file "C:/develop/ngircd/tests/configs/unknown_section.conf" ...
-Reading configuration from "C:/develop/ngircd/tests/configs/unknown_section.conf" ...
- - C:/develop/ngircd/tests/configs/unknown_section.conf, line 10: Unknown section "[Bogus]"!
- - Not specifying a full path name to "C:/develop/ngircd/tests/configs/unknown_section.conf" can cause problems when rehashing the server!
-Ok, dump of your server configuration follows:
-
-[GLOBAL]
-  Name = ngircd.unknown.test
-  AdminInfo1 = Test
-  AdminInfo2 = Test
-  AdminEMail = test@example.org
-  HelpFile = C:/develop/ngircd/archive/upstream-ngircd/doc/Commands.txt
-  Info = ngIRCd 27-win32
-  Listen = ::,0.0.0.0
-  MotdFile = C:/develop/ngircd/ngircd.motd
-  MotdPhrase =
-  Network = 
-  Password = 
-  PidFile = 
-  Ports = 6667
-  ServerGID = 0
-  ServerUID = 0
-
-[LIMITS]
-  ConnectRetry = 60
-  IdleTimeout = 0
-  MaxConnections = 0
-  MaxConnectionsIP = 5
-  MaxJoins = 10
-  MaxNickLength = 9
-  MaxPenaltyTime = -1
-  MaxListSize = 100
-  PingTimeout = 120
-  PongTimeout = 20
-
-[OPTIONS]
-  AllowedChannelTypes = #&+
-  AllowRemoteOper = no
-  ChrootDir = 
-  CloakHost = 
-  CloakHostModeX = 
-  CloakHostSalt = XNe#5U$#/xQ6SZ3:2u/H,RI0A8<7X21;
-  CloakUserToNick = no
-  ConnectIPv4 = yes
-  ConnectIPv6 = yes
-  DefaultChannelModes = 
-  DefaultUserModes = 
-  DNS = yes
-  IncludeDir = 
-  MorePrivacy = no
-  NoticeBeforeRegistration = no
-  OperCanUseMode = no
-  OperChanPAutoOp = yes
-  OperServerMode = no
-  RequireAuthPing = no
-  ScrubCTCP = no
-  WebircPassword = 
-
 <end of output>
-Test time =   0.05 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"ngircd_configtest_unknown_section" end time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_unknown_section" end time: Apr 11 23:37 W. Europe Summer Time
 "ngircd_configtest_unknown_section" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -575,7 +303,7 @@ Test Passed.
 19/27 Test: ngircd_configtest_multi_server
 Command: "C:/develop/ngircd/build/ngircd.exe" "--config" "C:/develop/ngircd/tests/configs/multi_server.conf" "--configtest"
 Directory: C:/develop/ngircd
-"ngircd_configtest_multi_server" start time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_multi_server" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows
@@ -585,88 +313,11 @@ Homepage: <http://ngircd.barton.de/>
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Using specified configuration file "C:/develop/ngircd/tests/configs/multi_server.conf" ...
-Reading configuration from "C:/develop/ngircd/tests/configs/multi_server.conf" ...
- - Not specifying a full path name to "C:/develop/ngircd/tests/configs/multi_server.conf" can cause problems when rehashing the server!
-Ok, dump of your server configuration follows:
-
-[GLOBAL]
-  Name = ngircd.multi.test
-  AdminInfo1 = Test
-  AdminInfo2 = Test
-  AdminEMail = test@example.org
-  HelpFile = C:/develop/ngircd/archive/upstream-ngircd/doc/Commands.txt
-  Info = ngIRCd 27-win32
-  Listen = ::,0.0.0.0
-  MotdFile = C:/develop/ngircd/ngircd.motd
-  MotdPhrase =
-  Network = 
-  Password = 
-  PidFile = 
-  Ports = 6667
-  ServerGID = 0
-  ServerUID = 0
-
-[LIMITS]
-  ConnectRetry = 60
-  IdleTimeout = 0
-  MaxConnections = 0
-  MaxConnectionsIP = 5
-  MaxJoins = 10
-  MaxNickLength = 9
-  MaxPenaltyTime = -1
-  MaxListSize = 100
-  PingTimeout = 120
-  PongTimeout = 20
-
-[OPTIONS]
-  AllowedChannelTypes = #&+
-  AllowRemoteOper = no
-  ChrootDir = 
-  CloakHost = 
-  CloakHostModeX = 
-  CloakHostSalt = ?LYi<R?AqM2/vO0]k,8iphkP;a-<2[;,
-  CloakUserToNick = no
-  ConnectIPv4 = yes
-  ConnectIPv6 = yes
-  DefaultChannelModes = 
-  DefaultUserModes = 
-  DNS = yes
-  IncludeDir = 
-  MorePrivacy = no
-  NoticeBeforeRegistration = no
-  OperCanUseMode = no
-  OperChanPAutoOp = yes
-  OperServerMode = no
-  RequireAuthPing = no
-  ScrubCTCP = no
-  WebircPassword = 
-
-[SERVER]
-  Name = one.example.org
-  Host = 127.0.0.1
-  Port = 6668
-  MyPassword = one
-  PeerPassword = two
-  ServiceMask = 
-  Group = -1
-  Passive = no
-
-[SERVER]
-  Name = two.example.org
-  Host = 127.0.0.1
-  Port = 6669
-  MyPassword = three
-  PeerPassword = four
-  ServiceMask = 
-  Group = -1
-  Passive = no
-
 <end of output>
-Test time =   0.04 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ngircd_configtest_multi_server" end time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_multi_server" end time: Apr 11 23:37 W. Europe Summer Time
 "ngircd_configtest_multi_server" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -674,7 +325,7 @@ Test Passed.
 20/27 Test: ngircd_configtest_long_values
 Command: "C:/develop/ngircd/build/ngircd.exe" "--config" "C:/develop/ngircd/tests/configs/long_values.conf" "--configtest"
 Directory: C:/develop/ngircd
-"ngircd_configtest_long_values" start time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_long_values" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows
@@ -684,72 +335,11 @@ Homepage: <http://ngircd.barton.de/>
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Using specified configuration file "C:/develop/ngircd/tests/configs/long_values.conf" ...
-Reading configuration from "C:/develop/ngircd/tests/configs/long_values.conf" ...
- - C:/develop/ngircd/tests/configs/long_values.conf, line 3: Value of "AdminEMail" too long!
- - C:/develop/ngircd/tests/configs/long_values.conf, line 7: Value of "MaxNickLength" exceeds 31!
- - Can't read help text file "./Commands.txt": No such file or directory
- - No help text available, HELP command will be of limited use.
- - Not specifying a full path name to "C:/develop/ngircd/tests/configs/long_values.conf" can cause problems when rehashing the server!
-Ok, dump of your server configuration follows:
-
-[GLOBAL]
-  Name = ngircd.long.test
-  AdminInfo1 = 
-  AdminInfo2 = 
-  AdminEMail = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-  HelpFile = ./Commands.txt
-  Info = ngIRCd 27-win32
-  Listen = ::,0.0.0.0
-  MotdFile = ./ngircd.motd
-  MotdPhrase =
-  Network = 
-  Password = 
-  PidFile = 
-  Ports = 6667
-  ServerGID = 0
-  ServerUID = 0
-
-[LIMITS]
-  ConnectRetry = 60
-  IdleTimeout = 0
-  MaxConnections = 0
-  MaxConnectionsIP = 5
-  MaxJoins = 10
-  MaxNickLength = 31
-  MaxPenaltyTime = -1
-  MaxListSize = 100
-  PingTimeout = 120
-  PongTimeout = 20
-
-[OPTIONS]
-  AllowedChannelTypes = #&+
-  AllowRemoteOper = no
-  ChrootDir = 
-  CloakHost = 
-  CloakHostModeX = 
-  CloakHostSalt = U1CUL\6FntU_FL-"V5>eU]`aAj7;Q-s:
-  CloakUserToNick = no
-  ConnectIPv4 = yes
-  ConnectIPv6 = yes
-  DefaultChannelModes = 
-  DefaultUserModes = 
-  DNS = yes
-  IncludeDir = 
-  MorePrivacy = no
-  NoticeBeforeRegistration = no
-  OperCanUseMode = no
-  OperChanPAutoOp = yes
-  OperServerMode = no
-  RequireAuthPing = no
-  ScrubCTCP = no
-  WebircPassword = 
-
 <end of output>
-Test time =   0.04 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ngircd_configtest_long_values" end time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_long_values" end time: Apr 11 23:37 W. Europe Summer Time
 "ngircd_configtest_long_values" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -757,7 +347,7 @@ Test Passed.
 21/27 Test: ngircd_configtest_invalid
 Command: "C:/develop/ngircd/build/ngircd.exe" "--config" "C:/develop/ngircd/tests/configs/does-not-exist.conf" "--configtest"
 Directory: C:/develop/ngircd
-"ngircd_configtest_invalid" start time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_invalid" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 ngIRCd 27-win32-IPv6+IRCPLUS-x86_64/pc/windows
@@ -767,14 +357,11 @@ Homepage: <http://ngircd.barton.de/>
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Using specified configuration file "C:/develop/ngircd/tests/configs/does-not-exist.conf" ...
- - Can't read specified configuration file "C:/develop/ngircd/tests/configs/does-not-exist.conf": No such file or directory
- - ngIRCd exiting due to fatal errors!
 <end of output>
-Test time =   0.04 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"ngircd_configtest_invalid" end time: Apr 11 23:26 W. Europe Summer Time
+"ngircd_configtest_invalid" end time: Apr 11 23:37 W. Europe Summer Time
 "ngircd_configtest_invalid" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -782,15 +369,15 @@ Test Passed.
 22/27 Test: core_runtime_test
 Command: "C:/develop/ngircd/build/core_runtime_test.exe"
 Directory: C:/develop/ngircd/build
-"core_runtime_test" start time: Apr 11 23:26 W. Europe Summer Time
+"core_runtime_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 core_runtime_test: all 28 checks passed
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"core_runtime_test" end time: Apr 11 23:26 W. Europe Summer Time
+"core_runtime_test" end time: Apr 11 23:37 W. Europe Summer Time
 "core_runtime_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -798,15 +385,15 @@ Test Passed.
 23/27 Test: host_wiring_test
 Command: "C:/develop/ngircd/build/host_wiring_test.exe"
 Directory: C:/develop/ngircd/build
-"host_wiring_test" start time: Apr 11 23:26 W. Europe Summer Time
+"host_wiring_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 host_wiring_test: all 34 checks passed
 <end of output>
-Test time =   0.06 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"host_wiring_test" end time: Apr 11 23:26 W. Europe Summer Time
+"host_wiring_test" end time: Apr 11 23:37 W. Europe Summer Time
 "host_wiring_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -814,19 +401,19 @@ Test Passed.
 24/27 Test: logging_module_test
 Command: "C:/develop/ngircd/build/logging_module_test.exe"
 Directory: C:/develop/ngircd/build
-"logging_module_test" start time: Apr 11 23:26 W. Europe Summer Time
+"logging_module_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 managed logging init syslog=0
-[38708:6 1775942802] test log_message
-[38708:7 1775942802] test debug_message
-[38708:1 1775942802] test fatal_message
+[40040:6 1775943451] test log_message
+[40040:7 1775943451] test debug_message
+[40040:1 1775943451] test fatal_message
 logging_module_test: all 21 checks passed
 <end of output>
-Test time =   0.07 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"logging_module_test" end time: Apr 11 23:26 W. Europe Summer Time
+"logging_module_test" end time: Apr 11 23:37 W. Europe Summer Time
 "logging_module_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -834,15 +421,15 @@ Test Passed.
 25/27 Test: config_module_test
 Command: "C:/develop/ngircd/build/config_module_test.exe"
 Directory: C:/develop/ngircd/build
-"config_module_test" start time: Apr 11 23:26 W. Europe Summer Time
+"config_module_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 config_module_test: all 21 checks passed
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"config_module_test" end time: Apr 11 23:26 W. Europe Summer Time
+"config_module_test" end time: Apr 11 23:37 W. Europe Summer Time
 "config_module_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -850,15 +437,15 @@ Test Passed.
 26/27 Test: platform_module_test
 Command: "C:/develop/ngircd/build/platform_module_test.exe"
 Directory: C:/develop/ngircd/build
-"platform_module_test" start time: Apr 11 23:26 W. Europe Summer Time
+"platform_module_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 platform_module_test: all 19 checks passed
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"platform_module_test" end time: Apr 11 23:26 W. Europe Summer Time
+"platform_module_test" end time: Apr 11 23:37 W. Europe Summer Time
 "platform_module_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -866,7 +453,7 @@ Test Passed.
 27/27 Test: server_app_unit_test
 Command: "C:/develop/ngircd/build/server_app_unit_test.exe"
 Directory: C:/develop/ngircd/build
-"server_app_unit_test" start time: Apr 11 23:26 W. Europe Summer Time
+"server_app_unit_test" start time: Apr 11 23:37 W. Europe Summer Time
 Output:
 ----------------------------------------------------------
 server_app_unit_test: all 30 checks passed
@@ -874,8 +461,8 @@ server_app_unit_test: all 30 checks passed
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"server_app_unit_test" end time: Apr 11 23:26 W. Europe Summer Time
+"server_app_unit_test" end time: Apr 11 23:37 W. Europe Summer Time
 "server_app_unit_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 11 23:26 W. Europe Summer Time
+End testing: Apr 11 23:37 W. Europe Summer Time

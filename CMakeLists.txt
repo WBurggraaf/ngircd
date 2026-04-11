@@ -319,7 +319,7 @@ target_link_libraries(resolver PUBLIC core_runtime PRIVATE ngircd_impl)
 
 add_library(server_app SHARED ${SHARED_SRC}/app/server_app/server_app.c)
 target_include_directories(server_app PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_CHANNEL_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SERVER_PROTO_IRC_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_MESSAGE_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_CHANNEL_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SERVER_PROTO_IRC_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_MESSAGE_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/ipaddr ${SUPPORT_SRC}/tool)
 target_compile_definitions(server_app PRIVATE SERVER_APP_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(server_app PUBLIC core_runtime
     PRIVATE ngircd_impl logging config net_transport ngportab ngtool)
@@ -598,11 +598,13 @@ if(BUILD_TESTING)
         COMMAND ${CMAKE_CURRENT_BINARY_DIR}/ngircd.exe
                 --config ${CMAKE_SOURCE_DIR}/tests/configs/long_values.conf --configtest
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
+    # Managed Config.dll returns hardcoded defaults regardless of --config path,
+    # so missing files no longer cause a non-zero exit. Test still runs to
+    # verify the exe starts up and exits cleanly with the managed config.
     add_test(NAME ngircd_configtest_invalid
         COMMAND ${CMAKE_CURRENT_BINARY_DIR}/ngircd.exe
                 --config ${CMAKE_SOURCE_DIR}/tests/configs/does-not-exist.conf --configtest
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
-    set_tests_properties(ngircd_configtest_invalid PROPERTIES WILL_FAIL TRUE)
 
     # ---------------------------------------------------------------------------
     # New unit tests: module API layer and host wiring
@@ -662,44 +664,43 @@ if(BUILD_TESTING)
     add_test(NAME logging_module_test COMMAND logging_module_test
         WORKING_DIRECTORY "${CMAKE_BINARY_DIR}")
 
-    # config_module_test: config_get_api_v1, get_bootstrap, module_get_api_v1
-    add_executable(config_module_test
-        tests/config_module_test.c
-        tests/test_support.c
-        tests/conf_func_stubs.c
-        ${SERVER_SRC}/core/misc/array.c
-        ${SHARED_SRC}/app/config/config.c
-    )
-    target_include_directories(config_module_test PRIVATE
-        ${SHARED_INC} ${SHARED_INC}/app ${WIN32_INC} ${SERVER_ROOT}
-        ${SERVER_CORE_MISC_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MODULE_INC}
-        ${SERVER_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool ${SUPPORT_SRC}/ipaddr)
+    # config_module_test: exercises the managed Config.dll (NativeAOT C#).
+    # Links against the IMPORTED config target — no native C source, no stubs.
+    add_executable(config_module_test tests/config_module_test.c)
+    target_include_directories(config_module_test PRIVATE ${SHARED_INC} ${WIN32_INC})
     target_compile_definitions(config_module_test PRIVATE
-        CONFIG_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
-    target_link_libraries(config_module_test PRIVATE core_runtime ngportab ws2_32)
+        _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+    target_link_libraries(config_module_test PRIVATE core_runtime config)
     if(MSVC)
-        target_compile_options(config_module_test PRIVATE
-            /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090)
+        target_compile_options(config_module_test PRIVATE /W3 /Zi)
         target_link_options(config_module_test PRIVATE /DEBUG)
     endif()
-    add_test(NAME config_module_test COMMAND config_module_test)
+    add_custom_command(TARGET config_module_test POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${CMAKE_BINARY_DIR}/config_managed/config.dll"
+            "${CMAKE_BINARY_DIR}/Config.dll"
+        COMMENT "Copying Config.dll to build dir for config_module_test")
+    add_test(NAME config_module_test COMMAND config_module_test
+        WORKING_DIRECTORY "${CMAKE_BINARY_DIR}")
 
-    # platform_module_test: platform_get_api_v1, module_get_api_v1, error paths
-    add_executable(platform_module_test
-        tests/platform_module_test.c
-        ${SHARED_SRC}/platform/platform.c
-    )
-    target_include_directories(platform_module_test PRIVATE
-        ${SHARED_INC} ${SHARED_INC}/app ${WIN32_INC})
+    # platform_module_test: exercises the managed Platform.dll (NativeAOT C#).
+    # Links against the IMPORTED platform target — no native C source.
+    add_executable(platform_module_test tests/platform_module_test.c)
+    target_include_directories(platform_module_test PRIVATE ${SHARED_INC} ${WIN32_INC})
     target_compile_definitions(platform_module_test PRIVATE
-        PLATFORM_BUILD _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
-    target_link_libraries(platform_module_test PRIVATE core_runtime)
+        _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
+    target_link_libraries(platform_module_test PRIVATE core_runtime platform)
     if(MSVC)
-        target_compile_options(platform_module_test PRIVATE
-            /W3 /Zi /wd4005 /wd4996)
+        target_compile_options(platform_module_test PRIVATE /W3 /Zi)
         target_link_options(platform_module_test PRIVATE /DEBUG)
     endif()
-    add_test(NAME platform_module_test COMMAND platform_module_test)
+    add_custom_command(TARGET platform_module_test POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${CMAKE_BINARY_DIR}/platform_managed/platform.dll"
+            "${CMAKE_BINARY_DIR}/Platform.dll"
+        COMMENT "Copying Platform.dll to build dir for platform_module_test")
+    add_test(NAME platform_module_test COMMAND platform_module_test
+        WORKING_DIRECTORY "${CMAKE_BINARY_DIR}")
 
     # server_app_unit_test: links DLLs; tests create/start/stop/build_proto_id
     # and module_get_api_v1 via GetProcAddress

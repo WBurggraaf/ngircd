@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/platform/platform.c" "CMakeFiles/platform_module_test.dir/src/platform/platform.c.obj" "msvc" "CMakeFiles/platform_module_test.dir/src/platform/platform.c.obj.d"
   "C:/develop/ngircd/tests/platform_module_test.c" "CMakeFiles/platform_module_test.dir/tests/platform_module_test.c.obj" "msvc" "CMakeFiles/platform_module_test.dir/tests/platform_module_test.c.obj.d"
   )
 

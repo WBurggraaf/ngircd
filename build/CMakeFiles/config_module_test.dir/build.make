@@ -81,110 +81,24 @@ CMakeFiles\config_module_test.dir\tests\config_module_test.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\config_module_test.dir\tests\config_module_test.c.s /c C:\develop\ngircd\tests\config_module_test.c
 <<
 
-CMakeFiles\config_module_test.dir\tests\test_support.c.obj: CMakeFiles\config_module_test.dir\flags.make
-CMakeFiles\config_module_test.dir\tests\test_support.c.obj: C:\develop\ngircd\tests\test_support.c
-CMakeFiles\config_module_test.dir\tests\test_support.c.obj: CMakeFiles\config_module_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/config_module_test.dir/tests/test_support.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\config_module_test.dir\tests\test_support.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\config_module_test.dir\tests\test_support.c.obj /FdCMakeFiles\config_module_test.dir\ /FS -c C:\develop\ngircd\tests\test_support.c
-<<
-
-CMakeFiles\config_module_test.dir\tests\test_support.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/config_module_test.dir/tests/test_support.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\config_module_test.dir\tests\test_support.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\tests\test_support.c
-<<
-
-CMakeFiles\config_module_test.dir\tests\test_support.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/config_module_test.dir/tests/test_support.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\config_module_test.dir\tests\test_support.c.s /c C:\develop\ngircd\tests\test_support.c
-<<
-
-CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.obj: CMakeFiles\config_module_test.dir\flags.make
-CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.obj: C:\develop\ngircd\tests\conf_func_stubs.c
-CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.obj: CMakeFiles\config_module_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/config_module_test.dir/tests/conf_func_stubs.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.obj /FdCMakeFiles\config_module_test.dir\ /FS -c C:\develop\ngircd\tests\conf_func_stubs.c
-<<
-
-CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/config_module_test.dir/tests/conf_func_stubs.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\tests\conf_func_stubs.c
-<<
-
-CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/config_module_test.dir/tests/conf_func_stubs.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.s /c C:\develop\ngircd\tests\conf_func_stubs.c
-<<
-
-CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj: CMakeFiles\config_module_test.dir\flags.make
-CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj: C:\develop\ngircd\src\server\core\misc\array.c
-CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj: CMakeFiles\config_module_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/config_module_test.dir/src/server/core/misc/array.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj /FdCMakeFiles\config_module_test.dir\ /FS -c C:\develop\ngircd\src\server\core\misc\array.c
-<<
-
-CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/config_module_test.dir/src/server/core/misc/array.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\core\misc\array.c
-<<
-
-CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/config_module_test.dir/src/server/core/misc/array.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\config_module_test.dir\src\server\core\misc\array.c.s /c C:\develop\ngircd\src\server\core\misc\array.c
-<<
-
-CMakeFiles\config_module_test.dir\src\app\config\config.c.obj: CMakeFiles\config_module_test.dir\flags.make
-CMakeFiles\config_module_test.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\app\config\config.c
-CMakeFiles\config_module_test.dir\src\app\config\config.c.obj: CMakeFiles\config_module_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/config_module_test.dir/src/app/config/config.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\config_module_test.dir\src\app\config\config.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\config_module_test.dir\src\app\config\config.c.obj /FdCMakeFiles\config_module_test.dir\ /FS -c C:\develop\ngircd\src\app\config\config.c
-<<
-
-CMakeFiles\config_module_test.dir\src\app\config\config.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/config_module_test.dir/src/app/config/config.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\config_module_test.dir\src\app\config\config.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\app\config\config.c
-<<
-
-CMakeFiles\config_module_test.dir\src\app\config\config.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/config_module_test.dir/src/app/config/config.c.s"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\config_module_test.dir\src\app\config\config.c.s /c C:\develop\ngircd\src\app\config\config.c
-<<
-
 # Object files for target config_module_test
 config_module_test_OBJECTS = \
-"CMakeFiles\config_module_test.dir\tests\config_module_test.c.obj" \
-"CMakeFiles\config_module_test.dir\tests\test_support.c.obj" \
-"CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.obj" \
-"CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj" \
-"CMakeFiles\config_module_test.dir\src\app\config\config.c.obj"
+"CMakeFiles\config_module_test.dir\tests\config_module_test.c.obj"
 
 # External object files for target config_module_test
 config_module_test_EXTERNAL_OBJECTS =
 
 config_module_test.exe: CMakeFiles\config_module_test.dir\tests\config_module_test.c.obj
-config_module_test.exe: CMakeFiles\config_module_test.dir\tests\test_support.c.obj
-config_module_test.exe: CMakeFiles\config_module_test.dir\tests\conf_func_stubs.c.obj
-config_module_test.exe: CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj
-config_module_test.exe: CMakeFiles\config_module_test.dir\src\app\config\config.c.obj
 config_module_test.exe: CMakeFiles\config_module_test.dir\build.make
 config_module_test.exe: core_runtime.lib
-config_module_test.exe: ngportab.lib
+config_module_test.exe: config_managed\config.lib
 config_module_test.exe: CMakeFiles\config_module_test.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable config_module_test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable config_module_test.exe"
 	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\config_module_test.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\config_module_test.dir\objects1.rsp @<<
- /out:config_module_test.exe /implib:config_module_test.lib /pdb:C:\develop\ngircd\build\config_module_test.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /DEBUG   -LIBPATH:C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\lib\x64  -LIBPATH:C:\PROGRA~2\WI3CF2~1\10\lib\100261~1.0\ucrt\x64  -LIBPATH:C:\PROGRA~2\WI3CF2~1\10\lib\100261~1.0\um\x64  core_runtime.lib ngportab.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:config_module_test.exe /implib:config_module_test.lib /pdb:C:\develop\ngircd\build\config_module_test.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /DEBUG   -LIBPATH:C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\lib\x64  -LIBPATH:C:\PROGRA~2\WI3CF2~1\10\lib\100261~1.0\ucrt\x64  -LIBPATH:C:\PROGRA~2\WI3CF2~1\10\lib\100261~1.0\um\x64  core_runtime.lib config_managed\config.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying Config.dll to build dir for config_module_test"
+	echo >nul && "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/develop/ngircd/build/config_managed/config.dll C:/develop/ngircd/build/Config.dll
 
 # Rule to build all files generated by this target.
 CMakeFiles\config_module_test.dir\build: config_module_test.exe
