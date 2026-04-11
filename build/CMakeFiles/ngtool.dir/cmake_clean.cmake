@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ngtool.dir/original/src/tool/tool.c.obj"
-  "CMakeFiles/ngtool.dir/original/src/tool/tool.c.obj.d"
+  "CMakeFiles/ngtool.dir/src/support/tool/tool.c.obj"
+  "CMakeFiles/ngtool.dir/src/support/tool/tool.c.obj.d"
   "ngtool.lib"
   "ngtool.pdb"
 )

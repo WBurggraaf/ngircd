@@ -61,980 +61,980 @@ include CMakeFiles\ngircd_impl.dir\flags.make
 CMakeFiles\ngircd_impl.dir\codegen:
 .PHONY : CMakeFiles\ngircd_impl.dir\codegen
 
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.obj: C:\develop\ngircd\src\ngircd_impl\ngircd_runtime_globals.c
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngircd_impl.dir/src/ngircd_impl/ngircd_runtime_globals.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\ngircd_impl\ngircd_runtime_globals.c
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.obj: C:\develop\ngircd\src\legacy_impl\server_runtime\ngircd_runtime_globals.c
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngircd_impl.dir/src/legacy_impl/server_runtime/ngircd_runtime_globals.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\legacy_impl\server_runtime\ngircd_runtime_globals.c
 <<
 
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/ngircd_impl/ngircd_runtime_globals.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\ngircd_impl\ngircd_runtime_globals.c
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/legacy_impl/server_runtime/ngircd_runtime_globals.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\legacy_impl\server_runtime\ngircd_runtime_globals.c
 <<
 
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/ngircd_impl/ngircd_runtime_globals.c.s"
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/legacy_impl/server_runtime/ngircd_runtime_globals.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.s /c C:\develop\ngircd\src\ngircd_impl\ngircd_runtime_globals.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.s /c C:\develop\ngircd\src\legacy_impl\server_runtime\ngircd_runtime_globals.c
 <<
 
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj: C:\develop\ngircd\src\ngircd_impl\ngircd_daemon.c
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ngircd_impl.dir/src/ngircd_impl/ngircd_daemon.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\ngircd_impl\ngircd_daemon.c
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.obj: C:\develop\ngircd\src\legacy_impl\server_runtime\ngircd_daemon.c
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ngircd_impl.dir/src/legacy_impl/server_runtime/ngircd_daemon.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\legacy_impl\server_runtime\ngircd_daemon.c
 <<
 
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/ngircd_impl/ngircd_daemon.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\ngircd_impl\ngircd_daemon.c
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/legacy_impl/server_runtime/ngircd_daemon.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\legacy_impl\server_runtime\ngircd_daemon.c
 <<
 
-CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/ngircd_impl/ngircd_daemon.c.s"
+CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/legacy_impl/server_runtime/ngircd_daemon.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.s /c C:\develop\ngircd\src\ngircd_impl\ngircd_daemon.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.s /c C:\develop\ngircd\src\legacy_impl\server_runtime\ngircd_daemon.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.obj: C:\develop\ngircd\original\src\ngircd\core\array.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/array.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\array.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.obj: C:\develop\ngircd\src\server\ngircd\core\array.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/array.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\array.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/array.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\array.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/array.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\array.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/array.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/array.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.s /c C:\develop\ngircd\original\src\ngircd\core\array.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.s /c C:\develop\ngircd\src\server\ngircd\core\array.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.obj: C:\develop\ngircd\original\src\ngircd\channel.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/channel.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\channel.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.obj: C:\develop\ngircd\src\server\ngircd\channel.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/channel.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\channel.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/channel.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\channel.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/channel.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\channel.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/channel.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/channel.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.s /c C:\develop\ngircd\original\src\ngircd\channel.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.s /c C:\develop\ngircd\src\server\ngircd\channel.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.obj: C:\develop\ngircd\original\src\ngircd\core\class.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/class.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\class.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.obj: C:\develop\ngircd\src\server\ngircd\core\class.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/class.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\class.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/class.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\class.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/class.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\class.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/class.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/class.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.s /c C:\develop\ngircd\original\src\ngircd\core\class.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.s /c C:\develop\ngircd\src\server\ngircd\core\class.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.obj: C:\develop\ngircd\original\src\ngircd\core\client.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/client.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\client.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.obj: C:\develop\ngircd\src\server\ngircd\core\client.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/client.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\client.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/client.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\client.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/client.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\client.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/client.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/client.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.s /c C:\develop\ngircd\original\src\ngircd\core\client.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.s /c C:\develop\ngircd\src\server\ngircd\core\client.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.obj: C:\develop\ngircd\original\src\ngircd\core\client-cap.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/client-cap.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\client-cap.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.obj: C:\develop\ngircd\src\server\ngircd\core\client-cap.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/client-cap.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\client-cap.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/client-cap.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\client-cap.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/client-cap.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\client-cap.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/client-cap.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/client-cap.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.s /c C:\develop\ngircd\original\src\ngircd\core\client-cap.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.s /c C:\develop\ngircd\src\server\ngircd\core\client-cap.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.obj: C:\develop\ngircd\original\src\ngircd\core\conf.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/conf.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\conf.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.obj: C:\develop\ngircd\src\server\ngircd\core\conf.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/conf.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\conf.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/conf.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\conf.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/conf.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\conf.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/conf.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/conf.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.s /c C:\develop\ngircd\original\src\ngircd\core\conf.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.s /c C:\develop\ngircd\src\server\ngircd\core\conf.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\net\conn.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.obj: C:\develop\ngircd\src\server\ngircd\net\conn.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\net\conn.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\net\conn.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\net\conn.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.s /c C:\develop\ngircd\original\src\ngircd\net\conn.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.s /c C:\develop\ngircd\src\server\ngircd\net\conn.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn-encoding.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.obj: C:\develop\ngircd\src\server\ngircd\net\conn-encoding.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn-encoding.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\net\conn-encoding.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn-encoding.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn-encoding.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\net\conn-encoding.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn-encoding.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn-encoding.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.s /c C:\develop\ngircd\original\src\ngircd\net\conn-encoding.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.s /c C:\develop\ngircd\src\server\ngircd\net\conn-encoding.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: C:\develop\ngircd\original\src\ngircd\net\conn-func.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn-func.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\net\conn-func.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.obj: C:\develop\ngircd\src\server\ngircd\net\conn-func.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn-func.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\net\conn-func.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn-func.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\net\conn-func.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn-func.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\net\conn-func.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/conn-func.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/conn-func.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.s /c C:\develop\ngircd\original\src\ngircd\net\conn-func.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.s /c C:\develop\ngircd\src\server\ngircd\net\conn-func.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.obj: C:\develop\ngircd\original\src\ngircd\core\hash.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/hash.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\hash.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.obj: C:\develop\ngircd\src\server\ngircd\core\hash.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/hash.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\hash.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/hash.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\hash.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/hash.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\hash.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/hash.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/hash.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.s /c C:\develop\ngircd\original\src\ngircd\core\hash.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.s /c C:\develop\ngircd\src\server\ngircd\core\hash.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: C:\develop\ngircd\original\src\ngircd\net\io.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/io.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\net\io.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.obj: C:\develop\ngircd\src\server\ngircd\net\io.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/io.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\net\io.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/io.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\net\io.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/io.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\net\io.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/net/io.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/net/io.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.s /c C:\develop\ngircd\original\src\ngircd\net\io.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.s /c C:\develop\ngircd\src\server\ngircd\net\io.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-cap.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-cap.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-cap.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-cap.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-cap.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-cap.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-cap.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-cap.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-cap.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-cap.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-cap.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-cap.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-cap.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-cap.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-channel.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-channel.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-channel.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-channel.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-channel.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-channel.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-channel.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-channel.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-channel.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-channel.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-channel.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-channel.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-channel.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-channel.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-encoding.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-encoding.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-encoding.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-encoding.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-encoding.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-encoding.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-encoding.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-encoding.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-encoding.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-encoding.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-encoding.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-encoding.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-encoding.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-encoding.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-info.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-info.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-info.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-info.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-info.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-info.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-info.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-info.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-info.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-info.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-info.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-info.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-info.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-info.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-login.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-login.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-login.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-login.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-login.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-login.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-login.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-login.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-login.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-login.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-login.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-login.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-login.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-login.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-metadata.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-metadata.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-metadata.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-metadata.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-metadata.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-metadata.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-metadata.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-metadata.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-metadata.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-metadata.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-metadata.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-metadata.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-metadata.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-metadata.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-mode.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-mode.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-mode.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-mode.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-mode.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-mode.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-mode.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-mode.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-mode.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-mode.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-mode.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-mode.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-mode.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-mode.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-op.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-op.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-op.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-op.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-op.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-op.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-op.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-op.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-op.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-op.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-op.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-op.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-op.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-op.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-oper.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-oper.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-oper.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-oper.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-oper.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-oper.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-oper.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-oper.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-oper.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-oper.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-oper.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-oper.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-oper.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-oper.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-server.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-server.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-server.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-server.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-server.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-server.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-server.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-server.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-server.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-server.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-server.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-server.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-server.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-server.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.obj: C:\develop\ngircd\original\src\ngircd\proto\irc-write.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-write.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\irc-write.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-write.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-write.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-write.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-write.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\irc-write.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-write.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-write.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/irc-write.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/irc-write.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.s /c C:\develop\ngircd\original\src\ngircd\proto\irc-write.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-write.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.obj: C:\develop\ngircd\original\src\ngircd\proto\join_check.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/join_check.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\join_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.obj: C:\develop\ngircd\src\server\ngircd\proto\join_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/join_check.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\join_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/join_check.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\join_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/join_check.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\join_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/join_check.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/join_check.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.s /c C:\develop\ngircd\original\src\ngircd\proto\join_check.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.s /c C:\develop\ngircd\src\server\ngircd\proto\join_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.obj: C:\develop\ngircd\original\src\ngircd\proto\join_error.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/join_error.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\join_error.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.obj: C:\develop\ngircd\src\server\ngircd\proto\join_error.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/join_error.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\join_error.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/join_error.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\join_error.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/join_error.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\join_error.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/join_error.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/join_error.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.s /c C:\develop\ngircd\original\src\ngircd\proto\join_error.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.s /c C:\develop\ngircd\src\server\ngircd\proto\join_error.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.obj: C:\develop\ngircd\original\src\ngircd\proto\login_flow.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_flow.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\login_flow.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.obj: C:\develop\ngircd\src\server\ngircd\proto\login_flow.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_flow.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\login_flow.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_flow.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\login_flow.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_flow.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\login_flow.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_flow.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_flow.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.s /c C:\develop\ngircd\original\src\ngircd\proto\login_flow.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.s /c C:\develop\ngircd\src\server\ngircd\proto\login_flow.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.obj: C:\develop\ngircd\original\src\ngircd\proto\login_state.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_state.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\login_state.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.obj: C:\develop\ngircd\src\server\ngircd\proto\login_state.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_state.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\login_state.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_state.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\login_state.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_state.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\login_state.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_state.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_state.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.s /c C:\develop\ngircd\original\src\ngircd\proto\login_state.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.s /c C:\develop\ngircd\src\server\ngircd\proto\login_state.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.obj: C:\develop\ngircd\original\src\ngircd\proto\login_check.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_check.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\login_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.obj: C:\develop\ngircd\src\server\ngircd\proto\login_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_check.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\login_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_check.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\login_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_check.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\login_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/login_check.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/login_check.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.s /c C:\develop\ngircd\original\src\ngircd\proto\login_check.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.s /c C:\develop\ngircd\src\server\ngircd\proto\login_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.obj: C:\develop\ngircd\original\src\ngircd\proto\nick_check.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/nick_check.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\nick_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.obj: C:\develop\ngircd\src\server\ngircd\proto\nick_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/nick_check.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\nick_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/nick_check.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\nick_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/nick_check.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\nick_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/nick_check.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/nick_check.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.s /c C:\develop\ngircd\original\src\ngircd\proto\nick_check.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.s /c C:\develop\ngircd\src\server\ngircd\proto\nick_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.obj: C:\develop\ngircd\original\src\ngircd\proto\message_check.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/message_check.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\message_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.obj: C:\develop\ngircd\src\server\ngircd\proto\message_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/message_check.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\message_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/message_check.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\message_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/message_check.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\message_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/message_check.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/message_check.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.s /c C:\develop\ngircd\original\src\ngircd\proto\message_check.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.s /c C:\develop\ngircd\src\server\ngircd\proto\message_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj: C:\develop\ngircd\original\src\ngircd\proto\user_check.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/user_check.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\user_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.obj: C:\develop\ngircd\src\server\ngircd\proto\user_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/user_check.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\user_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/user_check.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\user_check.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/user_check.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\user_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/user_check.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/user_check.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.s /c C:\develop\ngircd\original\src\ngircd\proto\user_check.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.s /c C:\develop\ngircd\src\server\ngircd\proto\user_check.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.obj: C:\develop\ngircd\original\src\ngircd\core\lists.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/lists.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\lists.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.obj: C:\develop\ngircd\src\server\ngircd\core\lists.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/lists.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\lists.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/lists.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\lists.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/lists.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\lists.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/lists.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/lists.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.s /c C:\develop\ngircd\original\src\ngircd\core\lists.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.s /c C:\develop\ngircd\src\server\ngircd\core\lists.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.obj: C:\develop\ngircd\original\src\ngircd\core\log.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/log.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\log.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.obj: C:\develop\ngircd\src\server\ngircd\core\log.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/log.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\log.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/log.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\log.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/log.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\log.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/log.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/log.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.s /c C:\develop\ngircd\original\src\ngircd\core\log.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.s /c C:\develop\ngircd\src\server\ngircd\core\log.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.obj: C:\develop\ngircd\original\src\ngircd\core\login.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/login.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\login.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.obj: C:\develop\ngircd\src\server\ngircd\core\login.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/login.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\login.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/login.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\login.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/login.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\login.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/login.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/login.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.s /c C:\develop\ngircd\original\src\ngircd\core\login.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.s /c C:\develop\ngircd\src\server\ngircd\core\login.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.obj: C:\develop\ngircd\original\src\ngircd\core\match.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/match.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\match.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.obj: C:\develop\ngircd\src\server\ngircd\core\match.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/match.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\match.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/match.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\match.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/match.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\match.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/match.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/match.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.s /c C:\develop\ngircd\original\src\ngircd\core\match.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.s /c C:\develop\ngircd\src\server\ngircd\core\match.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.obj: C:\develop\ngircd\original\src\ngircd\core\numeric.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/numeric.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\numeric.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.obj: C:\develop\ngircd\src\server\ngircd\core\numeric.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/numeric.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\numeric.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/numeric.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\numeric.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/numeric.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\numeric.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/numeric.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/numeric.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.s /c C:\develop\ngircd\original\src\ngircd\core\numeric.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.s /c C:\develop\ngircd\src\server\ngircd\core\numeric.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj: C:\develop\ngircd\original\src\ngircd\core\op.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/op.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\op.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.obj: C:\develop\ngircd\src\server\ngircd\core\op.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/op.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\op.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/op.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\op.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/op.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\op.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/op.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/op.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.s /c C:\develop\ngircd\original\src\ngircd\core\op.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.s /c C:\develop\ngircd\src\server\ngircd\core\op.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.obj: C:\develop\ngircd\original\src\ngircd\proto\parse.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/parse.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\parse.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.obj: C:\develop\ngircd\src\server\ngircd\proto\parse.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/parse.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\parse.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/parse.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\parse.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/parse.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\parse.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/proto/parse.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/proto/parse.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.s /c C:\develop\ngircd\original\src\ngircd\proto\parse.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.s /c C:\develop\ngircd\src\server\ngircd\proto\parse.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.obj: C:\develop\ngircd\original\src\ngircd\core\module_iface.c
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/module_iface.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\module_iface.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.obj: C:\develop\ngircd\src\server\ngircd\core\module_iface.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/module_iface.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\module_iface.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/module_iface.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\module_iface.c
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/module_iface.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\module_iface.c
 <<
 
-CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/original/src/ngircd/core/module_iface.c.s"
+CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/server/ngircd/core/module_iface.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.s /c C:\develop\ngircd\original\src\ngircd\core\module_iface.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.s /c C:\develop\ngircd\src\server\ngircd\core\module_iface.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.obj: C:\develop\ngircd\win32\src\win32_proc.c
-CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ngircd_impl.dir/win32/src/win32_proc.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\win32\src\win32_proc.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.obj: C:\develop\ngircd\src\platform\windows\src\win32_proc.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_proc.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\platform\windows\src\win32_proc.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/win32/src/win32_proc.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\win32\src\win32_proc.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_proc.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\platform\windows\src\win32_proc.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/win32/src/win32_proc.c.s"
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_proc.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.s /c C:\develop\ngircd\win32\src\win32_proc.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.s /c C:\develop\ngircd\src\platform\windows\src\win32_proc.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.obj: C:\develop\ngircd\win32\src\win32_resolve.c
-CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ngircd_impl.dir/win32/src/win32_resolve.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\win32\src\win32_resolve.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.obj: C:\develop\ngircd\src\platform\windows\src\win32_resolve.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_resolve.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\platform\windows\src\win32_resolve.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/win32/src/win32_resolve.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\win32\src\win32_resolve.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_resolve.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\platform\windows\src\win32_resolve.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/win32/src/win32_resolve.c.s"
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_resolve.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.s /c C:\develop\ngircd\win32\src\win32_resolve.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.s /c C:\develop\ngircd\src\platform\windows\src\win32_resolve.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
-CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.obj: C:\develop\ngircd\win32\src\win32_sighandlers.c
-CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ngircd_impl.dir/win32/src/win32_sighandlers.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\win32\src\win32_sighandlers.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.obj: CMakeFiles\ngircd_impl.dir\flags.make
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.obj: C:\develop\ngircd\src\platform\windows\src\win32_sighandlers.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.obj: CMakeFiles\ngircd_impl.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_sighandlers.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.obj /FdCMakeFiles\ngircd_impl.dir\ /FS -c C:\develop\ngircd\src\platform\windows\src\win32_sighandlers.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/win32/src/win32_sighandlers.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\win32\src\win32_sighandlers.c
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_sighandlers.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\platform\windows\src\win32_sighandlers.c
 <<
 
-CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/win32/src/win32_sighandlers.c.s"
+CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd_impl.dir/src/platform/windows/src/win32_sighandlers.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.s /c C:\develop\ngircd\win32\src\win32_sighandlers.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.s /c C:\develop\ngircd\src\platform\windows\src\win32_sighandlers.c
 <<
 
 # Object files for target ngircd_impl
 ngircd_impl_OBJECTS = \
-"CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.obj" \
-"CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.obj" \
-"CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.obj" \
-"CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.obj" \
-"CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.obj" \
-"CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.obj"
+"CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.obj" \
+"CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.obj"
 
 # External object files for target ngircd_impl
 ngircd_impl_EXTERNAL_OBJECTS =
 
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_runtime_globals.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\ngircd_impl\ngircd_daemon.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\array.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\channel.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\class.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\client-cap.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\conf.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-encoding.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\conn-func.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\hash.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\net\io.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-cap.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-channel.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-encoding.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-info.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-login.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-metadata.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-mode.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-op.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-oper.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-server.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\irc-write.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_check.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\join_error.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_flow.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_state.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\login_check.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\nick_check.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\message_check.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\user_check.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\lists.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\log.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\login.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\match.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\numeric.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\op.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\proto\parse.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\original\src\ngircd\core\module_iface.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\win32\src\win32_proc.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\win32\src\win32_resolve.c.obj
-ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\win32\src\win32_sighandlers.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_runtime_globals.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\legacy_impl\server_runtime\ngircd_daemon.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_proc.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_resolve.c.obj
+ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\src\platform\windows\src\win32_sighandlers.c.obj
 ngircd_impl.dll: CMakeFiles\ngircd_impl.dir\build.make
 ngircd_impl.dll: ngportab.lib
 ngircd_impl.dll: ngtool.lib

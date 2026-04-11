@@ -81,36 +81,36 @@ CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.s /c C:\develop\ngircd\tests\host_wiring_test.c
 <<
 
-CMakeFiles\host_wiring_test.dir\src\host\host.c.obj: CMakeFiles\host_wiring_test.dir\flags.make
-CMakeFiles\host_wiring_test.dir\src\host\host.c.obj: C:\develop\ngircd\src\host\host.c
-CMakeFiles\host_wiring_test.dir\src\host\host.c.obj: CMakeFiles\host_wiring_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/host_wiring_test.dir/src/host/host.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\host_wiring_test.dir\src\host\host.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\host_wiring_test.dir\src\host\host.c.obj /FdCMakeFiles\host_wiring_test.dir\ /FS -c C:\develop\ngircd\src\host\host.c
+CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: CMakeFiles\host_wiring_test.dir\flags.make
+CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: C:\develop\ngircd\src\app\host\host.c
+CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj: CMakeFiles\host_wiring_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/host_wiring_test.dir/src/app/host/host.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj /FdCMakeFiles\host_wiring_test.dir\ /FS -c C:\develop\ngircd\src\app\host\host.c
 <<
 
-CMakeFiles\host_wiring_test.dir\src\host\host.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/host_wiring_test.dir/src/host/host.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\host_wiring_test.dir\src\host\host.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\host\host.c
+CMakeFiles\host_wiring_test.dir\src\app\host\host.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/host_wiring_test.dir/src/app/host/host.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\host_wiring_test.dir\src\app\host\host.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\app\host\host.c
 <<
 
-CMakeFiles\host_wiring_test.dir\src\host\host.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/host_wiring_test.dir/src/host/host.c.s"
+CMakeFiles\host_wiring_test.dir\src\app\host\host.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/host_wiring_test.dir/src/app/host/host.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\host_wiring_test.dir\src\host\host.c.s /c C:\develop\ngircd\src\host\host.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\host_wiring_test.dir\src\app\host\host.c.s /c C:\develop\ngircd\src\app\host\host.c
 <<
 
 # Object files for target host_wiring_test
 host_wiring_test_OBJECTS = \
 "CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj" \
-"CMakeFiles\host_wiring_test.dir\src\host\host.c.obj"
+"CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj"
 
 # External object files for target host_wiring_test
 host_wiring_test_EXTERNAL_OBJECTS =
 
 host_wiring_test.exe: CMakeFiles\host_wiring_test.dir\tests\host_wiring_test.c.obj
-host_wiring_test.exe: CMakeFiles\host_wiring_test.dir\src\host\host.c.obj
+host_wiring_test.exe: CMakeFiles\host_wiring_test.dir\src\app\host\host.c.obj
 host_wiring_test.exe: CMakeFiles\host_wiring_test.dir\build.make
 host_wiring_test.exe: core_runtime.lib
 host_wiring_test.exe: CMakeFiles\host_wiring_test.dir\objects1.rsp

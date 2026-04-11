@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/resolver.dir/src/resolver/resolver.c.obj"
-  "CMakeFiles/resolver.dir/src/resolver/resolver.c.obj.d"
+  "CMakeFiles/resolver.dir/src/net/resolver/resolver.c.obj"
+  "CMakeFiles/resolver.dir/src/net/resolver/resolver.c.obj.d"
   "resolver.dll"
   "resolver.dll.manifest"
   "resolver.lib"

@@ -80,7 +80,7 @@ The codebase is still a monolithic native IRC server with a few in-process seams
 - There are no DLL targets, no module loader, and no exported ABI headers yet.
 
 ## Windows-Specific Behavior
-- The repo contains `win32/src` and `win32/include` shims for Windows portability.
+- The repo contains `src/platform/windows/src` and `src/platform/windows/include` shims for Windows portability.
 - Build configuration prioritizes the Win32 compatibility headers.
 - The current code still assumes a mostly native, single-process model with explicit platform work in the host process.
 

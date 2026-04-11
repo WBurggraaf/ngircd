@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/ngircd/proto/user_check.c" "CMakeFiles/user_check_test.dir/original/src/ngircd/proto/user_check.c.obj" "msvc" "CMakeFiles/user_check_test.dir/original/src/ngircd/proto/user_check.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/user_check.c" "CMakeFiles/user_check_test.dir/src/server/ngircd/proto/user_check.c.obj" "msvc" "CMakeFiles/user_check_test.dir/src/server/ngircd/proto/user_check.c.obj.d"
   "C:/develop/ngircd/tests/user_check_test.c" "CMakeFiles/user_check_test.dir/tests/user_check_test.c.obj" "msvc" "CMakeFiles/user_check_test.dir/tests/user_check_test.c.obj.d"
   )
 

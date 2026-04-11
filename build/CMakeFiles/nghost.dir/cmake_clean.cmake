@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/nghost.dir/src/host/host.c.obj"
-  "CMakeFiles/nghost.dir/src/host/host.c.obj.d"
+  "CMakeFiles/nghost.dir/src/app/host/host.c.obj"
+  "CMakeFiles/nghost.dir/src/app/host/host.c.obj.d"
   "host.dll"
   "host.dll.manifest"
   "host.lib"

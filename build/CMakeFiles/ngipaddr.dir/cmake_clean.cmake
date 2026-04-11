@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ngipaddr.dir/original/src/ipaddr/ng_ipaddr.c.obj"
-  "CMakeFiles/ngipaddr.dir/original/src/ipaddr/ng_ipaddr.c.obj.d"
+  "CMakeFiles/ngipaddr.dir/src/support/ipaddr/ng_ipaddr.c.obj"
+  "CMakeFiles/ngipaddr.dir/src/support/ipaddr/ng_ipaddr.c.obj.d"
   "ngipaddr.lib"
   "ngipaddr.pdb"
 )

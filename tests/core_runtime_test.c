@@ -7,8 +7,8 @@
  * Compiles core_runtime.c directly; no DLL deps needed.
  */
 
-#include "core_runtime/core_runtime.h"
-#include "core_runtime/module_api.h"
+#include "core/runtime/core_runtime.h"
+#include "core/runtime/module_api.h"
 
 #include <stdio.h>
 
@@ -66,3 +66,4 @@ int main(void)
     printf("core_runtime_test: all %d checks passed\n", 28);
     return 0;
 }
+

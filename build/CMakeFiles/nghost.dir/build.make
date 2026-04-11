@@ -61,34 +61,34 @@ include CMakeFiles\nghost.dir\flags.make
 CMakeFiles\nghost.dir\codegen:
 .PHONY : CMakeFiles\nghost.dir\codegen
 
-CMakeFiles\nghost.dir\src\host\host.c.obj: CMakeFiles\nghost.dir\flags.make
-CMakeFiles\nghost.dir\src\host\host.c.obj: C:\develop\ngircd\src\host\host.c
-CMakeFiles\nghost.dir\src\host\host.c.obj: CMakeFiles\nghost.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/nghost.dir/src/host/host.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\nghost.dir\src\host\host.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\nghost.dir\src\host\host.c.obj /FdCMakeFiles\nghost.dir\ /FS -c C:\develop\ngircd\src\host\host.c
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: CMakeFiles\nghost.dir\flags.make
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: C:\develop\ngircd\src\app\host\host.c
+CMakeFiles\nghost.dir\src\app\host\host.c.obj: CMakeFiles\nghost.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/nghost.dir/src/app/host/host.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\nghost.dir\src\app\host\host.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\nghost.dir\src\app\host\host.c.obj /FdCMakeFiles\nghost.dir\ /FS -c C:\develop\ngircd\src\app\host\host.c
 <<
 
-CMakeFiles\nghost.dir\src\host\host.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/nghost.dir/src/host/host.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\nghost.dir\src\host\host.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\host\host.c
+CMakeFiles\nghost.dir\src\app\host\host.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/nghost.dir/src/app/host/host.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\nghost.dir\src\app\host\host.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\app\host\host.c
 <<
 
-CMakeFiles\nghost.dir\src\host\host.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/nghost.dir/src/host/host.c.s"
+CMakeFiles\nghost.dir\src\app\host\host.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/nghost.dir/src/app/host/host.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\nghost.dir\src\host\host.c.s /c C:\develop\ngircd\src\host\host.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\nghost.dir\src\app\host\host.c.s /c C:\develop\ngircd\src\app\host\host.c
 <<
 
 # Object files for target nghost
 nghost_OBJECTS = \
-"CMakeFiles\nghost.dir\src\host\host.c.obj"
+"CMakeFiles\nghost.dir\src\app\host\host.c.obj"
 
 # External object files for target nghost
 nghost_EXTERNAL_OBJECTS =
 
-host.dll: CMakeFiles\nghost.dir\src\host\host.c.obj
+host.dll: CMakeFiles\nghost.dir\src\app\host\host.c.obj
 host.dll: CMakeFiles\nghost.dir\build.make
 host.dll: core_runtime.lib
 host.dll: CMakeFiles\nghost.dir\objects1.rsp

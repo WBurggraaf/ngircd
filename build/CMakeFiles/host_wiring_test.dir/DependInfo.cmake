@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/host/host.c" "CMakeFiles/host_wiring_test.dir/src/host/host.c.obj" "msvc" "CMakeFiles/host_wiring_test.dir/src/host/host.c.obj.d"
+  "C:/develop/ngircd/src/app/host/host.c" "CMakeFiles/host_wiring_test.dir/src/app/host/host.c.obj" "msvc" "CMakeFiles/host_wiring_test.dir/src/app/host/host.c.obj.d"
   "C:/develop/ngircd/tests/host_wiring_test.c" "CMakeFiles/host_wiring_test.dir/tests/host_wiring_test.c.obj" "msvc" "CMakeFiles/host_wiring_test.dir/tests/host_wiring_test.c.obj.d"
   )
 

@@ -13,11 +13,11 @@
  *   - build_proto_id() null-arg guards and happy path
  */
 
-#include "server_app/server_app.h"   /* pulls host.h → all typed APIs */
-#include "logging/logging.h"
-#include "config/config.h"
-#include "net_transport/net_transport.h"
-#include "core_runtime/module_api.h"
+#include "app/server_app/server_app.h"   /* pulls host.h → all typed APIs */
+#include "app/logging/logging.h"
+#include "app/config/config.h"
+#include "net/transport/net_transport.h"
+#include "core/runtime/module_api.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -119,3 +119,4 @@ int main(void)
     printf("server_app_unit_test: all 30 checks passed\n");
     return 0;
 }
+

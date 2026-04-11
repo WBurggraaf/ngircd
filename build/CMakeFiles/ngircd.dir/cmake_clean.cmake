@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ngircd.dir/original/src/ngircd/platform/ngircd.c.obj"
-  "CMakeFiles/ngircd.dir/original/src/ngircd/platform/ngircd.c.obj.d"
-  "CMakeFiles/ngircd.dir/win32/src/win32_main.c.obj"
-  "CMakeFiles/ngircd.dir/win32/src/win32_main.c.obj.d"
+  "CMakeFiles/ngircd.dir/src/platform/windows/src/win32_main.c.obj"
+  "CMakeFiles/ngircd.dir/src/platform/windows/src/win32_main.c.obj.d"
+  "CMakeFiles/ngircd.dir/src/server/ngircd/platform/ngircd.c.obj"
+  "CMakeFiles/ngircd.dir/src/server/ngircd/platform/ngircd.c.obj.d"
   "ngircd.exe"
   "ngircd.exe.manifest"
   "ngircd.lib"

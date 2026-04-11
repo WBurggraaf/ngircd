@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/command_handlers/command_handlers.c" "CMakeFiles/command_handlers.dir/src/command_handlers/command_handlers.c.obj" "msvc" "CMakeFiles/command_handlers.dir/src/command_handlers/command_handlers.c.obj.d"
+  "C:/develop/ngircd/src/protocol/command_handlers/command_handlers.c" "CMakeFiles/command_handlers.dir/src/protocol/command_handlers/command_handlers.c.obj" "msvc" "CMakeFiles/command_handlers.dir/src/protocol/command_handlers/command_handlers.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

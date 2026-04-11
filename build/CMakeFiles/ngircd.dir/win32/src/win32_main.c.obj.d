@@ -1,4 +1,4 @@
-C:/develop/ngircd/original/src/portab/portab.h
+C:/develop/ngircd/src/support/portab/portab.h
 C:/develop/ngircd/win32/include/config.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/types.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h

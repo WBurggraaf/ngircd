@@ -1,4 +1,4 @@
-C:/develop/ngircd/original/src/portab/portab.h
+C:/develop/ngircd/src/support/portab/portab.h
 C:/develop/ngircd/win32/include/config.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/types.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h
@@ -24,6 +24,6 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/signal.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
-C:/develop/ngircd/original/src/ngircd/ngircd.h
-C:/develop/ngircd/original/src/ngircd/defines.h
-C:/develop/ngircd/original/src/ngircd/sighandlers.h
+C:/develop/ngircd/src/server/ngircd/ngircd.h
+C:/develop/ngircd/src/server/ngircd/defines.h
+C:/develop/ngircd/src/server/ngircd/sighandlers.h

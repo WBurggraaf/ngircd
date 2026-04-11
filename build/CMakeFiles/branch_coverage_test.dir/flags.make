@@ -4,7 +4,7 @@
 # compile C with C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe
 C_DEFINES = 
 
-C_INCLUDES = -IC:\develop\ngircd\win32\include -IC:\develop\ngircd\original\src\portab -IC:\develop\ngircd\original\src\ngircd -IC:\develop\ngircd\original\src\ngircd\proto
+C_INCLUDES = -IC:\develop\ngircd\src\platform\windows\include -IC:\develop\ngircd\src\server -IC:\develop\ngircd\src\support -IC:\develop\ngircd\src\support\portab -IC:\develop\ngircd\src\server\ngircd -IC:\develop\ngircd\src\server\ngircd\proto
 
 C_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
 

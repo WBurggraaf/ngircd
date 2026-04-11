@@ -1,7 +1,7 @@
 /*
  * config_module_test.c — unit tests for the config wrapper DLL API
  *
- * Compiles src/config/config.c directly with CONFIG_BUILD.
+ * Compiles src/app/config/config.c directly with CONFIG_BUILD.
  * Uses test_support.c for Conf_* globals and conf_func_stubs.c for
  * Conf_Init / Conf_Rehash / Conf_Test stubs.
  *
@@ -12,8 +12,8 @@
  */
 
 #include "portab/portab.h"
-#include "config/config.h"
-#include "core_runtime/module_api.h"
+#include "app/config/config.h"
+#include "core/runtime/module_api.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -75,3 +75,4 @@ int main(void)
     printf("config_module_test: all 21 checks passed\n");
     return 0;
 }
+

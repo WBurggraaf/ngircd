@@ -8,11 +8,11 @@ CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files\Microsoft
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h"
-CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\include\core_runtime\core_runtime.h
+CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\include\core\runtime\core_runtime.h
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\include\core_runtime\module_api.h
+CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\include\core\runtime\module_api.h
 CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\win32\include\config.h
 CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\win32\include\win32compat.h
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
@@ -154,6 +154,12 @@ CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Win
 
 
 
+C:\develop\ngircd\include\core\runtime\core_runtime.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h":
@@ -174,10 +180,6 @@ C:\develop\ngircd\include\platform\platform.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h":
-
-C:\develop\ngircd\include\core_runtime\core_runtime.h:
-
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h":
@@ -190,9 +192,11 @@ C:\develop\ngircd\include\core_runtime\core_runtime.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h":
 
-C:\develop\ngircd\win32\include\config.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h":
 
-C:\develop\ngircd\include\core_runtime\module_api.h:
+C:\develop\ngircd\include\core\runtime\module_api.h:
+
+C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
 
@@ -254,6 +258,8 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h":
 
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\synchapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h":
@@ -268,8 +274,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apiset.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h":
@@ -281,10 +285,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\processenv.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 

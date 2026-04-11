@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/ngircd/core/array.c" "CMakeFiles/config_module_test.dir/original/src/ngircd/core/array.c.obj" "msvc" "CMakeFiles/config_module_test.dir/original/src/ngircd/core/array.c.obj.d"
-  "C:/develop/ngircd/src/config/config.c" "CMakeFiles/config_module_test.dir/src/config/config.c.obj" "msvc" "CMakeFiles/config_module_test.dir/src/config/config.c.obj.d"
+  "C:/develop/ngircd/src/app/config/config.c" "CMakeFiles/config_module_test.dir/src/app/config/config.c.obj" "msvc" "CMakeFiles/config_module_test.dir/src/app/config/config.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/core/array.c" "CMakeFiles/config_module_test.dir/src/server/ngircd/core/array.c.obj" "msvc" "CMakeFiles/config_module_test.dir/src/server/ngircd/core/array.c.obj.d"
   "C:/develop/ngircd/tests/conf_func_stubs.c" "CMakeFiles/config_module_test.dir/tests/conf_func_stubs.c.obj" "msvc" "CMakeFiles/config_module_test.dir/tests/conf_func_stubs.c.obj.d"
   "C:/develop/ngircd/tests/config_module_test.c" "CMakeFiles/config_module_test.dir/tests/config_module_test.c.obj" "msvc" "CMakeFiles/config_module_test.dir/tests/config_module_test.c.obj.d"
   "C:/develop/ngircd/tests/test_support.c" "CMakeFiles/config_module_test.dir/tests/test_support.c.obj" "msvc" "CMakeFiles/config_module_test.dir/tests/test_support.c.obj.d"

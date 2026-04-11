@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/client_state.dir/src/client_state/client_state.c.obj"
-  "CMakeFiles/client_state.dir/src/client_state/client_state.c.obj.d"
+  "CMakeFiles/client_state.dir/src/state/client_state/client_state.c.obj"
+  "CMakeFiles/client_state.dir/src/state/client_state/client_state.c.obj.d"
   "client_state.dll"
   "client_state.dll.manifest"
   "client_state.lib"

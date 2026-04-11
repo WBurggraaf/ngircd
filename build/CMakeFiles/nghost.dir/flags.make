@@ -4,7 +4,7 @@
 # compile C with C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe
 C_DEFINES = -DHOST_BUILD -Dnghost_EXPORTS
 
-C_INCLUDES = -IC:\develop\ngircd\include -IC:\develop\ngircd\win32\include -IC:\develop\ngircd\original\src -IC:\develop\ngircd\original\src\ngircd -IC:\develop\ngircd\original\src\portab
+C_INCLUDES = -IC:\develop\ngircd\include -IC:\develop\ngircd\src\platform\windows\include -IC:\develop\ngircd\src\server -IC:\develop\ngircd\src\server\ngircd -IC:\develop\ngircd\src\support -IC:\develop\ngircd\src\support\portab -IC:\develop\ngircd\src\support\tool -IC:\develop\ngircd\src\support\ipaddr
 
 C_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
 

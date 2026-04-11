@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/config.dir/src/config/config.c.obj"
-  "CMakeFiles/config.dir/src/config/config.c.obj.d"
+  "CMakeFiles/config.dir/src/app/config/config.c.obj"
+  "CMakeFiles/config.dir/src/app/config/config.c.obj.d"
   "config.dll"
   "config.dll.manifest"
   "config.lib"

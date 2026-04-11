@@ -1,7 +1,7 @@
 /*
  * logging_module_test.c — unit tests for the logging wrapper DLL API
  *
- * Compiles src/logging/logging.c directly with LOGGING_BUILD.
+ * Compiles src/app/logging/logging.c directly with LOGGING_BUILD.
  * Provides no-op stubs for Log_*, so no ngircd_impl link needed.
  *
  * Tests:
@@ -10,8 +10,8 @@
  *   - logging_log / logging_debug smoke (exercise code paths)
  */
 
-#include "logging/logging.h"
-#include "core_runtime/module_api.h"
+#include "app/logging/logging.h"
+#include "core/runtime/module_api.h"
 
 #include <stdbool.h>
 #include <stdarg.h>
@@ -75,3 +75,4 @@ int main(void)
     printf("logging_module_test: all 20 checks passed\n");
     return 0;
 }
+

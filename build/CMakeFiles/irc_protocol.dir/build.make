@@ -61,34 +61,34 @@ include CMakeFiles\irc_protocol.dir\flags.make
 CMakeFiles\irc_protocol.dir\codegen:
 .PHONY : CMakeFiles\irc_protocol.dir\codegen
 
-CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.obj: CMakeFiles\irc_protocol.dir\flags.make
-CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.obj: C:\develop\ngircd\src\irc_protocol\irc_protocol.c
-CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.obj: CMakeFiles\irc_protocol.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/irc_protocol.dir/src/irc_protocol/irc_protocol.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.obj /FdCMakeFiles\irc_protocol.dir\ /FS -c C:\develop\ngircd\src\irc_protocol\irc_protocol.c
+CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.obj: CMakeFiles\irc_protocol.dir\flags.make
+CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.obj: C:\develop\ngircd\src\protocol\irc_protocol\irc_protocol.c
+CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.obj: CMakeFiles\irc_protocol.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/irc_protocol.dir/src/protocol/irc_protocol/irc_protocol.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.obj /FdCMakeFiles\irc_protocol.dir\ /FS -c C:\develop\ngircd\src\protocol\irc_protocol\irc_protocol.c
 <<
 
-CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/irc_protocol.dir/src/irc_protocol/irc_protocol.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\irc_protocol\irc_protocol.c
+CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/irc_protocol.dir/src/protocol/irc_protocol/irc_protocol.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\protocol\irc_protocol\irc_protocol.c
 <<
 
-CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/irc_protocol.dir/src/irc_protocol/irc_protocol.c.s"
+CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/irc_protocol.dir/src/protocol/irc_protocol/irc_protocol.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.s /c C:\develop\ngircd\src\irc_protocol\irc_protocol.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.s /c C:\develop\ngircd\src\protocol\irc_protocol\irc_protocol.c
 <<
 
 # Object files for target irc_protocol
 irc_protocol_OBJECTS = \
-"CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.obj"
+"CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.obj"
 
 # External object files for target irc_protocol
 irc_protocol_EXTERNAL_OBJECTS =
 
-irc_protocol.dll: CMakeFiles\irc_protocol.dir\src\irc_protocol\irc_protocol.c.obj
+irc_protocol.dll: CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.obj
 irc_protocol.dll: CMakeFiles\irc_protocol.dir\build.make
 irc_protocol.dll: core_runtime.lib
 irc_protocol.dll: CMakeFiles\irc_protocol.dir\objects1.rsp

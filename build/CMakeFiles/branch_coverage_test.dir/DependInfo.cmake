@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/ngircd/proto/join_check.c" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/join_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/join_check.c.obj.d"
-  "C:/develop/ngircd/original/src/ngircd/proto/join_error.c" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/join_error.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/join_error.c.obj.d"
-  "C:/develop/ngircd/original/src/ngircd/proto/login_check.c" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/login_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/login_check.c.obj.d"
-  "C:/develop/ngircd/original/src/ngircd/proto/login_flow.c" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/login_flow.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/login_flow.c.obj.d"
-  "C:/develop/ngircd/original/src/ngircd/proto/message_check.c" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/message_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/message_check.c.obj.d"
-  "C:/develop/ngircd/original/src/ngircd/proto/nick_check.c" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/nick_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/nick_check.c.obj.d"
-  "C:/develop/ngircd/original/src/ngircd/proto/user_check.c" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/user_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/original/src/ngircd/proto/user_check.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/join_check.c" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/join_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/join_check.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/join_error.c" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/join_error.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/join_error.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/login_check.c" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/login_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/login_check.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/login_flow.c" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/login_flow.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/login_flow.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/message_check.c" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/message_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/message_check.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/nick_check.c" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/nick_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/nick_check.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/user_check.c" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/user_check.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/src/server/ngircd/proto/user_check.c.obj.d"
   "C:/develop/ngircd/tests/branch_coverage_test.c" "CMakeFiles/branch_coverage_test.dir/tests/branch_coverage_test.c.obj" "msvc" "CMakeFiles/branch_coverage_test.dir/tests/branch_coverage_test.c.obj.d"
   )
 

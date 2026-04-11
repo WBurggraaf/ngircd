@@ -1,5 +1,5 @@
-C:/develop/ngircd/original/src/portab/portab.h
-C:/develop/ngircd/win32/include/config.h
+C:/develop/ngircd/src/support/portab/portab.h
+C:/develop/ngircd/src/platform/windows/include/config.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/types.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime.h
@@ -10,18 +10,18 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stddef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/inttypes.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdint.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdbool.h
-C:/develop/ngircd/original/src/ngircd/ngircd.h
+C:/develop/ngircd/src/server/ngircd/ngircd.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
-C:/develop/ngircd/original/src/ngircd/defines.h
-C:/develop/ngircd/original/src/ngircd/conn.h
-C:/develop/ngircd/original/src/ngircd/conf-ssl.h
-C:/develop/ngircd/original/src/ngircd/client.h
-C:/develop/ngircd/original/src/ngircd/proc.h
-C:/develop/ngircd/original/src/ngircd/conf.h
-C:/develop/ngircd/original/src/ngircd/array.h
-C:/develop/ngircd/original/src/tool/tool.h
-C:/develop/ngircd/original/src/ipaddr/ng_ipaddr.h
+C:/develop/ngircd/src/server/ngircd/defines.h
+C:/develop/ngircd/src/server/ngircd/conn.h
+C:/develop/ngircd/src/server/ngircd/conf-ssl.h
+C:/develop/ngircd/src/server/ngircd/client.h
+C:/develop/ngircd/src/server/ngircd/proc.h
+C:/develop/ngircd/src/server/ngircd/conf.h
+C:/develop/ngircd/src/server/ngircd/array.h
+C:/develop/ngircd/src/support/tool/tool.h
+C:/develop/ngircd/src/support/ipaddr/ng_ipaddr.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/assert.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/string.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memory.h
@@ -29,8 +29,8 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/errno.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime_string.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
-C:/develop/ngircd/win32/include/sys/socket.h
-C:/develop/ngircd/win32/include/win32compat.h
+C:/develop/ngircd/src/platform/windows/include/sys/socket.h
+C:/develop/ngircd/src/platform/windows/include/win32compat.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/winsock2.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winapifamily.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winpackagefamily.h
@@ -149,9 +149,9 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/ws2tcpip.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/ws2ipdef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/in6addr.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/limits.h
-C:/develop/ngircd/original/src/ngircd/io.h
-C:/develop/ngircd/original/src/ngircd/module_iface.h
-C:/develop/ngircd/win32/include/sys/time.h
+C:/develop/ngircd/src/server/ngircd/io.h
+C:/develop/ngircd/src/server/ngircd/module_iface.h
+C:/develop/ngircd/src/platform/windows/include/sys/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/process.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_startup.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/math.h
@@ -161,5 +161,5 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wproces
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/direct.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wdirect.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/fcntl.h
-C:/develop/ngircd/win32/include/netinet/in.h
-C:/develop/ngircd/win32/include/arpa/inet.h
+C:/develop/ngircd/src/platform/windows/include/netinet/in.h
+C:/develop/ngircd/src/platform/windows/include/arpa/inet.h

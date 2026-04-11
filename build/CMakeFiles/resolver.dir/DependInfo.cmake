@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/resolver/resolver.c" "CMakeFiles/resolver.dir/src/resolver/resolver.c.obj" "msvc" "CMakeFiles/resolver.dir/src/resolver/resolver.c.obj.d"
+  "C:/develop/ngircd/src/net/resolver/resolver.c" "CMakeFiles/resolver.dir/src/net/resolver/resolver.c.obj" "msvc" "CMakeFiles/resolver.dir/src/net/resolver/resolver.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

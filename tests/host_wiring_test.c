@@ -11,7 +11,7 @@
  * on the stack using memset; no DLL deps required.
  */
 
-#include "host/host.h"
+#include "app/host/host.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -108,3 +108,4 @@ int main(void)
     printf("host_wiring_test: all 19 checks passed\n");
     return 0;
 }
+

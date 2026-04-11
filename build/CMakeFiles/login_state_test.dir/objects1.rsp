@@ -1,1 +1,1 @@
-﻿CMakeFiles/login_state_test.dir/tests/login_state_test.c.obj CMakeFiles/login_state_test.dir/original/src/ngircd/proto/login_state.c.obj
+﻿CMakeFiles/login_state_test.dir/tests/login_state_test.c.obj CMakeFiles/login_state_test.dir/src/server/ngircd/proto/login_state.c.obj

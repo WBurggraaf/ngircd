@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/core_runtime/core_runtime.c" "CMakeFiles/core_runtime_test.dir/src/core_runtime/core_runtime.c.obj" "msvc" "CMakeFiles/core_runtime_test.dir/src/core_runtime/core_runtime.c.obj.d"
+  "C:/develop/ngircd/src/core/runtime/core_runtime.c" "CMakeFiles/core_runtime_test.dir/src/core/runtime/core_runtime.c.obj" "msvc" "CMakeFiles/core_runtime_test.dir/src/core/runtime/core_runtime.c.obj.d"
   "C:/develop/ngircd/tests/core_runtime_test.c" "CMakeFiles/core_runtime_test.dir/tests/core_runtime_test.c.obj" "msvc" "CMakeFiles/core_runtime_test.dir/tests/core_runtime_test.c.obj.d"
   )
 

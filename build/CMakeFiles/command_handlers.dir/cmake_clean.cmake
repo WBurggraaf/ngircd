@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/command_handlers.dir/src/command_handlers/command_handlers.c.obj"
-  "CMakeFiles/command_handlers.dir/src/command_handlers/command_handlers.c.obj.d"
+  "CMakeFiles/command_handlers.dir/src/protocol/command_handlers/command_handlers.c.obj"
+  "CMakeFiles/command_handlers.dir/src/protocol/command_handlers/command_handlers.c.obj.d"
   "command_handlers.dll"
   "command_handlers.dll.manifest"
   "command_handlers.lib"

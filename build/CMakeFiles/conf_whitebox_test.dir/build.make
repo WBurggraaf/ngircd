@@ -101,82 +101,82 @@ CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\conf_whitebox_test.dir\tests\test_support.c.s /c C:\develop\ngircd\tests\test_support.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.obj: CMakeFiles\conf_whitebox_test.dir\flags.make
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.obj: C:\develop\ngircd\original\src\ngircd\core\array.c
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.obj: CMakeFiles\conf_whitebox_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/array.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.obj /FdCMakeFiles\conf_whitebox_test.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\array.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.obj: CMakeFiles\conf_whitebox_test.dir\flags.make
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.obj: C:\develop\ngircd\src\server\ngircd\core\array.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.obj: CMakeFiles\conf_whitebox_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/array.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.obj /FdCMakeFiles\conf_whitebox_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\array.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/array.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\array.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/array.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\array.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/array.c.s"
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/array.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.s /c C:\develop\ngircd\original\src\ngircd\core\array.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.s /c C:\develop\ngircd\src\server\ngircd\core\array.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.obj: CMakeFiles\conf_whitebox_test.dir\flags.make
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.obj: C:\develop\ngircd\original\src\ngircd\core\conf.c
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.obj: CMakeFiles\conf_whitebox_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/conf.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.obj /FdCMakeFiles\conf_whitebox_test.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\conf.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.obj: CMakeFiles\conf_whitebox_test.dir\flags.make
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.obj: C:\develop\ngircd\src\server\ngircd\core\conf.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.obj: CMakeFiles\conf_whitebox_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/conf.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.obj /FdCMakeFiles\conf_whitebox_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\conf.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/conf.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\conf.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/conf.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\conf.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/conf.c.s"
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/conf.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.s /c C:\develop\ngircd\original\src\ngircd\core\conf.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.s /c C:\develop\ngircd\src\server\ngircd\core\conf.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.obj: CMakeFiles\conf_whitebox_test.dir\flags.make
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.obj: C:\develop\ngircd\original\src\ngircd\core\module_iface.c
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.obj: CMakeFiles\conf_whitebox_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/module_iface.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.obj /FdCMakeFiles\conf_whitebox_test.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\core\module_iface.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.obj: CMakeFiles\conf_whitebox_test.dir\flags.make
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.obj: C:\develop\ngircd\src\server\ngircd\core\module_iface.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.obj: CMakeFiles\conf_whitebox_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/module_iface.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.obj /FdCMakeFiles\conf_whitebox_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\module_iface.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/module_iface.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\core\module_iface.c
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/module_iface.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\module_iface.c
 <<
 
-CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/module_iface.c.s"
+CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/module_iface.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.s /c C:\develop\ngircd\original\src\ngircd\core\module_iface.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.s /c C:\develop\ngircd\src\server\ngircd\core\module_iface.c
 <<
 
 # Object files for target conf_whitebox_test
 conf_whitebox_test_OBJECTS = \
 "CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj" \
 "CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj" \
-"CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.obj" \
-"CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.obj" \
-"CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.obj"
+"CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.obj" \
+"CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.obj" \
+"CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.obj"
 
 # External object files for target conf_whitebox_test
 conf_whitebox_test_EXTERNAL_OBJECTS =
 
 conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj
 conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj
-conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\array.c.obj
-conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\conf.c.obj
-conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\original\src\ngircd\core\module_iface.c.obj
+conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.obj
+conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.obj
+conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.obj
 conf_whitebox_test.exe: CMakeFiles\conf_whitebox_test.dir\build.make
 conf_whitebox_test.exe: ngportab.lib
 conf_whitebox_test.exe: ngtool.lib

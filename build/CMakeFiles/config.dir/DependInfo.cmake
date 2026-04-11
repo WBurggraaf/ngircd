@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/config/config.c" "CMakeFiles/config.dir/src/config/config.c.obj" "msvc" "CMakeFiles/config.dir/src/config/config.c.obj.d"
+  "C:/develop/ngircd/src/app/config/config.c" "CMakeFiles/config.dir/src/app/config/config.c.obj" "msvc" "CMakeFiles/config.dir/src/app/config/config.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

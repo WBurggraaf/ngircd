@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/ngircd/core/module_iface.c" "CMakeFiles/module_iface_test.dir/original/src/ngircd/core/module_iface.c.obj" "msvc" "CMakeFiles/module_iface_test.dir/original/src/ngircd/core/module_iface.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/core/module_iface.c" "CMakeFiles/module_iface_test.dir/src/server/ngircd/core/module_iface.c.obj" "msvc" "CMakeFiles/module_iface_test.dir/src/server/ngircd/core/module_iface.c.obj.d"
   "C:/develop/ngircd/tests/module_iface_test.c" "CMakeFiles/module_iface_test.dir/tests/module_iface_test.c.obj" "msvc" "CMakeFiles/module_iface_test.dir/tests/module_iface_test.c.obj.d"
   )
 

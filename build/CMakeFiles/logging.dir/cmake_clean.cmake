@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/logging.dir/src/logging/logging.c.obj"
-  "CMakeFiles/logging.dir/src/logging/logging.c.obj.d"
+  "CMakeFiles/logging.dir/src/app/logging/logging.c.obj"
+  "CMakeFiles/logging.dir/src/app/logging/logging.c.obj.d"
   "logging.dll"
   "logging.dll.manifest"
   "logging.lib"

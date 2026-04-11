@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/channel_state.dir/src/channel_state/channel_state.c.obj"
-  "CMakeFiles/channel_state.dir/src/channel_state/channel_state.c.obj.d"
+  "CMakeFiles/channel_state.dir/src/state/channel_state/channel_state.c.obj"
+  "CMakeFiles/channel_state.dir/src/state/channel_state/channel_state.c.obj.d"
   "channel_state.dll"
   "channel_state.dll.manifest"
   "channel_state.lib"

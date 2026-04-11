@@ -61,34 +61,34 @@ include CMakeFiles\ngtool.dir\flags.make
 CMakeFiles\ngtool.dir\codegen:
 .PHONY : CMakeFiles\ngtool.dir\codegen
 
-CMakeFiles\ngtool.dir\original\src\tool\tool.c.obj: CMakeFiles\ngtool.dir\flags.make
-CMakeFiles\ngtool.dir\original\src\tool\tool.c.obj: C:\develop\ngircd\original\src\tool\tool.c
-CMakeFiles\ngtool.dir\original\src\tool\tool.c.obj: CMakeFiles\ngtool.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngtool.dir/original/src/tool/tool.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngtool.dir\original\src\tool\tool.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngtool.dir\original\src\tool\tool.c.obj /FdCMakeFiles\ngtool.dir\ngtool.pdb /FS -c C:\develop\ngircd\original\src\tool\tool.c
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: CMakeFiles\ngtool.dir\flags.make
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\src\support\tool\tool.c
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: CMakeFiles\ngtool.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngtool.dir/src/support/tool/tool.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngtool.dir\src\support\tool\tool.c.obj /FdCMakeFiles\ngtool.dir\ngtool.pdb /FS -c C:\develop\ngircd\src\support\tool\tool.c
 <<
 
-CMakeFiles\ngtool.dir\original\src\tool\tool.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngtool.dir/original/src/tool/tool.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngtool.dir\original\src\tool\tool.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\tool\tool.c
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngtool.dir/src/support/tool/tool.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngtool.dir\src\support\tool\tool.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\support\tool\tool.c
 <<
 
-CMakeFiles\ngtool.dir\original\src\tool\tool.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngtool.dir/original/src/tool/tool.c.s"
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngtool.dir/src/support/tool/tool.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngtool.dir\original\src\tool\tool.c.s /c C:\develop\ngircd\original\src\tool\tool.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngtool.dir\src\support\tool\tool.c.s /c C:\develop\ngircd\src\support\tool\tool.c
 <<
 
 # Object files for target ngtool
 ngtool_OBJECTS = \
-"CMakeFiles\ngtool.dir\original\src\tool\tool.c.obj"
+"CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj"
 
 # External object files for target ngtool
 ngtool_EXTERNAL_OBJECTS =
 
-ngtool.lib: CMakeFiles\ngtool.dir\original\src\tool\tool.c.obj
+ngtool.lib: CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj
 ngtool.lib: CMakeFiles\ngtool.dir\build.make
 ngtool.lib: CMakeFiles\ngtool.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ngtool.lib"

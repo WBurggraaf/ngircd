@@ -61,122 +61,122 @@ include CMakeFiles\ngportab.dir\flags.make
 CMakeFiles\ngportab.dir\codegen:
 .PHONY : CMakeFiles\ngportab.dir\codegen
 
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: CMakeFiles\ngportab.dir\flags.make
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: C:\develop\ngircd\original\src\portab\strdup.c
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngportab.dir/original/src/portab/strdup.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\original\src\portab\strdup.c
+CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: CMakeFiles\ngportab.dir\flags.make
+CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: C:\develop\ngircd\src\support\portab\strdup.c
+CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngportab.dir/src/support/portab/strdup.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\src\support\portab\strdup.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/original/src/portab/strdup.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\original\src\portab\strdup.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\portab\strdup.c
+CMakeFiles\ngportab.dir\src\support\portab\strdup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/src/support/portab/strdup.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\src\support\portab\strdup.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\support\portab\strdup.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strdup.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/original/src/portab/strdup.c.s"
+CMakeFiles\ngportab.dir\src\support\portab\strdup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/src/support/portab/strdup.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\original\src\portab\strdup.c.s /c C:\develop\ngircd\original\src\portab\strdup.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\src\support\portab\strdup.c.s /c C:\develop\ngircd\src\support\portab\strdup.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: CMakeFiles\ngportab.dir\flags.make
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: C:\develop\ngircd\original\src\portab\strlcpy.c
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ngportab.dir/original/src/portab/strlcpy.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\original\src\portab\strlcpy.c
+CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: CMakeFiles\ngportab.dir\flags.make
+CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: C:\develop\ngircd\src\support\portab\strlcpy.c
+CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ngportab.dir/src/support/portab/strlcpy.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\src\support\portab\strlcpy.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/original/src/portab/strlcpy.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\portab\strlcpy.c
+CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/src/support/portab/strlcpy.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\support\portab\strlcpy.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/original/src/portab/strlcpy.c.s"
+CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/src/support/portab/strlcpy.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.s /c C:\develop\ngircd\original\src\portab\strlcpy.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.s /c C:\develop\ngircd\src\support\portab\strlcpy.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: CMakeFiles\ngportab.dir\flags.make
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: C:\develop\ngircd\original\src\portab\strndup.c
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ngportab.dir/original/src/portab/strndup.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\original\src\portab\strndup.c
+CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: CMakeFiles\ngportab.dir\flags.make
+CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: C:\develop\ngircd\src\support\portab\strndup.c
+CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ngportab.dir/src/support/portab/strndup.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\src\support\portab\strndup.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/original/src/portab/strndup.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\original\src\portab\strndup.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\portab\strndup.c
+CMakeFiles\ngportab.dir\src\support\portab\strndup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/src/support/portab/strndup.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\src\support\portab\strndup.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\support\portab\strndup.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strndup.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/original/src/portab/strndup.c.s"
+CMakeFiles\ngportab.dir\src\support\portab\strndup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/src/support/portab/strndup.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\original\src\portab\strndup.c.s /c C:\develop\ngircd\original\src\portab\strndup.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\src\support\portab\strndup.c.s /c C:\develop\ngircd\src\support\portab\strndup.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: CMakeFiles\ngportab.dir\flags.make
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: C:\develop\ngircd\original\src\portab\strtok_r.c
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ngportab.dir/original/src/portab/strtok_r.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\original\src\portab\strtok_r.c
+CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: CMakeFiles\ngportab.dir\flags.make
+CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: C:\develop\ngircd\src\support\portab\strtok_r.c
+CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ngportab.dir/src/support/portab/strtok_r.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\src\support\portab\strtok_r.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/original/src/portab/strtok_r.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\portab\strtok_r.c
+CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/src/support/portab/strtok_r.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\support\portab\strtok_r.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/original/src/portab/strtok_r.c.s"
+CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/src/support/portab/strtok_r.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.s /c C:\develop\ngircd\original\src\portab\strtok_r.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.s /c C:\develop\ngircd\src\support\portab\strtok_r.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: CMakeFiles\ngportab.dir\flags.make
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: C:\develop\ngircd\original\src\portab\vsnprintf.c
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ngportab.dir/original/src/portab/vsnprintf.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\original\src\portab\vsnprintf.c
+CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: CMakeFiles\ngportab.dir\flags.make
+CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: C:\develop\ngircd\src\support\portab\vsnprintf.c
+CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: CMakeFiles\ngportab.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ngportab.dir/src/support/portab/vsnprintf.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj /FdCMakeFiles\ngportab.dir\ngportab.pdb /FS -c C:\develop\ngircd\src\support\portab\vsnprintf.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/original/src/portab/vsnprintf.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\portab\vsnprintf.c
+CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngportab.dir/src/support/portab/vsnprintf.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\support\portab\vsnprintf.c
 <<
 
-CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/original/src/portab/vsnprintf.c.s"
+CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngportab.dir/src/support/portab/vsnprintf.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.s /c C:\develop\ngircd\original\src\portab\vsnprintf.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.s /c C:\develop\ngircd\src\support\portab\vsnprintf.c
 <<
 
 # Object files for target ngportab
 ngportab_OBJECTS = \
-"CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj" \
-"CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj" \
-"CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj" \
-"CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj" \
-"CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj"
+"CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj" \
+"CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj" \
+"CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj" \
+"CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj" \
+"CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj"
 
 # External object files for target ngportab
 ngportab_EXTERNAL_OBJECTS =
 
-ngportab.lib: CMakeFiles\ngportab.dir\original\src\portab\strdup.c.obj
-ngportab.lib: CMakeFiles\ngportab.dir\original\src\portab\strlcpy.c.obj
-ngportab.lib: CMakeFiles\ngportab.dir\original\src\portab\strndup.c.obj
-ngportab.lib: CMakeFiles\ngportab.dir\original\src\portab\strtok_r.c.obj
-ngportab.lib: CMakeFiles\ngportab.dir\original\src\portab\vsnprintf.c.obj
+ngportab.lib: CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj
+ngportab.lib: CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj
+ngportab.lib: CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj
+ngportab.lib: CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj
+ngportab.lib: CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj
 ngportab.lib: CMakeFiles\ngportab.dir\build.make
 ngportab.lib: CMakeFiles\ngportab.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library ngportab.lib"

@@ -12,7 +12,7 @@
  */
 
 #include "platform/platform.h"
-#include "core_runtime/module_api.h"
+#include "core/runtime/module_api.h"
 
 #include <stdio.h>
 
@@ -64,3 +64,4 @@ int main(void)
     printf("platform_module_test: all 19 checks passed\n");
     return 0;
 }
+

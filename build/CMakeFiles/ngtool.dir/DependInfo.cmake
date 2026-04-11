@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/tool/tool.c" "CMakeFiles/ngtool.dir/original/src/tool/tool.c.obj" "msvc" "CMakeFiles/ngtool.dir/original/src/tool/tool.c.obj.d"
+  "C:/develop/ngircd/src/support/tool/tool.c" "CMakeFiles/ngtool.dir/src/support/tool/tool.c.obj" "msvc" "CMakeFiles/ngtool.dir/src/support/tool/tool.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

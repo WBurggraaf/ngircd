@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/ngircd/proto/nick_check.c" "CMakeFiles/nick_check_test.dir/original/src/ngircd/proto/nick_check.c.obj" "msvc" "CMakeFiles/nick_check_test.dir/original/src/ngircd/proto/nick_check.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/proto/nick_check.c" "CMakeFiles/nick_check_test.dir/src/server/ngircd/proto/nick_check.c.obj" "msvc" "CMakeFiles/nick_check_test.dir/src/server/ngircd/proto/nick_check.c.obj.d"
   "C:/develop/ngircd/tests/nick_check_test.c" "CMakeFiles/nick_check_test.dir/tests/nick_check_test.c.obj" "msvc" "CMakeFiles/nick_check_test.dir/tests/nick_check_test.c.obj.d"
   )
 

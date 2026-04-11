@@ -61,34 +61,34 @@ include CMakeFiles\server_app.dir\flags.make
 CMakeFiles\server_app.dir\codegen:
 .PHONY : CMakeFiles\server_app.dir\codegen
 
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: CMakeFiles\server_app.dir\flags.make
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: C:\develop\ngircd\src\server_app\server_app.c
-CMakeFiles\server_app.dir\src\server_app\server_app.c.obj: CMakeFiles\server_app.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/server_app.dir/src/server_app/server_app.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\server_app.dir\src\server_app\server_app.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\server_app.dir\src\server_app\server_app.c.obj /FdCMakeFiles\server_app.dir\ /FS -c C:\develop\ngircd\src\server_app\server_app.c
+CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: CMakeFiles\server_app.dir\flags.make
+CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: C:\develop\ngircd\src\app\server_app\server_app.c
+CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: CMakeFiles\server_app.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/server_app.dir/src/app/server_app/server_app.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj /FdCMakeFiles\server_app.dir\ /FS -c C:\develop\ngircd\src\app\server_app\server_app.c
 <<
 
-CMakeFiles\server_app.dir\src\server_app\server_app.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/server_app.dir/src/server_app/server_app.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\server_app.dir\src\server_app\server_app.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server_app\server_app.c
+CMakeFiles\server_app.dir\src\app\server_app\server_app.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/server_app.dir/src/app/server_app/server_app.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\server_app.dir\src\app\server_app\server_app.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\app\server_app\server_app.c
 <<
 
-CMakeFiles\server_app.dir\src\server_app\server_app.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/server_app.dir/src/server_app/server_app.c.s"
+CMakeFiles\server_app.dir\src\app\server_app\server_app.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/server_app.dir/src/app/server_app/server_app.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\server_app.dir\src\server_app\server_app.c.s /c C:\develop\ngircd\src\server_app\server_app.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\server_app.dir\src\app\server_app\server_app.c.s /c C:\develop\ngircd\src\app\server_app\server_app.c
 <<
 
 # Object files for target server_app
 server_app_OBJECTS = \
-"CMakeFiles\server_app.dir\src\server_app\server_app.c.obj"
+"CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj"
 
 # External object files for target server_app
 server_app_EXTERNAL_OBJECTS =
 
-server_app.dll: CMakeFiles\server_app.dir\src\server_app\server_app.c.obj
+server_app.dll: CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj
 server_app.dll: CMakeFiles\server_app.dir\build.make
 server_app.dll: logging.lib
 server_app.dll: config.lib

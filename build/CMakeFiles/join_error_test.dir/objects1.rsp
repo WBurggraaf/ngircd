@@ -1,1 +1,1 @@
-﻿CMakeFiles/join_error_test.dir/tests/join_error_test.c.obj CMakeFiles/join_error_test.dir/original/src/ngircd/proto/join_error.c.obj CMakeFiles/join_error_test.dir/original/src/ngircd/proto/join_check.c.obj
+﻿CMakeFiles/join_error_test.dir/tests/join_error_test.c.obj CMakeFiles/join_error_test.dir/src/server/ngircd/proto/join_error.c.obj CMakeFiles/join_error_test.dir/src/server/ngircd/proto/join_check.c.obj

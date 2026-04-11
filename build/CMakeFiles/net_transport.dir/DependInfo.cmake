@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/net_transport/net_transport.c" "CMakeFiles/net_transport.dir/src/net_transport/net_transport.c.obj" "msvc" "CMakeFiles/net_transport.dir/src/net_transport/net_transport.c.obj.d"
+  "C:/develop/ngircd/src/net/transport/net_transport.c" "CMakeFiles/net_transport.dir/src/net/transport/net_transport.c.obj" "msvc" "CMakeFiles/net_transport.dir/src/net/transport/net_transport.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

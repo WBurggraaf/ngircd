@@ -61,34 +61,34 @@ include CMakeFiles\command_handlers.dir\flags.make
 CMakeFiles\command_handlers.dir\codegen:
 .PHONY : CMakeFiles\command_handlers.dir\codegen
 
-CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.obj: CMakeFiles\command_handlers.dir\flags.make
-CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.obj: C:\develop\ngircd\src\command_handlers\command_handlers.c
-CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.obj: CMakeFiles\command_handlers.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/command_handlers.dir/src/command_handlers/command_handlers.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.obj /FdCMakeFiles\command_handlers.dir\ /FS -c C:\develop\ngircd\src\command_handlers\command_handlers.c
+CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj: CMakeFiles\command_handlers.dir\flags.make
+CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj: C:\develop\ngircd\src\protocol\command_handlers\command_handlers.c
+CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj: CMakeFiles\command_handlers.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/command_handlers.dir/src/protocol/command_handlers/command_handlers.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj /FdCMakeFiles\command_handlers.dir\ /FS -c C:\develop\ngircd\src\protocol\command_handlers\command_handlers.c
 <<
 
-CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/command_handlers.dir/src/command_handlers/command_handlers.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\command_handlers\command_handlers.c
+CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/command_handlers.dir/src/protocol/command_handlers/command_handlers.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\protocol\command_handlers\command_handlers.c
 <<
 
-CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/command_handlers.dir/src/command_handlers/command_handlers.c.s"
+CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/command_handlers.dir/src/protocol/command_handlers/command_handlers.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.s /c C:\develop\ngircd\src\command_handlers\command_handlers.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.s /c C:\develop\ngircd\src\protocol\command_handlers\command_handlers.c
 <<
 
 # Object files for target command_handlers
 command_handlers_OBJECTS = \
-"CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.obj"
+"CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj"
 
 # External object files for target command_handlers
 command_handlers_EXTERNAL_OBJECTS =
 
-command_handlers.dll: CMakeFiles\command_handlers.dir\src\command_handlers\command_handlers.c.obj
+command_handlers.dll: CMakeFiles\command_handlers.dir\src\protocol\command_handlers\command_handlers.c.obj
 command_handlers.dll: CMakeFiles\command_handlers.dir\build.make
 command_handlers.dll: core_runtime.lib
 command_handlers.dll: CMakeFiles\command_handlers.dir\objects1.rsp

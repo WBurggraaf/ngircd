@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/ngircd/platform/ngircd.c" "CMakeFiles/ngircd.dir/original/src/ngircd/platform/ngircd.c.obj" "msvc" "CMakeFiles/ngircd.dir/original/src/ngircd/platform/ngircd.c.obj.d"
-  "C:/develop/ngircd/win32/src/win32_main.c" "CMakeFiles/ngircd.dir/win32/src/win32_main.c.obj" "msvc" "CMakeFiles/ngircd.dir/win32/src/win32_main.c.obj.d"
+  "C:/develop/ngircd/src/platform/windows/src/win32_main.c" "CMakeFiles/ngircd.dir/src/platform/windows/src/win32_main.c.obj" "msvc" "CMakeFiles/ngircd.dir/src/platform/windows/src/win32_main.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/platform/ngircd.c" "CMakeFiles/ngircd.dir/src/server/ngircd/platform/ngircd.c.obj" "msvc" "CMakeFiles/ngircd.dir/src/server/ngircd/platform/ngircd.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,0 +1,36 @@
+C:/develop/ngircd/src/support/portab/portab.h
+C:/develop/ngircd/src/platform/windows/include/config.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/types.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/sal.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/concurrencysal.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vadefs.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stddef.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/inttypes.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdint.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdbool.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/assert.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stdlib.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_search.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdlib.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/limits.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/string.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memory.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_s.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/errno.h
+C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime_string.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
+C:/develop/ngircd/src/platform/windows/include/strings.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
+C:/develop/ngircd/src/server/ngircd/conn.h
+C:/develop/ngircd/src/server/ngircd/conf-ssl.h
+C:/develop/ngircd/src/server/ngircd/client.h
+C:/develop/ngircd/src/server/ngircd/defines.h
+C:/develop/ngircd/src/server/ngircd/proc.h
+C:/develop/ngircd/src/server/ngircd/log.h
+C:/develop/ngircd/src/server/ngircd/module_iface.h
+C:/develop/ngircd/src/server/ngircd/match.h
+C:/develop/ngircd/src/server/ngircd/lists.h

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/ipaddr/ng_ipaddr.c" "CMakeFiles/ngipaddr.dir/original/src/ipaddr/ng_ipaddr.c.obj" "msvc" "CMakeFiles/ngipaddr.dir/original/src/ipaddr/ng_ipaddr.c.obj.d"
+  "C:/develop/ngircd/src/support/ipaddr/ng_ipaddr.c" "CMakeFiles/ngipaddr.dir/src/support/ipaddr/ng_ipaddr.c.obj" "msvc" "CMakeFiles/ngipaddr.dir/src/support/ipaddr/ng_ipaddr.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

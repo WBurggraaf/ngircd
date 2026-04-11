@@ -61,34 +61,34 @@ include CMakeFiles\config.dir\flags.make
 CMakeFiles\config.dir\codegen:
 .PHONY : CMakeFiles\config.dir\codegen
 
-CMakeFiles\config.dir\src\config\config.c.obj: CMakeFiles\config.dir\flags.make
-CMakeFiles\config.dir\src\config\config.c.obj: C:\develop\ngircd\src\config\config.c
-CMakeFiles\config.dir\src\config\config.c.obj: CMakeFiles\config.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/config.dir/src/config/config.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\config.dir\src\config\config.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\config.dir\src\config\config.c.obj /FdCMakeFiles\config.dir\ /FS -c C:\develop\ngircd\src\config\config.c
+CMakeFiles\config.dir\src\app\config\config.c.obj: CMakeFiles\config.dir\flags.make
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\app\config\config.c
+CMakeFiles\config.dir\src\app\config\config.c.obj: CMakeFiles\config.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/config.dir/src/app/config/config.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\config.dir\src\app\config\config.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\config.dir\src\app\config\config.c.obj /FdCMakeFiles\config.dir\ /FS -c C:\develop\ngircd\src\app\config\config.c
 <<
 
-CMakeFiles\config.dir\src\config\config.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/config.dir/src/config/config.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\config.dir\src\config\config.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\config\config.c
+CMakeFiles\config.dir\src\app\config\config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/config.dir/src/app/config/config.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\config.dir\src\app\config\config.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\app\config\config.c
 <<
 
-CMakeFiles\config.dir\src\config\config.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/config.dir/src/config/config.c.s"
+CMakeFiles\config.dir\src\app\config\config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/config.dir/src/app/config/config.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\config.dir\src\config\config.c.s /c C:\develop\ngircd\src\config\config.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\config.dir\src\app\config\config.c.s /c C:\develop\ngircd\src\app\config\config.c
 <<
 
 # Object files for target config
 config_OBJECTS = \
-"CMakeFiles\config.dir\src\config\config.c.obj"
+"CMakeFiles\config.dir\src\app\config\config.c.obj"
 
 # External object files for target config
 config_EXTERNAL_OBJECTS =
 
-config.dll: CMakeFiles\config.dir\src\config\config.c.obj
+config.dll: CMakeFiles\config.dir\src\app\config\config.c.obj
 config.dll: CMakeFiles\config.dir\build.make
 config.dll: ngircd_impl.lib
 config.dll: core_runtime.lib

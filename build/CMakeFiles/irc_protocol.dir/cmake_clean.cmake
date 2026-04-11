@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/irc_protocol.dir/src/irc_protocol/irc_protocol.c.obj"
-  "CMakeFiles/irc_protocol.dir/src/irc_protocol/irc_protocol.c.obj.d"
+  "CMakeFiles/irc_protocol.dir/src/protocol/irc_protocol/irc_protocol.c.obj"
+  "CMakeFiles/irc_protocol.dir/src/protocol/irc_protocol/irc_protocol.c.obj.d"
   "irc_protocol.dll"
   "irc_protocol.dll.manifest"
   "irc_protocol.lib"

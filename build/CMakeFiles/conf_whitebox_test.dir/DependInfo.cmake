@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/ngircd/core/array.c" "CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/array.c.obj" "msvc" "CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/array.c.obj.d"
-  "C:/develop/ngircd/original/src/ngircd/core/conf.c" "CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/conf.c.obj" "msvc" "CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/conf.c.obj.d"
-  "C:/develop/ngircd/original/src/ngircd/core/module_iface.c" "CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/module_iface.c.obj" "msvc" "CMakeFiles/conf_whitebox_test.dir/original/src/ngircd/core/module_iface.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/core/array.c" "CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/array.c.obj" "msvc" "CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/array.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/core/conf.c" "CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/conf.c.obj" "msvc" "CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/conf.c.obj.d"
+  "C:/develop/ngircd/src/server/ngircd/core/module_iface.c" "CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/module_iface.c.obj" "msvc" "CMakeFiles/conf_whitebox_test.dir/src/server/ngircd/core/module_iface.c.obj.d"
   "C:/develop/ngircd/tests/conf_whitebox_test.c" "CMakeFiles/conf_whitebox_test.dir/tests/conf_whitebox_test.c.obj" "msvc" "CMakeFiles/conf_whitebox_test.dir/tests/conf_whitebox_test.c.obj.d"
   "C:/develop/ngircd/tests/test_support.c" "CMakeFiles/conf_whitebox_test.dir/tests/test_support.c.obj" "msvc" "CMakeFiles/conf_whitebox_test.dir/tests/test_support.c.obj.d"
   )

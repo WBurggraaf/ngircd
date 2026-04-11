@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/nick_check_test.dir/original/src/ngircd/proto/nick_check.c.obj"
-  "CMakeFiles/nick_check_test.dir/original/src/ngircd/proto/nick_check.c.obj.d"
+  "CMakeFiles/nick_check_test.dir/src/server/ngircd/proto/nick_check.c.obj"
+  "CMakeFiles/nick_check_test.dir/src/server/ngircd/proto/nick_check.c.obj.d"
   "CMakeFiles/nick_check_test.dir/tests/nick_check_test.c.obj"
   "CMakeFiles/nick_check_test.dir/tests/nick_check_test.c.obj.d"
   "nick_check_test.exe"

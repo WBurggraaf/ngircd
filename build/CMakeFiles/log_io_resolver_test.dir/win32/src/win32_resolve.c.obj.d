@@ -1,4 +1,4 @@
-C:/develop/ngircd/original/src/portab/portab.h
+C:/develop/ngircd/src/support/portab/portab.h
 C:/develop/ngircd/win32/include/config.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/types.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h
@@ -139,22 +139,22 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/qos.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/ws2tcpip.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/ws2ipdef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/in6addr.h
-C:/develop/ngircd/original/src/ngircd/conn.h
+C:/develop/ngircd/src/server/ngircd/conn.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
-C:/develop/ngircd/original/src/ngircd/conf-ssl.h
-C:/develop/ngircd/original/src/ngircd/client.h
-C:/develop/ngircd/original/src/ngircd/defines.h
-C:/develop/ngircd/original/src/ngircd/proc.h
-C:/develop/ngircd/original/src/ngircd/conf.h
-C:/develop/ngircd/original/src/ngircd/array.h
-C:/develop/ngircd/original/src/tool/tool.h
-C:/develop/ngircd/original/src/ipaddr/ng_ipaddr.h
+C:/develop/ngircd/src/server/ngircd/conf-ssl.h
+C:/develop/ngircd/src/server/ngircd/client.h
+C:/develop/ngircd/src/server/ngircd/defines.h
+C:/develop/ngircd/src/server/ngircd/proc.h
+C:/develop/ngircd/src/server/ngircd/conf.h
+C:/develop/ngircd/src/server/ngircd/array.h
+C:/develop/ngircd/src/support/tool/tool.h
+C:/develop/ngircd/src/support/ipaddr/ng_ipaddr.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/assert.h
 C:/develop/ngircd/win32/include/sys/socket.h
 C:/develop/ngircd/win32/include/win32compat.h
-C:/develop/ngircd/original/src/ngircd/io.h
-C:/develop/ngircd/original/src/ngircd/module_iface.h
+C:/develop/ngircd/src/server/ngircd/io.h
+C:/develop/ngircd/src/server/ngircd/module_iface.h
 C:/develop/ngircd/win32/include/sys/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/process.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_startup.h
@@ -167,5 +167,5 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wdirect
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/fcntl.h
 C:/develop/ngircd/win32/include/netinet/in.h
 C:/develop/ngircd/win32/include/arpa/inet.h
-C:/develop/ngircd/original/src/ngircd/log.h
-C:/develop/ngircd/original/src/ngircd/resolve.h
+C:/develop/ngircd/src/server/ngircd/log.h
+C:/develop/ngircd/src/server/ngircd/resolve.h

@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/original/src/portab/strdup.c" "CMakeFiles/ngportab.dir/original/src/portab/strdup.c.obj" "msvc" "CMakeFiles/ngportab.dir/original/src/portab/strdup.c.obj.d"
-  "C:/develop/ngircd/original/src/portab/strlcpy.c" "CMakeFiles/ngportab.dir/original/src/portab/strlcpy.c.obj" "msvc" "CMakeFiles/ngportab.dir/original/src/portab/strlcpy.c.obj.d"
-  "C:/develop/ngircd/original/src/portab/strndup.c" "CMakeFiles/ngportab.dir/original/src/portab/strndup.c.obj" "msvc" "CMakeFiles/ngportab.dir/original/src/portab/strndup.c.obj.d"
-  "C:/develop/ngircd/original/src/portab/strtok_r.c" "CMakeFiles/ngportab.dir/original/src/portab/strtok_r.c.obj" "msvc" "CMakeFiles/ngportab.dir/original/src/portab/strtok_r.c.obj.d"
-  "C:/develop/ngircd/original/src/portab/vsnprintf.c" "CMakeFiles/ngportab.dir/original/src/portab/vsnprintf.c.obj" "msvc" "CMakeFiles/ngportab.dir/original/src/portab/vsnprintf.c.obj.d"
+  "C:/develop/ngircd/src/support/portab/strdup.c" "CMakeFiles/ngportab.dir/src/support/portab/strdup.c.obj" "msvc" "CMakeFiles/ngportab.dir/src/support/portab/strdup.c.obj.d"
+  "C:/develop/ngircd/src/support/portab/strlcpy.c" "CMakeFiles/ngportab.dir/src/support/portab/strlcpy.c.obj" "msvc" "CMakeFiles/ngportab.dir/src/support/portab/strlcpy.c.obj.d"
+  "C:/develop/ngircd/src/support/portab/strndup.c" "CMakeFiles/ngportab.dir/src/support/portab/strndup.c.obj" "msvc" "CMakeFiles/ngportab.dir/src/support/portab/strndup.c.obj.d"
+  "C:/develop/ngircd/src/support/portab/strtok_r.c" "CMakeFiles/ngportab.dir/src/support/portab/strtok_r.c.obj" "msvc" "CMakeFiles/ngportab.dir/src/support/portab/strtok_r.c.obj.d"
+  "C:/develop/ngircd/src/support/portab/vsnprintf.c" "CMakeFiles/ngportab.dir/src/support/portab/vsnprintf.c.obj" "msvc" "CMakeFiles/ngportab.dir/src/support/portab/vsnprintf.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

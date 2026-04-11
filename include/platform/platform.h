@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#include "core_runtime/core_runtime.h"
+#include "core/runtime/core_runtime.h"
 
 #ifdef _WIN32
 #  ifdef PLATFORM_BUILD
@@ -31,3 +31,4 @@ typedef const platform_api_t * (PLATFORM_CALL *platform_get_api_v1_fn)(void);
 PLATFORM_API const platform_api_t * PLATFORM_CALL platform_get_api_v1(void);
 
 #endif
+

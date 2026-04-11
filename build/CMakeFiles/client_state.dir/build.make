@@ -61,34 +61,34 @@ include CMakeFiles\client_state.dir\flags.make
 CMakeFiles\client_state.dir\codegen:
 .PHONY : CMakeFiles\client_state.dir\codegen
 
-CMakeFiles\client_state.dir\src\client_state\client_state.c.obj: CMakeFiles\client_state.dir\flags.make
-CMakeFiles\client_state.dir\src\client_state\client_state.c.obj: C:\develop\ngircd\src\client_state\client_state.c
-CMakeFiles\client_state.dir\src\client_state\client_state.c.obj: CMakeFiles\client_state.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/client_state.dir/src/client_state/client_state.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\client_state.dir\src\client_state\client_state.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\client_state.dir\src\client_state\client_state.c.obj /FdCMakeFiles\client_state.dir\ /FS -c C:\develop\ngircd\src\client_state\client_state.c
+CMakeFiles\client_state.dir\src\state\client_state\client_state.c.obj: CMakeFiles\client_state.dir\flags.make
+CMakeFiles\client_state.dir\src\state\client_state\client_state.c.obj: C:\develop\ngircd\src\state\client_state\client_state.c
+CMakeFiles\client_state.dir\src\state\client_state\client_state.c.obj: CMakeFiles\client_state.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/client_state.dir/src/state/client_state/client_state.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\client_state.dir\src\state\client_state\client_state.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\client_state.dir\src\state\client_state\client_state.c.obj /FdCMakeFiles\client_state.dir\ /FS -c C:\develop\ngircd\src\state\client_state\client_state.c
 <<
 
-CMakeFiles\client_state.dir\src\client_state\client_state.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/client_state.dir/src/client_state/client_state.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\client_state.dir\src\client_state\client_state.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\client_state\client_state.c
+CMakeFiles\client_state.dir\src\state\client_state\client_state.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/client_state.dir/src/state/client_state/client_state.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\client_state.dir\src\state\client_state\client_state.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\state\client_state\client_state.c
 <<
 
-CMakeFiles\client_state.dir\src\client_state\client_state.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/client_state.dir/src/client_state/client_state.c.s"
+CMakeFiles\client_state.dir\src\state\client_state\client_state.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/client_state.dir/src/state/client_state/client_state.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\client_state.dir\src\client_state\client_state.c.s /c C:\develop\ngircd\src\client_state\client_state.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\client_state.dir\src\state\client_state\client_state.c.s /c C:\develop\ngircd\src\state\client_state\client_state.c
 <<
 
 # Object files for target client_state
 client_state_OBJECTS = \
-"CMakeFiles\client_state.dir\src\client_state\client_state.c.obj"
+"CMakeFiles\client_state.dir\src\state\client_state\client_state.c.obj"
 
 # External object files for target client_state
 client_state_EXTERNAL_OBJECTS =
 
-client_state.dll: CMakeFiles\client_state.dir\src\client_state\client_state.c.obj
+client_state.dll: CMakeFiles\client_state.dir\src\state\client_state\client_state.c.obj
 client_state.dll: CMakeFiles\client_state.dir\build.make
 client_state.dll: core_runtime.lib
 client_state.dll: CMakeFiles\client_state.dir\objects1.rsp

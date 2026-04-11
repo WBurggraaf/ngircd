@@ -61,34 +61,34 @@ include CMakeFiles\ngipaddr.dir\flags.make
 CMakeFiles\ngipaddr.dir\codegen:
 .PHONY : CMakeFiles\ngipaddr.dir\codegen
 
-CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.obj: CMakeFiles\ngipaddr.dir\flags.make
-CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.c
-CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.obj: CMakeFiles\ngipaddr.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngipaddr.dir/original/src/ipaddr/ng_ipaddr.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.obj /FdCMakeFiles\ngipaddr.dir\ngipaddr.pdb /FS -c C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.c
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: CMakeFiles\ngipaddr.dir\flags.make
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.c
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: CMakeFiles\ngipaddr.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngipaddr.dir/src/support/ipaddr/ng_ipaddr.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj /FdCMakeFiles\ngipaddr.dir\ngipaddr.pdb /FS -c C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.c
 <<
 
-CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngipaddr.dir/original/src/ipaddr/ng_ipaddr.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.c
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngipaddr.dir/src/support/ipaddr/ng_ipaddr.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.c
 <<
 
-CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngipaddr.dir/original/src/ipaddr/ng_ipaddr.c.s"
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngipaddr.dir/src/support/ipaddr/ng_ipaddr.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.s /c C:\develop\ngircd\original\src\ipaddr\ng_ipaddr.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.s /c C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.c
 <<
 
 # Object files for target ngipaddr
 ngipaddr_OBJECTS = \
-"CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.obj"
+"CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj"
 
 # External object files for target ngipaddr
 ngipaddr_EXTERNAL_OBJECTS =
 
-ngipaddr.lib: CMakeFiles\ngipaddr.dir\original\src\ipaddr\ng_ipaddr.c.obj
+ngipaddr.lib: CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj
 ngipaddr.lib: CMakeFiles\ngipaddr.dir\build.make
 ngipaddr.lib: CMakeFiles\ngipaddr.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ngipaddr.lib"

@@ -61,34 +61,34 @@ include CMakeFiles\channel_state.dir\flags.make
 CMakeFiles\channel_state.dir\codegen:
 .PHONY : CMakeFiles\channel_state.dir\codegen
 
-CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.obj: CMakeFiles\channel_state.dir\flags.make
-CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.obj: C:\develop\ngircd\src\channel_state\channel_state.c
-CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.obj: CMakeFiles\channel_state.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/channel_state.dir/src/channel_state/channel_state.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\channel_state.dir\src\channel_state\channel_state.c.obj /FdCMakeFiles\channel_state.dir\ /FS -c C:\develop\ngircd\src\channel_state\channel_state.c
+CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj: CMakeFiles\channel_state.dir\flags.make
+CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj: C:\develop\ngircd\src\state\channel_state\channel_state.c
+CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj: CMakeFiles\channel_state.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/channel_state.dir/src/state/channel_state/channel_state.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj /FdCMakeFiles\channel_state.dir\ /FS -c C:\develop\ngircd\src\state\channel_state\channel_state.c
 <<
 
-CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/channel_state.dir/src/channel_state/channel_state.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\channel_state\channel_state.c
+CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/channel_state.dir/src/state/channel_state/channel_state.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\state\channel_state\channel_state.c
 <<
 
-CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/channel_state.dir/src/channel_state/channel_state.c.s"
+CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/channel_state.dir/src/state/channel_state/channel_state.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\channel_state.dir\src\channel_state\channel_state.c.s /c C:\develop\ngircd\src\channel_state\channel_state.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.s /c C:\develop\ngircd\src\state\channel_state\channel_state.c
 <<
 
 # Object files for target channel_state
 channel_state_OBJECTS = \
-"CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.obj"
+"CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj"
 
 # External object files for target channel_state
 channel_state_EXTERNAL_OBJECTS =
 
-channel_state.dll: CMakeFiles\channel_state.dir\src\channel_state\channel_state.c.obj
+channel_state.dll: CMakeFiles\channel_state.dir\src\state\channel_state\channel_state.c.obj
 channel_state.dll: CMakeFiles\channel_state.dir\build.make
 channel_state.dll: core_runtime.lib
 channel_state.dll: CMakeFiles\channel_state.dir\objects1.rsp

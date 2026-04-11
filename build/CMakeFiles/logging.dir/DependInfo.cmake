@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/logging/logging.c" "CMakeFiles/logging.dir/src/logging/logging.c.obj" "msvc" "CMakeFiles/logging.dir/src/logging/logging.c.obj.d"
+  "C:/develop/ngircd/src/app/logging/logging.c" "CMakeFiles/logging.dir/src/app/logging/logging.c.obj" "msvc" "CMakeFiles/logging.dir/src/app/logging/logging.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

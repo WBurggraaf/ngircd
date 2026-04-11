@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/server_app.dir/src/server_app/server_app.c.obj"
-  "CMakeFiles/server_app.dir/src/server_app/server_app.c.obj.d"
+  "CMakeFiles/server_app.dir/src/app/server_app/server_app.c.obj"
+  "CMakeFiles/server_app.dir/src/app/server_app/server_app.c.obj.d"
   "server_app.dll"
   "server_app.dll.manifest"
   "server_app.lib"

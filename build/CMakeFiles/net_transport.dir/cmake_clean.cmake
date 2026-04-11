@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/net_transport.dir/src/net_transport/net_transport.c.obj"
-  "CMakeFiles/net_transport.dir/src/net_transport/net_transport.c.obj.d"
+  "CMakeFiles/net_transport.dir/src/net/transport/net_transport.c.obj"
+  "CMakeFiles/net_transport.dir/src/net/transport/net_transport.c.obj.d"
   "net_transport.dll"
   "net_transport.dll.manifest"
   "net_transport.lib"

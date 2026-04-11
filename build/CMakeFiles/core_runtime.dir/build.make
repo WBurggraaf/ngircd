@@ -61,34 +61,34 @@ include CMakeFiles\core_runtime.dir\flags.make
 CMakeFiles\core_runtime.dir\codegen:
 .PHONY : CMakeFiles\core_runtime.dir\codegen
 
-CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.obj: CMakeFiles\core_runtime.dir\flags.make
-CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.obj: C:\develop\ngircd\src\core_runtime\core_runtime.c
-CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.obj: CMakeFiles\core_runtime.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/core_runtime.dir/src/core_runtime/core_runtime.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.obj /FdCMakeFiles\core_runtime.dir\ /FS -c C:\develop\ngircd\src\core_runtime\core_runtime.c
+CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.obj: CMakeFiles\core_runtime.dir\flags.make
+CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.obj: C:\develop\ngircd\src\core\runtime\core_runtime.c
+CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.obj: CMakeFiles\core_runtime.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/core_runtime.dir/src/core/runtime/core_runtime.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.obj /FdCMakeFiles\core_runtime.dir\ /FS -c C:\develop\ngircd\src\core\runtime\core_runtime.c
 <<
 
-CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/core_runtime.dir/src/core_runtime/core_runtime.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\core_runtime\core_runtime.c
+CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/core_runtime.dir/src/core/runtime/core_runtime.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\core\runtime\core_runtime.c
 <<
 
-CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/core_runtime.dir/src/core_runtime/core_runtime.c.s"
+CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/core_runtime.dir/src/core/runtime/core_runtime.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.s /c C:\develop\ngircd\src\core_runtime\core_runtime.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.s /c C:\develop\ngircd\src\core\runtime\core_runtime.c
 <<
 
 # Object files for target core_runtime
 core_runtime_OBJECTS = \
-"CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.obj"
+"CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.obj"
 
 # External object files for target core_runtime
 core_runtime_EXTERNAL_OBJECTS =
 
-core_runtime.dll: CMakeFiles\core_runtime.dir\src\core_runtime\core_runtime.c.obj
+core_runtime.dll: CMakeFiles\core_runtime.dir\src\core\runtime\core_runtime.c.obj
 core_runtime.dll: CMakeFiles\core_runtime.dir\build.make
 core_runtime.dll: CMakeFiles\core_runtime.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library core_runtime.dll"

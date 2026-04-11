@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/core_runtime_test.dir/src/core_runtime/core_runtime.c.obj"
-  "CMakeFiles/core_runtime_test.dir/src/core_runtime/core_runtime.c.obj.d"
+  "CMakeFiles/core_runtime_test.dir/src/core/runtime/core_runtime.c.obj"
+  "CMakeFiles/core_runtime_test.dir/src/core/runtime/core_runtime.c.obj.d"
   "CMakeFiles/core_runtime_test.dir/tests/core_runtime_test.c.obj"
   "CMakeFiles/core_runtime_test.dir/tests/core_runtime_test.c.obj.d"
   "core_runtime_test.exe"

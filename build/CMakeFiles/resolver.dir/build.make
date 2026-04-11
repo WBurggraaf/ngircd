@@ -61,34 +61,34 @@ include CMakeFiles\resolver.dir\flags.make
 CMakeFiles\resolver.dir\codegen:
 .PHONY : CMakeFiles\resolver.dir\codegen
 
-CMakeFiles\resolver.dir\src\resolver\resolver.c.obj: CMakeFiles\resolver.dir\flags.make
-CMakeFiles\resolver.dir\src\resolver\resolver.c.obj: C:\develop\ngircd\src\resolver\resolver.c
-CMakeFiles\resolver.dir\src\resolver\resolver.c.obj: CMakeFiles\resolver.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/resolver.dir/src/resolver/resolver.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\resolver.dir\src\resolver\resolver.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\resolver.dir\src\resolver\resolver.c.obj /FdCMakeFiles\resolver.dir\ /FS -c C:\develop\ngircd\src\resolver\resolver.c
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: CMakeFiles\resolver.dir\flags.make
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\net\resolver\resolver.c
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: CMakeFiles\resolver.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/resolver.dir/src/net/resolver/resolver.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj /FdCMakeFiles\resolver.dir\ /FS -c C:\develop\ngircd\src\net\resolver\resolver.c
 <<
 
-CMakeFiles\resolver.dir\src\resolver\resolver.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/resolver.dir/src/resolver/resolver.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\resolver.dir\src\resolver\resolver.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\resolver\resolver.c
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/resolver.dir/src/net/resolver/resolver.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\resolver.dir\src\net\resolver\resolver.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\net\resolver\resolver.c
 <<
 
-CMakeFiles\resolver.dir\src\resolver\resolver.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/resolver.dir/src/resolver/resolver.c.s"
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/resolver.dir/src/net/resolver/resolver.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\resolver.dir\src\resolver\resolver.c.s /c C:\develop\ngircd\src\resolver\resolver.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\resolver.dir\src\net\resolver\resolver.c.s /c C:\develop\ngircd\src\net\resolver\resolver.c
 <<
 
 # Object files for target resolver
 resolver_OBJECTS = \
-"CMakeFiles\resolver.dir\src\resolver\resolver.c.obj"
+"CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj"
 
 # External object files for target resolver
 resolver_EXTERNAL_OBJECTS =
 
-resolver.dll: CMakeFiles\resolver.dir\src\resolver\resolver.c.obj
+resolver.dll: CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj
 resolver.dll: CMakeFiles\resolver.dir\build.make
 resolver.dll: ngircd_impl.lib
 resolver.dll: core_runtime.lib

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/irc_protocol/irc_protocol.c" "CMakeFiles/irc_protocol.dir/src/irc_protocol/irc_protocol.c.obj" "msvc" "CMakeFiles/irc_protocol.dir/src/irc_protocol/irc_protocol.c.obj.d"
+  "C:/develop/ngircd/src/protocol/irc_protocol/irc_protocol.c" "CMakeFiles/irc_protocol.dir/src/protocol/irc_protocol/irc_protocol.c.obj" "msvc" "CMakeFiles/irc_protocol.dir/src/protocol/irc_protocol/irc_protocol.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

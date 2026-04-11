@@ -2,7 +2,7 @@
 
 #include <fcntl.h>
 
-#include "core_runtime/module_api.h"
+#include "core/runtime/module_api.h"
 
 #ifdef _WIN32
 #include "config.h"
@@ -75,3 +75,4 @@ module_get_api_v1(void)
 {
     return &PlatformModuleApi;
 }
+

@@ -81,36 +81,36 @@ CMakeFiles\join_check_test.dir\tests\join_check_test.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\join_check_test.dir\tests\join_check_test.c.s /c C:\develop\ngircd\tests\join_check_test.c
 <<
 
-CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.obj: CMakeFiles\join_check_test.dir\flags.make
-CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.obj: C:\develop\ngircd\original\src\ngircd\proto\join_check.c
-CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.obj: CMakeFiles\join_check_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/join_check_test.dir/original/src/ngircd/proto/join_check.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.obj /FdCMakeFiles\join_check_test.dir\ /FS -c C:\develop\ngircd\original\src\ngircd\proto\join_check.c
+CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.obj: CMakeFiles\join_check_test.dir\flags.make
+CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.obj: C:\develop\ngircd\src\server\ngircd\proto\join_check.c
+CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.obj: CMakeFiles\join_check_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/join_check_test.dir/src/server/ngircd/proto/join_check.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.obj /FdCMakeFiles\join_check_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\join_check.c
 <<
 
-CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/join_check_test.dir/original/src/ngircd/proto/join_check.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\original\src\ngircd\proto\join_check.c
+CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/join_check_test.dir/src/server/ngircd/proto/join_check.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\join_check.c
 <<
 
-CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/join_check_test.dir/original/src/ngircd/proto/join_check.c.s"
+CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/join_check_test.dir/src/server/ngircd/proto/join_check.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.s /c C:\develop\ngircd\original\src\ngircd\proto\join_check.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.s /c C:\develop\ngircd\src\server\ngircd\proto\join_check.c
 <<
 
 # Object files for target join_check_test
 join_check_test_OBJECTS = \
 "CMakeFiles\join_check_test.dir\tests\join_check_test.c.obj" \
-"CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.obj"
+"CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.obj"
 
 # External object files for target join_check_test
 join_check_test_EXTERNAL_OBJECTS =
 
 join_check_test.exe: CMakeFiles\join_check_test.dir\tests\join_check_test.c.obj
-join_check_test.exe: CMakeFiles\join_check_test.dir\original\src\ngircd\proto\join_check.c.obj
+join_check_test.exe: CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.obj
 join_check_test.exe: CMakeFiles\join_check_test.dir\build.make
 join_check_test.exe: CMakeFiles\join_check_test.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable join_check_test.exe"
