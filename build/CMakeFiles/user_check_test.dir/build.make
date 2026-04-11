@@ -81,36 +81,36 @@ CMakeFiles\user_check_test.dir\tests\user_check_test.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\user_check_test.dir\tests\user_check_test.c.s /c C:\develop\ngircd\tests\user_check_test.c
 <<
 
-CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.obj: CMakeFiles\user_check_test.dir\flags.make
-CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.obj: C:\develop\ngircd\src\server\ngircd\proto\user_check.c
-CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.obj: CMakeFiles\user_check_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/user_check_test.dir/src/server/ngircd/proto/user_check.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.obj /FdCMakeFiles\user_check_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\user_check.c
+CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.obj: CMakeFiles\user_check_test.dir\flags.make
+CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.obj: C:\develop\ngircd\src\server\proto\user\user_check.c
+CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.obj: CMakeFiles\user_check_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/user_check_test.dir/src/server/proto/user/user_check.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.obj /FdCMakeFiles\user_check_test.dir\ /FS -c C:\develop\ngircd\src\server\proto\user\user_check.c
 <<
 
-CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_check_test.dir/src/server/ngircd/proto/user_check.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\user_check.c
+CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_check_test.dir/src/server/proto/user/user_check.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\proto\user\user_check.c
 <<
 
-CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_check_test.dir/src/server/ngircd/proto/user_check.c.s"
+CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_check_test.dir/src/server/proto/user/user_check.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.s /c C:\develop\ngircd\src\server\ngircd\proto\user_check.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.s /c C:\develop\ngircd\src\server\proto\user\user_check.c
 <<
 
 # Object files for target user_check_test
 user_check_test_OBJECTS = \
 "CMakeFiles\user_check_test.dir\tests\user_check_test.c.obj" \
-"CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.obj"
+"CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.obj"
 
 # External object files for target user_check_test
 user_check_test_EXTERNAL_OBJECTS =
 
 user_check_test.exe: CMakeFiles\user_check_test.dir\tests\user_check_test.c.obj
-user_check_test.exe: CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.obj
+user_check_test.exe: CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.obj
 user_check_test.exe: CMakeFiles\user_check_test.dir\build.make
 user_check_test.exe: CMakeFiles\user_check_test.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable user_check_test.exe"

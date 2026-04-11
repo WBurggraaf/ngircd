@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/login_flow_test.dir/src/server/ngircd/proto/login_flow.c.obj"
-  "CMakeFiles/login_flow_test.dir/src/server/ngircd/proto/login_flow.c.obj.d"
+  "CMakeFiles/login_flow_test.dir/src/server/proto/login/login_flow.c.obj"
+  "CMakeFiles/login_flow_test.dir/src/server/proto/login/login_flow.c.obj.d"
   "CMakeFiles/login_flow_test.dir/tests/login_flow_test.c.obj"
   "CMakeFiles/login_flow_test.dir/tests/login_flow_test.c.obj.d"
   "login_flow_test.exe"

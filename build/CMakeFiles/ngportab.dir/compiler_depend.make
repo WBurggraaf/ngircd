@@ -3,7 +3,7 @@
 
 CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: C:\develop\ngircd\src\support\portab\strdup.c
 CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
@@ -18,7 +18,7 @@ CMakeFiles\ngportab.dir\src\support\portab\strdup.c.obj: "C:\Program Files\Micro
 
 CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: C:\develop\ngircd\src\support\portab\strlcpy.c
 CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
@@ -39,7 +39,7 @@ CMakeFiles\ngportab.dir\src\support\portab\strlcpy.c.obj: "C:\Program Files (x86
 
 CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: C:\develop\ngircd\src\support\portab\strndup.c
 CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
@@ -65,7 +65,7 @@ CMakeFiles\ngportab.dir\src\support\portab\strndup.c.obj: "C:\Program Files\Micr
 
 CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: C:\develop\ngircd\src\support\portab\strtok_r.c
 CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
@@ -80,7 +80,7 @@ CMakeFiles\ngportab.dir\src\support\portab\strtok_r.c.obj: "C:\Program Files\Mic
 
 CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: C:\develop\ngircd\src\support\portab\vsnprintf.c
 CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\ngportab.dir\src\support\portab\vsnprintf.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
@@ -104,17 +104,19 @@ C:\develop\ngircd\src\support\portab\strdup.c:
 
 C:\develop\ngircd\src\support\portab\portab.h:
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h":
 
-C:\develop\ngircd\win32\include\config.h:
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":
+
+C:\develop\ngircd\src\platform\windows\include\config.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h":
 
@@ -159,5 +161,3 @@ C:\develop\ngircd\src\support\portab\vsnprintf.c:
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":

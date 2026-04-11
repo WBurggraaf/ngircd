@@ -9,10 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/develop/ngircd/src/platform/windows/src/win32_resolve.c" "CMakeFiles/log_io_resolver_test.dir/src/platform/windows/src/win32_resolve.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/platform/windows/src/win32_resolve.c.obj.d"
-  "C:/develop/ngircd/src/server/ngircd/core/array.c" "CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/array.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/array.c.obj.d"
-  "C:/develop/ngircd/src/server/ngircd/core/log.c" "CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/log.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/log.c.obj.d"
-  "C:/develop/ngircd/src/server/ngircd/core/module_iface.c" "CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/module_iface.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/module_iface.c.obj.d"
-  "C:/develop/ngircd/src/server/ngircd/net/io.c" "CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/net/io.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/net/io.c.obj.d"
+  "C:/develop/ngircd/src/server/core/logging/log.c" "CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj.d"
+  "C:/develop/ngircd/src/server/core/misc/array.c" "CMakeFiles/log_io_resolver_test.dir/src/server/core/misc/array.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/core/misc/array.c.obj.d"
+  "C:/develop/ngircd/src/server/core/module/module_iface.c" "CMakeFiles/log_io_resolver_test.dir/src/server/core/module/module_iface.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/core/module/module_iface.c.obj.d"
+  "C:/develop/ngircd/src/server/net/conn/io.c" "CMakeFiles/log_io_resolver_test.dir/src/server/net/conn/io.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/net/conn/io.c.obj.d"
   "C:/develop/ngircd/tests/log_io_resolver_test.c" "CMakeFiles/log_io_resolver_test.dir/tests/log_io_resolver_test.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/tests/log_io_resolver_test.c.obj.d"
   "C:/develop/ngircd/tests/log_io_test_support.c" "CMakeFiles/log_io_resolver_test.dir/tests/log_io_test_support.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/tests/log_io_test_support.c.obj.d"
   )

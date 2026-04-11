@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/server/ngircd/proto/irc-cap.c" "CMakeFiles/irc_cap_end_test.dir/src/server/ngircd/proto/irc-cap.c.obj" "msvc" "CMakeFiles/irc_cap_end_test.dir/src/server/ngircd/proto/irc-cap.c.obj.d"
+  "C:/develop/ngircd/src/server/proto/irc/irc-cap.c" "CMakeFiles/irc_cap_end_test.dir/src/server/proto/irc/irc-cap.c.obj" "msvc" "CMakeFiles/irc_cap_end_test.dir/src/server/proto/irc/irc-cap.c.obj.d"
   "C:/develop/ngircd/tests/irc_cap_end_test.c" "CMakeFiles/irc_cap_end_test.dir/tests/irc_cap_end_test.c.obj" "msvc" "CMakeFiles/irc_cap_end_test.dir/tests/irc_cap_end_test.c.obj.d"
   )
 

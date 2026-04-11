@@ -3,7 +3,7 @@
 
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\src\support\tool\tool.c
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
@@ -31,9 +31,9 @@ CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files (x86)\Windo
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
-CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\win32\include\sys\time.h
-CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\win32\include\netinet\in.h
-CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\win32\include\win32compat.h
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\src\platform\windows\include\netinet\in.h
+CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\src\platform\windows\include\win32compat.h
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
 CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
@@ -166,6 +166,8 @@ CMakeFiles\ngtool.dir\src\support\tool\tool.c.obj: C:\develop\ngircd\src\support
 
 
 
+C:\develop\ngircd\src\platform\windows\include\netinet\in.h:
+
 C:\develop\ngircd\src\support\tool\tool.c:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h":
@@ -178,19 +180,25 @@ C:\develop\ngircd\src\support\tool\tool.c:
 
 C:\develop\ngircd\src\support\portab\portab.h:
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
-
-C:\develop\ngircd\win32\include\config.h:
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\guiddef.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
+
+C:\develop\ngircd\src\platform\windows\include\config.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h":
 
@@ -226,12 +234,6 @@ C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdlib.h":
@@ -248,21 +250,17 @@ C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h":
 
+C:\develop\ngircd\src\platform\windows\include\sys\time.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wio.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
 
-C:\develop\ngircd\win32\include\sys\time.h:
-
-C:\develop\ngircd\win32\include\netinet\in.h:
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
-
-C:\develop\ngircd\win32\include\win32compat.h:
+C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h":
 
@@ -282,8 +280,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h":
@@ -299,6 +295,8 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 
@@ -419,6 +417,8 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_io.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_share.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wio.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h":
 

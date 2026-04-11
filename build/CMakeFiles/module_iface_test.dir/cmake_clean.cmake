@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/module_iface_test.dir/src/server/ngircd/core/module_iface.c.obj"
-  "CMakeFiles/module_iface_test.dir/src/server/ngircd/core/module_iface.c.obj.d"
+  "CMakeFiles/module_iface_test.dir/src/server/core/module/module_iface.c.obj"
+  "CMakeFiles/module_iface_test.dir/src/server/core/module/module_iface.c.obj.d"
   "CMakeFiles/module_iface_test.dir/tests/module_iface_test.c.obj"
   "CMakeFiles/module_iface_test.dir/tests/module_iface_test.c.obj.d"
   "module_iface_test.exe"

@@ -139,22 +139,22 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/qos.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/ws2tcpip.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/ws2ipdef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/in6addr.h
-C:/develop/ngircd/src/server/ngircd/conn.h
+C:/develop/ngircd/src/server/net/conn/conn.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
-C:/develop/ngircd/src/server/ngircd/conf-ssl.h
-C:/develop/ngircd/src/server/ngircd/client.h
-C:/develop/ngircd/src/server/ngircd/defines.h
-C:/develop/ngircd/src/server/ngircd/proc.h
-C:/develop/ngircd/src/server/ngircd/conf.h
-C:/develop/ngircd/src/server/ngircd/array.h
+C:/develop/ngircd/src/server/core/config/conf-ssl.h
+C:/develop/ngircd/src/server/core/client/client.h
+C:/develop/ngircd/src/server/core/misc/defines.h
+C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/server/core/config/conf.h
+C:/develop/ngircd/src/server/core/misc/array.h
 C:/develop/ngircd/src/support/tool/tool.h
 C:/develop/ngircd/src/support/ipaddr/ng_ipaddr.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/assert.h
 C:/develop/ngircd/src/platform/windows/include/sys/socket.h
 C:/develop/ngircd/src/platform/windows/include/win32compat.h
-C:/develop/ngircd/src/server/ngircd/io.h
-C:/develop/ngircd/src/server/ngircd/module_iface.h
+C:/develop/ngircd/src/server/net/conn/io.h
+C:/develop/ngircd/src/server/core/module/module_iface.h
 C:/develop/ngircd/src/platform/windows/include/sys/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/process.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_startup.h
@@ -167,5 +167,5 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wdirect
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/fcntl.h
 C:/develop/ngircd/src/platform/windows/include/netinet/in.h
 C:/develop/ngircd/src/platform/windows/include/arpa/inet.h
-C:/develop/ngircd/src/server/ngircd/log.h
-C:/develop/ngircd/src/server/ngircd/resolve.h
+C:/develop/ngircd/src/server/core/logging/log.h
+C:/develop/ngircd/src/server/net/conn/resolve.h

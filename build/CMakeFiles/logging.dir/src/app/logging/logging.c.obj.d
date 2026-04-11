@@ -12,11 +12,11 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_stdio_config.h
 C:/develop/ngircd/include/core/runtime/module_api.h
-C:/develop/ngircd/src/server/ngircd/log.h
-C:/develop/ngircd/src/server/ngircd/module_iface.h
+C:/develop/ngircd/src/server/core/logging/log.h
+C:/develop/ngircd/src/server/core/module/module_iface.h
 C:/develop/ngircd/src/support/portab/portab.h
 C:/develop/ngircd/src/platform/windows/include/config.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/types.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/inttypes.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdbool.h
-C:/develop/ngircd/src/server/ngircd/proc.h
+C:/develop/ngircd/src/server/net/conn/proc.h

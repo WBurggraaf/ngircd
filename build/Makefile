@@ -1362,1070 +1362,1070 @@ src\protocol\irc_protocol\irc_protocol.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_protocol.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_protocol.dir\src\protocol\irc_protocol\irc_protocol.c.s
 .PHONY : src\protocol\irc_protocol\irc_protocol.c.s
 
-src\server\ngircd\channel.obj: src\server\ngircd\channel.c.obj
-.PHONY : src\server\ngircd\channel.obj
+src\server\core\channel\channel.obj: src\server\core\channel\channel.c.obj
+.PHONY : src\server\core\channel\channel.obj
 
 # target to build an object file
-src\server\ngircd\channel.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.obj
-.PHONY : src\server\ngircd\channel.c.obj
+src\server\core\channel\channel.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\channel\channel.c.obj
+.PHONY : src\server\core\channel\channel.c.obj
 
-src\server\ngircd\channel.i: src\server\ngircd\channel.c.i
-.PHONY : src\server\ngircd\channel.i
+src\server\core\channel\channel.i: src\server\core\channel\channel.c.i
+.PHONY : src\server\core\channel\channel.i
 
 # target to preprocess a source file
-src\server\ngircd\channel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.i
-.PHONY : src\server\ngircd\channel.c.i
+src\server\core\channel\channel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\channel\channel.c.i
+.PHONY : src\server\core\channel\channel.c.i
 
-src\server\ngircd\channel.s: src\server\ngircd\channel.c.s
-.PHONY : src\server\ngircd\channel.s
+src\server\core\channel\channel.s: src\server\core\channel\channel.c.s
+.PHONY : src\server\core\channel\channel.s
 
 # target to generate assembly for a file
-src\server\ngircd\channel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\channel.c.s
-.PHONY : src\server\ngircd\channel.c.s
+src\server\core\channel\channel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\channel\channel.c.s
+.PHONY : src\server\core\channel\channel.c.s
 
-src\server\ngircd\core\array.obj: src\server\ngircd\core\array.c.obj
-.PHONY : src\server\ngircd\core\array.obj
+src\server\core\client\client-cap.obj: src\server\core\client\client-cap.c.obj
+.PHONY : src\server\core\client\client-cap.obj
 
 # target to build an object file
-src\server\ngircd\core\array.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\ngircd\core\array.c.obj
-.PHONY : src\server\ngircd\core\array.c.obj
+src\server\core\client\client-cap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\client\client-cap.c.obj
+.PHONY : src\server\core\client\client-cap.c.obj
 
-src\server\ngircd\core\array.i: src\server\ngircd\core\array.c.i
-.PHONY : src\server\ngircd\core\array.i
+src\server\core\client\client-cap.i: src\server\core\client\client-cap.c.i
+.PHONY : src\server\core\client\client-cap.i
 
 # target to preprocess a source file
-src\server\ngircd\core\array.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\ngircd\core\array.c.i
-.PHONY : src\server\ngircd\core\array.c.i
+src\server\core\client\client-cap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\client\client-cap.c.i
+.PHONY : src\server\core\client\client-cap.c.i
 
-src\server\ngircd\core\array.s: src\server\ngircd\core\array.c.s
-.PHONY : src\server\ngircd\core\array.s
+src\server\core\client\client-cap.s: src\server\core\client\client-cap.c.s
+.PHONY : src\server\core\client\client-cap.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\array.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\array.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\array.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\ngircd\core\array.c.s
-.PHONY : src\server\ngircd\core\array.c.s
+src\server\core\client\client-cap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\client\client-cap.c.s
+.PHONY : src\server\core\client\client-cap.c.s
 
-src\server\ngircd\core\class.obj: src\server\ngircd\core\class.c.obj
-.PHONY : src\server\ngircd\core\class.obj
+src\server\core\client\client.obj: src\server\core\client\client.c.obj
+.PHONY : src\server\core\client\client.obj
 
 # target to build an object file
-src\server\ngircd\core\class.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.obj
-.PHONY : src\server\ngircd\core\class.c.obj
+src\server\core\client\client.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\client\client.c.obj
+.PHONY : src\server\core\client\client.c.obj
 
-src\server\ngircd\core\class.i: src\server\ngircd\core\class.c.i
-.PHONY : src\server\ngircd\core\class.i
+src\server\core\client\client.i: src\server\core\client\client.c.i
+.PHONY : src\server\core\client\client.i
 
 # target to preprocess a source file
-src\server\ngircd\core\class.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.i
-.PHONY : src\server\ngircd\core\class.c.i
+src\server\core\client\client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\client\client.c.i
+.PHONY : src\server\core\client\client.c.i
 
-src\server\ngircd\core\class.s: src\server\ngircd\core\class.c.s
-.PHONY : src\server\ngircd\core\class.s
+src\server\core\client\client.s: src\server\core\client\client.c.s
+.PHONY : src\server\core\client\client.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\class.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\class.c.s
-.PHONY : src\server\ngircd\core\class.c.s
+src\server\core\client\client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\client\client.c.s
+.PHONY : src\server\core\client\client.c.s
 
-src\server\ngircd\core\client-cap.obj: src\server\ngircd\core\client-cap.c.obj
-.PHONY : src\server\ngircd\core\client-cap.obj
+src\server\core\config\conf.obj: src\server\core\config\conf.c.obj
+.PHONY : src\server\core\config\conf.obj
 
 # target to build an object file
-src\server\ngircd\core\client-cap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.obj
-.PHONY : src\server\ngircd\core\client-cap.c.obj
+src\server\core\config\conf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\config\conf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj
+.PHONY : src\server\core\config\conf.c.obj
 
-src\server\ngircd\core\client-cap.i: src\server\ngircd\core\client-cap.c.i
-.PHONY : src\server\ngircd\core\client-cap.i
+src\server\core\config\conf.i: src\server\core\config\conf.c.i
+.PHONY : src\server\core\config\conf.i
 
 # target to preprocess a source file
-src\server\ngircd\core\client-cap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.i
-.PHONY : src\server\ngircd\core\client-cap.c.i
+src\server\core\config\conf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\config\conf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.i
+.PHONY : src\server\core\config\conf.c.i
 
-src\server\ngircd\core\client-cap.s: src\server\ngircd\core\client-cap.c.s
-.PHONY : src\server\ngircd\core\client-cap.s
+src\server\core\config\conf.s: src\server\core\config\conf.c.s
+.PHONY : src\server\core\config\conf.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\client-cap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client-cap.c.s
-.PHONY : src\server\ngircd\core\client-cap.c.s
+src\server\core\config\conf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\config\conf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.s
+.PHONY : src\server\core\config\conf.c.s
 
-src\server\ngircd\core\client.obj: src\server\ngircd\core\client.c.obj
-.PHONY : src\server\ngircd\core\client.obj
+src\server\core\logging\log.obj: src\server\core\logging\log.c.obj
+.PHONY : src\server\core\logging\log.obj
 
 # target to build an object file
-src\server\ngircd\core\client.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.obj
-.PHONY : src\server\ngircd\core\client.c.obj
+src\server\core\logging\log.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj
+.PHONY : src\server\core\logging\log.c.obj
 
-src\server\ngircd\core\client.i: src\server\ngircd\core\client.c.i
-.PHONY : src\server\ngircd\core\client.i
+src\server\core\logging\log.i: src\server\core\logging\log.c.i
+.PHONY : src\server\core\logging\log.i
 
 # target to preprocess a source file
-src\server\ngircd\core\client.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.i
-.PHONY : src\server\ngircd\core\client.c.i
+src\server\core\logging\log.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.i
+.PHONY : src\server\core\logging\log.c.i
 
-src\server\ngircd\core\client.s: src\server\ngircd\core\client.c.s
-.PHONY : src\server\ngircd\core\client.s
+src\server\core\logging\log.s: src\server\core\logging\log.c.s
+.PHONY : src\server\core\logging\log.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\client.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\client.c.s
-.PHONY : src\server\ngircd\core\client.c.s
+src\server\core\logging\log.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\logging\log.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.s
+.PHONY : src\server\core\logging\log.c.s
 
-src\server\ngircd\core\conf.obj: src\server\ngircd\core\conf.c.obj
-.PHONY : src\server\ngircd\core\conf.obj
+src\server\core\login.obj: src\server\core\login.c.obj
+.PHONY : src\server\core\login.obj
 
 # target to build an object file
-src\server\ngircd\core\conf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.obj
-.PHONY : src\server\ngircd\core\conf.c.obj
+src\server\core\login.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\login.c.obj
+.PHONY : src\server\core\login.c.obj
 
-src\server\ngircd\core\conf.i: src\server\ngircd\core\conf.c.i
-.PHONY : src\server\ngircd\core\conf.i
+src\server\core\login.i: src\server\core\login.c.i
+.PHONY : src\server\core\login.i
 
 # target to preprocess a source file
-src\server\ngircd\core\conf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.i
-.PHONY : src\server\ngircd\core\conf.c.i
+src\server\core\login.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\login.c.i
+.PHONY : src\server\core\login.c.i
 
-src\server\ngircd\core\conf.s: src\server\ngircd\core\conf.c.s
-.PHONY : src\server\ngircd\core\conf.s
+src\server\core\login.s: src\server\core\login.c.s
+.PHONY : src\server\core\login.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\conf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\conf.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\conf.c.s
-.PHONY : src\server\ngircd\core\conf.c.s
+src\server\core\login.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\login.c.s
+.PHONY : src\server\core\login.c.s
 
-src\server\ngircd\core\hash.obj: src\server\ngircd\core\hash.c.obj
-.PHONY : src\server\ngircd\core\hash.obj
+src\server\core\misc\array.obj: src\server\core\misc\array.c.obj
+.PHONY : src\server\core\misc\array.obj
 
 # target to build an object file
-src\server\ngircd\core\hash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.obj
-.PHONY : src\server\ngircd\core\hash.c.obj
+src\server\core\misc\array.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\array.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.obj
+.PHONY : src\server\core\misc\array.c.obj
 
-src\server\ngircd\core\hash.i: src\server\ngircd\core\hash.c.i
-.PHONY : src\server\ngircd\core\hash.i
+src\server\core\misc\array.i: src\server\core\misc\array.c.i
+.PHONY : src\server\core\misc\array.i
 
 # target to preprocess a source file
-src\server\ngircd\core\hash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.i
-.PHONY : src\server\ngircd\core\hash.c.i
+src\server\core\misc\array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\array.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.i
+.PHONY : src\server\core\misc\array.c.i
 
-src\server\ngircd\core\hash.s: src\server\ngircd\core\hash.c.s
-.PHONY : src\server\ngircd\core\hash.s
+src\server\core\misc\array.s: src\server\core\misc\array.c.s
+.PHONY : src\server\core\misc\array.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\hash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\hash.c.s
-.PHONY : src\server\ngircd\core\hash.c.s
+src\server\core\misc\array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\array.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\config_module_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\config_module_test.dir\src\server\core\misc\array.c.s
+.PHONY : src\server\core\misc\array.c.s
 
-src\server\ngircd\core\lists.obj: src\server\ngircd\core\lists.c.obj
-.PHONY : src\server\ngircd\core\lists.obj
+src\server\core\misc\class.obj: src\server\core\misc\class.c.obj
+.PHONY : src\server\core\misc\class.obj
 
 # target to build an object file
-src\server\ngircd\core\lists.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.obj
-.PHONY : src\server\ngircd\core\lists.c.obj
+src\server\core\misc\class.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\class.c.obj
+.PHONY : src\server\core\misc\class.c.obj
 
-src\server\ngircd\core\lists.i: src\server\ngircd\core\lists.c.i
-.PHONY : src\server\ngircd\core\lists.i
+src\server\core\misc\class.i: src\server\core\misc\class.c.i
+.PHONY : src\server\core\misc\class.i
 
 # target to preprocess a source file
-src\server\ngircd\core\lists.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.i
-.PHONY : src\server\ngircd\core\lists.c.i
+src\server\core\misc\class.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\class.c.i
+.PHONY : src\server\core\misc\class.c.i
 
-src\server\ngircd\core\lists.s: src\server\ngircd\core\lists.c.s
-.PHONY : src\server\ngircd\core\lists.s
+src\server\core\misc\class.s: src\server\core\misc\class.c.s
+.PHONY : src\server\core\misc\class.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\lists.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\lists.c.s
-.PHONY : src\server\ngircd\core\lists.c.s
+src\server\core\misc\class.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\class.c.s
+.PHONY : src\server\core\misc\class.c.s
 
-src\server\ngircd\core\log.obj: src\server\ngircd\core\log.c.obj
-.PHONY : src\server\ngircd\core\log.obj
+src\server\core\misc\hash.obj: src\server\core\misc\hash.c.obj
+.PHONY : src\server\core\misc\hash.obj
 
 # target to build an object file
-src\server\ngircd\core\log.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.obj
-.PHONY : src\server\ngircd\core\log.c.obj
+src\server\core\misc\hash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\hash.c.obj
+.PHONY : src\server\core\misc\hash.c.obj
 
-src\server\ngircd\core\log.i: src\server\ngircd\core\log.c.i
-.PHONY : src\server\ngircd\core\log.i
+src\server\core\misc\hash.i: src\server\core\misc\hash.c.i
+.PHONY : src\server\core\misc\hash.i
 
 # target to preprocess a source file
-src\server\ngircd\core\log.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.i
-.PHONY : src\server\ngircd\core\log.c.i
+src\server\core\misc\hash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\hash.c.i
+.PHONY : src\server\core\misc\hash.c.i
 
-src\server\ngircd\core\log.s: src\server\ngircd\core\log.c.s
-.PHONY : src\server\ngircd\core\log.s
+src\server\core\misc\hash.s: src\server\core\misc\hash.c.s
+.PHONY : src\server\core\misc\hash.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\log.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\log.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.s
-.PHONY : src\server\ngircd\core\log.c.s
+src\server\core\misc\hash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\hash.c.s
+.PHONY : src\server\core\misc\hash.c.s
 
-src\server\ngircd\core\login.obj: src\server\ngircd\core\login.c.obj
-.PHONY : src\server\ngircd\core\login.obj
+src\server\core\misc\lists.obj: src\server\core\misc\lists.c.obj
+.PHONY : src\server\core\misc\lists.obj
 
 # target to build an object file
-src\server\ngircd\core\login.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.obj
-.PHONY : src\server\ngircd\core\login.c.obj
+src\server\core\misc\lists.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\lists.c.obj
+.PHONY : src\server\core\misc\lists.c.obj
 
-src\server\ngircd\core\login.i: src\server\ngircd\core\login.c.i
-.PHONY : src\server\ngircd\core\login.i
+src\server\core\misc\lists.i: src\server\core\misc\lists.c.i
+.PHONY : src\server\core\misc\lists.i
 
 # target to preprocess a source file
-src\server\ngircd\core\login.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.i
-.PHONY : src\server\ngircd\core\login.c.i
+src\server\core\misc\lists.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\lists.c.i
+.PHONY : src\server\core\misc\lists.c.i
 
-src\server\ngircd\core\login.s: src\server\ngircd\core\login.c.s
-.PHONY : src\server\ngircd\core\login.s
+src\server\core\misc\lists.s: src\server\core\misc\lists.c.s
+.PHONY : src\server\core\misc\lists.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\login.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\login.c.s
-.PHONY : src\server\ngircd\core\login.c.s
+src\server\core\misc\lists.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\lists.c.s
+.PHONY : src\server\core\misc\lists.c.s
 
-src\server\ngircd\core\match.obj: src\server\ngircd\core\match.c.obj
-.PHONY : src\server\ngircd\core\match.obj
+src\server\core\misc\match.obj: src\server\core\misc\match.c.obj
+.PHONY : src\server\core\misc\match.obj
 
 # target to build an object file
-src\server\ngircd\core\match.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.obj
-.PHONY : src\server\ngircd\core\match.c.obj
+src\server\core\misc\match.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\match.c.obj
+.PHONY : src\server\core\misc\match.c.obj
 
-src\server\ngircd\core\match.i: src\server\ngircd\core\match.c.i
-.PHONY : src\server\ngircd\core\match.i
+src\server\core\misc\match.i: src\server\core\misc\match.c.i
+.PHONY : src\server\core\misc\match.i
 
 # target to preprocess a source file
-src\server\ngircd\core\match.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.i
-.PHONY : src\server\ngircd\core\match.c.i
+src\server\core\misc\match.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\match.c.i
+.PHONY : src\server\core\misc\match.c.i
 
-src\server\ngircd\core\match.s: src\server\ngircd\core\match.c.s
-.PHONY : src\server\ngircd\core\match.s
+src\server\core\misc\match.s: src\server\core\misc\match.c.s
+.PHONY : src\server\core\misc\match.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\match.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\match.c.s
-.PHONY : src\server\ngircd\core\match.c.s
+src\server\core\misc\match.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\match.c.s
+.PHONY : src\server\core\misc\match.c.s
 
-src\server\ngircd\core\module_iface.obj: src\server\ngircd\core\module_iface.c.obj
-.PHONY : src\server\ngircd\core\module_iface.obj
+src\server\core\misc\numeric.obj: src\server\core\misc\numeric.c.obj
+.PHONY : src\server\core\misc\numeric.obj
 
 # target to build an object file
-src\server\ngircd\core\module_iface.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\core\module_iface.c.obj
-.PHONY : src\server\ngircd\core\module_iface.c.obj
+src\server\core\misc\numeric.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\numeric.c.obj
+.PHONY : src\server\core\misc\numeric.c.obj
 
-src\server\ngircd\core\module_iface.i: src\server\ngircd\core\module_iface.c.i
-.PHONY : src\server\ngircd\core\module_iface.i
+src\server\core\misc\numeric.i: src\server\core\misc\numeric.c.i
+.PHONY : src\server\core\misc\numeric.i
 
 # target to preprocess a source file
-src\server\ngircd\core\module_iface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\core\module_iface.c.i
-.PHONY : src\server\ngircd\core\module_iface.c.i
+src\server\core\misc\numeric.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\numeric.c.i
+.PHONY : src\server\core\misc\numeric.c.i
 
-src\server\ngircd\core\module_iface.s: src\server\ngircd\core\module_iface.c.s
-.PHONY : src\server\ngircd\core\module_iface.s
+src\server\core\misc\numeric.s: src\server\core\misc\numeric.c.s
+.PHONY : src\server\core\misc\numeric.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\module_iface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\module_iface.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\ngircd\core\module_iface.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\core\module_iface.c.s
-.PHONY : src\server\ngircd\core\module_iface.c.s
+src\server\core\misc\numeric.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\numeric.c.s
+.PHONY : src\server\core\misc\numeric.c.s
 
-src\server\ngircd\core\numeric.obj: src\server\ngircd\core\numeric.c.obj
-.PHONY : src\server\ngircd\core\numeric.obj
+src\server\core\misc\op.obj: src\server\core\misc\op.c.obj
+.PHONY : src\server\core\misc\op.obj
 
 # target to build an object file
-src\server\ngircd\core\numeric.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.obj
-.PHONY : src\server\ngircd\core\numeric.c.obj
+src\server\core\misc\op.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\op.c.obj
+.PHONY : src\server\core\misc\op.c.obj
 
-src\server\ngircd\core\numeric.i: src\server\ngircd\core\numeric.c.i
-.PHONY : src\server\ngircd\core\numeric.i
+src\server\core\misc\op.i: src\server\core\misc\op.c.i
+.PHONY : src\server\core\misc\op.i
 
 # target to preprocess a source file
-src\server\ngircd\core\numeric.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.i
-.PHONY : src\server\ngircd\core\numeric.c.i
+src\server\core\misc\op.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\op.c.i
+.PHONY : src\server\core\misc\op.c.i
 
-src\server\ngircd\core\numeric.s: src\server\ngircd\core\numeric.c.s
-.PHONY : src\server\ngircd\core\numeric.s
+src\server\core\misc\op.s: src\server\core\misc\op.c.s
+.PHONY : src\server\core\misc\op.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\numeric.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\numeric.c.s
-.PHONY : src\server\ngircd\core\numeric.c.s
+src\server\core\misc\op.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\misc\op.c.s
+.PHONY : src\server\core\misc\op.c.s
 
-src\server\ngircd\core\op.obj: src\server\ngircd\core\op.c.obj
-.PHONY : src\server\ngircd\core\op.obj
+src\server\core\module\module_iface.obj: src\server\core\module\module_iface.c.obj
+.PHONY : src\server\core\module\module_iface.obj
 
 # target to build an object file
-src\server\ngircd\core\op.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.obj
-.PHONY : src\server\ngircd\core\op.c.obj
+src\server\core\module\module_iface.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\module\module_iface.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\core\module\module_iface.c.obj
+.PHONY : src\server\core\module\module_iface.c.obj
 
-src\server\ngircd\core\op.i: src\server\ngircd\core\op.c.i
-.PHONY : src\server\ngircd\core\op.i
+src\server\core\module\module_iface.i: src\server\core\module\module_iface.c.i
+.PHONY : src\server\core\module\module_iface.i
 
 # target to preprocess a source file
-src\server\ngircd\core\op.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.i
-.PHONY : src\server\ngircd\core\op.c.i
+src\server\core\module\module_iface.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\module\module_iface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\core\module\module_iface.c.i
+.PHONY : src\server\core\module\module_iface.c.i
 
-src\server\ngircd\core\op.s: src\server\ngircd\core\op.c.s
-.PHONY : src\server\ngircd\core\op.s
+src\server\core\module\module_iface.s: src\server\core\module\module_iface.c.s
+.PHONY : src\server\core\module\module_iface.s
 
 # target to generate assembly for a file
-src\server\ngircd\core\op.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\core\op.c.s
-.PHONY : src\server\ngircd\core\op.c.s
+src\server\core\module\module_iface.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\core\module\module_iface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\module_iface_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conf_whitebox_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\core\module\module_iface.c.s
+.PHONY : src\server\core\module\module_iface.c.s
 
-src\server\ngircd\net\conn-encoding.obj: src\server\ngircd\net\conn-encoding.c.obj
-.PHONY : src\server\ngircd\net\conn-encoding.obj
+src\server\net\conn\conn-encoding.obj: src\server\net\conn\conn-encoding.c.obj
+.PHONY : src\server\net\conn\conn-encoding.obj
 
 # target to build an object file
-src\server\ngircd\net\conn-encoding.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.obj
-.PHONY : src\server\ngircd\net\conn-encoding.c.obj
+src\server\net\conn\conn-encoding.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn-encoding.c.obj
+.PHONY : src\server\net\conn\conn-encoding.c.obj
 
-src\server\ngircd\net\conn-encoding.i: src\server\ngircd\net\conn-encoding.c.i
-.PHONY : src\server\ngircd\net\conn-encoding.i
+src\server\net\conn\conn-encoding.i: src\server\net\conn\conn-encoding.c.i
+.PHONY : src\server\net\conn\conn-encoding.i
 
 # target to preprocess a source file
-src\server\ngircd\net\conn-encoding.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.i
-.PHONY : src\server\ngircd\net\conn-encoding.c.i
+src\server\net\conn\conn-encoding.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn-encoding.c.i
+.PHONY : src\server\net\conn\conn-encoding.c.i
 
-src\server\ngircd\net\conn-encoding.s: src\server\ngircd\net\conn-encoding.c.s
-.PHONY : src\server\ngircd\net\conn-encoding.s
+src\server\net\conn\conn-encoding.s: src\server\net\conn\conn-encoding.c.s
+.PHONY : src\server\net\conn\conn-encoding.s
 
 # target to generate assembly for a file
-src\server\ngircd\net\conn-encoding.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-encoding.c.s
-.PHONY : src\server\ngircd\net\conn-encoding.c.s
+src\server\net\conn\conn-encoding.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn-encoding.c.s
+.PHONY : src\server\net\conn\conn-encoding.c.s
 
-src\server\ngircd\net\conn-func.obj: src\server\ngircd\net\conn-func.c.obj
-.PHONY : src\server\ngircd\net\conn-func.obj
+src\server\net\conn\conn-func.obj: src\server\net\conn\conn-func.c.obj
+.PHONY : src\server\net\conn\conn-func.obj
 
 # target to build an object file
-src\server\ngircd\net\conn-func.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.obj
-.PHONY : src\server\ngircd\net\conn-func.c.obj
+src\server\net\conn\conn-func.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn-func.c.obj
+.PHONY : src\server\net\conn\conn-func.c.obj
 
-src\server\ngircd\net\conn-func.i: src\server\ngircd\net\conn-func.c.i
-.PHONY : src\server\ngircd\net\conn-func.i
+src\server\net\conn\conn-func.i: src\server\net\conn\conn-func.c.i
+.PHONY : src\server\net\conn\conn-func.i
 
 # target to preprocess a source file
-src\server\ngircd\net\conn-func.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.i
-.PHONY : src\server\ngircd\net\conn-func.c.i
+src\server\net\conn\conn-func.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn-func.c.i
+.PHONY : src\server\net\conn\conn-func.c.i
 
-src\server\ngircd\net\conn-func.s: src\server\ngircd\net\conn-func.c.s
-.PHONY : src\server\ngircd\net\conn-func.s
+src\server\net\conn\conn-func.s: src\server\net\conn\conn-func.c.s
+.PHONY : src\server\net\conn\conn-func.s
 
 # target to generate assembly for a file
-src\server\ngircd\net\conn-func.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn-func.c.s
-.PHONY : src\server\ngircd\net\conn-func.c.s
+src\server\net\conn\conn-func.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn-func.c.s
+.PHONY : src\server\net\conn\conn-func.c.s
 
-src\server\ngircd\net\conn.obj: src\server\ngircd\net\conn.c.obj
-.PHONY : src\server\ngircd\net\conn.obj
+src\server\net\conn\conn.obj: src\server\net\conn\conn.c.obj
+.PHONY : src\server\net\conn\conn.obj
 
 # target to build an object file
-src\server\ngircd\net\conn.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.obj
-.PHONY : src\server\ngircd\net\conn.c.obj
+src\server\net\conn\conn.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn.c.obj
+.PHONY : src\server\net\conn\conn.c.obj
 
-src\server\ngircd\net\conn.i: src\server\ngircd\net\conn.c.i
-.PHONY : src\server\ngircd\net\conn.i
+src\server\net\conn\conn.i: src\server\net\conn\conn.c.i
+.PHONY : src\server\net\conn\conn.i
 
 # target to preprocess a source file
-src\server\ngircd\net\conn.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.i
-.PHONY : src\server\ngircd\net\conn.c.i
+src\server\net\conn\conn.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn.c.i
+.PHONY : src\server\net\conn\conn.c.i
 
-src\server\ngircd\net\conn.s: src\server\ngircd\net\conn.c.s
-.PHONY : src\server\ngircd\net\conn.s
+src\server\net\conn\conn.s: src\server\net\conn\conn.c.s
+.PHONY : src\server\net\conn\conn.s
 
 # target to generate assembly for a file
-src\server\ngircd\net\conn.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\conn.c.s
-.PHONY : src\server\ngircd\net\conn.c.s
+src\server\net\conn\conn.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\conn.c.s
+.PHONY : src\server\net\conn\conn.c.s
 
-src\server\ngircd\net\io.obj: src\server\ngircd\net\io.c.obj
-.PHONY : src\server\ngircd\net\io.obj
+src\server\net\conn\io.obj: src\server\net\conn\io.c.obj
+.PHONY : src\server\net\conn\io.obj
 
 # target to build an object file
-src\server\ngircd\net\io.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.obj
-.PHONY : src\server\ngircd\net\io.c.obj
+src\server\net\conn\io.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\io.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.obj
+.PHONY : src\server\net\conn\io.c.obj
 
-src\server\ngircd\net\io.i: src\server\ngircd\net\io.c.i
-.PHONY : src\server\ngircd\net\io.i
+src\server\net\conn\io.i: src\server\net\conn\io.c.i
+.PHONY : src\server\net\conn\io.i
 
 # target to preprocess a source file
-src\server\ngircd\net\io.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.i
-.PHONY : src\server\ngircd\net\io.c.i
+src\server\net\conn\io.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\io.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.i
+.PHONY : src\server\net\conn\io.c.i
 
-src\server\ngircd\net\io.s: src\server\ngircd\net\io.c.s
-.PHONY : src\server\ngircd\net\io.s
+src\server\net\conn\io.s: src\server\net\conn\io.c.s
+.PHONY : src\server\net\conn\io.s
 
 # target to generate assembly for a file
-src\server\ngircd\net\io.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\net\io.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.s
-.PHONY : src\server\ngircd\net\io.c.s
+src\server\net\conn\io.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\net\conn\io.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\log_io_resolver_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.s
+.PHONY : src\server\net\conn\io.c.s
 
-src\server\ngircd\platform\ngircd.obj: src\server\ngircd\platform\ngircd.c.obj
-.PHONY : src\server\ngircd\platform\ngircd.obj
+src\server\platform\ngircd.obj: src\server\platform\ngircd.c.obj
+.PHONY : src\server\platform\ngircd.obj
 
 # target to build an object file
-src\server\ngircd\platform\ngircd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.obj
-.PHONY : src\server\ngircd\platform\ngircd.c.obj
+src\server\platform\ngircd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj
+.PHONY : src\server\platform\ngircd.c.obj
 
-src\server\ngircd\platform\ngircd.i: src\server\ngircd\platform\ngircd.c.i
-.PHONY : src\server\ngircd\platform\ngircd.i
+src\server\platform\ngircd.i: src\server\platform\ngircd.c.i
+.PHONY : src\server\platform\ngircd.i
 
 # target to preprocess a source file
-src\server\ngircd\platform\ngircd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.i
-.PHONY : src\server\ngircd\platform\ngircd.c.i
+src\server\platform\ngircd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.i
+.PHONY : src\server\platform\ngircd.c.i
 
-src\server\ngircd\platform\ngircd.s: src\server\ngircd\platform\ngircd.c.s
-.PHONY : src\server\ngircd\platform\ngircd.s
+src\server\platform\ngircd.s: src\server\platform\ngircd.c.s
+.PHONY : src\server\platform\ngircd.s
 
 # target to generate assembly for a file
-src\server\ngircd\platform\ngircd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.s
-.PHONY : src\server\ngircd\platform\ngircd.c.s
+src\server\platform\ngircd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.s
+.PHONY : src\server\platform\ngircd.c.s
 
-src\server\ngircd\proto\irc-cap.obj: src\server\ngircd\proto\irc-cap.c.obj
-.PHONY : src\server\ngircd\proto\irc-cap.obj
+src\server\proto\irc\irc-cap.obj: src\server\proto\irc\irc-cap.c.obj
+.PHONY : src\server\proto\irc\irc-cap.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-cap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_cap_end_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.obj
-.PHONY : src\server\ngircd\proto\irc-cap.c.obj
+src\server\proto\irc\irc-cap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-cap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_cap_end_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj
+.PHONY : src\server\proto\irc\irc-cap.c.obj
 
-src\server\ngircd\proto\irc-cap.i: src\server\ngircd\proto\irc-cap.c.i
-.PHONY : src\server\ngircd\proto\irc-cap.i
+src\server\proto\irc\irc-cap.i: src\server\proto\irc\irc-cap.c.i
+.PHONY : src\server\proto\irc\irc-cap.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-cap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_cap_end_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.i
-.PHONY : src\server\ngircd\proto\irc-cap.c.i
+src\server\proto\irc\irc-cap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-cap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_cap_end_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.i
+.PHONY : src\server\proto\irc\irc-cap.c.i
 
-src\server\ngircd\proto\irc-cap.s: src\server\ngircd\proto\irc-cap.c.s
-.PHONY : src\server\ngircd\proto\irc-cap.s
+src\server\proto\irc\irc-cap.s: src\server\proto\irc\irc-cap.c.s
+.PHONY : src\server\proto\irc\irc-cap.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-cap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-cap.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_cap_end_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.s
-.PHONY : src\server\ngircd\proto\irc-cap.c.s
+src\server\proto\irc\irc-cap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-cap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\irc_cap_end_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.s
+.PHONY : src\server\proto\irc\irc-cap.c.s
 
-src\server\ngircd\proto\irc-channel.obj: src\server\ngircd\proto\irc-channel.c.obj
-.PHONY : src\server\ngircd\proto\irc-channel.obj
+src\server\proto\irc\irc-channel.obj: src\server\proto\irc\irc-channel.c.obj
+.PHONY : src\server\proto\irc\irc-channel.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-channel.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.obj
-.PHONY : src\server\ngircd\proto\irc-channel.c.obj
+src\server\proto\irc\irc-channel.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-channel.c.obj
+.PHONY : src\server\proto\irc\irc-channel.c.obj
 
-src\server\ngircd\proto\irc-channel.i: src\server\ngircd\proto\irc-channel.c.i
-.PHONY : src\server\ngircd\proto\irc-channel.i
+src\server\proto\irc\irc-channel.i: src\server\proto\irc\irc-channel.c.i
+.PHONY : src\server\proto\irc\irc-channel.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-channel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.i
-.PHONY : src\server\ngircd\proto\irc-channel.c.i
+src\server\proto\irc\irc-channel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-channel.c.i
+.PHONY : src\server\proto\irc\irc-channel.c.i
 
-src\server\ngircd\proto\irc-channel.s: src\server\ngircd\proto\irc-channel.c.s
-.PHONY : src\server\ngircd\proto\irc-channel.s
+src\server\proto\irc\irc-channel.s: src\server\proto\irc\irc-channel.c.s
+.PHONY : src\server\proto\irc\irc-channel.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-channel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-channel.c.s
-.PHONY : src\server\ngircd\proto\irc-channel.c.s
+src\server\proto\irc\irc-channel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-channel.c.s
+.PHONY : src\server\proto\irc\irc-channel.c.s
 
-src\server\ngircd\proto\irc-encoding.obj: src\server\ngircd\proto\irc-encoding.c.obj
-.PHONY : src\server\ngircd\proto\irc-encoding.obj
+src\server\proto\irc\irc-encoding.obj: src\server\proto\irc\irc-encoding.c.obj
+.PHONY : src\server\proto\irc\irc-encoding.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-encoding.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.obj
-.PHONY : src\server\ngircd\proto\irc-encoding.c.obj
+src\server\proto\irc\irc-encoding.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-encoding.c.obj
+.PHONY : src\server\proto\irc\irc-encoding.c.obj
 
-src\server\ngircd\proto\irc-encoding.i: src\server\ngircd\proto\irc-encoding.c.i
-.PHONY : src\server\ngircd\proto\irc-encoding.i
+src\server\proto\irc\irc-encoding.i: src\server\proto\irc\irc-encoding.c.i
+.PHONY : src\server\proto\irc\irc-encoding.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-encoding.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.i
-.PHONY : src\server\ngircd\proto\irc-encoding.c.i
+src\server\proto\irc\irc-encoding.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-encoding.c.i
+.PHONY : src\server\proto\irc\irc-encoding.c.i
 
-src\server\ngircd\proto\irc-encoding.s: src\server\ngircd\proto\irc-encoding.c.s
-.PHONY : src\server\ngircd\proto\irc-encoding.s
+src\server\proto\irc\irc-encoding.s: src\server\proto\irc\irc-encoding.c.s
+.PHONY : src\server\proto\irc\irc-encoding.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-encoding.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-encoding.c.s
-.PHONY : src\server\ngircd\proto\irc-encoding.c.s
+src\server\proto\irc\irc-encoding.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-encoding.c.s
+.PHONY : src\server\proto\irc\irc-encoding.c.s
 
-src\server\ngircd\proto\irc-info.obj: src\server\ngircd\proto\irc-info.c.obj
-.PHONY : src\server\ngircd\proto\irc-info.obj
+src\server\proto\irc\irc-info.obj: src\server\proto\irc\irc-info.c.obj
+.PHONY : src\server\proto\irc\irc-info.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.obj
-.PHONY : src\server\ngircd\proto\irc-info.c.obj
+src\server\proto\irc\irc-info.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-info.c.obj
+.PHONY : src\server\proto\irc\irc-info.c.obj
 
-src\server\ngircd\proto\irc-info.i: src\server\ngircd\proto\irc-info.c.i
-.PHONY : src\server\ngircd\proto\irc-info.i
+src\server\proto\irc\irc-info.i: src\server\proto\irc\irc-info.c.i
+.PHONY : src\server\proto\irc\irc-info.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.i
-.PHONY : src\server\ngircd\proto\irc-info.c.i
+src\server\proto\irc\irc-info.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-info.c.i
+.PHONY : src\server\proto\irc\irc-info.c.i
 
-src\server\ngircd\proto\irc-info.s: src\server\ngircd\proto\irc-info.c.s
-.PHONY : src\server\ngircd\proto\irc-info.s
+src\server\proto\irc\irc-info.s: src\server\proto\irc\irc-info.c.s
+.PHONY : src\server\proto\irc\irc-info.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-info.c.s
-.PHONY : src\server\ngircd\proto\irc-info.c.s
+src\server\proto\irc\irc-info.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-info.c.s
+.PHONY : src\server\proto\irc\irc-info.c.s
 
-src\server\ngircd\proto\irc-login.obj: src\server\ngircd\proto\irc-login.c.obj
-.PHONY : src\server\ngircd\proto\irc-login.obj
+src\server\proto\irc\irc-login.obj: src\server\proto\irc\irc-login.c.obj
+.PHONY : src\server\proto\irc\irc-login.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-login.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.obj
-.PHONY : src\server\ngircd\proto\irc-login.c.obj
+src\server\proto\irc\irc-login.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-login.c.obj
+.PHONY : src\server\proto\irc\irc-login.c.obj
 
-src\server\ngircd\proto\irc-login.i: src\server\ngircd\proto\irc-login.c.i
-.PHONY : src\server\ngircd\proto\irc-login.i
+src\server\proto\irc\irc-login.i: src\server\proto\irc\irc-login.c.i
+.PHONY : src\server\proto\irc\irc-login.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-login.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.i
-.PHONY : src\server\ngircd\proto\irc-login.c.i
+src\server\proto\irc\irc-login.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-login.c.i
+.PHONY : src\server\proto\irc\irc-login.c.i
 
-src\server\ngircd\proto\irc-login.s: src\server\ngircd\proto\irc-login.c.s
-.PHONY : src\server\ngircd\proto\irc-login.s
+src\server\proto\irc\irc-login.s: src\server\proto\irc\irc-login.c.s
+.PHONY : src\server\proto\irc\irc-login.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-login.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-login.c.s
-.PHONY : src\server\ngircd\proto\irc-login.c.s
+src\server\proto\irc\irc-login.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-login.c.s
+.PHONY : src\server\proto\irc\irc-login.c.s
 
-src\server\ngircd\proto\irc-metadata.obj: src\server\ngircd\proto\irc-metadata.c.obj
-.PHONY : src\server\ngircd\proto\irc-metadata.obj
+src\server\proto\irc\irc-metadata.obj: src\server\proto\irc\irc-metadata.c.obj
+.PHONY : src\server\proto\irc\irc-metadata.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-metadata.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.obj
-.PHONY : src\server\ngircd\proto\irc-metadata.c.obj
+src\server\proto\irc\irc-metadata.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-metadata.c.obj
+.PHONY : src\server\proto\irc\irc-metadata.c.obj
 
-src\server\ngircd\proto\irc-metadata.i: src\server\ngircd\proto\irc-metadata.c.i
-.PHONY : src\server\ngircd\proto\irc-metadata.i
+src\server\proto\irc\irc-metadata.i: src\server\proto\irc\irc-metadata.c.i
+.PHONY : src\server\proto\irc\irc-metadata.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-metadata.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.i
-.PHONY : src\server\ngircd\proto\irc-metadata.c.i
+src\server\proto\irc\irc-metadata.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-metadata.c.i
+.PHONY : src\server\proto\irc\irc-metadata.c.i
 
-src\server\ngircd\proto\irc-metadata.s: src\server\ngircd\proto\irc-metadata.c.s
-.PHONY : src\server\ngircd\proto\irc-metadata.s
+src\server\proto\irc\irc-metadata.s: src\server\proto\irc\irc-metadata.c.s
+.PHONY : src\server\proto\irc\irc-metadata.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-metadata.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-metadata.c.s
-.PHONY : src\server\ngircd\proto\irc-metadata.c.s
+src\server\proto\irc\irc-metadata.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-metadata.c.s
+.PHONY : src\server\proto\irc\irc-metadata.c.s
 
-src\server\ngircd\proto\irc-mode.obj: src\server\ngircd\proto\irc-mode.c.obj
-.PHONY : src\server\ngircd\proto\irc-mode.obj
+src\server\proto\irc\irc-mode.obj: src\server\proto\irc\irc-mode.c.obj
+.PHONY : src\server\proto\irc\irc-mode.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-mode.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.obj
-.PHONY : src\server\ngircd\proto\irc-mode.c.obj
+src\server\proto\irc\irc-mode.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-mode.c.obj
+.PHONY : src\server\proto\irc\irc-mode.c.obj
 
-src\server\ngircd\proto\irc-mode.i: src\server\ngircd\proto\irc-mode.c.i
-.PHONY : src\server\ngircd\proto\irc-mode.i
+src\server\proto\irc\irc-mode.i: src\server\proto\irc\irc-mode.c.i
+.PHONY : src\server\proto\irc\irc-mode.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-mode.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.i
-.PHONY : src\server\ngircd\proto\irc-mode.c.i
+src\server\proto\irc\irc-mode.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-mode.c.i
+.PHONY : src\server\proto\irc\irc-mode.c.i
 
-src\server\ngircd\proto\irc-mode.s: src\server\ngircd\proto\irc-mode.c.s
-.PHONY : src\server\ngircd\proto\irc-mode.s
+src\server\proto\irc\irc-mode.s: src\server\proto\irc\irc-mode.c.s
+.PHONY : src\server\proto\irc\irc-mode.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-mode.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-mode.c.s
-.PHONY : src\server\ngircd\proto\irc-mode.c.s
+src\server\proto\irc\irc-mode.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-mode.c.s
+.PHONY : src\server\proto\irc\irc-mode.c.s
 
-src\server\ngircd\proto\irc-op.obj: src\server\ngircd\proto\irc-op.c.obj
-.PHONY : src\server\ngircd\proto\irc-op.obj
+src\server\proto\irc\irc-op.obj: src\server\proto\irc\irc-op.c.obj
+.PHONY : src\server\proto\irc\irc-op.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-op.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.obj
-.PHONY : src\server\ngircd\proto\irc-op.c.obj
+src\server\proto\irc\irc-op.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-op.c.obj
+.PHONY : src\server\proto\irc\irc-op.c.obj
 
-src\server\ngircd\proto\irc-op.i: src\server\ngircd\proto\irc-op.c.i
-.PHONY : src\server\ngircd\proto\irc-op.i
+src\server\proto\irc\irc-op.i: src\server\proto\irc\irc-op.c.i
+.PHONY : src\server\proto\irc\irc-op.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-op.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.i
-.PHONY : src\server\ngircd\proto\irc-op.c.i
+src\server\proto\irc\irc-op.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-op.c.i
+.PHONY : src\server\proto\irc\irc-op.c.i
 
-src\server\ngircd\proto\irc-op.s: src\server\ngircd\proto\irc-op.c.s
-.PHONY : src\server\ngircd\proto\irc-op.s
+src\server\proto\irc\irc-op.s: src\server\proto\irc\irc-op.c.s
+.PHONY : src\server\proto\irc\irc-op.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-op.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-op.c.s
-.PHONY : src\server\ngircd\proto\irc-op.c.s
+src\server\proto\irc\irc-op.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-op.c.s
+.PHONY : src\server\proto\irc\irc-op.c.s
 
-src\server\ngircd\proto\irc-oper.obj: src\server\ngircd\proto\irc-oper.c.obj
-.PHONY : src\server\ngircd\proto\irc-oper.obj
+src\server\proto\irc\irc-oper.obj: src\server\proto\irc\irc-oper.c.obj
+.PHONY : src\server\proto\irc\irc-oper.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-oper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.obj
-.PHONY : src\server\ngircd\proto\irc-oper.c.obj
+src\server\proto\irc\irc-oper.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-oper.c.obj
+.PHONY : src\server\proto\irc\irc-oper.c.obj
 
-src\server\ngircd\proto\irc-oper.i: src\server\ngircd\proto\irc-oper.c.i
-.PHONY : src\server\ngircd\proto\irc-oper.i
+src\server\proto\irc\irc-oper.i: src\server\proto\irc\irc-oper.c.i
+.PHONY : src\server\proto\irc\irc-oper.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-oper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.i
-.PHONY : src\server\ngircd\proto\irc-oper.c.i
+src\server\proto\irc\irc-oper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-oper.c.i
+.PHONY : src\server\proto\irc\irc-oper.c.i
 
-src\server\ngircd\proto\irc-oper.s: src\server\ngircd\proto\irc-oper.c.s
-.PHONY : src\server\ngircd\proto\irc-oper.s
+src\server\proto\irc\irc-oper.s: src\server\proto\irc\irc-oper.c.s
+.PHONY : src\server\proto\irc\irc-oper.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-oper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-oper.c.s
-.PHONY : src\server\ngircd\proto\irc-oper.c.s
+src\server\proto\irc\irc-oper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-oper.c.s
+.PHONY : src\server\proto\irc\irc-oper.c.s
 
-src\server\ngircd\proto\irc-server.obj: src\server\ngircd\proto\irc-server.c.obj
-.PHONY : src\server\ngircd\proto\irc-server.obj
+src\server\proto\irc\irc-server.obj: src\server\proto\irc\irc-server.c.obj
+.PHONY : src\server\proto\irc\irc-server.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-server.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.obj
-.PHONY : src\server\ngircd\proto\irc-server.c.obj
+src\server\proto\irc\irc-server.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-server.c.obj
+.PHONY : src\server\proto\irc\irc-server.c.obj
 
-src\server\ngircd\proto\irc-server.i: src\server\ngircd\proto\irc-server.c.i
-.PHONY : src\server\ngircd\proto\irc-server.i
+src\server\proto\irc\irc-server.i: src\server\proto\irc\irc-server.c.i
+.PHONY : src\server\proto\irc\irc-server.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-server.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.i
-.PHONY : src\server\ngircd\proto\irc-server.c.i
+src\server\proto\irc\irc-server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-server.c.i
+.PHONY : src\server\proto\irc\irc-server.c.i
 
-src\server\ngircd\proto\irc-server.s: src\server\ngircd\proto\irc-server.c.s
-.PHONY : src\server\ngircd\proto\irc-server.s
+src\server\proto\irc\irc-server.s: src\server\proto\irc\irc-server.c.s
+.PHONY : src\server\proto\irc\irc-server.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-server.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-server.c.s
-.PHONY : src\server\ngircd\proto\irc-server.c.s
+src\server\proto\irc\irc-server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-server.c.s
+.PHONY : src\server\proto\irc\irc-server.c.s
 
-src\server\ngircd\proto\irc-write.obj: src\server\ngircd\proto\irc-write.c.obj
-.PHONY : src\server\ngircd\proto\irc-write.obj
+src\server\proto\irc\irc-write.obj: src\server\proto\irc\irc-write.c.obj
+.PHONY : src\server\proto\irc\irc-write.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc-write.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.obj
-.PHONY : src\server\ngircd\proto\irc-write.c.obj
+src\server\proto\irc\irc-write.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-write.c.obj
+.PHONY : src\server\proto\irc\irc-write.c.obj
 
-src\server\ngircd\proto\irc-write.i: src\server\ngircd\proto\irc-write.c.i
-.PHONY : src\server\ngircd\proto\irc-write.i
+src\server\proto\irc\irc-write.i: src\server\proto\irc\irc-write.c.i
+.PHONY : src\server\proto\irc\irc-write.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc-write.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.i
-.PHONY : src\server\ngircd\proto\irc-write.c.i
+src\server\proto\irc\irc-write.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-write.c.i
+.PHONY : src\server\proto\irc\irc-write.c.i
 
-src\server\ngircd\proto\irc-write.s: src\server\ngircd\proto\irc-write.c.s
-.PHONY : src\server\ngircd\proto\irc-write.s
+src\server\proto\irc\irc-write.s: src\server\proto\irc\irc-write.c.s
+.PHONY : src\server\proto\irc\irc-write.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc-write.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc-write.c.s
-.PHONY : src\server\ngircd\proto\irc-write.c.s
+src\server\proto\irc\irc-write.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc-write.c.s
+.PHONY : src\server\proto\irc\irc-write.c.s
 
-src\server\ngircd\proto\irc.obj: src\server\ngircd\proto\irc.c.obj
-.PHONY : src\server\ngircd\proto\irc.obj
+src\server\proto\irc\irc.obj: src\server\proto\irc\irc.c.obj
+.PHONY : src\server\proto\irc\irc.obj
 
 # target to build an object file
-src\server\ngircd\proto\irc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.obj
-.PHONY : src\server\ngircd\proto\irc.c.obj
+src\server\proto\irc\irc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc.c.obj
+.PHONY : src\server\proto\irc\irc.c.obj
 
-src\server\ngircd\proto\irc.i: src\server\ngircd\proto\irc.c.i
-.PHONY : src\server\ngircd\proto\irc.i
+src\server\proto\irc\irc.i: src\server\proto\irc\irc.c.i
+.PHONY : src\server\proto\irc\irc.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\irc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.i
-.PHONY : src\server\ngircd\proto\irc.c.i
+src\server\proto\irc\irc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc.c.i
+.PHONY : src\server\proto\irc\irc.c.i
 
-src\server\ngircd\proto\irc.s: src\server\ngircd\proto\irc.c.s
-.PHONY : src\server\ngircd\proto\irc.s
+src\server\proto\irc\irc.s: src\server\proto\irc\irc.c.s
+.PHONY : src\server\proto\irc\irc.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\irc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\irc.c.s
-.PHONY : src\server\ngircd\proto\irc.c.s
+src\server\proto\irc\irc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\irc.c.s
+.PHONY : src\server\proto\irc\irc.c.s
 
-src\server\ngircd\proto\join_check.obj: src\server\ngircd\proto\join_check.c.obj
-.PHONY : src\server\ngircd\proto\join_check.obj
+src\server\proto\irc\parse.obj: src\server\proto\irc\parse.c.obj
+.PHONY : src\server\proto\irc\parse.obj
 
 # target to build an object file
-src\server\ngircd\proto\join_check.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\ngircd\proto\join_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\join_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\join_check.c.obj
-.PHONY : src\server\ngircd\proto\join_check.c.obj
+src\server\proto\irc\parse.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\parse.c.obj
+.PHONY : src\server\proto\irc\parse.c.obj
 
-src\server\ngircd\proto\join_check.i: src\server\ngircd\proto\join_check.c.i
-.PHONY : src\server\ngircd\proto\join_check.i
+src\server\proto\irc\parse.i: src\server\proto\irc\parse.c.i
+.PHONY : src\server\proto\irc\parse.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\join_check.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\ngircd\proto\join_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\join_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\join_check.c.i
-.PHONY : src\server\ngircd\proto\join_check.c.i
+src\server\proto\irc\parse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\parse.c.i
+.PHONY : src\server\proto\irc\parse.c.i
 
-src\server\ngircd\proto\join_check.s: src\server\ngircd\proto\join_check.c.s
-.PHONY : src\server\ngircd\proto\join_check.s
+src\server\proto\irc\parse.s: src\server\proto\irc\parse.c.s
+.PHONY : src\server\proto\irc\parse.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\join_check.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_check_test.dir\src\server\ngircd\proto\join_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\ngircd\proto\join_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\join_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\join_check.c.s
-.PHONY : src\server\ngircd\proto\join_check.c.s
+src\server\proto\irc\parse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\irc\parse.c.s
+.PHONY : src\server\proto\irc\parse.c.s
 
-src\server\ngircd\proto\join_error.obj: src\server\ngircd\proto\join_error.c.obj
-.PHONY : src\server\ngircd\proto\join_error.obj
+src\server\proto\join\join_check.obj: src\server\proto\join\join_check.c.obj
+.PHONY : src\server\proto\join\join_check.obj
 
 # target to build an object file
-src\server\ngircd\proto\join_error.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\ngircd\proto\join_error.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\join_error.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\join_error.c.obj
-.PHONY : src\server\ngircd\proto\join_error.c.obj
+src\server\proto\join\join_check.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\join\join_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_check_test.dir\src\server\proto\join\join_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\proto\join\join_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\join\join_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_check.c.obj
+.PHONY : src\server\proto\join\join_check.c.obj
 
-src\server\ngircd\proto\join_error.i: src\server\ngircd\proto\join_error.c.i
-.PHONY : src\server\ngircd\proto\join_error.i
+src\server\proto\join\join_check.i: src\server\proto\join\join_check.c.i
+.PHONY : src\server\proto\join\join_check.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\join_error.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\ngircd\proto\join_error.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\join_error.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\join_error.c.i
-.PHONY : src\server\ngircd\proto\join_error.c.i
+src\server\proto\join\join_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\join\join_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_check_test.dir\src\server\proto\join\join_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\proto\join\join_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\join\join_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_check.c.i
+.PHONY : src\server\proto\join\join_check.c.i
 
-src\server\ngircd\proto\join_error.s: src\server\ngircd\proto\join_error.c.s
-.PHONY : src\server\ngircd\proto\join_error.s
+src\server\proto\join\join_check.s: src\server\proto\join\join_check.c.s
+.PHONY : src\server\proto\join\join_check.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\join_error.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\join_error.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\ngircd\proto\join_error.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\join_error.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\join_error.c.s
-.PHONY : src\server\ngircd\proto\join_error.c.s
+src\server\proto\join\join_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\join\join_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_check_test.dir\src\server\proto\join\join_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\proto\join\join_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\join\join_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_check.c.s
+.PHONY : src\server\proto\join\join_check.c.s
 
-src\server\ngircd\proto\login_check.obj: src\server\ngircd\proto\login_check.c.obj
-.PHONY : src\server\ngircd\proto\login_check.obj
+src\server\proto\join\join_error.obj: src\server\proto\join\join_error.c.obj
+.PHONY : src\server\proto\join\join_error.obj
 
 # target to build an object file
-src\server\ngircd\proto\login_check.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_check_test.dir\src\server\ngircd\proto\login_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\login_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_check.c.obj
-.PHONY : src\server\ngircd\proto\login_check.c.obj
+src\server\proto\join\join_error.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\join\join_error.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\proto\join\join_error.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\join\join_error.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_error.c.obj
+.PHONY : src\server\proto\join\join_error.c.obj
 
-src\server\ngircd\proto\login_check.i: src\server\ngircd\proto\login_check.c.i
-.PHONY : src\server\ngircd\proto\login_check.i
+src\server\proto\join\join_error.i: src\server\proto\join\join_error.c.i
+.PHONY : src\server\proto\join\join_error.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\login_check.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_check_test.dir\src\server\ngircd\proto\login_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\login_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_check.c.i
-.PHONY : src\server\ngircd\proto\login_check.c.i
+src\server\proto\join\join_error.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\join\join_error.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\proto\join\join_error.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\join\join_error.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_error.c.i
+.PHONY : src\server\proto\join\join_error.c.i
 
-src\server\ngircd\proto\login_check.s: src\server\ngircd\proto\login_check.c.s
-.PHONY : src\server\ngircd\proto\login_check.s
+src\server\proto\join\join_error.s: src\server\proto\join\join_error.c.s
+.PHONY : src\server\proto\join\join_error.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\login_check.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_check_test.dir\src\server\ngircd\proto\login_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\login_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_check.c.s
-.PHONY : src\server\ngircd\proto\login_check.c.s
+src\server\proto\join\join_error.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\join\join_error.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\join_error_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\join_error_test.dir\src\server\proto\join\join_error.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\join\join_error.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_error.c.s
+.PHONY : src\server\proto\join\join_error.c.s
 
-src\server\ngircd\proto\login_flow.obj: src\server\ngircd\proto\login_flow.c.obj
-.PHONY : src\server\ngircd\proto\login_flow.obj
+src\server\proto\login\login_check.obj: src\server\proto\login\login_check.c.obj
+.PHONY : src\server\proto\login\login_check.obj
 
 # target to build an object file
-src\server\ngircd\proto\login_flow.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_flow_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_flow_test.dir\src\server\ngircd\proto\login_flow.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\login_flow.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_flow.c.obj
-.PHONY : src\server\ngircd\proto\login_flow.c.obj
+src\server\proto\login\login_check.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_check_test.dir\src\server\proto\login\login_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\login\login_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_check.c.obj
+.PHONY : src\server\proto\login\login_check.c.obj
 
-src\server\ngircd\proto\login_flow.i: src\server\ngircd\proto\login_flow.c.i
-.PHONY : src\server\ngircd\proto\login_flow.i
+src\server\proto\login\login_check.i: src\server\proto\login\login_check.c.i
+.PHONY : src\server\proto\login\login_check.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\login_flow.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_flow_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_flow_test.dir\src\server\ngircd\proto\login_flow.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\login_flow.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_flow.c.i
-.PHONY : src\server\ngircd\proto\login_flow.c.i
+src\server\proto\login\login_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_check_test.dir\src\server\proto\login\login_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\login\login_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_check.c.i
+.PHONY : src\server\proto\login\login_check.c.i
 
-src\server\ngircd\proto\login_flow.s: src\server\ngircd\proto\login_flow.c.s
-.PHONY : src\server\ngircd\proto\login_flow.s
+src\server\proto\login\login_check.s: src\server\proto\login\login_check.c.s
+.PHONY : src\server\proto\login\login_check.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\login_flow.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_flow.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_flow_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_flow_test.dir\src\server\ngircd\proto\login_flow.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\login_flow.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_flow.c.s
-.PHONY : src\server\ngircd\proto\login_flow.c.s
+src\server\proto\login\login_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_check_test.dir\src\server\proto\login\login_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\login\login_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_check.c.s
+.PHONY : src\server\proto\login\login_check.c.s
 
-src\server\ngircd\proto\login_state.obj: src\server\ngircd\proto\login_state.c.obj
-.PHONY : src\server\ngircd\proto\login_state.obj
+src\server\proto\login\login_flow.obj: src\server\proto\login\login_flow.c.obj
+.PHONY : src\server\proto\login\login_flow.obj
 
 # target to build an object file
-src\server\ngircd\proto\login_state.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_state_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_state_test.dir\src\server\ngircd\proto\login_state.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_state.c.obj
-.PHONY : src\server\ngircd\proto\login_state.c.obj
+src\server\proto\login\login_flow.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_flow.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_flow_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_flow_test.dir\src\server\proto\login\login_flow.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\login\login_flow.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_flow.c.obj
+.PHONY : src\server\proto\login\login_flow.c.obj
 
-src\server\ngircd\proto\login_state.i: src\server\ngircd\proto\login_state.c.i
-.PHONY : src\server\ngircd\proto\login_state.i
+src\server\proto\login\login_flow.i: src\server\proto\login\login_flow.c.i
+.PHONY : src\server\proto\login\login_flow.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\login_state.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_state_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_state_test.dir\src\server\ngircd\proto\login_state.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_state.c.i
-.PHONY : src\server\ngircd\proto\login_state.c.i
+src\server\proto\login\login_flow.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_flow.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_flow_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_flow_test.dir\src\server\proto\login\login_flow.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\login\login_flow.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_flow.c.i
+.PHONY : src\server\proto\login\login_flow.c.i
 
-src\server\ngircd\proto\login_state.s: src\server\ngircd\proto\login_state.c.s
-.PHONY : src\server\ngircd\proto\login_state.s
+src\server\proto\login\login_flow.s: src\server\proto\login\login_flow.c.s
+.PHONY : src\server\proto\login\login_flow.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\login_state.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\login_state.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_state_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_state_test.dir\src\server\ngircd\proto\login_state.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\login_state.c.s
-.PHONY : src\server\ngircd\proto\login_state.c.s
+src\server\proto\login\login_flow.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_flow.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_flow_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_flow_test.dir\src\server\proto\login\login_flow.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\login\login_flow.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_flow.c.s
+.PHONY : src\server\proto\login\login_flow.c.s
 
-src\server\ngircd\proto\message_check.obj: src\server\ngircd\proto\message_check.c.obj
-.PHONY : src\server\ngircd\proto\message_check.obj
+src\server\proto\login\login_state.obj: src\server\proto\login\login_state.c.obj
+.PHONY : src\server\proto\login\login_state.obj
 
 # target to build an object file
-src\server\ngircd\proto\message_check.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\message_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\src\server\ngircd\proto\message_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\message_check.c.obj
-.PHONY : src\server\ngircd\proto\message_check.c.obj
+src\server\proto\login\login_state.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_state.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_state_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_state_test.dir\src\server\proto\login\login_state.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.obj
+.PHONY : src\server\proto\login\login_state.c.obj
 
-src\server\ngircd\proto\message_check.i: src\server\ngircd\proto\message_check.c.i
-.PHONY : src\server\ngircd\proto\message_check.i
+src\server\proto\login\login_state.i: src\server\proto\login\login_state.c.i
+.PHONY : src\server\proto\login\login_state.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\message_check.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\message_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\src\server\ngircd\proto\message_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\message_check.c.i
-.PHONY : src\server\ngircd\proto\message_check.c.i
+src\server\proto\login\login_state.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_state.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_state_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_state_test.dir\src\server\proto\login\login_state.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.i
+.PHONY : src\server\proto\login\login_state.c.i
 
-src\server\ngircd\proto\message_check.s: src\server\ngircd\proto\message_check.c.s
-.PHONY : src\server\ngircd\proto\message_check.s
+src\server\proto\login\login_state.s: src\server\proto\login\login_state.c.s
+.PHONY : src\server\proto\login\login_state.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\message_check.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\message_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\message_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\src\server\ngircd\proto\message_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\message_check.c.s
-.PHONY : src\server\ngircd\proto\message_check.c.s
+src\server\proto\login\login_state.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\login\login_state.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\login_state_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\login_state_test.dir\src\server\proto\login\login_state.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.s
+.PHONY : src\server\proto\login\login_state.c.s
 
-src\server\ngircd\proto\nick_check.obj: src\server\ngircd\proto\nick_check.c.obj
-.PHONY : src\server\ngircd\proto\nick_check.obj
+src\server\proto\message\message_check.obj: src\server\proto\message\message_check.c.obj
+.PHONY : src\server\proto\message\message_check.obj
 
 # target to build an object file
-src\server\ngircd\proto\nick_check.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nick_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nick_check_test.dir\src\server\ngircd\proto\nick_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\nick_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\nick_check.c.obj
-.PHONY : src\server\ngircd\proto\nick_check.c.obj
+src\server\proto\message\message_check.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\message\message_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\message\message_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\src\server\proto\message\message_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\message\message_check.c.obj
+.PHONY : src\server\proto\message\message_check.c.obj
 
-src\server\ngircd\proto\nick_check.i: src\server\ngircd\proto\nick_check.c.i
-.PHONY : src\server\ngircd\proto\nick_check.i
+src\server\proto\message\message_check.i: src\server\proto\message\message_check.c.i
+.PHONY : src\server\proto\message\message_check.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\nick_check.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nick_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nick_check_test.dir\src\server\ngircd\proto\nick_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\nick_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\nick_check.c.i
-.PHONY : src\server\ngircd\proto\nick_check.c.i
+src\server\proto\message\message_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\message\message_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\message\message_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\src\server\proto\message\message_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\message\message_check.c.i
+.PHONY : src\server\proto\message\message_check.c.i
 
-src\server\ngircd\proto\nick_check.s: src\server\ngircd\proto\nick_check.c.s
-.PHONY : src\server\ngircd\proto\nick_check.s
+src\server\proto\message\message_check.s: src\server\proto\message\message_check.c.s
+.PHONY : src\server\proto\message\message_check.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\nick_check.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\nick_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\nick_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nick_check_test.dir\src\server\ngircd\proto\nick_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\nick_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\nick_check.c.s
-.PHONY : src\server\ngircd\proto\nick_check.c.s
+src\server\proto\message\message_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\message\message_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\message\message_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\message_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\message_check_test.dir\src\server\proto\message\message_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\message\message_check.c.s
+.PHONY : src\server\proto\message\message_check.c.s
 
-src\server\ngircd\proto\parse.obj: src\server\ngircd\proto\parse.c.obj
-.PHONY : src\server\ngircd\proto\parse.obj
+src\server\proto\nick\nick_check.obj: src\server\proto\nick\nick_check.c.obj
+.PHONY : src\server\proto\nick\nick_check.obj
 
 # target to build an object file
-src\server\ngircd\proto\parse.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.obj
-.PHONY : src\server\ngircd\proto\parse.c.obj
+src\server\proto\nick\nick_check.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\nick\nick_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\nick_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nick_check_test.dir\src\server\proto\nick\nick_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\nick\nick_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\nick\nick_check.c.obj
+.PHONY : src\server\proto\nick\nick_check.c.obj
 
-src\server\ngircd\proto\parse.i: src\server\ngircd\proto\parse.c.i
-.PHONY : src\server\ngircd\proto\parse.i
+src\server\proto\nick\nick_check.i: src\server\proto\nick\nick_check.c.i
+.PHONY : src\server\proto\nick\nick_check.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\parse.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.i
-.PHONY : src\server\ngircd\proto\parse.c.i
+src\server\proto\nick\nick_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\nick\nick_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\nick_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nick_check_test.dir\src\server\proto\nick\nick_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\nick\nick_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\nick\nick_check.c.i
+.PHONY : src\server\proto\nick\nick_check.c.i
 
-src\server\ngircd\proto\parse.s: src\server\ngircd\proto\parse.c.s
-.PHONY : src\server\ngircd\proto\parse.s
+src\server\proto\nick\nick_check.s: src\server\proto\nick\nick_check.c.s
+.PHONY : src\server\proto\nick\nick_check.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\parse.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\parse.c.s
-.PHONY : src\server\ngircd\proto\parse.c.s
+src\server\proto\nick\nick_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\nick\nick_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\nick_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\nick_check_test.dir\src\server\proto\nick\nick_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\nick\nick_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\nick\nick_check.c.s
+.PHONY : src\server\proto\nick\nick_check.c.s
 
-src\server\ngircd\proto\user_check.obj: src\server\ngircd\proto\user_check.c.obj
-.PHONY : src\server\ngircd\proto\user_check.obj
+src\server\proto\user\user_check.obj: src\server\proto\user\user_check.c.obj
+.PHONY : src\server\proto\user\user_check.obj
 
 # target to build an object file
-src\server\ngircd\proto\user_check.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\user_check.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\user_check.c.obj
-.PHONY : src\server\ngircd\proto\user_check.c.obj
+src\server\proto\user\user_check.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\user\user_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\user\user_check.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\user\user_check.c.obj
+.PHONY : src\server\proto\user\user_check.c.obj
 
-src\server\ngircd\proto\user_check.i: src\server\ngircd\proto\user_check.c.i
-.PHONY : src\server\ngircd\proto\user_check.i
+src\server\proto\user\user_check.i: src\server\proto\user\user_check.c.i
+.PHONY : src\server\proto\user\user_check.i
 
 # target to preprocess a source file
-src\server\ngircd\proto\user_check.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\user_check.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\user_check.c.i
-.PHONY : src\server\ngircd\proto\user_check.c.i
+src\server\proto\user\user_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\user\user_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\user\user_check.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\user\user_check.c.i
+.PHONY : src\server\proto\user\user_check.c.i
 
-src\server\ngircd\proto\user_check.s: src\server\ngircd\proto\user_check.c.s
-.PHONY : src\server\ngircd\proto\user_check.s
+src\server\proto\user\user_check.s: src\server\proto\user\user_check.c.s
+.PHONY : src\server\proto\user\user_check.s
 
 # target to generate assembly for a file
-src\server\ngircd\proto\user_check.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\ngircd\proto\user_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\user_check_test.dir\src\server\ngircd\proto\user_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\ngircd\proto\user_check.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\ngircd\proto\user_check.c.s
-.PHONY : src\server\ngircd\proto\user_check.c.s
+src\server\proto\user\user_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ngircd_impl.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ngircd_impl.dir\src\server\proto\user\user_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_check_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\user_check_test.dir\src\server\proto\user\user_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\branch_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\branch_coverage_test.dir\src\server\proto\user\user_check.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\full_coverage_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\full_coverage_test.dir\src\server\proto\user\user_check.c.s
+.PHONY : src\server\proto\user\user_check.c.s
 
 src\state\channel_state\channel_state.obj: src\state\channel_state\channel_state.c.obj
 .PHONY : src\state\channel_state\channel_state.obj
@@ -3320,126 +3320,126 @@ help:
 	@echo ... src/protocol/irc_protocol/irc_protocol.obj
 	@echo ... src/protocol/irc_protocol/irc_protocol.i
 	@echo ... src/protocol/irc_protocol/irc_protocol.s
-	@echo ... src/server/ngircd/channel.obj
-	@echo ... src/server/ngircd/channel.i
-	@echo ... src/server/ngircd/channel.s
-	@echo ... src/server/ngircd/core/array.obj
-	@echo ... src/server/ngircd/core/array.i
-	@echo ... src/server/ngircd/core/array.s
-	@echo ... src/server/ngircd/core/class.obj
-	@echo ... src/server/ngircd/core/class.i
-	@echo ... src/server/ngircd/core/class.s
-	@echo ... src/server/ngircd/core/client-cap.obj
-	@echo ... src/server/ngircd/core/client-cap.i
-	@echo ... src/server/ngircd/core/client-cap.s
-	@echo ... src/server/ngircd/core/client.obj
-	@echo ... src/server/ngircd/core/client.i
-	@echo ... src/server/ngircd/core/client.s
-	@echo ... src/server/ngircd/core/conf.obj
-	@echo ... src/server/ngircd/core/conf.i
-	@echo ... src/server/ngircd/core/conf.s
-	@echo ... src/server/ngircd/core/hash.obj
-	@echo ... src/server/ngircd/core/hash.i
-	@echo ... src/server/ngircd/core/hash.s
-	@echo ... src/server/ngircd/core/lists.obj
-	@echo ... src/server/ngircd/core/lists.i
-	@echo ... src/server/ngircd/core/lists.s
-	@echo ... src/server/ngircd/core/log.obj
-	@echo ... src/server/ngircd/core/log.i
-	@echo ... src/server/ngircd/core/log.s
-	@echo ... src/server/ngircd/core/login.obj
-	@echo ... src/server/ngircd/core/login.i
-	@echo ... src/server/ngircd/core/login.s
-	@echo ... src/server/ngircd/core/match.obj
-	@echo ... src/server/ngircd/core/match.i
-	@echo ... src/server/ngircd/core/match.s
-	@echo ... src/server/ngircd/core/module_iface.obj
-	@echo ... src/server/ngircd/core/module_iface.i
-	@echo ... src/server/ngircd/core/module_iface.s
-	@echo ... src/server/ngircd/core/numeric.obj
-	@echo ... src/server/ngircd/core/numeric.i
-	@echo ... src/server/ngircd/core/numeric.s
-	@echo ... src/server/ngircd/core/op.obj
-	@echo ... src/server/ngircd/core/op.i
-	@echo ... src/server/ngircd/core/op.s
-	@echo ... src/server/ngircd/net/conn-encoding.obj
-	@echo ... src/server/ngircd/net/conn-encoding.i
-	@echo ... src/server/ngircd/net/conn-encoding.s
-	@echo ... src/server/ngircd/net/conn-func.obj
-	@echo ... src/server/ngircd/net/conn-func.i
-	@echo ... src/server/ngircd/net/conn-func.s
-	@echo ... src/server/ngircd/net/conn.obj
-	@echo ... src/server/ngircd/net/conn.i
-	@echo ... src/server/ngircd/net/conn.s
-	@echo ... src/server/ngircd/net/io.obj
-	@echo ... src/server/ngircd/net/io.i
-	@echo ... src/server/ngircd/net/io.s
-	@echo ... src/server/ngircd/platform/ngircd.obj
-	@echo ... src/server/ngircd/platform/ngircd.i
-	@echo ... src/server/ngircd/platform/ngircd.s
-	@echo ... src/server/ngircd/proto/irc-cap.obj
-	@echo ... src/server/ngircd/proto/irc-cap.i
-	@echo ... src/server/ngircd/proto/irc-cap.s
-	@echo ... src/server/ngircd/proto/irc-channel.obj
-	@echo ... src/server/ngircd/proto/irc-channel.i
-	@echo ... src/server/ngircd/proto/irc-channel.s
-	@echo ... src/server/ngircd/proto/irc-encoding.obj
-	@echo ... src/server/ngircd/proto/irc-encoding.i
-	@echo ... src/server/ngircd/proto/irc-encoding.s
-	@echo ... src/server/ngircd/proto/irc-info.obj
-	@echo ... src/server/ngircd/proto/irc-info.i
-	@echo ... src/server/ngircd/proto/irc-info.s
-	@echo ... src/server/ngircd/proto/irc-login.obj
-	@echo ... src/server/ngircd/proto/irc-login.i
-	@echo ... src/server/ngircd/proto/irc-login.s
-	@echo ... src/server/ngircd/proto/irc-metadata.obj
-	@echo ... src/server/ngircd/proto/irc-metadata.i
-	@echo ... src/server/ngircd/proto/irc-metadata.s
-	@echo ... src/server/ngircd/proto/irc-mode.obj
-	@echo ... src/server/ngircd/proto/irc-mode.i
-	@echo ... src/server/ngircd/proto/irc-mode.s
-	@echo ... src/server/ngircd/proto/irc-op.obj
-	@echo ... src/server/ngircd/proto/irc-op.i
-	@echo ... src/server/ngircd/proto/irc-op.s
-	@echo ... src/server/ngircd/proto/irc-oper.obj
-	@echo ... src/server/ngircd/proto/irc-oper.i
-	@echo ... src/server/ngircd/proto/irc-oper.s
-	@echo ... src/server/ngircd/proto/irc-server.obj
-	@echo ... src/server/ngircd/proto/irc-server.i
-	@echo ... src/server/ngircd/proto/irc-server.s
-	@echo ... src/server/ngircd/proto/irc-write.obj
-	@echo ... src/server/ngircd/proto/irc-write.i
-	@echo ... src/server/ngircd/proto/irc-write.s
-	@echo ... src/server/ngircd/proto/irc.obj
-	@echo ... src/server/ngircd/proto/irc.i
-	@echo ... src/server/ngircd/proto/irc.s
-	@echo ... src/server/ngircd/proto/join_check.obj
-	@echo ... src/server/ngircd/proto/join_check.i
-	@echo ... src/server/ngircd/proto/join_check.s
-	@echo ... src/server/ngircd/proto/join_error.obj
-	@echo ... src/server/ngircd/proto/join_error.i
-	@echo ... src/server/ngircd/proto/join_error.s
-	@echo ... src/server/ngircd/proto/login_check.obj
-	@echo ... src/server/ngircd/proto/login_check.i
-	@echo ... src/server/ngircd/proto/login_check.s
-	@echo ... src/server/ngircd/proto/login_flow.obj
-	@echo ... src/server/ngircd/proto/login_flow.i
-	@echo ... src/server/ngircd/proto/login_flow.s
-	@echo ... src/server/ngircd/proto/login_state.obj
-	@echo ... src/server/ngircd/proto/login_state.i
-	@echo ... src/server/ngircd/proto/login_state.s
-	@echo ... src/server/ngircd/proto/message_check.obj
-	@echo ... src/server/ngircd/proto/message_check.i
-	@echo ... src/server/ngircd/proto/message_check.s
-	@echo ... src/server/ngircd/proto/nick_check.obj
-	@echo ... src/server/ngircd/proto/nick_check.i
-	@echo ... src/server/ngircd/proto/nick_check.s
-	@echo ... src/server/ngircd/proto/parse.obj
-	@echo ... src/server/ngircd/proto/parse.i
-	@echo ... src/server/ngircd/proto/parse.s
-	@echo ... src/server/ngircd/proto/user_check.obj
-	@echo ... src/server/ngircd/proto/user_check.i
-	@echo ... src/server/ngircd/proto/user_check.s
+	@echo ... src/server/core/channel/channel.obj
+	@echo ... src/server/core/channel/channel.i
+	@echo ... src/server/core/channel/channel.s
+	@echo ... src/server/core/client/client-cap.obj
+	@echo ... src/server/core/client/client-cap.i
+	@echo ... src/server/core/client/client-cap.s
+	@echo ... src/server/core/client/client.obj
+	@echo ... src/server/core/client/client.i
+	@echo ... src/server/core/client/client.s
+	@echo ... src/server/core/config/conf.obj
+	@echo ... src/server/core/config/conf.i
+	@echo ... src/server/core/config/conf.s
+	@echo ... src/server/core/logging/log.obj
+	@echo ... src/server/core/logging/log.i
+	@echo ... src/server/core/logging/log.s
+	@echo ... src/server/core/login.obj
+	@echo ... src/server/core/login.i
+	@echo ... src/server/core/login.s
+	@echo ... src/server/core/misc/array.obj
+	@echo ... src/server/core/misc/array.i
+	@echo ... src/server/core/misc/array.s
+	@echo ... src/server/core/misc/class.obj
+	@echo ... src/server/core/misc/class.i
+	@echo ... src/server/core/misc/class.s
+	@echo ... src/server/core/misc/hash.obj
+	@echo ... src/server/core/misc/hash.i
+	@echo ... src/server/core/misc/hash.s
+	@echo ... src/server/core/misc/lists.obj
+	@echo ... src/server/core/misc/lists.i
+	@echo ... src/server/core/misc/lists.s
+	@echo ... src/server/core/misc/match.obj
+	@echo ... src/server/core/misc/match.i
+	@echo ... src/server/core/misc/match.s
+	@echo ... src/server/core/misc/numeric.obj
+	@echo ... src/server/core/misc/numeric.i
+	@echo ... src/server/core/misc/numeric.s
+	@echo ... src/server/core/misc/op.obj
+	@echo ... src/server/core/misc/op.i
+	@echo ... src/server/core/misc/op.s
+	@echo ... src/server/core/module/module_iface.obj
+	@echo ... src/server/core/module/module_iface.i
+	@echo ... src/server/core/module/module_iface.s
+	@echo ... src/server/net/conn/conn-encoding.obj
+	@echo ... src/server/net/conn/conn-encoding.i
+	@echo ... src/server/net/conn/conn-encoding.s
+	@echo ... src/server/net/conn/conn-func.obj
+	@echo ... src/server/net/conn/conn-func.i
+	@echo ... src/server/net/conn/conn-func.s
+	@echo ... src/server/net/conn/conn.obj
+	@echo ... src/server/net/conn/conn.i
+	@echo ... src/server/net/conn/conn.s
+	@echo ... src/server/net/conn/io.obj
+	@echo ... src/server/net/conn/io.i
+	@echo ... src/server/net/conn/io.s
+	@echo ... src/server/platform/ngircd.obj
+	@echo ... src/server/platform/ngircd.i
+	@echo ... src/server/platform/ngircd.s
+	@echo ... src/server/proto/irc/irc-cap.obj
+	@echo ... src/server/proto/irc/irc-cap.i
+	@echo ... src/server/proto/irc/irc-cap.s
+	@echo ... src/server/proto/irc/irc-channel.obj
+	@echo ... src/server/proto/irc/irc-channel.i
+	@echo ... src/server/proto/irc/irc-channel.s
+	@echo ... src/server/proto/irc/irc-encoding.obj
+	@echo ... src/server/proto/irc/irc-encoding.i
+	@echo ... src/server/proto/irc/irc-encoding.s
+	@echo ... src/server/proto/irc/irc-info.obj
+	@echo ... src/server/proto/irc/irc-info.i
+	@echo ... src/server/proto/irc/irc-info.s
+	@echo ... src/server/proto/irc/irc-login.obj
+	@echo ... src/server/proto/irc/irc-login.i
+	@echo ... src/server/proto/irc/irc-login.s
+	@echo ... src/server/proto/irc/irc-metadata.obj
+	@echo ... src/server/proto/irc/irc-metadata.i
+	@echo ... src/server/proto/irc/irc-metadata.s
+	@echo ... src/server/proto/irc/irc-mode.obj
+	@echo ... src/server/proto/irc/irc-mode.i
+	@echo ... src/server/proto/irc/irc-mode.s
+	@echo ... src/server/proto/irc/irc-op.obj
+	@echo ... src/server/proto/irc/irc-op.i
+	@echo ... src/server/proto/irc/irc-op.s
+	@echo ... src/server/proto/irc/irc-oper.obj
+	@echo ... src/server/proto/irc/irc-oper.i
+	@echo ... src/server/proto/irc/irc-oper.s
+	@echo ... src/server/proto/irc/irc-server.obj
+	@echo ... src/server/proto/irc/irc-server.i
+	@echo ... src/server/proto/irc/irc-server.s
+	@echo ... src/server/proto/irc/irc-write.obj
+	@echo ... src/server/proto/irc/irc-write.i
+	@echo ... src/server/proto/irc/irc-write.s
+	@echo ... src/server/proto/irc/irc.obj
+	@echo ... src/server/proto/irc/irc.i
+	@echo ... src/server/proto/irc/irc.s
+	@echo ... src/server/proto/irc/parse.obj
+	@echo ... src/server/proto/irc/parse.i
+	@echo ... src/server/proto/irc/parse.s
+	@echo ... src/server/proto/join/join_check.obj
+	@echo ... src/server/proto/join/join_check.i
+	@echo ... src/server/proto/join/join_check.s
+	@echo ... src/server/proto/join/join_error.obj
+	@echo ... src/server/proto/join/join_error.i
+	@echo ... src/server/proto/join/join_error.s
+	@echo ... src/server/proto/login/login_check.obj
+	@echo ... src/server/proto/login/login_check.i
+	@echo ... src/server/proto/login/login_check.s
+	@echo ... src/server/proto/login/login_flow.obj
+	@echo ... src/server/proto/login/login_flow.i
+	@echo ... src/server/proto/login/login_flow.s
+	@echo ... src/server/proto/login/login_state.obj
+	@echo ... src/server/proto/login/login_state.i
+	@echo ... src/server/proto/login/login_state.s
+	@echo ... src/server/proto/message/message_check.obj
+	@echo ... src/server/proto/message/message_check.i
+	@echo ... src/server/proto/message/message_check.s
+	@echo ... src/server/proto/nick/nick_check.obj
+	@echo ... src/server/proto/nick/nick_check.i
+	@echo ... src/server/proto/nick/nick_check.s
+	@echo ... src/server/proto/user/user_check.obj
+	@echo ... src/server/proto/user/user_check.i
+	@echo ... src/server/proto/user/user_check.s
 	@echo ... src/state/channel_state/channel_state.obj
 	@echo ... src/state/channel_state/channel_state.i
 	@echo ... src/state/channel_state/channel_state.s

@@ -13,7 +13,7 @@ CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\include\core\runtime\module_api.h
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
@@ -26,8 +26,8 @@ CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
-CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\win32\include\sys\socket.h
-CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\win32\include\win32compat.h
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\socket.h
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\platform\windows\include\win32compat.h
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
@@ -148,7 +148,7 @@ CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\server\ngircd\io.h
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\server\ngircd\module_iface.h
-CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\win32\include\sys\time.h
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\math.h"
@@ -158,8 +158,8 @@ CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\win32\include\netinet\in.h
-CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\win32\include\arpa\inet.h
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\platform\windows\include\netinet\in.h
+CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\platform\windows\include\arpa\inet.h
 CMakeFiles\resolver.dir\src\net\resolver\resolver.c.obj: C:\develop\ngircd\src\server\ngircd\resolve.h
 
 
@@ -212,7 +212,11 @@ C:\develop\ngircd\include\core\runtime\module_api.h:
 
 C:\develop\ngircd\src\support\portab\portab.h:
 
-C:\develop\ngircd\win32\include\config.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
+
+C:\develop\ngircd\src\platform\windows\include\config.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 
@@ -240,13 +244,15 @@ C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h":
 
-C:\develop\ngircd\win32\include\sys\socket.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
+C:\develop\ngircd\src\platform\windows\include\sys\socket.h:
 
-C:\develop\ngircd\win32\include\win32compat.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
+
+C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h":
 
@@ -272,8 +278,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h":
@@ -284,15 +288,11 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h":
 
@@ -408,7 +408,7 @@ C:\develop\ngircd\src\server\ngircd\io.h:
 
 C:\develop\ngircd\src\server\ngircd\module_iface.h:
 
-C:\develop\ngircd\win32\include\sys\time.h:
+C:\develop\ngircd\src\platform\windows\include\sys\time.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h":
 
@@ -426,8 +426,8 @@ C:\develop\ngircd\win32\include\sys\time.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h":
 
-C:\develop\ngircd\win32\include\netinet\in.h:
+C:\develop\ngircd\src\platform\windows\include\netinet\in.h:
 
-C:\develop\ngircd\win32\include\arpa\inet.h:
+C:\develop\ngircd\src\platform\windows\include\arpa\inet.h:
 
 C:\develop\ngircd\src\server\ngircd\resolve.h:

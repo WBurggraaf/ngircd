@@ -24,6 +24,6 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/signal.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
-C:/develop/ngircd/src/server/ngircd/ngircd.h
-C:/develop/ngircd/src/server/ngircd/defines.h
-C:/develop/ngircd/src/server/ngircd/sighandlers.h
+C:/develop/ngircd/src/server/core/misc/ngircd.h
+C:/develop/ngircd/src/server/core/misc/defines.h
+C:/develop/ngircd/src/server/platform/sighandlers.h

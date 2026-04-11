@@ -5,8 +5,26 @@ set(CMAKE_C_STANDARD 99)
 include(CTest)
 
 # Source directories
-set(SERVER_SRC "${CMAKE_SOURCE_DIR}/src/server/ngircd")
+set(SERVER_SRC "${CMAKE_SOURCE_DIR}/src/server")
 set(SERVER_ROOT "${CMAKE_SOURCE_DIR}/src/server")
+set(SERVER_CORE_INC "${CMAKE_SOURCE_DIR}/src/server/core")
+set(SERVER_CORE_MISC_INC "${CMAKE_SOURCE_DIR}/src/server/core/misc")
+set(SERVER_CORE_CHANNEL_INC "${CMAKE_SOURCE_DIR}/src/server/core/channel")
+set(SERVER_CORE_CLIENT_INC "${CMAKE_SOURCE_DIR}/src/server/core/client")
+set(SERVER_CORE_CONFIG_INC "${CMAKE_SOURCE_DIR}/src/server/core/config")
+set(SERVER_CORE_LOGGING_INC "${CMAKE_SOURCE_DIR}/src/server/core/logging")
+set(SERVER_CORE_MODULE_INC "${CMAKE_SOURCE_DIR}/src/server/core/module")
+set(SERVER_NET_INC "${CMAKE_SOURCE_DIR}/src/server/net")
+set(SERVER_NET_CONN_INC "${CMAKE_SOURCE_DIR}/src/server/net/conn")
+set(SERVER_NET_PROC_INC "${CMAKE_SOURCE_DIR}/src/server/net/proc")
+set(SERVER_PROTO_INC "${CMAKE_SOURCE_DIR}/src/server/proto")
+set(SERVER_PROTO_IRC_INC "${CMAKE_SOURCE_DIR}/src/server/proto/irc")
+set(SERVER_PROTO_JOIN_INC "${CMAKE_SOURCE_DIR}/src/server/proto/join")
+set(SERVER_PROTO_LOGIN_INC "${CMAKE_SOURCE_DIR}/src/server/proto/login")
+set(SERVER_PROTO_MESSAGE_INC "${CMAKE_SOURCE_DIR}/src/server/proto/message")
+set(SERVER_PROTO_NICK_INC "${CMAKE_SOURCE_DIR}/src/server/proto/nick")
+set(SERVER_PROTO_USER_INC "${CMAKE_SOURCE_DIR}/src/server/proto/user")
+set(SERVER_PLATFORM_INC "${CMAKE_SOURCE_DIR}/src/server/platform")
 set(SUPPORT_SRC "${CMAKE_SOURCE_DIR}/src/support")
 set(WIN32_SRC "${CMAKE_SOURCE_DIR}/src/platform/windows/src")
 set(WIN32_INC "${CMAKE_SOURCE_DIR}/src/platform/windows/include")
@@ -98,7 +116,7 @@ set_target_properties(command_handlers PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
 add_library(nghost SHARED ${SHARED_SRC}/app/host/host.c)
 set_target_properties(nghost PROPERTIES OUTPUT_NAME "host")
 target_include_directories(nghost PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SERVER_ROOT} ${SERVER_SRC}
+    PRIVATE ${WIN32_INC} ${SERVER_CORE_INC} ${SERVER_NET_INC} ${SERVER_PROTO_INC} ${SERVER_PLATFORM_INC}
             ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool ${SUPPORT_SRC}/ipaddr)
 target_compile_definitions(nghost PRIVATE HOST_BUILD)
 target_link_libraries(nghost PUBLIC core_runtime)
@@ -123,45 +141,45 @@ add_library(ngircd_impl SHARED
     ${SHARED_SRC}/legacy_impl/server_runtime/ngircd_runtime_globals.c
     ${SHARED_SRC}/legacy_impl/server_runtime/ngircd_daemon.c
     # Original monolith (minus ngircd.c which is the EXE entry)
-    ${SERVER_SRC}/core/array.c
-    ${SERVER_SRC}/channel.c
-    ${SERVER_SRC}/core/class.c
-    ${SERVER_SRC}/core/client.c
-    ${SERVER_SRC}/core/client-cap.c
-    ${SERVER_SRC}/core/conf.c
-    ${SERVER_SRC}/net/conn.c
-    ${SERVER_SRC}/net/conn-encoding.c
-    ${SERVER_SRC}/net/conn-func.c
-    ${SERVER_SRC}/core/hash.c
-    ${SERVER_SRC}/net/io.c
-    ${SERVER_SRC}/proto/irc.c
-    ${SERVER_SRC}/proto/irc-cap.c
-    ${SERVER_SRC}/proto/irc-channel.c
-    ${SERVER_SRC}/proto/irc-encoding.c
-    ${SERVER_SRC}/proto/irc-info.c
-    ${SERVER_SRC}/proto/irc-login.c
-    ${SERVER_SRC}/proto/irc-metadata.c
-    ${SERVER_SRC}/proto/irc-mode.c
-    ${SERVER_SRC}/proto/irc-op.c
-    ${SERVER_SRC}/proto/irc-oper.c
-    ${SERVER_SRC}/proto/irc-server.c
-    ${SERVER_SRC}/proto/irc-write.c
-    ${SERVER_SRC}/proto/join_check.c
-    ${SERVER_SRC}/proto/join_error.c
-    ${SERVER_SRC}/proto/login_flow.c
-    ${SERVER_SRC}/proto/login_state.c
-    ${SERVER_SRC}/proto/login_check.c
-    ${SERVER_SRC}/proto/nick_check.c
-    ${SERVER_SRC}/proto/message_check.c
-    ${SERVER_SRC}/proto/user_check.c
-    ${SERVER_SRC}/core/lists.c
-    ${SERVER_SRC}/core/log.c
+    ${SERVER_SRC}/core/misc/array.c
+    ${SERVER_SRC}/core/channel/channel.c
+    ${SERVER_SRC}/core/misc/class.c
+    ${SERVER_SRC}/core/client/client.c
+    ${SERVER_SRC}/core/client/client-cap.c
+    ${SERVER_SRC}/core/config/conf.c
+    ${SERVER_SRC}/net/conn/conn.c
+    ${SERVER_SRC}/net/conn/conn-encoding.c
+    ${SERVER_SRC}/net/conn/conn-func.c
+    ${SERVER_SRC}/core/misc/hash.c
+    ${SERVER_SRC}/net/conn/io.c
+    ${SERVER_SRC}/proto/irc/irc.c
+    ${SERVER_SRC}/proto/irc/irc-cap.c
+    ${SERVER_SRC}/proto/irc/irc-channel.c
+    ${SERVER_SRC}/proto/irc/irc-encoding.c
+    ${SERVER_SRC}/proto/irc/irc-info.c
+    ${SERVER_SRC}/proto/irc/irc-login.c
+    ${SERVER_SRC}/proto/irc/irc-metadata.c
+    ${SERVER_SRC}/proto/irc/irc-mode.c
+    ${SERVER_SRC}/proto/irc/irc-op.c
+    ${SERVER_SRC}/proto/irc/irc-oper.c
+    ${SERVER_SRC}/proto/irc/irc-server.c
+    ${SERVER_SRC}/proto/irc/irc-write.c
+    ${SERVER_SRC}/proto/join/join_check.c
+    ${SERVER_SRC}/proto/join/join_error.c
+    ${SERVER_SRC}/proto/login/login_flow.c
+    ${SERVER_SRC}/proto/login/login_state.c
+    ${SERVER_SRC}/proto/login/login_check.c
+    ${SERVER_SRC}/proto/nick/nick_check.c
+    ${SERVER_SRC}/proto/message/message_check.c
+    ${SERVER_SRC}/proto/user/user_check.c
+    ${SERVER_SRC}/core/misc/lists.c
+    ${SERVER_SRC}/core/logging/log.c
     ${SERVER_SRC}/core/login.c
-    ${SERVER_SRC}/core/match.c
-    ${SERVER_SRC}/core/numeric.c
-    ${SERVER_SRC}/core/op.c
-    ${SERVER_SRC}/proto/parse.c
-    ${SERVER_SRC}/core/module_iface.c
+    ${SERVER_SRC}/core/misc/match.c
+    ${SERVER_SRC}/core/misc/numeric.c
+    ${SERVER_SRC}/core/misc/op.c
+    ${SERVER_SRC}/proto/irc/parse.c
+    ${SERVER_SRC}/core/module/module_iface.c
     ${WIN32_SRC}/win32_proc.c
     ${WIN32_SRC}/win32_resolve.c
     ${WIN32_SRC}/win32_sighandlers.c
@@ -175,11 +193,28 @@ target_include_directories(ngircd_impl PRIVATE
     ${SHARED_INC}
     ${SHARED_INC}/app
     ${SERVER_ROOT}
+    ${SERVER_CORE_MISC_INC}
+    ${SERVER_CORE_CHANNEL_INC}
+    ${SERVER_CORE_CLIENT_INC}
+    ${SERVER_CORE_CONFIG_INC}
+    ${SERVER_CORE_LOGGING_INC}
+    ${SERVER_CORE_MODULE_INC}
+    ${SERVER_NET_CONN_INC}
+    ${SERVER_NET_PROC_INC}
+    ${SERVER_PROTO_IRC_INC}
+    ${SERVER_PROTO_JOIN_INC}
+    ${SERVER_PROTO_LOGIN_INC}
+    ${SERVER_PROTO_MESSAGE_INC}
+    ${SERVER_PROTO_NICK_INC}
+    ${SERVER_PROTO_USER_INC}
+    ${SERVER_CORE_INC}
+    ${SERVER_NET_INC}
+    ${SERVER_PROTO_INC}
+    ${SERVER_PLATFORM_INC}
     ${SUPPORT_SRC}
     ${SUPPORT_SRC}/portab
     ${SUPPORT_SRC}/tool
     ${SUPPORT_SRC}/ipaddr
-    ${SERVER_SRC}
 )
 target_compile_definitions(ngircd_impl PRIVATE
     NGIRCD_IMPL_BUILD
@@ -218,33 +253,33 @@ endif()
 
 add_library(logging SHARED ${SHARED_SRC}/app/logging/logging.c)
 target_include_directories(logging PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_ROOT} ${SERVER_SRC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
 target_compile_definitions(logging PRIVATE LOGGING_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(logging PUBLIC core_runtime PRIVATE ngircd_impl)
 
 add_library(config SHARED ${SHARED_SRC}/app/config/config.c)
 target_include_directories(config PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_ROOT} ${SERVER_SRC}
+    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC}
             ${SUPPORT_SRC} ${SUPPORT_SRC}/ipaddr ${SUPPORT_SRC}/tool ${SUPPORT_SRC}/portab)
 target_compile_definitions(config PRIVATE CONFIG_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(config PUBLIC core_runtime PRIVATE ngircd_impl)
 
 add_library(net_transport SHARED ${SHARED_SRC}/net/transport/net_transport.c)
 target_include_directories(net_transport PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_ROOT} ${SERVER_SRC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
 target_compile_definitions(net_transport PRIVATE NET_TRANSPORT_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(net_transport PUBLIC core_runtime PRIVATE ngircd_impl)
 
 add_library(resolver SHARED ${SHARED_SRC}/net/resolver/resolver.c)
 target_include_directories(resolver PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_ROOT} ${SERVER_SRC}
+    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_NET_CONN_INC}
             ${SUPPORT_SRC} ${SUPPORT_SRC}/ipaddr ${SUPPORT_SRC}/portab)
 target_compile_definitions(resolver PRIVATE RESOLVER_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(resolver PUBLIC core_runtime PRIVATE ngircd_impl)
 
 add_library(server_app SHARED ${SHARED_SRC}/app/server_app/server_app.c)
 target_include_directories(server_app PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_ROOT} ${SERVER_SRC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_CORE_MISC_INC} ${SERVER_CORE_CHANNEL_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SERVER_PROTO_IRC_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_MESSAGE_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
 target_compile_definitions(server_app PRIVATE SERVER_APP_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(server_app PUBLIC core_runtime
     PRIVATE ngircd_impl logging config net_transport ngportab ngtool)
@@ -269,11 +304,25 @@ target_include_directories(ngircd PRIVATE
     ${SHARED_INC}
     ${SHARED_INC}/app
     ${SERVER_ROOT}
+    ${SERVER_CORE_MISC_INC}
+    ${SERVER_CORE_CHANNEL_INC}
+    ${SERVER_CORE_CLIENT_INC}
+    ${SERVER_CORE_CONFIG_INC}
+    ${SERVER_CORE_LOGGING_INC}
+    ${SERVER_CORE_MODULE_INC}
+    ${SERVER_NET_CONN_INC}
+    ${SERVER_NET_PROC_INC}
+    ${SERVER_PROTO_IRC_INC}
+    ${SERVER_PROTO_JOIN_INC}
+    ${SERVER_PROTO_LOGIN_INC}
+    ${SERVER_PROTO_MESSAGE_INC}
+    ${SERVER_PROTO_NICK_INC}
+    ${SERVER_PROTO_USER_INC}
+    ${SERVER_PLATFORM_INC}
     ${SUPPORT_SRC}
     ${SUPPORT_SRC}/portab
     ${SUPPORT_SRC}/tool
     ${SUPPORT_SRC}/ipaddr
-    ${SERVER_SRC}
 )
 target_compile_definitions(ngircd PRIVATE
     _CRT_SECURE_NO_WARNINGS
@@ -316,10 +365,10 @@ endif()
 if(BUILD_TESTING)
     add_executable(module_iface_test
         tests/module_iface_test.c
-        ${SERVER_SRC}/core/module_iface.c
+        ${SERVER_SRC}/core/module/module_iface.c
     )
     target_include_directories(module_iface_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC})
+        ${WIN32_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_CORE_MISC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     target_link_libraries(module_iface_test PRIVATE ws2_32)
     add_test(NAME module_iface_test COMMAND module_iface_test)
     if(MSVC)
@@ -330,13 +379,13 @@ if(BUILD_TESTING)
     add_executable(conf_whitebox_test
         tests/conf_whitebox_test.c
         tests/test_support.c
-        ${SERVER_SRC}/core/array.c
-        ${SERVER_SRC}/core/conf.c
-        ${SERVER_SRC}/core/module_iface.c
+        ${SERVER_SRC}/core/misc/array.c
+        ${SERVER_SRC}/core/config/conf.c
+        ${SERVER_SRC}/core/module/module_iface.c
     )
     target_include_directories(conf_whitebox_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool
-        ${SUPPORT_SRC}/ipaddr ${SERVER_SRC})
+        ${WIN32_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool
+        ${SUPPORT_SRC}/ipaddr)
     target_compile_definitions(conf_whitebox_test PRIVATE NGIRCD_UNITTEST)
     target_compile_options(conf_whitebox_test PRIVATE
         /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090)
@@ -347,15 +396,15 @@ if(BUILD_TESTING)
     add_executable(log_io_resolver_test
         tests/log_io_resolver_test.c
         tests/log_io_test_support.c
-        ${SERVER_SRC}/core/array.c
-        ${SERVER_SRC}/core/log.c
-        ${SERVER_SRC}/net/io.c
-        ${SERVER_SRC}/core/module_iface.c
+        ${SERVER_SRC}/core/misc/array.c
+        ${SERVER_SRC}/core/logging/log.c
+        ${SERVER_SRC}/net/conn/io.c
+        ${SERVER_SRC}/core/module/module_iface.c
         ${WIN32_SRC}/win32_resolve.c
     )
     target_include_directories(log_io_resolver_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool
-        ${SUPPORT_SRC}/ipaddr ${SERVER_SRC})
+        ${WIN32_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SUPPORT_SRC}/tool
+        ${SUPPORT_SRC}/ipaddr)
     target_compile_definitions(log_io_resolver_test PRIVATE NGIRCD_UNITTEST)
     target_compile_options(log_io_resolver_test PRIVATE
         /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090)
@@ -365,94 +414,94 @@ if(BUILD_TESTING)
 
     add_executable(login_state_test
         tests/login_state_test.c
-        ${SERVER_SRC}/proto/login_state.c)
+        ${SERVER_SRC}/proto/login/login_state.c)
     target_include_directories(login_state_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_state_test COMMAND login_state_test)
 
     add_executable(login_check_test
         tests/login_check_test.c
-        ${SERVER_SRC}/proto/login_check.c)
+        ${SERVER_SRC}/proto/login/login_check.c)
     target_include_directories(login_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_check_test COMMAND login_check_test)
 
     add_executable(join_check_test
         tests/join_check_test.c
-        ${SERVER_SRC}/proto/join_check.c)
+        ${SERVER_SRC}/proto/join/join_check.c)
     target_include_directories(join_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_JOIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME join_check_test COMMAND join_check_test)
 
     add_executable(join_error_test
         tests/join_error_test.c
-        ${SERVER_SRC}/proto/join_error.c
-        ${SERVER_SRC}/proto/join_check.c)
+        ${SERVER_SRC}/proto/join/join_error.c
+        ${SERVER_SRC}/proto/join/join_check.c)
     target_include_directories(join_error_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_JOIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME join_error_test COMMAND join_error_test)
 
     add_executable(login_flow_test
         tests/login_flow_test.c
-        ${SERVER_SRC}/proto/login_flow.c)
+        ${SERVER_SRC}/proto/login/login_flow.c)
     target_include_directories(login_flow_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_flow_test COMMAND login_flow_test)
 
     add_executable(irc_cap_end_test
         tests/irc_cap_end_test.c
-        ${SERVER_SRC}/proto/irc-cap.c)
+        ${SERVER_SRC}/proto/irc/irc-cap.c)
     target_include_directories(irc_cap_end_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_IRC_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME irc_cap_end_test COMMAND irc_cap_end_test)
 
     add_executable(nick_check_test
         tests/nick_check_test.c
-        ${SERVER_SRC}/proto/nick_check.c)
+        ${SERVER_SRC}/proto/nick/nick_check.c)
     target_include_directories(nick_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_NICK_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME nick_check_test COMMAND nick_check_test)
 
     add_executable(user_check_test
         tests/user_check_test.c
-        ${SERVER_SRC}/proto/user_check.c)
+        ${SERVER_SRC}/proto/user/user_check.c)
     target_include_directories(user_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_USER_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME user_check_test COMMAND user_check_test)
 
     add_executable(branch_coverage_test
         tests/branch_coverage_test.c
-        ${SERVER_SRC}/proto/login_check.c
-        ${SERVER_SRC}/proto/join_check.c
-        ${SERVER_SRC}/proto/join_error.c
-        ${SERVER_SRC}/proto/login_flow.c
-        ${SERVER_SRC}/proto/nick_check.c
-        ${SERVER_SRC}/proto/user_check.c
-        ${SERVER_SRC}/proto/message_check.c)
+        ${SERVER_SRC}/proto/login/login_check.c
+        ${SERVER_SRC}/proto/join/join_check.c
+        ${SERVER_SRC}/proto/join/join_error.c
+        ${SERVER_SRC}/proto/login/login_flow.c
+        ${SERVER_SRC}/proto/nick/nick_check.c
+        ${SERVER_SRC}/proto/user/user_check.c
+        ${SERVER_SRC}/proto/message/message_check.c)
     target_include_directories(branch_coverage_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SERVER_PROTO_MESSAGE_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME branch_coverage_test COMMAND branch_coverage_test)
 
     add_executable(message_check_test
         tests/message_check_test.c
-        ${SERVER_SRC}/proto/message_check.c)
+        ${SERVER_SRC}/proto/message/message_check.c)
     target_include_directories(message_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_MESSAGE_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME message_check_test COMMAND message_check_test)
 
     add_executable(full_coverage_test
         tests/full_coverage_test.c
-        ${SERVER_SRC}/proto/login_check.c
-        ${SERVER_SRC}/proto/join_check.c
-        ${SERVER_SRC}/proto/join_error.c
-        ${SERVER_SRC}/proto/login_flow.c
-        ${SERVER_SRC}/proto/login_state.c
-        ${SERVER_SRC}/proto/nick_check.c
-        ${SERVER_SRC}/proto/user_check.c
-        ${SERVER_SRC}/proto/message_check.c
-        ${SERVER_SRC}/core/module_iface.c)
+        ${SERVER_SRC}/proto/login/login_check.c
+        ${SERVER_SRC}/proto/join/join_check.c
+        ${SERVER_SRC}/proto/join/join_error.c
+        ${SERVER_SRC}/proto/login/login_flow.c
+        ${SERVER_SRC}/proto/login/login_state.c
+        ${SERVER_SRC}/proto/nick/nick_check.c
+        ${SERVER_SRC}/proto/user/user_check.c
+        ${SERVER_SRC}/proto/message/message_check.c
+        ${SERVER_SRC}/core/module/module_iface.c)
     target_include_directories(full_coverage_test PRIVATE
-        ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab ${SERVER_SRC} ${SERVER_SRC}/proto)
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SERVER_PROTO_MESSAGE_INC} ${SERVER_CORE_MODULE_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     target_compile_options(full_coverage_test PRIVATE /W3 /wd4005)
     target_link_libraries(full_coverage_test PRIVATE ws2_32)
     add_test(NAME full_coverage_test COMMAND full_coverage_test)
@@ -545,7 +594,7 @@ if(BUILD_TESTING)
         tests/config_module_test.c
         tests/test_support.c
         tests/conf_func_stubs.c
-        ${SERVER_SRC}/core/array.c
+        ${SERVER_SRC}/core/misc/array.c
         ${SHARED_SRC}/app/config/config.c
     )
     target_include_directories(config_module_test PRIVATE
@@ -584,7 +633,7 @@ if(BUILD_TESTING)
         tests/server_app_unit_test.c
     )
     target_include_directories(server_app_unit_test PRIVATE
-        ${SHARED_INC} ${SHARED_INC}/app ${WIN32_INC} ${SERVER_ROOT} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
+        ${SHARED_INC} ${SHARED_INC}/app ${WIN32_INC} ${SERVER_CORE_MISC_INC} ${SERVER_CORE_CHANNEL_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_NET_PROC_INC} ${SERVER_PROTO_IRC_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_MESSAGE_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     target_compile_definitions(server_app_unit_test PRIVATE
         _CRT_SECURE_NO_WARNINGS _WINSOCK_DEPRECATED_NO_WARNINGS)
     target_link_libraries(server_app_unit_test PRIVATE
@@ -597,4 +646,5 @@ if(BUILD_TESTING)
     add_test(NAME server_app_unit_test COMMAND server_app_unit_test)
 
 endif()
+
 

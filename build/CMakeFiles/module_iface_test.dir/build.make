@@ -81,36 +81,36 @@ CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\module_iface_test.dir\tests\module_iface_test.c.s /c C:\develop\ngircd\tests\module_iface_test.c
 <<
 
-CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.obj: CMakeFiles\module_iface_test.dir\flags.make
-CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.obj: C:\develop\ngircd\src\server\ngircd\core\module_iface.c
-CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.obj: CMakeFiles\module_iface_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/module_iface_test.dir/src/server/ngircd/core/module_iface.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.obj /FdCMakeFiles\module_iface_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\module_iface.c
+CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: CMakeFiles\module_iface_test.dir\flags.make
+CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.c
+CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: CMakeFiles\module_iface_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/module_iface_test.dir/src/server/core/module/module_iface.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj /FdCMakeFiles\module_iface_test.dir\ /FS -c C:\develop\ngircd\src\server\core\module\module_iface.c
 <<
 
-CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/module_iface_test.dir/src/server/ngircd/core/module_iface.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\module_iface.c
+CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/module_iface_test.dir/src/server/core/module/module_iface.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\core\module\module_iface.c
 <<
 
-CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/module_iface_test.dir/src/server/ngircd/core/module_iface.c.s"
+CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/module_iface_test.dir/src/server/core/module/module_iface.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.s /c C:\develop\ngircd\src\server\ngircd\core\module_iface.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.s /c C:\develop\ngircd\src\server\core\module\module_iface.c
 <<
 
 # Object files for target module_iface_test
 module_iface_test_OBJECTS = \
 "CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj" \
-"CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.obj"
+"CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj"
 
 # External object files for target module_iface_test
 module_iface_test_EXTERNAL_OBJECTS =
 
 module_iface_test.exe: CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj
-module_iface_test.exe: CMakeFiles\module_iface_test.dir\src\server\ngircd\core\module_iface.c.obj
+module_iface_test.exe: CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj
 module_iface_test.exe: CMakeFiles\module_iface_test.dir\build.make
 module_iface_test.exe: CMakeFiles\module_iface_test.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable module_iface_test.exe"

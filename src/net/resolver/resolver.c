@@ -2,9 +2,9 @@
 
 #include "core/runtime/module_api.h"
 #include "portab/portab.h"
-#include "ngircd/proc.h"
+#include "proc.h"
 #include "ipaddr/ng_ipaddr.h"
-#include "ngircd/resolve.h"
+#include "resolve.h"
 
 static core_status_t RESOLVER_CALL
 resolver_resolve_name(const char *host)

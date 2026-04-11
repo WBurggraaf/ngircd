@@ -61,24 +61,24 @@ include CMakeFiles\ngircd.dir\flags.make
 CMakeFiles\ngircd.dir\codegen:
 .PHONY : CMakeFiles\ngircd.dir\codegen
 
-CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.obj: CMakeFiles\ngircd.dir\flags.make
-CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.obj: C:\develop\ngircd\src\server\ngircd\platform\ngircd.c
-CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.obj: CMakeFiles\ngircd.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngircd.dir/src/server/ngircd/platform/ngircd.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) -Dmain=ngircd_main $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.obj /FdCMakeFiles\ngircd.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\platform\ngircd.c
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: CMakeFiles\ngircd.dir\flags.make
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\platform\ngircd.c
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: CMakeFiles\ngircd.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ngircd.dir/src/server/platform/ngircd.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) -Dmain=ngircd_main $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj /FdCMakeFiles\ngircd.dir\ /FS -c C:\develop\ngircd\src\server\platform\ngircd.c
 <<
 
-CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd.dir/src/server/ngircd/platform/ngircd.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.i @<<
- /nologo $(C_DEFINES) -Dmain=ngircd_main $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\platform\ngircd.c
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ngircd.dir/src/server/platform/ngircd.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.i @<<
+ /nologo $(C_DEFINES) -Dmain=ngircd_main $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\platform\ngircd.c
 <<
 
-CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd.dir/src/server/ngircd/platform/ngircd.c.s"
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ngircd.dir/src/server/platform/ngircd.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) -Dmain=ngircd_main $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.s /c C:\develop\ngircd\src\server\ngircd\platform\ngircd.c
+ /nologo $(C_DEFINES) -Dmain=ngircd_main $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\ngircd.dir\src\server\platform\ngircd.c.s /c C:\develop\ngircd\src\server\platform\ngircd.c
 <<
 
 CMakeFiles\ngircd.dir\src\platform\windows\src\win32_main.c.obj: CMakeFiles\ngircd.dir\flags.make
@@ -103,13 +103,13 @@ CMakeFiles\ngircd.dir\src\platform\windows\src\win32_main.c.s: cmake_force
 
 # Object files for target ngircd
 ngircd_OBJECTS = \
-"CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.obj" \
+"CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj" \
 "CMakeFiles\ngircd.dir\src\platform\windows\src\win32_main.c.obj"
 
 # External object files for target ngircd
 ngircd_EXTERNAL_OBJECTS =
 
-ngircd.exe: CMakeFiles\ngircd.dir\src\server\ngircd\platform\ngircd.c.obj
+ngircd.exe: CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj
 ngircd.exe: CMakeFiles\ngircd.dir\src\platform\windows\src\win32_main.c.obj
 ngircd.exe: CMakeFiles\ngircd.dir\build.make
 ngircd.exe: server_app.lib

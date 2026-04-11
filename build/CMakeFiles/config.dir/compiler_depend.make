@@ -15,17 +15,17 @@ CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\include\cor
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\include\core\runtime\module_api.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\conn.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\conf-ssl.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\client.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\defines.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\proc.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\conf.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\array.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\client\client.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\misc\array.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\support\tool\tool.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
@@ -35,8 +35,8 @@ CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windo
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\win32\include\sys\socket.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\win32\include\win32compat.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\socket.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\platform\windows\include\win32compat.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
@@ -155,9 +155,9 @@ CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windo
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\io.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\ngircd\module_iface.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\win32\include\sys\time.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\math.h"
@@ -167,8 +167,8 @@ CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windo
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\win32\include\netinet\in.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\win32\include\arpa\inet.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\platform\windows\include\netinet\in.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\platform\windows\include\arpa\inet.h
 
 
 
@@ -181,6 +181,8 @@ C:\develop\ngircd\include\app\config\config.h:
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h":
+
+C:\develop\ngircd\src\server\net\conn\proc.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
@@ -197,6 +199,8 @@ C:\develop\ngircd\include\core\runtime\module_api.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack1.h":
+
+C:\develop\ngircd\src\server\core\misc\array.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\windef.h":
 
@@ -220,7 +224,15 @@ C:\develop\ngircd\include\core\runtime\core_runtime.h:
 
 C:\develop\ngircd\src\support\portab\portab.h:
 
-C:\develop\ngircd\win32\include\config.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
+
+C:\develop\ngircd\src\server\net\conn\conn.h:
+
+C:\develop\ngircd\src\platform\windows\include\config.h:
+
+C:\develop\ngircd\src\server\core\config\conf-ssl.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 
@@ -232,35 +244,25 @@ C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h":
 
-C:\develop\ngircd\src\server\ngircd\conn.h:
+C:\develop\ngircd\src\server\core\client\client.h:
 
-C:\develop\ngircd\src\server\ngircd\conf-ssl.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h":
+
+C:\develop\ngircd\src\server\core\config\conf.h:
+
+C:\develop\ngircd\src\server\core\misc\defines.h:
+
+C:\develop\ngircd\src\support\tool\tool.h:
+
+C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\kernelspecs.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h":
-
-C:\develop\ngircd\src\server\ngircd\client.h:
-
-C:\develop\ngircd\src\server\ngircd\defines.h:
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
-
-C:\develop\ngircd\src\server\ngircd\proc.h:
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h":
-
-C:\develop\ngircd\src\server\ngircd\conf.h:
-
-C:\develop\ngircd\src\server\ngircd\array.h:
-
-"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h":
-
-C:\develop\ngircd\src\support\tool\tool.h:
-
-C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h":
 
@@ -270,15 +272,13 @@ C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h":
 
-C:\develop\ngircd\win32\include\sys\socket.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
+C:\develop\ngircd\src\platform\windows\include\sys\socket.h:
 
-C:\develop\ngircd\win32\include\win32compat.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h":
+C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winver.h":
 
@@ -292,7 +292,7 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdkddkver.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\excpt.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h":
 
@@ -304,17 +304,15 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 
@@ -329,6 +327,8 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 
@@ -410,6 +410,8 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\wnnc.h":
 
+C:\develop\ngircd\src\server\core\module\module_iface.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsvc.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\imm.h":
@@ -430,11 +432,9 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h":
 
-C:\develop\ngircd\src\server\ngircd\io.h:
+C:\develop\ngircd\src\server\net\conn\io.h:
 
-C:\develop\ngircd\src\server\ngircd\module_iface.h:
-
-C:\develop\ngircd\win32\include\sys\time.h:
+C:\develop\ngircd\src\platform\windows\include\sys\time.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h":
 
@@ -452,6 +452,6 @@ C:\develop\ngircd\win32\include\sys\time.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h":
 
-C:\develop\ngircd\win32\include\netinet\in.h:
+C:\develop\ngircd\src\platform\windows\include\netinet\in.h:
 
-C:\develop\ngircd\win32\include\arpa\inet.h:
+C:\develop\ngircd\src\platform\windows\include\arpa\inet.h:

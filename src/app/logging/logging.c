@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 #include "core/runtime/module_api.h"
-#include "ngircd/log.h"
+#include "log.h"
 
 static core_status_t LOGGING_CALL
 logging_init(int syslog_mode)

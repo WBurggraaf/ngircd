@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/config_module_test.dir/src/app/config/config.c.obj"
   "CMakeFiles/config_module_test.dir/src/app/config/config.c.obj.d"
-  "CMakeFiles/config_module_test.dir/src/server/ngircd/core/array.c.obj"
-  "CMakeFiles/config_module_test.dir/src/server/ngircd/core/array.c.obj.d"
+  "CMakeFiles/config_module_test.dir/src/server/core/misc/array.c.obj"
+  "CMakeFiles/config_module_test.dir/src/server/core/misc/array.c.obj.d"
   "CMakeFiles/config_module_test.dir/tests/conf_func_stubs.c.obj"
   "CMakeFiles/config_module_test.dir/tests/conf_func_stubs.c.obj.d"
   "CMakeFiles/config_module_test.dir/tests/config_module_test.c.obj"

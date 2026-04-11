@@ -3,7 +3,7 @@
 
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.c
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\support\portab\portab.h
-CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\win32\include\config.h
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h"
@@ -26,8 +26,8 @@ CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files\Mi
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
-CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\win32\include\sys\socket.h
-CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\win32\include\win32compat.h
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\socket.h
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\platform\windows\include\win32compat.h
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
@@ -159,8 +159,8 @@ CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\direct.h"
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
 CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
-CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\win32\include\netinet\in.h
-CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\win32\include\arpa\inet.h
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\platform\windows\include\netinet\in.h
+CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\src\platform\windows\include\arpa\inet.h
 
 
 
@@ -170,9 +170,19 @@ CMakeFiles\ngipaddr.dir\src\support\ipaddr\ng_ipaddr.c.obj: C:\develop\ngircd\wi
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h":
 
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
+
+C:\develop\ngircd\src\platform\windows\include\config.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapifromapp.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\basetsd.h":
+
+C:\develop\ngircd\src\platform\windows\include\sys\socket.h:
 
 C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.c:
 
@@ -187,8 +197,6 @@ C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.c:
 C:\develop\ngircd\src\support\portab\portab.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
-
-C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
@@ -220,12 +228,6 @@ C:\develop\ngircd\win32\include\config.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h":
@@ -236,13 +238,9 @@ C:\develop\ngircd\win32\include\config.h:
 
 C:\develop\ngircd\src\support\ipaddr\ng_ipaddr.h:
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
 
-C:\develop\ngircd\win32\include\sys\socket.h:
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
-
-C:\develop\ngircd\win32\include\win32compat.h:
+C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h":
 
@@ -268,8 +266,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h":
@@ -287,6 +283,10 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h":
 
@@ -426,6 +426,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h":
 
-C:\develop\ngircd\win32\include\netinet\in.h:
+C:\develop\ngircd\src\platform\windows\include\netinet\in.h:
 
-C:\develop\ngircd\win32\include\arpa\inet.h:
+C:\develop\ngircd\src\platform\windows\include\arpa\inet.h:

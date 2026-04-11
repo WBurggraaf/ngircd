@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/server/ngircd/proto/join_check.c" "CMakeFiles/join_check_test.dir/src/server/ngircd/proto/join_check.c.obj" "msvc" "CMakeFiles/join_check_test.dir/src/server/ngircd/proto/join_check.c.obj.d"
+  "C:/develop/ngircd/src/server/proto/join/join_check.c" "CMakeFiles/join_check_test.dir/src/server/proto/join/join_check.c.obj" "msvc" "CMakeFiles/join_check_test.dir/src/server/proto/join/join_check.c.obj.d"
   "C:/develop/ngircd/tests/join_check_test.c" "CMakeFiles/join_check_test.dir/tests/join_check_test.c.obj" "msvc" "CMakeFiles/join_check_test.dir/tests/join_check_test.c.obj.d"
   )
 

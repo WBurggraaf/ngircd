@@ -13,8 +13,8 @@ CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Win
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\fcntl.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\include\core\runtime\module_api.h
-CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\win32\include\config.h
-CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\win32\include\win32compat.h
+CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\src\platform\windows\include\config.h
+CMakeFiles\platform.dir\src\platform\platform.c.obj: C:\develop\ngircd\src\platform\windows\include\win32compat.h
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winapifamily.h"
 CMakeFiles\platform.dir\src\platform\platform.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h"
@@ -196,11 +196,15 @@ C:\develop\ngircd\include\platform\platform.h:
 
 C:\develop\ngircd\include\core\runtime\module_api.h:
 
-C:\develop\ngircd\win32\include\config.h:
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
 
-C:\develop\ngircd\win32\include\win32compat.h:
+C:\develop\ngircd\src\platform\windows\include\config.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
+
+C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winsock2.h":
 
@@ -227,8 +231,6 @@ C:\develop\ngircd\win32\include\win32compat.h:
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdarg.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\poppack.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h":
 
@@ -268,15 +270,13 @@ C:\develop\ngircd\win32\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\stralign.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\mcx.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ktmtypes.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 

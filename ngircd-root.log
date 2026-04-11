@@ -362,3 +362,11 @@
 [48464:7   30] Freed channel structure for "#test".
 [48464:6   30] Connection 400 with "127.0.0.1:64690" closed (in: 0.1k, out: 2.1k).
 [48464:7   30] Shutdown of connection 400 completed, 0 connections left.
+[48464:5  463] Server going down NOW!
+[48464:6  463] Shutting down all listening sockets (1 total) ...
+[48464:7  463] Listening socket 404 closed.
+[48464:7  463] Shutting down all connections ...
+[48464:7  463] Log_Exit() called.
+[48464:5  463] ngIRCd done, served 1 connection.
+[48464:7  463] Signals_Exit(): restoring default signal handlers.
+[48464:7  463] Removing PID file (C:/develop/ngircd/runtime/ngircd.pid) ...

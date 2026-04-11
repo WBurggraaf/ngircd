@@ -3,7 +3,7 @@
 #include "core/runtime/module_api.h"
 #include "portab/portab.h"
 #include "conn.h"
-#include "ngircd/conf.h"
+#include "conf.h"
 
 static void CONFIG_CALL
 config_fill_runtime_policy(config_bootstrap_t *bootstrap)

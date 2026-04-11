@@ -81,36 +81,36 @@ CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.s /c C:\develop\ngircd\tests\irc_cap_end_test.c
 <<
 
-CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.obj: CMakeFiles\irc_cap_end_test.dir\flags.make
-CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.obj: C:\develop\ngircd\src\server\ngircd\proto\irc-cap.c
-CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.obj: CMakeFiles\irc_cap_end_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/irc_cap_end_test.dir/src/server/ngircd/proto/irc-cap.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.obj /FdCMakeFiles\irc_cap_end_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\proto\irc-cap.c
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: CMakeFiles\irc_cap_end_test.dir\flags.make
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\proto\irc\irc-cap.c
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: CMakeFiles\irc_cap_end_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/irc_cap_end_test.dir/src/server/proto/irc/irc-cap.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj /FdCMakeFiles\irc_cap_end_test.dir\ /FS -c C:\develop\ngircd\src\server\proto\irc\irc-cap.c
 <<
 
-CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/irc_cap_end_test.dir/src/server/ngircd/proto/irc-cap.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\proto\irc-cap.c
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/irc_cap_end_test.dir/src/server/proto/irc/irc-cap.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\proto\irc\irc-cap.c
 <<
 
-CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/irc_cap_end_test.dir/src/server/ngircd/proto/irc-cap.c.s"
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/irc_cap_end_test.dir/src/server/proto/irc/irc-cap.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.s /c C:\develop\ngircd\src\server\ngircd\proto\irc-cap.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.s /c C:\develop\ngircd\src\server\proto\irc\irc-cap.c
 <<
 
 # Object files for target irc_cap_end_test
 irc_cap_end_test_OBJECTS = \
 "CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj" \
-"CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.obj"
+"CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj"
 
 # External object files for target irc_cap_end_test
 irc_cap_end_test_EXTERNAL_OBJECTS =
 
 irc_cap_end_test.exe: CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj
-irc_cap_end_test.exe: CMakeFiles\irc_cap_end_test.dir\src\server\ngircd\proto\irc-cap.c.obj
+irc_cap_end_test.exe: CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj
 irc_cap_end_test.exe: CMakeFiles\irc_cap_end_test.dir\build.make
 irc_cap_end_test.exe: CMakeFiles\irc_cap_end_test.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable irc_cap_end_test.exe"

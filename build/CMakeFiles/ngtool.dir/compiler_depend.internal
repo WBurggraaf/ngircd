@@ -4,7 +4,7 @@
 CMakeFiles/ngtool.dir/src/support/tool/tool.c.obj
  C:/develop/ngircd/src/support/tool/tool.c
  C:/develop/ngircd/src/support/portab/portab.h
- C:/develop/ngircd/win32/include/config.h
+ C:/develop/ngircd/src/platform/windows/include/config.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/types.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h
  C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime.h
@@ -32,9 +32,9 @@ CMakeFiles/ngtool.dir/src/support/tool/tool.c.obj
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/errno.h
  C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime_string.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
- C:/develop/ngircd/win32/include/sys/time.h
- C:/develop/ngircd/win32/include/netinet/in.h
- C:/develop/ngircd/win32/include/win32compat.h
+ C:/develop/ngircd/src/platform/windows/include/sys/time.h
+ C:/develop/ngircd/src/platform/windows/include/netinet/in.h
+ C:/develop/ngircd/src/platform/windows/include/win32compat.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/winsock2.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winapifamily.h
  C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winpackagefamily.h

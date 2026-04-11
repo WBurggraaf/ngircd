@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/join_check_test.dir/src/server/ngircd/proto/join_check.c.obj"
-  "CMakeFiles/join_check_test.dir/src/server/ngircd/proto/join_check.c.obj.d"
+  "CMakeFiles/join_check_test.dir/src/server/proto/join/join_check.c.obj"
+  "CMakeFiles/join_check_test.dir/src/server/proto/join/join_check.c.obj.d"
   "CMakeFiles/join_check_test.dir/tests/join_check_test.c.obj"
   "CMakeFiles/join_check_test.dir/tests/join_check_test.c.obj.d"
   "join_check_test.exe"

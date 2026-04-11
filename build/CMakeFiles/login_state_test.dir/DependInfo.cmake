@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/develop/ngircd/src/server/ngircd/proto/login_state.c" "CMakeFiles/login_state_test.dir/src/server/ngircd/proto/login_state.c.obj" "msvc" "CMakeFiles/login_state_test.dir/src/server/ngircd/proto/login_state.c.obj.d"
+  "C:/develop/ngircd/src/server/proto/login/login_state.c" "CMakeFiles/login_state_test.dir/src/server/proto/login/login_state.c.obj" "msvc" "CMakeFiles/login_state_test.dir/src/server/proto/login/login_state.c.obj.d"
   "C:/develop/ngircd/tests/login_state_test.c" "CMakeFiles/login_state_test.dir/tests/login_state_test.c.obj" "msvc" "CMakeFiles/login_state_test.dir/tests/login_state_test.c.obj.d"
   )
 

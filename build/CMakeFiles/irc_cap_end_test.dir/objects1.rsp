@@ -1,1 +1,1 @@
-﻿CMakeFiles/irc_cap_end_test.dir/tests/irc_cap_end_test.c.obj "CMakeFiles/irc_cap_end_test.dir/src/server/ngircd/proto/irc-cap.c.obj"
+﻿CMakeFiles/irc_cap_end_test.dir/tests/irc_cap_end_test.c.obj "CMakeFiles/irc_cap_end_test.dir/src/server/proto/irc/irc-cap.c.obj"

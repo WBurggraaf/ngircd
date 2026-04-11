@@ -101,84 +101,84 @@ CMakeFiles\log_io_resolver_test.dir\tests\log_io_test_support.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\tests\log_io_test_support.c.s /c C:\develop\ngircd\tests\log_io_test_support.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.obj: C:\develop\ngircd\src\server\ngircd\core\array.c
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.obj: CMakeFiles\log_io_resolver_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/array.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.obj /FdCMakeFiles\log_io_resolver_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\array.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
+CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj: C:\develop\ngircd\src\server\core\misc\array.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj: CMakeFiles\log_io_resolver_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/log_io_resolver_test.dir/src/server/core/misc/array.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj /FdCMakeFiles\log_io_resolver_test.dir\ /FS -c C:\develop\ngircd\src\server\core\misc\array.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/array.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\array.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/log_io_resolver_test.dir/src/server/core/misc/array.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\core\misc\array.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/array.c.s"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/log_io_resolver_test.dir/src/server/core/misc/array.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.s /c C:\develop\ngircd\src\server\ngircd\core\array.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.s /c C:\develop\ngircd\src\server\core\misc\array.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.obj: C:\develop\ngircd\src\server\ngircd\core\log.c
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.obj: CMakeFiles\log_io_resolver_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/log.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.obj /FdCMakeFiles\log_io_resolver_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\log.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: C:\develop\ngircd\src\server\core\logging\log.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj: CMakeFiles\log_io_resolver_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj /FdCMakeFiles\log_io_resolver_test.dir\ /FS -c C:\develop\ngircd\src\server\core\logging\log.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/log.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\log.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\core\logging\log.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/log.c.s"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.s /c C:\develop\ngircd\src\server\ngircd\core\log.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.s /c C:\develop\ngircd\src\server\core\logging\log.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.obj: C:\develop\ngircd\src\server\ngircd\net\io.c
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.obj: CMakeFiles\log_io_resolver_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/net/io.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.obj /FdCMakeFiles\log_io_resolver_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\net\io.c
+CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
+CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.obj: C:\develop\ngircd\src\server\net\conn\io.c
+CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.obj: CMakeFiles\log_io_resolver_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/log_io_resolver_test.dir/src/server/net/conn/io.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.obj /FdCMakeFiles\log_io_resolver_test.dir\ /FS -c C:\develop\ngircd\src\server\net\conn\io.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/net/io.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\net\io.c
+CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/log_io_resolver_test.dir/src/server/net/conn/io.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\net\conn\io.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/net/io.c.s"
+CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/log_io_resolver_test.dir/src/server/net/conn/io.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.s /c C:\develop\ngircd\src\server\ngircd\net\io.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.s /c C:\develop\ngircd\src\server\net\conn\io.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.obj: C:\develop\ngircd\src\server\ngircd\core\module_iface.c
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.obj: CMakeFiles\log_io_resolver_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/module_iface.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.obj /FdCMakeFiles\log_io_resolver_test.dir\ /FS -c C:\develop\ngircd\src\server\ngircd\core\module_iface.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
+CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.obj: CMakeFiles\log_io_resolver_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/log_io_resolver_test.dir/src/server/core/module/module_iface.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.obj /FdCMakeFiles\log_io_resolver_test.dir\ /FS -c C:\develop\ngircd\src\server\core\module\module_iface.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/module_iface.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\ngircd\core\module_iface.c
+CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/log_io_resolver_test.dir/src/server/core/module/module_iface.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\core\module\module_iface.c
 <<
 
-CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/log_io_resolver_test.dir/src/server/ngircd/core/module_iface.c.s"
+CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/log_io_resolver_test.dir/src/server/core/module/module_iface.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.s /c C:\develop\ngircd\src\server\ngircd\core\module_iface.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.s /c C:\develop\ngircd\src\server\core\module\module_iface.c
 <<
 
 CMakeFiles\log_io_resolver_test.dir\src\platform\windows\src\win32_resolve.c.obj: CMakeFiles\log_io_resolver_test.dir\flags.make
@@ -205,10 +205,10 @@ CMakeFiles\log_io_resolver_test.dir\src\platform\windows\src\win32_resolve.c.s: 
 log_io_resolver_test_OBJECTS = \
 "CMakeFiles\log_io_resolver_test.dir\tests\log_io_resolver_test.c.obj" \
 "CMakeFiles\log_io_resolver_test.dir\tests\log_io_test_support.c.obj" \
-"CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.obj" \
-"CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.obj" \
-"CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.obj" \
-"CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.obj" \
+"CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj" \
+"CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj" \
+"CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.obj" \
+"CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.obj" \
 "CMakeFiles\log_io_resolver_test.dir\src\platform\windows\src\win32_resolve.c.obj"
 
 # External object files for target log_io_resolver_test
@@ -216,10 +216,10 @@ log_io_resolver_test_EXTERNAL_OBJECTS =
 
 log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\tests\log_io_resolver_test.c.obj
 log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\tests\log_io_test_support.c.obj
-log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\array.c.obj
-log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\log.c.obj
-log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\net\io.c.obj
-log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\server\ngircd\core\module_iface.c.obj
+log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\server\core\misc\array.c.obj
+log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\server\core\logging\log.c.obj
+log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\server\net\conn\io.c.obj
+log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\server\core\module\module_iface.c.obj
 log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\src\platform\windows\src\win32_resolve.c.obj
 log_io_resolver_test.exe: CMakeFiles\log_io_resolver_test.dir\build.make
 log_io_resolver_test.exe: ngportab.lib

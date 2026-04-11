@@ -4,7 +4,7 @@
 # compile C with C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe
 C_DEFINES = -DNGIRCD_IMPL_CONSUMER -DSERVER_APP_BUILD -Dserver_app_EXPORTS
 
-C_INCLUDES = -IC:\develop\ngircd\include -IC:\develop\ngircd\src\platform\windows\include -IC:\develop\ngircd\include\app -IC:\develop\ngircd\src\server -IC:\develop\ngircd\src\server\ngircd -IC:\develop\ngircd\src\support -IC:\develop\ngircd\src\support\portab -IC:\develop\ngircd\src\support\tool
+C_INCLUDES = -IC:\develop\ngircd\include -IC:\develop\ngircd\src\platform\windows\include -IC:\develop\ngircd\include\app -IC:\develop\ngircd\src\server\core\misc -IC:\develop\ngircd\src\server\core\channel -IC:\develop\ngircd\src\server\core\client -IC:\develop\ngircd\src\server\core\config -IC:\develop\ngircd\src\server\core\logging -IC:\develop\ngircd\src\server\core\module -IC:\develop\ngircd\src\server\net\conn -IC:\develop\ngircd\src\server\net\proc -IC:\develop\ngircd\src\server\proto\irc -IC:\develop\ngircd\src\server\proto\join -IC:\develop\ngircd\src\server\proto\login -IC:\develop\ngircd\src\server\proto\message -IC:\develop\ngircd\src\server\proto\nick -IC:\develop\ngircd\src\server\proto\user -IC:\develop\ngircd\src\support -IC:\develop\ngircd\src\support\portab -IC:\develop\ngircd\src\support\tool
 
 C_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
 

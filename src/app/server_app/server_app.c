@@ -17,8 +17,8 @@
 
 #include "core/runtime/module_api.h"
 #include "portab/portab.h"
-#include "ngircd/defines.h"
-#include "ngircd/ngircd.h"
+#include "defines.h"
+#include "ngircd.h"
 
 /* Cached module APIs populated by server_app_create() from the injected table */
 static const config_api_t        *s_config_api    = NULL;

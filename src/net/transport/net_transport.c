@@ -3,7 +3,7 @@
 #include "core/runtime/module_api.h"
 #include "portab/portab.h"
 #include "conn.h"
-#include "ngircd/io.h"
+#include "io.h"
 #include "win32compat.h"
 
 #include <sys/time.h>
