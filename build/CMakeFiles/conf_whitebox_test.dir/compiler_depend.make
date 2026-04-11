@@ -151,9 +151,9 @@ CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: "C:\Program
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h"
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
-CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
@@ -170,10 +170,10 @@ CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\platform\windows\include\netdb.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\misc\ngircd.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\state\connection\conn.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\client\client.h
-CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\channel\channel.h
+CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\state\client\client.h
+CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\state\channel\channel.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\logging\log.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\misc\match.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\config\conf.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
@@ -331,9 +331,9 @@ CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: "C:\Program 
 CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h"
 CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
 CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
-CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
 CMakeFiles\conf_whitebox_test.dir\src\server\core\misc\array.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
@@ -360,7 +360,7 @@ CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.obj: "C:
 CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
 CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\conf_whitebox_test.dir\src\server\core\module\module_iface.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 
 
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\tests\conf_whitebox_test.c
@@ -376,13 +376,13 @@ CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Fi
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\state\connection\conn.h
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\core\client\client.h
+CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\state\client\client.h
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\core\misc\array.h
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\support\tool\tool.h
@@ -514,7 +514,7 @@ CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Fi
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
-CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\conf_whitebox_test.dir\tests\conf_whitebox_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
@@ -559,10 +559,10 @@ CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\sr
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\state\connection\conn.h
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\core\client\client.h
-CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\state\client\client.h
+CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\core\misc\array.h
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\support\tool\tool.h
@@ -688,7 +688,7 @@ CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: "C:\Program Files (x
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
-CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\conf_whitebox_test.dir\tests\test_support.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
@@ -772,8 +772,6 @@ C:\develop\ngircd\src\platform\windows\include\unistd.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h":
-
-C:\develop\ngircd\src\server\core\channel\channel.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
 
@@ -860,6 +858,8 @@ C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h":
+
+C:\develop\ngircd\src\state\connection\proc.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 
@@ -963,9 +963,7 @@ C:\develop\ngircd\src\server\core\module\module_iface.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h":
 
-C:\develop\ngircd\src\server\net\conn\io.h:
-
-C:\develop\ngircd\src\server\net\conn\proc.h:
+C:\develop\ngircd\src\state\connection\io.h:
 
 C:\develop\ngircd\src\platform\windows\include\sys\time.h:
 
@@ -997,11 +995,13 @@ C:\develop\ngircd\src\server\core\misc\ngircd.h:
 
 C:\develop\ngircd\src\server\core\misc\defines.h:
 
-C:\develop\ngircd\src\server\net\conn\conn.h:
+C:\develop\ngircd\src\state\connection\conn.h:
 
 C:\develop\ngircd\src\server\core\config\conf-ssl.h:
 
-C:\develop\ngircd\src\server\core\client\client.h:
+C:\develop\ngircd\src\state\client\client.h:
+
+C:\develop\ngircd\src\state\channel\channel.h:
 
 C:\develop\ngircd\src\server\core\logging\log.h:
 

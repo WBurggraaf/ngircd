@@ -142,9 +142,9 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/qos.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/ws2tcpip.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/ws2ipdef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/in6addr.h
-C:/develop/ngircd/src/server/net/conn/io.h
+C:/develop/ngircd/src/state/connection/io.h
 C:/develop/ngircd/src/server/core/module/module_iface.h
-C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/state/connection/proc.h
 C:/develop/ngircd/src/platform/windows/include/sys/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/process.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_startup.h

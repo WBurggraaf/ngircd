@@ -23,7 +23,7 @@ CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: C:\develop\ngi
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
 CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\logging_module_test.dir\src\app\logging\logging.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 
 
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: C:\develop\ngircd\tests\logging_module_test.c
@@ -44,8 +44,6 @@ CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program 
 CMakeFiles\logging_module_test.dir\tests\logging_module_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
 
 
-
-C:\develop\ngircd\src\server\net\conn\proc.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
@@ -84,6 +82,8 @@ C:\develop\ngircd\src\platform\windows\include\config.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h":
 
 C:\develop\ngircd\include\core\runtime\module_api.h:
+
+C:\develop\ngircd\src\state\connection\proc.h:
 
 C:\develop\ngircd\src\server\core\logging\log.h:
 

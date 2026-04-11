@@ -20,12 +20,12 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_memcpy_
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/errno.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/vcruntime_string.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
-C:/develop/ngircd/src/server/net/conn/conn.h
+C:/develop/ngircd/src/state/connection/conn.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
 C:/develop/ngircd/src/server/core/config/conf-ssl.h
-C:/develop/ngircd/src/server/core/client/client.h
+C:/develop/ngircd/src/state/client/client.h
 C:/develop/ngircd/src/server/core/misc/defines.h
-C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/state/connection/proc.h
 C:/develop/ngircd/src/server/core/misc/lists.h
 C:/develop/ngircd/src/server/core/misc/class.h

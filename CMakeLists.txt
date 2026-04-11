@@ -18,20 +18,21 @@ endif()
 set(SERVER_SRC "${CMAKE_SOURCE_DIR}/src/server")
 set(SERVER_ROOT "${CMAKE_SOURCE_DIR}/src/server")
 set(SERVER_CORE_INC "${CMAKE_SOURCE_DIR}/src/server/core")
-set(SERVER_CORE_INC "${CMAKE_SOURCE_DIR}/src/server/core")
 set(SERVER_CORE_MISC_INC "${CMAKE_SOURCE_DIR}/src/server/core/misc")
-set(SERVER_CORE_CHANNEL_INC "${CMAKE_SOURCE_DIR}/src/server/core/channel")
-set(SERVER_CORE_CLIENT_INC "${CMAKE_SOURCE_DIR}/src/server/core/client")
+set(SERVER_CORE_CHANNEL_INC "${CMAKE_SOURCE_DIR}/src/state/channel")
+set(SERVER_CORE_CLIENT_INC "${CMAKE_SOURCE_DIR}/src/state/client")
 set(SERVER_CORE_CONFIG_INC "${CMAKE_SOURCE_DIR}/src/server/core/config")
 set(SERVER_CORE_LOGGING_INC "${CMAKE_SOURCE_DIR}/src/server/core/logging")
 set(SERVER_CORE_MODULE_INC "${CMAKE_SOURCE_DIR}/src/server/core/module")
 set(SERVER_NET_INC "${CMAKE_SOURCE_DIR}/src/server/net")
-set(SERVER_NET_CONN_INC "${CMAKE_SOURCE_DIR}/src/server/net/conn")
-set(SERVER_NET_PROC_INC "${CMAKE_SOURCE_DIR}/src/server/net/proc")
+set(SERVER_NET_CONN_INC "${CMAKE_SOURCE_DIR}/src/state/connection")
+set(SERVER_NET_PROC_INC "${CMAKE_SOURCE_DIR}/src/state/process")
 set(SERVER_PROTO_INC "${CMAKE_SOURCE_DIR}/src/server/proto")
 set(SERVER_PROTO_IRC_INC "${CMAKE_SOURCE_DIR}/src/server/proto/irc")
 set(SERVER_PROTO_JOIN_INC "${CMAKE_SOURCE_DIR}/src/server/proto/join")
 set(SERVER_PROTO_LOGIN_INC "${CMAKE_SOURCE_DIR}/src/server/proto/login")
+set(SERVER_STATE_LOGIN_INC "${CMAKE_SOURCE_DIR}/src/state/login_state")
+set(SERVER_STATE_LOGIN_HELPER_INC "${CMAKE_SOURCE_DIR}/src/state/login")
 set(SERVER_PROTO_MESSAGE_INC "${CMAKE_SOURCE_DIR}/src/server/proto/message")
 set(SERVER_PROTO_NICK_INC "${CMAKE_SOURCE_DIR}/src/server/proto/nick")
 set(SERVER_PROTO_USER_INC "${CMAKE_SOURCE_DIR}/src/server/proto/user")
@@ -153,16 +154,16 @@ add_library(ngircd_impl SHARED
     ${SHARED_SRC}/legacy_impl/server_runtime/ngircd_daemon.c
     # Original monolith (minus ngircd.c which is the EXE entry)
     ${SERVER_SRC}/core/misc/array.c
-    ${SERVER_SRC}/core/channel/channel.c
+    ${SHARED_SRC}/state/channel/channel.c
     ${SERVER_SRC}/core/misc/class.c
-    ${SERVER_SRC}/core/client/client.c
-    ${SERVER_SRC}/core/client/client-cap.c
+    ${SHARED_SRC}/state/client/client.c
+    ${SHARED_SRC}/state/client/client-cap.c
     ${SERVER_SRC}/core/config/conf.c
-    ${SERVER_SRC}/net/conn/conn.c
-    ${SERVER_SRC}/net/conn/conn-encoding.c
-    ${SERVER_SRC}/net/conn/conn-func.c
+    ${SHARED_SRC}/state/connection/conn.c
+    ${SHARED_SRC}/state/connection/conn-encoding.c
+    ${SHARED_SRC}/state/connection/conn-func.c
     ${SERVER_SRC}/core/misc/hash.c
-    ${SERVER_SRC}/net/conn/io.c
+    ${SHARED_SRC}/state/connection/io.c
     ${SERVER_SRC}/proto/irc/irc.c
     ${SERVER_SRC}/proto/irc/irc-cap.c
     ${SERVER_SRC}/proto/irc/irc-channel.c
@@ -178,14 +179,14 @@ add_library(ngircd_impl SHARED
     ${SERVER_SRC}/proto/join/join_check.c
     ${SERVER_SRC}/proto/join/join_error.c
     ${SERVER_SRC}/proto/login/login_flow.c
-    ${SERVER_SRC}/proto/login/login_state.c
+    ${SHARED_SRC}/state/login_state/login_state.c
     ${SERVER_SRC}/proto/login/login_check.c
     ${SERVER_SRC}/proto/nick/nick_check.c
     ${SERVER_SRC}/proto/message/message_check.c
     ${SERVER_SRC}/proto/user/user_check.c
     ${SERVER_SRC}/core/misc/lists.c
     ${SERVER_SRC}/core/logging/log.c
-    ${SERVER_SRC}/core/login.c
+    ${SHARED_SRC}/state/login/login.c
     ${SERVER_SRC}/core/misc/match.c
     ${SERVER_SRC}/core/misc/numeric.c
     ${SERVER_SRC}/core/misc/op.c
@@ -215,6 +216,8 @@ target_include_directories(ngircd_impl PRIVATE
     ${SERVER_PROTO_IRC_INC}
     ${SERVER_PROTO_JOIN_INC}
     ${SERVER_PROTO_LOGIN_INC}
+    ${SERVER_STATE_LOGIN_INC}
+    ${SERVER_STATE_LOGIN_HELPER_INC}
     ${SERVER_PROTO_MESSAGE_INC}
     ${SERVER_PROTO_NICK_INC}
     ${SERVER_PROTO_USER_INC}
@@ -283,7 +286,7 @@ target_link_libraries(net_transport PUBLIC core_runtime PRIVATE ngircd_impl)
 
 add_library(resolver SHARED ${SHARED_SRC}/net/resolver/resolver.c)
 target_include_directories(resolver PUBLIC ${SHARED_INC}
-    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_NET_CONN_INC}
+    PRIVATE ${WIN32_INC} ${SHARED_INC}/app ${SERVER_NET_CONN_INC} ${SERVER_CORE_MODULE_INC}
             ${SUPPORT_SRC} ${SUPPORT_SRC}/ipaddr ${SUPPORT_SRC}/portab)
 target_compile_definitions(resolver PRIVATE RESOLVER_BUILD NGIRCD_IMPL_CONSUMER)
 target_link_libraries(resolver PUBLIC core_runtime PRIVATE ngircd_impl)
@@ -415,7 +418,7 @@ if(BUILD_TESTING)
         tests/log_io_test_support.c
         ${SERVER_SRC}/core/misc/array.c
         ${SERVER_SRC}/core/logging/log.c
-        ${SERVER_SRC}/net/conn/io.c
+        ${SHARED_SRC}/state/connection/io.c
         ${SERVER_SRC}/core/module/module_iface.c
         ${WIN32_SRC}/win32_resolve.c
     )
@@ -437,9 +440,9 @@ if(BUILD_TESTING)
 
     add_executable(login_state_test
         tests/login_state_test.c
-        ${SERVER_SRC}/proto/login/login_state.c)
+        ${SHARED_SRC}/state/login_state/login_state.c)
     target_include_directories(login_state_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_STATE_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
         ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_state_test COMMAND login_state_test)
 
@@ -447,7 +450,7 @@ if(BUILD_TESTING)
         tests/login_check_test.c
         ${SERVER_SRC}/proto/login/login_check.c)
     target_include_directories(login_check_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_STATE_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
         ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_check_test COMMAND login_check_test)
 
@@ -472,7 +475,7 @@ if(BUILD_TESTING)
         tests/login_flow_test.c
         ${SERVER_SRC}/proto/login/login_flow.c)
     target_include_directories(login_flow_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_STATE_LOGIN_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
         ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME login_flow_test COMMAND login_flow_test)
 
@@ -483,6 +486,7 @@ if(BUILD_TESTING)
         ${WIN32_INC} ${SERVER_CORE_INC} ${SERVER_PROTO_IRC_INC} ${SERVER_NET_CONN_INC}
         ${SERVER_CORE_CHANNEL_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC}
         ${SERVER_CORE_LOGGING_INC} ${SERVER_CORE_MODULE_INC} ${SERVER_CORE_MISC_INC}
+        ${SERVER_STATE_LOGIN_HELPER_INC}
         ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     add_test(NAME irc_cap_end_test COMMAND irc_cap_end_test)
 
@@ -531,13 +535,13 @@ if(BUILD_TESTING)
         ${SERVER_SRC}/proto/join/join_check.c
         ${SERVER_SRC}/proto/join/join_error.c
         ${SERVER_SRC}/proto/login/login_flow.c
-        ${SERVER_SRC}/proto/login/login_state.c
+        ${SHARED_SRC}/state/login_state/login_state.c
         ${SERVER_SRC}/proto/nick/nick_check.c
         ${SERVER_SRC}/proto/user/user_check.c
         ${SERVER_SRC}/proto/message/message_check.c
         ${SERVER_SRC}/core/module/module_iface.c)
     target_include_directories(full_coverage_test PRIVATE
-        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SERVER_PROTO_MESSAGE_INC}
+        ${WIN32_INC} ${SERVER_PROTO_LOGIN_INC} ${SERVER_STATE_LOGIN_INC} ${SERVER_PROTO_JOIN_INC} ${SERVER_PROTO_NICK_INC} ${SERVER_PROTO_USER_INC} ${SERVER_PROTO_MESSAGE_INC}
         ${SERVER_CORE_MODULE_INC} ${SERVER_NET_CONN_INC} ${SERVER_CORE_CLIENT_INC} ${SERVER_CORE_CONFIG_INC} ${SERVER_CORE_MISC_INC}
         ${SUPPORT_SRC} ${SUPPORT_SRC}/portab)
     target_compile_options(full_coverage_test PRIVATE /W3 /wd4005)

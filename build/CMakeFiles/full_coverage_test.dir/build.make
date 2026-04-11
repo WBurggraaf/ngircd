@@ -161,24 +161,24 @@ CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_flow.c.s: cmake_f
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\full_coverage_test.dir\src\server\proto\login\login_flow.c.s /c C:\develop\ngircd\src\server\proto\login\login_flow.c
 <<
 
-CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.obj: CMakeFiles\full_coverage_test.dir\flags.make
-CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.obj: C:\develop\ngircd\src\server\proto\login\login_state.c
-CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.obj: CMakeFiles\full_coverage_test.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_state.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.obj /FdCMakeFiles\full_coverage_test.dir\ /FS -c C:\develop\ngircd\src\server\proto\login\login_state.c
+CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.obj: CMakeFiles\full_coverage_test.dir\flags.make
+CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.obj: C:\develop\ngircd\src\state\login_state\login_state.c
+CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.obj: CMakeFiles\full_coverage_test.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\develop\ngircd\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/full_coverage_test.dir/src/state/login_state/login_state.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.obj.d --working-dir=C:\develop\ngircd\build --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.obj /FdCMakeFiles\full_coverage_test.dir\ /FS -c C:\develop\ngircd\src\state\login_state\login_state.c
 <<
 
-CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_state.c.i"
-	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\server\proto\login\login_state.c
+CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/full_coverage_test.dir/src/state/login_state/login_state.c.i"
+	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe > CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\develop\ngircd\src\state\login_state\login_state.c
 <<
 
-CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_state.c.s"
+CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/full_coverage_test.dir/src/state/login_state/login_state.c.s"
 	C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.s /c C:\develop\ngircd\src\server\proto\login\login_state.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.s /c C:\develop\ngircd\src\state\login_state\login_state.c
 <<
 
 CMakeFiles\full_coverage_test.dir\src\server\proto\nick\nick_check.c.obj: CMakeFiles\full_coverage_test.dir\flags.make
@@ -268,7 +268,7 @@ full_coverage_test_OBJECTS = \
 "CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_check.c.obj" \
 "CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_error.c.obj" \
 "CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_flow.c.obj" \
-"CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.obj" \
+"CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.obj" \
 "CMakeFiles\full_coverage_test.dir\src\server\proto\nick\nick_check.c.obj" \
 "CMakeFiles\full_coverage_test.dir\src\server\proto\user\user_check.c.obj" \
 "CMakeFiles\full_coverage_test.dir\src\server\proto\message\message_check.c.obj" \
@@ -282,7 +282,7 @@ full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\server\proto\login
 full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_check.c.obj
 full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\server\proto\join\join_error.c.obj
 full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_flow.c.obj
-full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\server\proto\login\login_state.c.obj
+full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\state\login_state\login_state.c.obj
 full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\server\proto\nick\nick_check.c.obj
 full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\server\proto\user\user_check.c.obj
 full_coverage_test.exe: CMakeFiles\full_coverage_test.dir\src\server\proto\message\message_check.c.obj

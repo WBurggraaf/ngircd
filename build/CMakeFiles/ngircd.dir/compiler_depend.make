@@ -294,9 +294,9 @@ CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: "C:\Program Files (x86)\
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h"
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
-CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
@@ -312,12 +312,12 @@ CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: "C:\Program Files (x86)\
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\stat.h"
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\platform\windows\include\pwd.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\platform\windows\include\grp.h
-CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\state\connection\conn.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\core\client\client.h
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\state\client\client.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\core\misc\class.h
-CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\core\channel\channel.h
+CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\state\channel\channel.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\core\logging\log.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\src\server\platform\sighandlers.h
 CMakeFiles\ngircd.dir\src\server\platform\ngircd.c.obj: C:\develop\ngircd\include\app\host\host.h
@@ -443,8 +443,6 @@ C:\develop\ngircd\src\platform\windows\include\config.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\minwinbase.h":
 
-C:\develop\ngircd\src\server\core\channel\channel.h:
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack4.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack8.h":
@@ -472,6 +470,8 @@ C:\develop\ngircd\include\core\runtime\core_runtime.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h":
+
+C:\develop\ngircd\src\state\connection\proc.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 
@@ -585,9 +585,7 @@ C:\develop\ngircd\src\platform\windows\include\unistd.h:
 
 C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 
-C:\develop\ngircd\src\server\net\conn\io.h:
-
-C:\develop\ngircd\src\server\net\conn\proc.h:
+C:\develop\ngircd\src\state\connection\io.h:
 
 C:\develop\ngircd\src\platform\windows\include\sys\time.h:
 
@@ -619,15 +617,17 @@ C:\develop\ngircd\src\platform\windows\include\pwd.h:
 
 C:\develop\ngircd\src\platform\windows\include\grp.h:
 
-C:\develop\ngircd\src\server\net\conn\conn.h:
+C:\develop\ngircd\src\state\connection\conn.h:
 
 C:\develop\ngircd\src\server\core\config\conf-ssl.h:
 
-C:\develop\ngircd\src\server\core\client\client.h:
+C:\develop\ngircd\src\state\client\client.h:
 
 C:\develop\ngircd\src\server\core\misc\defines.h:
 
 C:\develop\ngircd\src\server\core\misc\class.h:
+
+C:\develop\ngircd\src\state\channel\channel.h:
 
 C:\develop\ngircd\src\server\core\logging\log.h:
 

@@ -19,4 +19,4 @@ C:/develop/ngircd/src/platform/windows/include/config.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/sys/types.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/inttypes.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdbool.h
-C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/state/connection/proc.h

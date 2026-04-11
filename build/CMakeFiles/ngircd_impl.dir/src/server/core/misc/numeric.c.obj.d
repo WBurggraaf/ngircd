@@ -27,12 +27,12 @@ C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
-C:/develop/ngircd/src/server/net/conn/conn-func.h
-C:/develop/ngircd/src/server/net/conn/conn.h
+C:/develop/ngircd/src/state/connection/conn-func.h
+C:/develop/ngircd/src/state/connection/conn.h
 C:/develop/ngircd/src/server/core/config/conf-ssl.h
-C:/develop/ngircd/src/server/core/client/client.h
+C:/develop/ngircd/src/state/client/client.h
 C:/develop/ngircd/src/server/core/misc/defines.h
-C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/state/connection/proc.h
 C:/develop/ngircd/src/server/core/config/conf.h
 C:/develop/ngircd/src/server/core/misc/array.h
 C:/develop/ngircd/src/support/tool/tool.h
@@ -157,7 +157,7 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/qos.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/ws2tcpip.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/ws2ipdef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/in6addr.h
-C:/develop/ngircd/src/server/net/conn/io.h
+C:/develop/ngircd/src/state/connection/io.h
 C:/develop/ngircd/src/server/core/module/module_iface.h
 C:/develop/ngircd/src/platform/windows/include/sys/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/process.h
@@ -171,7 +171,7 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wdirect
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/fcntl.h
 C:/develop/ngircd/src/platform/windows/include/netinet/in.h
 C:/develop/ngircd/src/platform/windows/include/arpa/inet.h
-C:/develop/ngircd/src/server/core/channel/channel.h
+C:/develop/ngircd/src/state/channel/channel.h
 C:/develop/ngircd/src/server/core/misc/class.h
 C:/develop/ngircd/src/server/proto/irc/irc-write.h
 C:/develop/ngircd/src/server/core/misc/lists.h

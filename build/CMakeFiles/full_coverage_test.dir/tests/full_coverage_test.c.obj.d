@@ -14,14 +14,14 @@ C:/develop/ngircd/src/server/proto/login/login_check.h
 C:/develop/ngircd/src/server/proto/join/join_check.h
 C:/develop/ngircd/src/server/proto/join/join_error.h
 C:/develop/ngircd/src/server/proto/login/login_flow.h
-C:/develop/ngircd/src/server/proto/login/login_state.h
-C:/develop/ngircd/src/server/net/conn/conn.h
+C:/develop/ngircd/src/state/login_state/login_state.h
+C:/develop/ngircd/src/state/connection/conn.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
 C:/develop/ngircd/src/server/core/config/conf-ssl.h
-C:/develop/ngircd/src/server/core/client/client.h
+C:/develop/ngircd/src/state/client/client.h
 C:/develop/ngircd/src/server/core/misc/defines.h
-C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/state/connection/proc.h
 C:/develop/ngircd/src/server/proto/nick/nick_check.h
 C:/develop/ngircd/src/server/proto/user/user_check.h
 C:/develop/ngircd/src/server/proto/message/message_check.h

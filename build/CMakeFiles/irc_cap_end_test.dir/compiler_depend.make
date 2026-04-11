@@ -22,19 +22,19 @@ CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: "C:\Program 
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime_string.h"
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\platform\windows\include\strings.h
-CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\state\connection\conn.h
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\client\client.h
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\state\client\client.h
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
-CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\channel\channel.h
-CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\client\client-cap.h
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\state\connection\proc.h
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\state\channel\channel.h
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\state\client\client-cap.h
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\proto\irc\irc-write.h
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\logging\log.h
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\login.h
+CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\state\login\login.h
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\misc\messages.h
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\core\misc\parse.h
 CMakeFiles\irc_cap_end_test.dir\src\server\proto\irc\irc-cap.c.obj: C:\develop\ngircd\src\server\proto\irc\irc-cap.h
@@ -53,16 +53,16 @@ CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files 
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\state\connection\conn.h
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\server\core\client\client.h
+CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\state\client\client.h
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
-CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\server\core\client\client-cap.h
+CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\state\connection\proc.h
+CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\state\client\client-cap.h
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\server\proto\irc\irc-cap.h
-CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\server\core\login.h
+CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: C:\develop\ngircd\src\state\login\login.h
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
@@ -77,7 +77,7 @@ CMakeFiles\irc_cap_end_test.dir\tests\irc_cap_end_test.c.obj: "C:\Program Files 
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h":
 
-C:\develop\ngircd\src\server\core\client\client-cap.h:
+C:\develop\ngircd\src\state\channel\channel.h:
 
 C:\develop\ngircd\src\server\proto\irc\irc-cap.c:
 
@@ -91,15 +91,11 @@ C:\develop\ngircd\src\support\portab\portab.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":
 
-C:\develop\ngircd\src\server\net\conn\conn.h:
-
 C:\develop\ngircd\src\platform\windows\include\config.h:
 
 C:\develop\ngircd\src\server\core\config\conf-ssl.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
-
-C:\develop\ngircd\src\server\net\conn\proc.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
@@ -133,26 +129,30 @@ C:\develop\ngircd\src\server\proto\irc\irc-cap.h:
 
 C:\develop\ngircd\src\platform\windows\include\strings.h:
 
+C:\develop\ngircd\src\state\connection\conn.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h":
 
-C:\develop\ngircd\src\server\core\client\client.h:
+C:\develop\ngircd\src\state\client\client.h:
 
 C:\develop\ngircd\src\server\core\misc\defines.h:
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":
+C:\develop\ngircd\src\server\core\logging\log.h:
 
-C:\develop\ngircd\src\server\core\channel\channel.h:
+C:\develop\ngircd\src\state\connection\proc.h:
+
+C:\develop\ngircd\src\state\client\client-cap.h:
 
 C:\develop\ngircd\src\server\proto\irc\irc-write.h:
 
-C:\develop\ngircd\src\server\core\logging\log.h:
-
-C:\develop\ngircd\src\server\core\login.h:
+C:\develop\ngircd\src\state\login\login.h:
 
 C:\develop\ngircd\src\server\core\misc\messages.h:
 
 C:\develop\ngircd\src\server\core\misc\parse.h:
 
 C:\develop\ngircd\tests\irc_cap_end_test.c:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":

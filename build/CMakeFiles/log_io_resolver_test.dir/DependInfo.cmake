@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/develop/ngircd/src/server/core/logging/log.c" "CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/core/logging/log.c.obj.d"
   "C:/develop/ngircd/src/server/core/misc/array.c" "CMakeFiles/log_io_resolver_test.dir/src/server/core/misc/array.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/core/misc/array.c.obj.d"
   "C:/develop/ngircd/src/server/core/module/module_iface.c" "CMakeFiles/log_io_resolver_test.dir/src/server/core/module/module_iface.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/core/module/module_iface.c.obj.d"
-  "C:/develop/ngircd/src/server/net/conn/io.c" "CMakeFiles/log_io_resolver_test.dir/src/server/net/conn/io.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/server/net/conn/io.c.obj.d"
+  "C:/develop/ngircd/src/state/connection/io.c" "CMakeFiles/log_io_resolver_test.dir/src/state/connection/io.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/src/state/connection/io.c.obj.d"
   "C:/develop/ngircd/tests/log_io_resolver_test.c" "CMakeFiles/log_io_resolver_test.dir/tests/log_io_resolver_test.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/tests/log_io_resolver_test.c.obj.d"
   "C:/develop/ngircd/tests/log_io_test_support.c" "CMakeFiles/log_io_resolver_test.dir/tests/log_io_test_support.c.obj" "msvc" "CMakeFiles/log_io_resolver_test.dir/tests/log_io_test_support.c.obj.d"
   )

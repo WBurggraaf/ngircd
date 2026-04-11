@@ -15,7 +15,7 @@ CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: "C:\
 CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
 CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\module_iface_test.dir\src\server\core\module\module_iface.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 
 
 CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: C:\develop\ngircd\tests\module_iface_test.c
@@ -32,14 +32,12 @@ CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: "C:\Program File
 CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h"
 CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
 CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
 CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\module_iface_test.dir\tests\module_iface_test.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
 
 
-
-C:\develop\ngircd\src\server\net\conn\proc.h:
 
 C:\develop\ngircd\src\server\core\module\module_iface.c:
 
@@ -74,5 +72,7 @@ C:\develop\ngircd\src\server\core\module\module_iface.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h":
+
+C:\develop\ngircd\src\state\connection\proc.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":

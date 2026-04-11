@@ -13,10 +13,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/develop/ngircd/src/server/proto/join/join_error.c" "CMakeFiles/full_coverage_test.dir/src/server/proto/join/join_error.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/src/server/proto/join/join_error.c.obj.d"
   "C:/develop/ngircd/src/server/proto/login/login_check.c" "CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_check.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_check.c.obj.d"
   "C:/develop/ngircd/src/server/proto/login/login_flow.c" "CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_flow.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_flow.c.obj.d"
-  "C:/develop/ngircd/src/server/proto/login/login_state.c" "CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_state.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/src/server/proto/login/login_state.c.obj.d"
   "C:/develop/ngircd/src/server/proto/message/message_check.c" "CMakeFiles/full_coverage_test.dir/src/server/proto/message/message_check.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/src/server/proto/message/message_check.c.obj.d"
   "C:/develop/ngircd/src/server/proto/nick/nick_check.c" "CMakeFiles/full_coverage_test.dir/src/server/proto/nick/nick_check.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/src/server/proto/nick/nick_check.c.obj.d"
   "C:/develop/ngircd/src/server/proto/user/user_check.c" "CMakeFiles/full_coverage_test.dir/src/server/proto/user/user_check.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/src/server/proto/user/user_check.c.obj.d"
+  "C:/develop/ngircd/src/state/login_state/login_state.c" "CMakeFiles/full_coverage_test.dir/src/state/login_state/login_state.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/src/state/login_state/login_state.c.obj.d"
   "C:/develop/ngircd/tests/full_coverage_test.c" "CMakeFiles/full_coverage_test.dir/tests/full_coverage_test.c.obj" "msvc" "CMakeFiles/full_coverage_test.dir/tests/full_coverage_test.c.obj.d"
   )
 

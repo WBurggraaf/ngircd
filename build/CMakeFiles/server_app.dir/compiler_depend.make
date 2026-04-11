@@ -155,13 +155,13 @@ CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\ws2tcpip.h"
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
-CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: C:\develop\ngircd\src\support\portab\portab.h
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
-CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
 CMakeFiles\server_app.dir\src\app\server_app\server_app.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_startup.h"
@@ -343,6 +343,8 @@ C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h":
 
+C:\develop\ngircd\src\state\connection\proc.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h":
@@ -441,15 +443,13 @@ C:\develop\ngircd\src\server\core\module\module_iface.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h":
 
-C:\develop\ngircd\src\server\net\conn\io.h:
+C:\develop\ngircd\src\state\connection\io.h:
 
 C:\develop\ngircd\src\support\portab\portab.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h":
-
-C:\develop\ngircd\src\server\net\conn\proc.h:
 
 C:\develop\ngircd\src\platform\windows\include\sys\time.h:
 

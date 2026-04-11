@@ -10,13 +10,13 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stddef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/inttypes.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdint.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/stdbool.h
-C:/develop/ngircd/src/server/net/conn/conn.h
+C:/develop/ngircd/src/state/connection/conn.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
 C:/develop/ngircd/src/server/core/config/conf-ssl.h
-C:/develop/ngircd/src/server/core/client/client.h
+C:/develop/ngircd/src/state/client/client.h
 C:/develop/ngircd/src/server/core/misc/defines.h
-C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/state/connection/proc.h
 C:/develop/ngircd/src/server/core/config/conf.h
 C:/develop/ngircd/src/server/core/misc/array.h
 C:/develop/ngircd/src/support/tool/tool.h
@@ -148,7 +148,7 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/ws2tcpip.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/ws2ipdef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/in6addr.h
 C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include/limits.h
-C:/develop/ngircd/src/server/net/conn/io.h
+C:/develop/ngircd/src/state/connection/io.h
 C:/develop/ngircd/src/server/core/module/module_iface.h
 C:/develop/ngircd/src/platform/windows/include/sys/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/process.h

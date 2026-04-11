@@ -17,14 +17,14 @@ CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\n
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\state\connection\conn.h
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\server\core\client\client.h
+CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\state\client\client.h
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
-CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\state\connection\proc.h
+CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: C:\develop\ngircd\src\platform\windows\include\win32compat.h
@@ -164,8 +164,6 @@ CMakeFiles\net_transport.dir\src\net\transport\net_transport.c.obj: "C:\Program 
 
 
 
-C:\develop\ngircd\src\server\net\conn\proc.h:
-
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\jobapi2.h":
@@ -189,6 +187,8 @@ C:\develop\ngircd\include\net\transport\net_transport.h:
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\concurrencysal.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vadefs.h":
+
+C:\develop\ngircd\src\state\connection\conn.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h":
 
@@ -222,8 +222,6 @@ C:\develop\ngircd\src\support\portab\portab.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
 
-C:\develop\ngircd\src\server\net\conn\conn.h:
-
 C:\develop\ngircd\src\platform\windows\include\config.h:
 
 C:\develop\ngircd\src\server\core\config\conf-ssl.h:
@@ -238,7 +236,7 @@ C:\develop\ngircd\src\server\core\config\conf-ssl.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h":
 
-C:\develop\ngircd\src\server\core\client\client.h:
+C:\develop\ngircd\src\state\client\client.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h":
 
@@ -246,13 +244,13 @@ C:\develop\ngircd\src\server\core\client\client.h:
 
 C:\develop\ngircd\src\server\core\misc\defines.h:
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winver.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h":
+C:\develop\ngircd\src\state\connection\proc.h:
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h":
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
 
-C:\develop\ngircd\src\server\net\conn\io.h:
+C:\develop\ngircd\src\state\connection\io.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h":
 
@@ -261,6 +259,12 @@ C:\develop\ngircd\src\platform\windows\include\sys\time.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\minwindef.h":
 
 C:\develop\ngircd\src\platform\windows\include\win32compat.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winver.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\winpackagefamily.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\ctype.h":
 
@@ -302,8 +306,6 @@ C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\winbase.h":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\apisetcconv.h":
-
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\apiquery2.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\libloaderapi.h":
@@ -315,8 +317,6 @@ C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h":
 

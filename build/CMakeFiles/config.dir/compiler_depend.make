@@ -19,11 +19,11 @@ CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\platfor
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h"
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\net\conn\conn.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\state\connection\conn.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\config\conf-ssl.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\client\client.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\state\client\client.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\misc\defines.h
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\net\conn\proc.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\state\connection\proc.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\config\conf.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\misc\array.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\support\tool\tool.h
@@ -155,7 +155,7 @@ CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windo
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\ws2ipdef.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\in6addr.h"
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h"
-CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\net\conn\io.h
+CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\state\connection\io.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\server\core\module\module_iface.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: C:\develop\ngircd\src\platform\windows\include\sys\time.h
 CMakeFiles\config.dir\src\app\config\config.c.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\process.h"
@@ -181,8 +181,6 @@ C:\develop\ngircd\include\app\config\config.h:
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\sal.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdint.h":
-
-C:\develop\ngircd\src\server\net\conn\proc.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vcruntime.h":
 
@@ -212,6 +210,8 @@ C:\develop\ngircd\src\server\core\misc\array.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h":
 
+C:\develop\ngircd\src\state\connection\conn.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\handleapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\utilapiset.h":
@@ -228,8 +228,6 @@ C:\develop\ngircd\src\support\portab\portab.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\pshpack2.h":
 
-C:\develop\ngircd\src\server\net\conn\conn.h:
-
 C:\develop\ngircd\src\platform\windows\include\config.h:
 
 C:\develop\ngircd\src\server\core\config\conf-ssl.h:
@@ -244,7 +242,7 @@ C:\develop\ngircd\src\server\core\config\conf-ssl.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\stdbool.h":
 
-C:\develop\ngircd\src\server\core\client\client.h:
+C:\develop\ngircd\src\state\client\client.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h":
 
@@ -253,6 +251,10 @@ C:\develop\ngircd\src\server\core\client\client.h:
 C:\develop\ngircd\src\server\core\config\conf.h:
 
 C:\develop\ngircd\src\server\core\misc\defines.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
+
+C:\develop\ngircd\src\state\connection\proc.h:
 
 C:\develop\ngircd\src\support\tool\tool.h:
 
@@ -329,8 +331,6 @@ C:\develop\ngircd\src\platform\windows\include\win32compat.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fileapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\debugapi.h":
-
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\errhandlingapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um\fibersapi.h":
 
@@ -432,7 +432,7 @@ C:\develop\ngircd\src\server\core\module\module_iface.h:
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h":
 
-C:\develop\ngircd\src\server\net\conn\io.h:
+C:\develop\ngircd\src\state\connection\io.h:
 
 C:\develop\ngircd\src\platform\windows\include\sys\time.h:
 

@@ -25,11 +25,11 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wstring
 C:/develop/ngircd/src/platform/windows/include/strings.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/time.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt_wtime.h
-C:/develop/ngircd/src/server/net/conn/conn.h
+C:/develop/ngircd/src/state/connection/conn.h
 C:/develop/ngircd/src/server/core/config/conf-ssl.h
-C:/develop/ngircd/src/server/core/client/client.h
+C:/develop/ngircd/src/state/client/client.h
 C:/develop/ngircd/src/server/core/misc/defines.h
-C:/develop/ngircd/src/server/net/conn/proc.h
+C:/develop/ngircd/src/state/connection/proc.h
 C:/develop/ngircd/src/server/core/logging/log.h
 C:/develop/ngircd/src/server/core/module/module_iface.h
 C:/develop/ngircd/src/server/core/misc/match.h
