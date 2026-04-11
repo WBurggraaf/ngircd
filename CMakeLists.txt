@@ -119,6 +119,8 @@ add_library(ngircd_impl SHARED
     # Globals and daemon bootstrap (must be in this DLL for dllexport)
     ${SHARED_SRC}/ngircd_impl/ngircd_runtime_globals.c
     ${SHARED_SRC}/ngircd_impl/ngircd_daemon.c
+    # Phase 2 shim: forwards Conn_*/io_* to net_transport.dll at runtime
+    ${SHARED_SRC}/ngircd_impl/conn_shim.c
     # Original monolith (minus ngircd.c which is the EXE entry)
     ${ORIG_SRC}/ngircd/core/array.c
     ${ORIG_SRC}/ngircd/channel.c
@@ -237,14 +239,6 @@ if(MSVC)
     target_compile_options(net_transport PRIVATE
         /W3 /Zi /wd4005 /wd4013 /wd4996 /wd4267 /wd4244 /wd4018 /wd4133 /wd4090)
     target_link_options(net_transport PRIVATE /DEBUG)
-endif()
-
-# Phase 2: ngircd_impl proto files call Conn_*/io_* which now live in net_transport.dll.
-# CMake forbids SHARED→SHARED cycles in target_link_libraries. Use raw import-lib reference
-# instead. add_dependencies ensures net_transport.lib exists before ngircd_impl links.
-add_dependencies(ngircd_impl net_transport)
-if(MSVC)
-    target_link_options(ngircd_impl PRIVATE "$<TARGET_LINKER_FILE:net_transport>")
 endif()
 
 add_library(resolver SHARED ${SHARED_SRC}/resolver/resolver.c)
